@@ -4,8 +4,14 @@
 
 - [System Prompt](#system-prompt)
 - [Instruction Prompt](#instruction-prompt)
-- Types
-  - [Built-in Types](#built-in-types)
+- Core
+  - [Core - Comments](#core-comments)
+  - [Core - Variables & Constants](#core-variables-constants)
+  - [Core - Arrays](#core-arrays)
+  - [Core - Blocks & Scopes](#core-blocks-scope)
+  - [Core - Control-Flow/Conditionals](#core-control-flow-conditionals)
+  - [Core - Control-Flow/Iterations](#core-control-flow-iterations)
+- Extended
   - [User Defined Types](#user-defined-types)
 
 ## System Prompt
@@ -28,7 +34,166 @@ Code block example for each language
 
 ## Training Data
 
-### Built-in Types
+### Core - Comments
+
+Python (version >=x.x.x)
+
+```python
+
+```
+
+Mojo (version >=x.x.x)
+
+```mojo
+
+```
+
+Typescript (version >=x.x.x)
+
+```ts
+
+```
+
+Go (version >=x.x.x)
+
+```go
+
+```
+
+### Core - Variables & Constants
+
+// TODO:
+Python (version >=x.x.x)
+
+```python
+
+```
+
+Mojo (version >=x.x.x)
+
+```mojo
+
+```
+
+Typescript (version >=x.x.x)
+
+```ts
+
+```
+
+Go (version >=x.x.x)
+
+```go
+
+```
+
+### Core - Arrays
+
+// TODO:
+Python (version >=x.x.x)
+
+```python
+
+```
+
+Mojo (version >=x.x.x)
+
+```mojo
+
+```
+
+Typescript (version >=x.x.x)
+
+```ts
+
+```
+
+Go (version >=x.x.x)
+
+```go
+
+```
+
+### Core - Blocks & Scopes
+
+// TODO:
+Python (version >=x.x.x)
+
+```python
+
+```
+
+Mojo (version >=x.x.x)
+
+```mojo
+
+```
+
+Typescript (version >=x.x.x)
+
+```ts
+
+```
+
+Go (version >=x.x.x)
+
+```go
+
+```
+
+### Core - Control Flow / Conditionals
+
+// TODO:
+Python (version >=x.x.x)
+
+```python
+
+```
+
+Mojo (version >=x.x.x)
+
+```mojo
+
+```
+
+Typescript (version >=x.x.x)
+
+```ts
+
+```
+
+Go (version >=x.x.x)
+
+```go
+
+```
+
+### Core - Control Flow / Iterations
+
+// TODO:
+Python (version >=x.x.x)
+
+```python
+
+```
+
+Mojo (version >=x.x.x)
+
+```mojo
+
+```
+
+Typescript (version >=x.x.x)
+
+```ts
+
+```
+
+Go (version >=x.x.x)
+
+```go
+
+```
 
 // TODO:
 
@@ -47,18 +212,18 @@ ColorType = str
 c1: ColorType = "blue"
 ```
 
-TypeScript (version >=1.x.x)
-
-```ts
-type ColorType = string;
-let c1: ColorType = "blue";
-```
-
 Mojo (version >=0.4.x)
 
 ```mojo
 alias ColorType = String
 var c1: ColorType = "blue"
+```
+
+TypeScript (version >=1.x.x)
+
+```ts
+type ColorType = string;
+let c1: ColorType = "blue";
 ```
 
 Go (version >=1.x.x)
@@ -95,6 +260,21 @@ p1 = PointType(1, 2)
 x = p1.x
 ```
 
+Mojo (version >=0.4.x)
+
+```mojo
+struct PointType:
+  var x: Int
+  var y: Int
+
+  def __init__(out self, x: Int, y: Int):
+    self.x = x
+    self.y = y
+
+var p1 = PointType(1, 2)
+var x = p1.x
+```
+
 TypeScript (version >=2.x.x)
 
 ```ts
@@ -110,21 +290,6 @@ interface PointInterface {
 const p1: PointInterface = { x: 1, y: 2 };
 const p2: PointType = { x: 1, y: 2 };
 let x = p1.x;
-```
-
-Mojo (version >=0.4.x)
-
-```mojo
-struct PointType:
-  var x: Int
-  var y: Int
-
-  def __init__(out self, x: Int, y: Int):
-    self.x = x
-    self.y = y
-
-var p1 = PointType(1, 2)
-var x = p1.x
 ```
 
 Go (version >=1.x.x)
