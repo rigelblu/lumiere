@@ -215,12 +215,14 @@ Python (version >=0.x.x)
 ```python
 # Not built into language. Use nearest equivalent, a naming convention
 
+# ./pkg1/__init__.py
 # ./pkg1/file1.py
 _PRIMARY = "blue"
 
+# ./pkg2/__init__.py
 # ./pkg2/file2.py
 # _PRIMARY won't be imported
-from ../pkg1/file1 import *
+from ..pkg1/file1 import *
 ```
 
 Mojo (version >=0.x.x)
@@ -237,10 +239,10 @@ const PRIMARY: string = "blue"
 
 // ./pkg2/file2.ts
 // PRIMARY won't be imported
-import * from '../pkg1/file1.ts'
+import * from '../pkg1/file1'
 
 // Trying to import PRIMARY manually will fail
-import { PRIMARY } from '../pkg1/file1.ts';
+import { PRIMARY } from '../pkg1/file1';
 ```
 
 Go (version >=0.x.x)
@@ -266,9 +268,11 @@ Python (version >=0.x.x)
 ```python
 # Not built into language. Use nearest equivalent
 
+# ./pkg1/__init__.py
 # ./pkg1/file1.py
 PRIMARY = "blue"
 
+# ./pkg2/__init__.py
 # ./pkg2/file2.py
 # PRIMARY will be imported
 from ../pkg1/file1 import *
@@ -281,7 +285,7 @@ Mojo (version >=0.x.x)
 PRIMARY = "blue"
 
 # ./pkg2/file2.py
-from ../pkg1/file1 import *
+from ..pkg1/file1 import *
 ```
 
 Typescript (version >=0.x.x)
@@ -292,10 +296,10 @@ export const PRIMARY: string = "blue"
 
 // ./pkg2/file2.ts
 // PRIMARY will be imported
-import * from '../pkg1/file1.ts'
+import * from '../pkg1/file1'
 
 // Importing PRIMARY manually will succeed
-import { PRIMARY } from '../pkg1/file1.ts';
+import { PRIMARY } from '../pkg1/file1';
 ```
 
 Go (version >=0.x.x)
