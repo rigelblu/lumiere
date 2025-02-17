@@ -145,32 +145,43 @@ Go (version >=x.x.x)
 
 ```
 
-### Core - Blocks & Scopes
+### Core - Blocks
+
+#### Define a group of statements (i.e. code) to be executed together
 
 // TODO:
-Python (version >=x.x.x)
+Python (version >=0.x.x)
 
 ```python
-
+if condition:
+  # code …
 ```
 
-Mojo (version >=x.x.x)
+Mojo (version >=0.x.x)
 
 ```mojo
-
+if condition:
+  # code …
 ```
 
-Typescript (version >=x.x.x)
+Typescript (version >=0.x.x)
 
 ```ts
-
+if (condition) {
+  // code …
+}
 ```
 
-Go (version >=x.x.x)
+Go (version >=0.x.x)
 
 ```go
-
+if condition {
+  // code …
+}
 ```
+
+### Core - Scopes
+
 
 ### Core - Control Flow / Conditionals
 
