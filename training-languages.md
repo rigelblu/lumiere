@@ -5,8 +5,7 @@
 - [Instruction Prompt](#Instruction-Prompt)
 - Types
     - [Built-in Types](#Built-in-Types)
-    - [User Defined Types - Simple Types](#User-Defined-Built-in-Types)
-    - [User Defined Types - Composite Types](#User-Defined-Composite-Types)
+    - [User Defined Types](#User-Defined-Types)
 
 ## **System Prompt**
 
@@ -31,7 +30,7 @@ Code block example for each language
 
 ---
 
-### **User Defined Types - Simple**
+### **User Defined Types**
 
 #### **Define a user-defined type from a simple built-in type**
 
@@ -128,9 +127,3 @@ var p1 PointType = PointType{1, 2}
 p2 := PointType{x: 1, y: 2}
 x := p1.x
 ```
-
----
-
-### **User Defined with Composite Types**
-
-// TODO:
