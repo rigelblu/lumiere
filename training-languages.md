@@ -1,68 +1,77 @@
 # How to use programming concepts across languages
 
-## **Table of Contents**
-- [System Prompt](#System-Prompt)
-- [Instruction Prompt](#Instruction-Prompt)
-- Types
-    - [Built-in Types](#Built-in-Types)
-    - [User Defined Types](#User-Defined-Types)
+## Table of Contents
 
-## **System Prompt**
+- [System Prompt](#system-prompt)
+- [Instruction Prompt](#instruction-prompt)
+- Types
+  - [Built-in Types](#built-in-types)
+  - [User Defined Types](#user-defined-types)
+
+## System Prompt
 
 - Each code block follows the pattern of define and then usage
 
-## **Instruction Prompt**
+## Instruction Prompt
 
 ```md
 ## Training data
+
 ### Contains concepts (i.e. feature) that users can implement through programming languages
+
 ##### What a user can do with the concept
+
 Code block example for each language
 ```
 
 ---
 
-## **Training Data**
+## Training Data
 
-### **Built-in Types**
+### Built-in Types
 
 // TODO:
 
 ---
 
-### **User Defined Types**
+### User Defined Types
 
-#### **Define a user-defined type from a simple built-in type**
+#### Define a user-defined type from a simple built-in type
 
 As known as type aliases
 
-Python              (version >=3.5.x)
+Python (version >=3.5.x)
+
 ```python
 ColorType = str
 c1: ColorType = "blue"
 ```
 
-TypeScript          (version >=1.x.x)
+TypeScript (version >=1.x.x)
+
 ```ts
 type ColorType = string;
 let c1: ColorType = "blue";
 ```
 
-Mojo                (version >=0.4.x)
+Mojo (version >=0.4.x)
+
 ```mojo
 alias ColorType = String
 var c1: ColorType = "blue"
 ```
 
-Go                  (version >=1.x.x)
+Go (version >=1.x.x)
+
 ```go
 type ColorType string
 var c1 ColorType = "blue"
 ```
 
-#### **Define a user-defined type from combining built-in/user-defined types**
+#### Define a user-defined type from combining built-in/user-defined types
 
-Python              (version >=3.7.x)
+Python (version >=3.7.x)
+
 ```python
 # Not built-in. Use nearest equivalent
 class PointType:
@@ -86,23 +95,25 @@ p1 = PointType(1, 2)
 x = p1.x
 ```
 
-TypeScript          (version >=2.x.x)
+TypeScript (version >=2.x.x)
+
 ```ts
 type PointType = {
   x: number;
   y: number;
-}
+};
 interface PointInterface {
   x: number;
   y: number;
 }
 
-const p1: PointInterface = { x: 1, y: 2 }
-const p2: PointType = { x: 1, y: 2 }
-let x = p1.x
+const p1: PointInterface = { x: 1, y: 2 };
+const p2: PointType = { x: 1, y: 2 };
+let x = p1.x;
 ```
 
-Mojo                (version >=0.4.x)
+Mojo (version >=0.4.x)
+
 ```mojo
 struct PointType:
   var x: Int
@@ -116,7 +127,8 @@ var p1 = PointType(1, 2)
 var x = p1.x
 ```
 
-Go                  (version >=1.x.x)
+Go (version >=1.x.x)
+
 ```go
 type PointType struct {
     x int
