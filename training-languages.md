@@ -36,28 +36,60 @@ Code block example for each language
 
 ### Core - Comments
 
+#### Write comments that will be ignored
+
 Python (version >=x.x.x)
 
 ```python
+# Single line comment
+name = "lang" # Comment at end of line
 
+"""
+Multi-line comment
+"""
+
+'''
+Multi-line comment
+'''
 ```
 
-Mojo (version >=x.x.x)
+Mojo (version >=0.x.x)
 
 ```mojo
+# Single line comment
+var name = "lang" # Comment at end of line
 
+"""
+Multi-line comment
+"""
+
+'''
+Multi-line comment
+'''
 ```
 
-Typescript (version >=x.x.x)
+Typescript (version >=0.x.x)
 
 ```ts
+// Single line comment
+name = "lang" // Comment at end of line
 
+/* multi-line comment */
+
+/*
+ * multi-line comment
+ */
 ```
 
-Go (version >=x.x.x)
+Go (version >=0.x.x)
 
 ```go
+// Single line comment
+name := "lang" // Comment at end of line
 
+/*
+ * multi-line comment
+ */
 ```
 
 ### Core - Variables & Constants
@@ -79,7 +111,6 @@ Typescript (version >=x.x.x)
 
 ```ts
 
-```
 
 Go (version >=x.x.x)
 
@@ -142,6 +173,8 @@ Go (version >=x.x.x)
 ```
 
 ### Core - Control Flow / Conditionals
+
+#### Define a user-defined type from a simple built-in type
 
 // TODO:
 Python (version >=x.x.x)
