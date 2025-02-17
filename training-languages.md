@@ -71,6 +71,20 @@ class PointType:
     y: int
 
 p1 = PointType(1, 2)
+x = p1.x
+```
+
+```python
+# Not built-in. Use nearest equivalent
+from dataclasses import dataclass
+
+@dataclass
+class PointType:
+    x: int
+    y: int
+
+p1 = PointType(1, 2)
+x = p1.x
 ```
 
 TypeScript          (version >=2.x.x)
