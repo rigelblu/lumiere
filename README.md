@@ -1,15 +1,17 @@
-# Lumiere
+# **Lumiere**
 
 Multi-programming language training data for LLMs
 
-## Intro
+## **Intro**
 
 *Draft*
 LLMs struggle with accuracy on most new things - languages, libraries, frameworks due to lack of training data. So what if we provide one example for every use case/pattern to enable few shot learning the new thing (taking inspiration from few shot prompting).
 
 If LLMs are great at correlating, pattern matching, interpolating, maybe this isenough to prevent calcifying culture, enabling new ideas to grow. Plus, we hear quality over quantity of the data is what matters.
 
-## Usage
+---
+
+## **Usage**
 
 - In the short term, paste the training data into your LLMs's system prompt
 - In the long term, LLMs will train on this data and become available whenever they update their cut-off date
@@ -26,13 +28,15 @@ Write approach goals
  >
  > -- Malcom Gladwell
 
-## Roadmap
+---
 
-### Doing
+## **Roadmap**
+
+### **Doing**
 - [ ] Python, Mojo, TypeScript, Go
 
-### Future
+### **Future**
 - [ ] Provide training data for libraries and frameworks
 
-### Just an ida
+### **Just an ida**
 - [ ] Split training data into separate files. Createa one joined version for easy pasting into system prompt
