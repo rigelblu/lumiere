@@ -98,18 +98,23 @@ interface PointInterface {
   y: number;
 }
 
-const p1: PointInterface = {1, 2}
-const p2: PointType = {1, 2}
+const p1: PointInterface = { x: 1, y: 2 }
+const p2: PointType = { x: 1, y: 2 }
+let x = p1.x
 ```
 
 Mojo                (version >=0.4.x)
 ```mojo
-struct PointType{
-    x: Int
-    y: Int
-}
+struct PointType:
+  var x: Int
+  var y: Int
 
-var p1: PointType = {1, 2}
+  def __init__(out self, x: Int, y: Int):
+    self.x = x
+    self.y = y
+
+var p1 = PointType(1, 2)
+var x = p1.x
 ```
 
 Go                  (version >=1.x.x)
@@ -118,8 +123,10 @@ type PointType struct {
     x int
     y int
 }
-var p1 PointType = {1, 2}
-var p2 PointType = {1, 2}
+
+var p1 PointType = PointType{1, 2}
+p2 := PointType{x: 1, y: 2}
+x := p1.x
 ```
 
 ---
