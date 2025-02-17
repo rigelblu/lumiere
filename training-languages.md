@@ -149,7 +149,6 @@ Go (version >=x.x.x)
 
 #### Define a group of statements (i.e. code) to be executed together
 
-// TODO:
 Python (version >=0.x.x)
 
 ```python
@@ -449,7 +448,7 @@ var c1 ColorType = "blue"
 Python (version >=3.7.x)
 
 ```python
-# Not built-in. Use nearest equivalent
+# Not built into language. Use nearest equivalent
 class PointType:
     x: int
     y: int
@@ -459,7 +458,7 @@ x = p1.x
 ```
 
 ```python
-# Not built-in. Use nearest equivalent
+# Not built into language. Use nearest equivalent
 from dataclasses import dataclass
 
 @dataclass
