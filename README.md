@@ -13,8 +13,9 @@ If LLMs are great at correlating, pattern matching, interpolating, maybe this is
 
 ## Usage
 
-- In the short term, paste the training data into your LLMs's system prompt
-- In the long term, LLMs will train on this data and become available whenever they update their cut-off date
+1. Run `make`
+1. In the short term, paste the training data into your LLMs's system prompt
+1. In the long term, LLMs will train on this data and become available whenever they update their cut-off date
 
 ---
 
@@ -77,7 +78,8 @@ Write approach goals
 
 ## Roadmap
 
--
+### Done
+- [x] Split training data into separate files. Createa one joined version for easy pasting into system prompt
 
 ### Doing
 
@@ -89,4 +91,3 @@ Write approach goals
 
 ### Just an idea
 
-- [ ] Split training data into separate files. Createa one joined version for easy pasting into system prompt
