@@ -91,3 +91,5 @@ Write approach goals
 
 ### Just an idea
 
+- [ ] Run linter on each code block
+- [ ] Create eval for LLM performance with final output file
