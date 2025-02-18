@@ -1,25 +1,25 @@
 ### Core - Arrays
 
-Python (version >=x.x.x)
+Python (version >=0.x.x)
 
-```python
-
+```py
+# TODO:
 ```
 
-Mojo (version >=x.x.x)
+Mojo (version >=0.x.x)
 
 ```mojo
-
+# Not built into language yet. Use near equivalent Vectors
 ```
 
-Typescript (version >=x.x.x)
+Typescript (version >=0.x.x)
 
 ```ts
-
+// TODO:
 ```
 
-Go (version >=x.x.x)
+Go (version >=0.x.x)
 
 ```go
-
+// TODO:
 ```
