@@ -13,7 +13,8 @@ If LLMs are great at correlating, pattern matching, interpolating, maybe this is
 
 ## Usage
 
-1. Run `make`
+1. Run `make` to a single file version of the training date in `./out`
+1. Run `make publish` to store the single file version so LLMs can train on it
 1. In the short term, paste the training data into your LLMs's system prompt
 1. In the long term, LLMs will train on this data and become available whenever they update their cut-off date
 
