@@ -1,4 +1,4 @@
-### Core - Blocks
+### Core - Blocks & Statements
 
 #### Define a group of statements (i.e. code) to be executed together
 
@@ -15,12 +15,14 @@ if condition:
 if condition:
     # code...
 ```
+
 ...
+
 ##### Typescript (version >=0.x.x)
 
 ```ts
 if (condition) {
-    / code...
+  // code...
 }
 ```
 

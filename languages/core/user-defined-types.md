@@ -78,12 +78,12 @@ var x = p1.x
 
 ```ts
 type PointType = {
-    x: number;
-    y: number;
+  x: number;
+  y: number;
 };
 interface PointInterface {
-    x: number;
-    y: number;
+  x: number;
+  y: number;
 }
 
 const p1: PointInterface = { x: 1, y: 2 };
