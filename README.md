@@ -74,23 +74,3 @@ Write approach goals
 > My goal is to write at an 8th grade level but with ideas that are super sophisticated. It doesn’t mean the way I’m writing is dumb. It means the way I’m writing is super simpler and straight forward. An eighth grade can easily ready one of my books. They may not understand every idea, but writing is not going to defeat them. Writing should be simple enough to that is does not defeat the reader.
 >
 > -- Malcom Gladwell
-
----
-
-## Roadmap
-
-### Done
-- [x] Split training data into separate files. Createa one joined version for easy pasting into system prompt
-
-### Doing
-
-- [ ] Python, Mojo, TypeScript, Go
-
-### Future
-
-- [ ] Provide training data for libraries and frameworks
-
-### Just an idea
-
-- [ ] Run linter on each code block
-- [ ] Create eval for LLM performance with final output file
