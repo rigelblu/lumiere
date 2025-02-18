@@ -2,25 +2,25 @@
 
 #### Make variable available globally across program
 
-Python (version >=0.x.x)
+##### Python (version >=0.x.x)
 
 ```py
 global_var = "I'm global"
 ```
 
-Mojo (version >=0.x.x)
+##### Mojo (version >=0.x.x)
 
 ```mojo
 # Not built into language
 ```
 
-Typescript (version >=0.x.x)
+##### Typescript (version >=0.x.x)
 
 ```ts
 // Not built into language
 ```
 
-Go (version >=0.x.x)
+##### Go (version >=0.x.x)
 
 ```go
 // Not built into language
@@ -28,7 +28,7 @@ Go (version >=0.x.x)
 
 #### Make variables privately available only to it's package / file
 
-Python (version >=0.x.x)
+##### Python (version >=0.x.x)
 
 ```py
 # Not built into language. Use nearest equivalent, a naming convention
@@ -43,13 +43,13 @@ _PRIMARY = "blue"
 from ..pkg1/file1 import *
 ```
 
-Mojo (version >=0.x.x)
+##### Mojo (version >=0.x.x)
 
 ```mojo
 # TODO: confirm if it's not built into language or if it follows python pattern
 ```
 
-Typescript (version >=0.x.x)
+##### Typescript (version >=0.x.x)
 
 ```ts
 // ./pkg1/file1.ts
@@ -63,7 +63,7 @@ import * from '../pkg1/file1'
 import { PRIMARY } from '../pkg1/file1';
 ```
 
-Go (version >=0.x.x)
+##### Go (version >=0.x.x)
 
 ```go
 // ./pkg1/file1.go
@@ -81,7 +81,7 @@ c1 := colors.primary
 
 #### Make variables publically available to other packages / files
 
-Python (version >=0.x.x)
+##### Python (version >=0.x.x)
 
 ```py
 # Not built into language. Use nearest equivalent
@@ -96,7 +96,7 @@ PRIMARY = "blue"
 from ../pkg1/file1 import *
 ```
 
-Mojo (version >=0.x.x)
+##### Mojo (version >=0.x.x)
 
 ```mojo
 # ./pkg1/file1.py
@@ -106,7 +106,7 @@ PRIMARY = "blue"
 from ..pkg1/file1 import *
 ```
 
-Typescript (version >=0.x.x)
+##### Typescript (version >=0.x.x)
 
 ```ts
 // ./pkg1/file1.ts
@@ -120,7 +120,7 @@ import * from '../pkg1/file1'
 import { PRIMARY } from '../pkg1/file1';
 ```
 
-Go (version >=0.x.x)
+##### Go (version >=0.x.x)
 
 ```go
 // ./pkg1/file1.go
@@ -153,21 +153,21 @@ c1 := Primary
 
 #### Make variables available only to it's local block
 
-Python (version >=0.x.x)
+##### Python (version >=0.x.x)
 
 ```py
 if condition:
     # code...
 ```
 
-Mojo (version >=0.x.x)
+##### Mojo (version >=0.x.x)
 
 ```mojo
 if condition:
     # code...
 ```
 
-Typescript (version >=0.x.x)
+##### Typescript (version >=0.x.x)
 
 ```ts
 if (condition) {
@@ -175,7 +175,7 @@ if (condition) {
 }
 ```
 
-Go (version >=0.x.x)
+##### Go (version >=0.x.x)
 
 ```go
 if condition {

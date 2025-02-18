@@ -2,7 +2,7 @@
 
 #### Write comments that will be ignored
 
-Python (version >=x.x.x)
+##### Python (version >=x.x.x)
 
 ```py
 # Single line comment
@@ -17,7 +17,7 @@ Multi-line comment
 '''
 ```
 
-Mojo (version >=0.x.x)
+##### Mojo (version >=0.x.x)
 
 ```mojo
 # Single line comment
@@ -32,7 +32,7 @@ Multi-line comment
 '''
 ```
 
-Typescript (version >=0.x.x)
+##### Typescript (version >=0.x.x)
 
 ```ts
 // Single line comment
@@ -45,7 +45,7 @@ name = "lang" // Comment at end of line
  */
 ```
 
-Go (version >=0.x.x)
+##### Go (version >=0.x.x)
 
 ```go
 // Single line comment

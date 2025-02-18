@@ -4,28 +4,28 @@
 
 As known as type aliases
 
-Python (version >=3.5.x)
+##### Python (version >=3.5.x)
 
 ```py
 ColorType = str
 c1: ColorType = "blue"
 ```
 
-Mojo (version >=0.4.x)
+##### Mojo (version >=0.4.x)
 
 ```mojo
 alias ColorType = String
 var c1: ColorType = "blue"
 ```
 
-TypeScript (version >=1.x.x)
+##### Typescript (version >=1.x.x)
 
 ```ts
 type ColorType = string;
 let c1: ColorType = "blue";
 ```
 
-Go (version >=1.x.x)
+##### Go (version >=1.x.x)
 
 ```go
 type ColorType string
@@ -34,7 +34,7 @@ var c1 ColorType = "blue"
 
 #### Define a user-defined type from combining built-in/user-defined types
 
-Python (version >=3.7.x)
+##### Python (version >=3.7.x)
 
 ```py
 # Not built into language. Use nearest equivalent
@@ -59,7 +59,7 @@ p1 = PointType(1, 2)
 x = p1.x
 ```
 
-Mojo (version >=0.4.x)
+##### Mojo (version >=0.4.x)
 
 ```mojo
 struct PointType:
@@ -74,7 +74,7 @@ var p1 = PointType(1, 2)
 var x = p1.x
 ```
 
-TypeScript (version >=2.x.x)
+##### Typescript (version >=2.x.x)
 
 ```ts
 type PointType = {
@@ -91,7 +91,7 @@ const p2: PointType = { x: 1, y: 2 };
 let x = p1.x;
 ```
 
-Go (version >=1.x.x)
+##### Go (version >=1.x.x)
 
 ```go
 type PointType struct {

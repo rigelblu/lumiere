@@ -2,13 +2,13 @@
 
 #### Execute block if condition is true
 
-Python (version >=x.x.x)
+##### Python (version >=x.x.x)
 
 ```py
 # TODO:
 ```
 
-Mojo (version >=x.x.x)
+##### Mojo (version >=x.x.x)
 
 ```mojo
 year = 2025
@@ -24,13 +24,13 @@ else:
 
 ```
 
-Typescript (version >=x.x.x)
+##### Typescript (version >=x.x.x)
 
 ```ts
 // TODO:
 ```
 
-Go (version >=x.x.x)
+##### Go (version >=x.x.x)
 
 ```go
 // TODO:
@@ -38,13 +38,13 @@ Go (version >=x.x.x)
 
 #### Execute inline statement if condition is true
 
-Python (version >=x.x.x)
+##### Python (version >=x.x.x)
 
 ```py
 # TODO:
 ```
 
-Mojo (version >=x.x.x)
+##### Mojo (version >=x.x.x)
 
 ```mojo
 if year < 2021: # code...skipped when condition is False
@@ -54,13 +54,13 @@ if year != 2025: # code...skipped when condition is False
 # TODO: add negation example
 ```
 
-Typescript (version >=x.x.x)
+##### Typescript (version >=x.x.x)
 
 ```ts
 // TODO:
 ```
 
-Go (version >=x.x.x)
+##### Go (version >=x.x.x)
 
 ```go
 // TODO:
@@ -69,13 +69,13 @@ Go (version >=x.x.x)
 
 #### Execute if either or both conditions are true
 
-Python (version >=x.x.x)
+##### Python (version >=x.x.x)
 
 ```py
 # TODO:
 ```
 
-Mojo (version >=x.x.x)
+##### Mojo (version >=x.x.x)
 
 ```mojo
 # Either conditions
@@ -87,13 +87,13 @@ if false_func() and true_func():
     print("True result")
 ```
 
-Typescript (version >=x.x.x)
+##### Typescript (version >=x.x.x)
 
 ```ts
 // TODO:
 ```
 
-Go (version >=x.x.x)
+##### Go (version >=x.x.x)
 
 ```go
 // TODO:
@@ -101,25 +101,25 @@ Go (version >=x.x.x)
 
 #### Assign value to variable if condition is true
 
-Python (version >=x.x.x)
+##### Python (version >=x.x.x)
 
 ```py
 # TODO:
 ```
 
-Mojo (version >=x.x.x)
+##### Mojo (version >=x.x.x)
 
 ```mojo
 time = "future" if year > 2020 else "past"
 ```
 
-Typescript (version >=x.x.x)
+##### Typescript (version >=x.x.x)
 
 ```ts
 // TODO:
 ```
 
-Go (version >=x.x.x)
+##### Go (version >=x.x.x)
 
 ```go
 // TODO:
