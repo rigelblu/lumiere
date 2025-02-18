@@ -4,7 +4,7 @@
 
 Python (version >=0.x.x)
 
-```python
+```py
 global_var = "I'm global"
 ```
 
@@ -30,7 +30,7 @@ Go (version >=0.x.x)
 
 Python (version >=0.x.x)
 
-```python
+```py
 # Not built into language. Use nearest equivalent, a naming convention
 
 # ./pkg1/__init__.py
@@ -83,7 +83,7 @@ c1 := colors.primary
 
 Python (version >=0.x.x)
 
-```python
+```py
 # Not built into language. Use nearest equivalent
 
 # ./pkg1/__init__.py
@@ -155,7 +155,7 @@ c1 := Primary
 
 Python (version >=0.x.x)
 
-```python
+```py
 if condition:
   # code …
 ```

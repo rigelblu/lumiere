@@ -4,8 +4,7 @@
 
 Python (version >=x.x.x)
 
-```python
-
+```py
 ```
 
 Mojo (version >=x.x.x)

@@ -4,7 +4,7 @@
 
 Python (version >=0.x.x)
 
-```python
+```py
 if condition:
   # code …
 ```

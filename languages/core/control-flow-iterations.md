@@ -2,7 +2,6 @@
 
 Python (version >=x.x.x)
 
-```python
 
 ```
 
@@ -22,4 +21,5 @@ Go (version >=x.x.x)
 
 ```go
 
+```py
 ```

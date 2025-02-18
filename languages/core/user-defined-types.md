@@ -6,7 +6,7 @@ As known as type aliases
 
 Python (version >=3.5.x)
 
-```python
+```py
 ColorType = str
 c1: ColorType = "blue"
 ```
@@ -36,7 +36,7 @@ var c1 ColorType = "blue"
 
 Python (version >=3.7.x)
 
-```python
+```py
 # Not built into language. Use nearest equivalent
 class PointType:
     x: int
@@ -46,7 +46,7 @@ p1 = PointType(1, 2)
 x = p1.x
 ```
 
-```python
+```py
 # Not built into language. Use nearest equivalent
 from dataclasses import dataclass
 
