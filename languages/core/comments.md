@@ -4,6 +4,7 @@
 
 Python (version >=x.x.x)
 
+```py
 # Single line comment
 name = "lang" # Comment at end of line
 
