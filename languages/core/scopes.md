@@ -157,21 +157,21 @@ Python (version >=0.x.x)
 
 ```py
 if condition:
-  # code...
+    # code...
 ```
 
 Mojo (version >=0.x.x)
 
 ```mojo
 if condition:
-  # code...
+    # code...
 ```
 
 Typescript (version >=0.x.x)
 
 ```ts
 if (condition) {
-  // code...
+    // code...
 }
 ```
 
@@ -179,6 +179,6 @@ Go (version >=0.x.x)
 
 ```go
 if condition {
-  // code...
+    // code...
 }
 ```

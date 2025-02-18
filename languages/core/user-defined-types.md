@@ -63,12 +63,12 @@ Mojo (version >=0.4.x)
 
 ```mojo
 struct PointType:
-  var x: Int
-  var y: Int
+    var x: Int
+    var y: Int
 
-  def __init__(out self, x: Int, y: Int):
-    self.x = x
-    self.y = y
+    def __init__(out self, x: Int, y: Int):
+        self.x = x
+        self.y = y
 
 var p1 = PointType(1, 2)
 var x = p1.x
@@ -78,12 +78,12 @@ TypeScript (version >=2.x.x)
 
 ```ts
 type PointType = {
-  x: number;
-  y: number;
+    x: number;
+    y: number;
 };
 interface PointInterface {
-  x: number;
-  y: number;
+    x: number;
+    y: number;
 }
 
 const p1: PointInterface = { x: 1, y: 2 };
