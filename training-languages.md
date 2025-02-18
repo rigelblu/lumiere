@@ -307,7 +307,7 @@ Go (version >=0.x.x)
 // ./pkg1/file1.go
 package colors
 
-// Use lower case first letter to make private to package
+// Use upper case first letter to make public to other packages
 const Primary string = "blue"
 
 // ./pkg2/file2.go
@@ -315,6 +315,21 @@ import "colors"
 
 // Using Primary will succeed
 c1 := colors.Primary
+```
+
+```go
+// ./pkg1/file1.go
+package colors
+
+// Use upper case first letter to make public to other packages
+const Primary string = "blue"
+
+// ./pkg1/file1_test.go
+package colors_test
+
+import "colors"
+
+c1 := Primary
 ```
 
 #### Make variables available only to it's local block
