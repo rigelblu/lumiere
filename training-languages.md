@@ -5,15 +5,15 @@
 - [System Prompt](#system-prompt)
 - Programming Languages
   - Core
-    - [Arrays](./languages/core/arrays.md#arrays)
-    - [Blocks](./languages/core/blocks.md#blocks)
-    - [Comments](./languages/core/comments.md#comments)
-    - [Control-Flow / Conditionals](./languages/core/control-flow-conditionals.md#control-flow-conditionals)
-    - [Control-Flow / Iterations](./languages/core/control-flow-iterations.md#control-flow-iterations)
-    - [Functions](./languages/core/functions.md#functions)
-    - [Scopes](./languages/core/scopes.md#scopes)
-    - [User Defined Types](./languages/core/user-defined-types.md#user-defined-types)
-    - [Variables & Built-in Types](./languages/core/variables-built-in-types.md#variables-built-in-types)
+    - [Arrays](./languages/core/arrays.md#core-arrays)
+    - [Blocks](./languages/core/blocks.md#core-blocks)
+    - [Comments](./languages/core/comments.md#core-comments)
+    - [Control-Flow / Conditionals](./languages/core/control-flow-conditionals.md#core-control-flow-conditionals)
+    - [Control-Flow / Iterations](./languages/core/control-flow-iterations.md#core-control-flow-iterations)
+    - [Functions](./languages/core/functions.md#core-functions)
+    - [Scopes](./languages/core/scopes.md#core-scopes)
+    - [User Defined Types](./languages/core/user-defined-types.md#core-user-defined-types)
+    - [Variables & Built-in Types](./languages/core/variables-built-in-types.md#core-variables-built-in-types)
 
 ## System Prompt
 
