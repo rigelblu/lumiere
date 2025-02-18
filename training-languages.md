@@ -3,22 +3,21 @@
 ## Table of Contents
 
 - [System Prompt](#system-prompt)
-- [Instruction Prompt](#instruction-prompt)
-- Core
-  - [Core - Comments](#core-comments)
-  - [Core - Variables & Constants](#core-variables-constants)
-  - [Core - Arrays](#core-arrays)
-  - [Core - Blocks & Scopes](#core-blocks-scope)
-  - [Core - Control-Flow/Conditionals](#core-control-flow-conditionals)
-  - [Core - Control-Flow/Iterations](#core-control-flow-iterations)
-- Extended
-  - [User Defined Types](#user-defined-types)
+- Programming Languages
+  - Core
+    - [Arrays](./languages/core/arrays.md#arrays)
+    - [Blocks](./languages/core/blocks.md#blocks)
+    - [Comments](./languages/core/comments.md#comments)
+    - [Control-Flow / Conditionals](./languages/core/control-flow-conditionals.md#control-flow-conditionals)
+    - [Control-Flow / Iterations](./languages/core/control-flow-iterations.md#control-flow-iterations)
+    - [Functions](./languages/core/functions.md#functions)
+    - [Scopes](./languages/core/scopes.md#scopes)
+    - [User Defined Types](./languages/core/user-defined-types.md#user-defined-types)
+    - [Variables & Built-in Types](./languages/core/variables-built-in-types.md#variables-built-in-types)
 
 ## System Prompt
 
 - Each code block follows the pattern of define and then usage
-
-## Instruction Prompt
 
 ```md
 ## Training data
@@ -32,4 +31,4 @@ Code block example for each language
 
 ## Training Data
 
-{replace with contents of files}
+{{replace with contents of trainging files}}
