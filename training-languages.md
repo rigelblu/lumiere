@@ -5,15 +5,17 @@
 - [System Prompt](#system-prompt)
 - Programming Languages
   - Core
-    - [Arrays](./languages/core/arrays.md#core-arrays)
-    - [Blocks](./languages/core/blocks.md#core-blocks)
-    - [Comments](./languages/core/comments.md#core-comments)
-    - [Control-Flow / Conditionals](./languages/core/control-flow-conditionals.md#core-control-flow-conditionals)
-    - [Control-Flow / Iterations](./languages/core/control-flow-iterations.md#core-control-flow-iterations)
-    - [Functions](./languages/core/functions.md#core-functions)
-    - [Scopes](./languages/core/scopes.md#core-scopes)
-    - [User Defined Types](./languages/core/user-defined-types.md#core-user-defined-types)
-    - [Variables & Built-in Types](./languages/core/variables-built-in-types.md#core-variables-built-in-types)
+    - [Arrays](./languages/arrays.md)
+    - [Blocks & Statements](./languages/blocks-statements.md)
+    - [Built-in Types](./languages/built-in-types.md)
+    - [Comments](./languages/comments.md)
+    - [Control-Flow / Conditionals](./languages/control-flow-conditionals.md)
+    - [Control-Flow / Iterations / For](./languages/control-flow-iterations-for.md)
+    - [Control-Flow / Iterations / While](./languages/control-flow-iterations-while.md)
+    - [Functions](./languages/functions.md)
+    - [Scopes](./languages/scopes.md)
+    - [User Defined Types](./languages/user-defined-types.md)
+    - [Values](./languages/values.md)
 
 ## System Prompt
 
@@ -31,4 +33,4 @@ Code block example for each language
 
 ## Training Data
 
-{{replace with contents of trainging files}}
+{{replaced with contents of trainging files}}

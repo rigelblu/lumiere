@@ -1,4 +1,4 @@
-### Core - Arrays
+### Arrays
 
 #### TODO:
 

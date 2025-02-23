@@ -1,4 +1,4 @@
-### Core - Comments
+### Comments
 
 #### Write comments that will be ignored
 
