@@ -135,3 +135,29 @@ mojo build hello.mojo
 ```sh
 # TODO:
 ```
+
+#### Add dependency
+
+##### Python (version >=0.x.x)
+
+```sh
+# TODO:
+```
+
+##### Mojo (version >=0.x.x)
+
+```sh
+magic add {{package-name}}
+```
+
+##### TypeScript (version >=0.x.x)
+
+```sh
+# TODO:
+```
+
+##### Go (version >=0.x.x)
+
+```sh
+# TODO:
+```
