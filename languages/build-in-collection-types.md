@@ -1,6 +1,10 @@
 ### Built-in Collection Types
 
 #### Define a string
+- **Traits:**
+  - Stringable - cannot raise an error
+  - StringableRaising - can raise an error
+  - Signature: `__str__() -> String`
 
 ##### Python (version >=0.x.x)
 
