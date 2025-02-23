@@ -25,3 +25,29 @@ print("Hellow world")
 ```go
 // TODO:
 ```
+
+#### Read from console
+
+##### Python (version >=0.x.x)
+
+```py
+# TODO:
+```
+
+##### Mojo (version >=0.x.x)
+
+```mojo
+var year: Int = input("What year is it")
+```
+
+##### Typescript (version >=0.x.x)
+
+```ts
+// TODO:
+```
+
+##### Go (version >=0.x.x)
+
+```go
+// TODO:
+```
