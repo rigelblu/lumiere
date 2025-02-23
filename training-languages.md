@@ -7,6 +7,7 @@
   - Core
     - [Arrays](./languages/arrays.md)
     - [Blocks & Statements](./languages/blocks-statements.md)
+    - [Built-in Types](./languages/built-in-types.md)
     - [Comments](./languages/comments.md)
     - [Control-Flow / Conditionals](./languages/control-flow-conditionals.md)
     - [Control-Flow / Iterations / For](./languages/control-flow-iterations-for.md)
