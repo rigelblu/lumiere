@@ -10,7 +10,7 @@
 
 ##### Mojo (version >=0.x.x)
 
-Convention: put at end of file
+- **Convention:** put at end of file
 
 ```mojo
 def main():

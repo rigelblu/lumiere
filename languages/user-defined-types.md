@@ -65,6 +65,10 @@ x = p1.x
 
 ##### Mojo (version >=0.4.x)
 
+- **Constraints**:
+  - All fields must be declared upfront with a type. You can't add fields dynamically at run-time.
+  - Values can't be assigned as part of the field declaration. Instead, use constructor to initialize the value of all fields.
+
 ```mojo
 struct PointType:
     var x: Int
