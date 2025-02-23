@@ -7,7 +7,8 @@
   - Core
     - [Arrays](./languages/arrays.md)
     - [Blocks & Statements](./languages/blocks-statements.md)
-    - [Built-in Types](./languages/built-in-types.md)
+    - [Built-in Single Value Types](./languages/built-in-single-value-types.md)
+    - [Built-in Collection Types](./languages/built-in-collection-types.md)
     - [Comments](./languages/comments.md)
     - [Control-Flow / Conditionals](./languages/control-flow-conditionals.md)
     - [Control-Flow / Iterations / For](./languages/control-flow-iterations-for.md)

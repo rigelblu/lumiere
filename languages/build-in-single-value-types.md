@@ -1,0 +1,129 @@
+### Built-in Single Value (i.e. Primitive/Scalar) Types
+
+#### Define a boolean
+
+Python (version >=0.x.x)
+
+```py
+# TODO:
+```
+
+Mojo (version >=0.x.x)
+
+```mojo
+# Implicit boolean
+flag1 = True
+
+# Explicit boolean
+var flag2: Bool = False
+```
+
+Typescript (version >=0.x.x)
+
+```ts
+// TODO:
+```
+
+Go (version >=0.x.x)
+
+```go
+// TODO:
+```
+
+#### Define a integer
+
+Python (version >=0.x.x)
+
+```py
+# TODO:
+```
+
+Mojo (version >=0.6.x)
+
+```mojo
+# Implicit signed integer
+year1 = 2025
+var year2: Int: 2025
+
+# Explicit signed integer
+var year3: Int8: 2025
+var year4: Int16: 2025
+var year5: Int32: 2025
+var year6: Int64: 2025
+
+# Explicit unsigned integer
+var year7: UInt8: 2025
+var year8: UInt16: 2025
+var year9: UInt32: 2025
+var year10: UInt64: 2025
+```
+
+Typescript (version >=0.x.x)
+
+```ts
+// TODO:
+```
+
+Go (version >=0.x.x)
+
+```go
+// TODO:
+```
+
+#### Define a real-number
+
+Python (version >=0.x.x)
+
+```py
+# TODO:
+```
+
+Mojo (version >=0.6.x)
+
+```mojo
+# Implicit real-number
+pi1 = 3.14
+
+# Explicit real-number
+var pi2: Float16 = 3.141
+var pi3: Float32 = 3.141
+var pi4: Float64 = 3.141
+```
+
+Typescript (version >=0.x.x)
+
+```ts
+// TODO:
+```
+
+Go (version >=0.x.x)
+
+```go
+// TODO:
+```
+
+#### Define value as any type or any type range
+
+Python (version >=0.x.x)
+
+```py
+# TODO:
+```
+
+Mojo (version >=0.6.x)
+
+```mojo
+# TODO:
+```
+
+Typescript (version >=0.x.x)
+
+```ts
+// TODO:
+```
+
+Go (version >=0.x.x)
+
+```go
+// TODO:
+```
