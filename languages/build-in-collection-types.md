@@ -234,7 +234,7 @@ for color in c1:
 // TODO:
 ```
 
-#### Define as optional value
+#### Define as optional or none value
 
 ##### Python (version >=x.x.x)
 
@@ -255,6 +255,9 @@ var c4: Optional[String] = None
 
 var c5: Optional[String] = String("blue")
 if c5:
+    # code...
+
+def color() -> None:
     # code...
 ```
 
