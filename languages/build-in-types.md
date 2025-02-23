@@ -42,17 +42,18 @@ Mojo (version >=0.6.x)
 
 ```mojo
 # Implicit string
-c2 = "blue"
+c1 = "blue"
 
 # Implicit string literals
-copy1 = "Sentence"
-        "Continued."
-copy2 = """
-        Sentence
-        Continued."""
+c2 = "Sentence"
+     "Continued."
+c3 = """
+     Sentence
+     Continued."""
 
 # Explicit string
-var c1: String = "blue
+var c4: String = "yellow"
+var c5: String = "Color: " + c1
 ```
 
 Typescript (version >=0.x.x)
