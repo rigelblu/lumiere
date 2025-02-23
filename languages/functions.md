@@ -10,6 +10,8 @@
 
 ##### Mojo (version >=0.x.x)
 
+Convention: put at end of file
+
 ```mojo
 def main():
     # code...
@@ -38,6 +40,46 @@ def main():
 ##### Mojo (version >=0.x.x)
 
 ```mojo
+```
+
+##### Typescript (version >=0.x.x)
+
+```ts
+// TODO:
+```
+
+##### Go (version >=0.x.x)
+
+```go
+// TODO:
+```
+
+#### TODO: Define a function
+
+##### Python (version >=0.x.x)
+
+```py
+# TODO:
+```
+
+##### Mojo (version >=0.x.x)
+
+```mojo
+def hello1():
+  # code...
+
+# Pass argument by value
+def hello2(name: String):
+  # code...
+
+# Pass argument by value, return string
+def hello3(name: String) -> String:
+  # code...
+  return "Hello " + name
+
+# Invoke function
+hello3("world")
+
 ```
 
 ##### Typescript (version >=0.x.x)
