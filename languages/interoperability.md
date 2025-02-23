@@ -8,7 +8,7 @@
 magic add "python>=311,<3.13" "pygame>=2.6.1,<3"
 ```
 
-#### Define behaviour when instance of struct is created, moved, copied, and destroyed
+#### Import python
 
 ##### Python (version >=0.x.x)
 
@@ -19,7 +19,11 @@ magic add "python>=311,<3.13" "pygame>=2.6.1,<3"
 ##### Mojo (version >=0.x.x)
 
 ```mojo
-# TODO:
+from python import Python
+
+def run_display():
+    pygame = Python.import_module("pygame")
+    pygame.init()
 ```
 
 ##### TypeScript (version >=0.x.x)
