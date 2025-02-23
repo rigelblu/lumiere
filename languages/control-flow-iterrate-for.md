@@ -58,7 +58,7 @@ from collections import List
 
 colors = List[String]("Blue", "Yellow")
 for color in colors:
-    print(color[])
+    print(color[]) # Required to reference the element
 else:
     print("Finished executing 'for' loop")
 ```
