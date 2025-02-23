@@ -1,4 +1,4 @@
-### Core - Control Flow / Iterations
+### Control Flow / Iterations
 
 Python (version >=x.x.x)
 

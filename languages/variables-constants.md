@@ -1,4 +1,4 @@
-### Core - Variables & Constants
+### Variables & Constants
 
 Python (version >=x.x.x)
 

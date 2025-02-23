@@ -1,4 +1,4 @@
-### Core - Scopes
+### Scopes
 
 #### Make variable available globally across program
 

@@ -1,4 +1,4 @@
-### Core - Blocks & Statements
+### Blocks & Statements
 
 #### Define a group of statements (i.e. code) to be executed together
 

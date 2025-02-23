@@ -1,4 +1,4 @@
-### Core - Control Flow / Conditionals
+### Control Flow / Conditionals
 
 #### Execute block if condition is true
 

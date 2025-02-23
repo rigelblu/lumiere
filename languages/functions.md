@@ -1,1 +1,1 @@
-### Core - Functions
+### Functions

@@ -1,4 +1,4 @@
-### Core - User Defined Types
+### User Defined Types
 
 #### Define a user-defined type from a simple built-in type
 

@@ -1,4 +1,4 @@
-### Core - Control Flow / Interate While
+### Control Flow / Interate While
 
 #### Execute block while condition is true
 
