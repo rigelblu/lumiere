@@ -68,18 +68,29 @@ x = p1.x
 - **Constraints**:
   - All fields must be declared upfront with a type. You can't add fields dynamically at run-time.
   - Values can't be assigned as part of the field declaration. Instead, use constructor to initialize the value of all fields.
-
+- **How it works:**
+  - The instance is automatically passed as the first argument, followed by any explicit arguments that you provide.
+  - The first argument of the method is an instance of the struct, so it doesn't require an explicit type annotation
+- **Conventions:**
+  - Although any name could be used for this argument, the convention is to call it self
 ```mojo
 struct PointType:
     var x: Int
     var y: Int
 
+    # Constructor
     def __init__(out self, x: Int, y: Int):
         self.x = x
         self.y = y
 
-var p1 = PointType(1, 2)
-var x = p1.x
+    # Method
+    def str(self) -> String:
+        str = "(" + x + ", " + y + ")"
+        return str
+
+var p1 = PointType(1, 2)  # Call struct's constructor
+var x = p1.x              # Call struct's getter
+print(p1.str())           # Call struct's method
 ```
 
 ##### TypeScript (version >=2.x.x)
