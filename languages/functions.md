@@ -31,6 +31,10 @@ def main():
 
 #### TODO: def vs fn functions
 
+- **Def functions:**
+  - Compiler always assumes that the function can raise an error
+  - You must explicitly indicate with a `raises` keyword if it can raise an error
+
 ##### Python (version >=0.x.x)
 
 ```py
