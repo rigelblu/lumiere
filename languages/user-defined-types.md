@@ -34,6 +34,10 @@ var c1 ColorType = "blue"
 
 #### Define a user-defined type from composing built-in/user-defined types
 
+Custom data structure with
+- Fields: variables containing the data
+- Methods: (optional) functions to work with/manipulate instances of the data structure
+
 ##### Python (version >=3.7.x)
 
 ```py
