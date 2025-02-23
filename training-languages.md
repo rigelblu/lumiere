@@ -13,9 +13,11 @@
     - [Control-Flow / Iterations / For](./languages/control-flow-iterations-for.md)
     - [Control-Flow / Iterations / While](./languages/control-flow-iterations-while.md)
     - [Functions](./languages/functions.md)
+    - [Input / Output](./languages/input-output.md)
     - [Scopes](./languages/scopes.md)
     - [User Defined Types](./languages/user-defined-types.md)
     - [Values](./languages/values.md)
+    - [Standard Library](./languages/standard-library.md)
 
 ## System Prompt
 
