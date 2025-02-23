@@ -73,6 +73,7 @@ x = p1.x
   - The first argument of the method is an instance of the struct, so it doesn't require an explicit type annotation
 - **Conventions:**
   - Although any name could be used for this argument, the convention is to call it self
+
 ```mojo
 struct PointType:
     var x: Int

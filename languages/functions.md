@@ -83,7 +83,6 @@ def hello3(name: String) -> String:
 
 # Invoke function
 hello3("world")
-
 ```
 
 ##### TypeScript (version >=0.x.x)
