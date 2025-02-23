@@ -107,3 +107,30 @@ month, year = m, year + 1
 ```go
 // TODO:
 ```
+
+
+#### Get modulo
+
+##### Python (version >=0.x.x)
+
+```py
+# TODO:
+```
+
+##### Mojo (version >=0.6.x)
+
+```mojo
+n = 10 % 3 # Modulo operations
+```
+
+##### TypeScript (version >=0.x.x)
+
+```ts
+// TODO:
+```
+
+##### Go (version >=0.x.x)
+
+```go
+// TODO:
+```
