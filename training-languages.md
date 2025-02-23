@@ -5,7 +5,6 @@
 - [System Prompt](#system-prompt)
 - Programming Languages
   - Core
-    - [Arrays](./languages/arrays.md)
     - [Blocks & Statements](./languages/blocks-statements.md)
     - [Built-in Single Value Types](./languages/built-in-single-value-types.md)
     - [Built-in Collection Types](./languages/built-in-collection-types.md)
