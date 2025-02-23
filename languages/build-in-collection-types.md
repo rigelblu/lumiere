@@ -50,6 +50,7 @@ var c5: String = "Color: " + c1
 
 ```mojo
 # Implicit
+var l = List(1, 2, 3, 4)
 
 # Explicit
 var l = List[Int](1, 2, 3, 4)
