@@ -1,6 +1,8 @@
 ### Packages & Modules
 
-#### TODO:
+#### Create and use module
+
+A module is a single file
 
 ##### Python (version >=0.x.x)
 
@@ -11,7 +13,18 @@
 ##### Mojo (version >=0.x.x)
 
 ```mojo
-# TODO:
+# file1.mojo
+@value
+struct Point
+    x: Int
+    y: Int
+```
+
+```mojo
+# file2.mojo
+from file1 import Point
+
+# code...
 ```
 
 ##### TypeScript (version >=0.x.x)
