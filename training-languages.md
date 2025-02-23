@@ -22,6 +22,7 @@
     - [User Defined Types](./languages/user-defined-types.md)
     - [Values](./languages/values.md)
     - [Standard Library](./languages/standard-library.md)
+    - [Interoperability](./languages/interoperability.md)
 
 ## System Prompt
 
