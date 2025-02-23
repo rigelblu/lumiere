@@ -32,7 +32,7 @@ type ColorType string
 var c1 ColorType = "blue"
 ```
 
-#### Define a user-defined type from combining built-in/user-defined types
+#### Define a user-defined type from composing built-in/user-defined types
 
 ##### Python (version >=3.7.x)
 
