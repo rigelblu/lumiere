@@ -11,14 +11,14 @@ if condition:
 
 ##### Mojo (version >=0.x.x)
 
+You can use any number of spaces or tabs for indentation as long as the same indentation is used for the entire code block
+
 ```mojo
 if condition:
     # code...
 ```
 
-...
-
-##### Typescript (version >=0.x.x)
+##### TypeScript (version >=0.x.x)
 
 ```ts
 if (condition) {

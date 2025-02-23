@@ -5,17 +5,24 @@
 - [System Prompt](#system-prompt)
 - Programming Languages
   - Core
-    - [Arrays](./languages/arrays.md)
     - [Blocks & Statements](./languages/blocks-statements.md)
-    - [Built-in Types](./languages/built-in-types.md)
+    - [Built-in Single Value Types](./languages/built-in-single-value-types.md)
+    - [Built-in Collection Types](./languages/built-in-collection-types.md)
     - [Comments](./languages/comments.md)
     - [Control-Flow / Conditionals](./languages/control-flow-conditionals.md)
     - [Control-Flow / Iterations / For](./languages/control-flow-iterations-for.md)
     - [Control-Flow / Iterations / While](./languages/control-flow-iterations-while.md)
     - [Functions](./languages/functions.md)
+    - [Input / Output](./languages/input-output.md)
+    - [Lifetimes](./languages/lifetimes.md)
+    - [Packages / Modules](./languages/packages-modules.md)
+    - [Ownership](./languages/ownership.md)
     - [Scopes](./languages/scopes.md)
+    - [Traits & Interfaces](./languages/traits-interfaces.md)
     - [User Defined Types](./languages/user-defined-types.md)
     - [Values](./languages/values.md)
+    - [Standard Library](./languages/standard-library.md)
+    - [Interoperability](./languages/interoperability.md)
 
 ## System Prompt
 

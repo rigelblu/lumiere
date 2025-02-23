@@ -1,6 +1,7 @@
-### Arrays
+### Standard Library
+REFACTOR: move into separate files inside a standard-library directory
 
-#### TODO:
+#### Print to console
 
 ##### Python (version >=0.x.x)
 
@@ -11,10 +12,10 @@
 ##### Mojo (version >=0.x.x)
 
 ```mojo
-# Not built into language yet. Use near equivalent Vectors
+# TODO:
 ```
 
-##### Typescript (version >=0.x.x)
+##### TypeScript (version >=0.x.x)
 
 ```ts
 // TODO:

@@ -18,7 +18,7 @@ alias ColorType = String
 var c1: ColorType = "blue"
 ```
 
-##### Typescript (version >=1.x.x)
+##### TypeScript (version >=1.x.x)
 
 ```ts
 type ColorType = string;
@@ -32,7 +32,11 @@ type ColorType string
 var c1 ColorType = "blue"
 ```
 
-#### Define a user-defined type from combining built-in/user-defined types
+#### Define a user-defined type from composing built-in/user-defined types
+
+Custom data structure with
+- Fields: variables containing the data
+- Methods: (optional) functions to work with/manipulate instances of the data structure
 
 ##### Python (version >=3.7.x)
 
@@ -61,20 +65,41 @@ x = p1.x
 
 ##### Mojo (version >=0.4.x)
 
+- **Constraints**:
+  - All fields must be declared upfront with a type. You can't add fields dynamically at run-time.
+  - Values can't be assigned as part of the field declaration. Instead, use constructor to initialize the value of all fields.
+- **How it works:**
+  - The instance is automatically passed as the first argument, followed by any explicit arguments that you provide.
+  - The first argument of the method is an instance of the struct, so it doesn't require an explicit type annotation
+- **Conventions:**
+  - Although any name could be used for this argument, the convention is to call it self
+
 ```mojo
 struct PointType:
     var x: Int
     var y: Int
 
+    # Constructor
     def __init__(out self, x: Int, y: Int):
         self.x = x
         self.y = y
 
-var p1 = PointType(1, 2)
-var x = p1.x
+    # Method
+    def str(self) -> String:
+        str = "(" + x + ", " + y + ")"
+        return str
+
+    # Static method
+    @staticmethod
+    def zeoro() -> Self:
+        return Self(0,0) # Alis for the type of struct
+
+var p1 = PointType(1, 2)  # Call struct's constructor
+var x = p1.x              # Call struct's getter
+print(p1.str())           # Call struct's method
 ```
 
-##### Typescript (version >=2.x.x)
+##### TypeScript (version >=2.x.x)
 
 ```ts
 type PointType = {

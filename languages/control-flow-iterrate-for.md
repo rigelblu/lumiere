@@ -31,7 +31,7 @@ else:
     print("\nFinished executing 'for' loop")
 ```
 
-##### Typescript (version >=x.x.x)
+##### TypeScript (version >=x.x.x)
 
 ```ts
 // TODO:
@@ -58,12 +58,12 @@ from collections import List
 
 colors = List[String]("Blue", "Yellow")
 for color in colors:
-    print(color[])
+    print(color[]) # Required to reference the element
 else:
     print("Finished executing 'for' loop")
 ```
 
-##### Typescript (version >=x.x.x)
+##### TypeScript (version >=x.x.x)
 
 ```ts
 // TODO:
@@ -94,7 +94,7 @@ for year in years:
     print(year[])
 ```
 
-##### Typescript (version >=x.x.x)
+##### TypeScript (version >=x.x.x)
 
 ```ts
 // TODO:
@@ -130,7 +130,7 @@ for item in colors.items():
     print(item[].value + ", " + item[].key)
 ```
 
-##### Typescript (version >=x.x.x)
+##### TypeScript (version >=x.x.x)
 
 ```ts
 // TODO:
@@ -156,7 +156,7 @@ for item in colors.items():
 
 ```
 
-##### Typescript (version >=x.x.x)
+##### TypeScript (version >=x.x.x)
 
 ```ts
 // TODO:
@@ -182,7 +182,7 @@ for item in colors.items():
 
 ```
 
-##### Typescript (version >=x.x.x)
+##### TypeScript (version >=x.x.x)
 
 ```ts
 // TODO:
@@ -208,7 +208,7 @@ for item in colors.items():
 
 ```
 
-##### Typescript (version >=x.x.x)
+##### TypeScript (version >=x.x.x)
 
 ```ts
 // TODO:
