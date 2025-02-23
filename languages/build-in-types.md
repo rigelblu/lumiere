@@ -140,7 +140,7 @@ Go (version >=0.x.x)
 // TODO:
 ```
 
-#### Define a list of values
+#### Define a list (array) of values
 
 Python (version >=0.x.x)
 
@@ -193,7 +193,7 @@ Go (version >=0.x.x)
 // TODO:
 ```
 
-#### Defined a dictionary
+#### Define a dictionary
 
 Python (version >=0.x.x)
 
@@ -265,7 +265,7 @@ Go (version >=0.x.x)
 // TODO:
 ```
 
-#### Define as a set
+#### Define a set
 
 Python (version >=x.x.x)
 
@@ -298,7 +298,7 @@ Go (version >=x.x.x)
 // TODO:
 ```
 
-#### Define as any type and any type range
+#### Define value as any type or any type range
 
 Python (version >=0.x.x)
 
