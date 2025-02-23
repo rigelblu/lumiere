@@ -16,6 +16,7 @@
     - [Input / Output](./languages/input-output.md)
     - [Lifetimes](./languages/lifetimes.md)
     - [Packages / Modules](./languages/packages-modules.md)
+    - [Ownership](./languages/ownership.md)
     - [Scopes](./languages/scopes.md)
     - [Traits & Interfaces](./languages/traits-interfaces.md)
     - [User Defined Types](./languages/user-defined-types.md)
