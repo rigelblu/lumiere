@@ -108,7 +108,6 @@ month, year = m, year + 1
 // TODO:
 ```
 
-
 #### Get modulo
 
 ##### Python (version >=0.x.x)
