@@ -50,24 +50,11 @@ var c5: String = "Color: " + c1
 
 ```mojo
 # Implicit
-var l = List(1, 2, 3, 4)
+var l1 = List(1, 2, 3, 4)
 
 # Explicit
-var l = List[Int](1, 2, 3, 4)
-
-l.append(3.14) # error: FloatLiteral cannot be converted to Int
-
-# Inferred type == Int
-var l1 = List(1, 2, 3, 4)
-var l = List[String]()
-
-# Doesn't work
-var list: List[Int] = [2, 3, 5]
-
-var list = List(2, 3, 5)
-
-# Does not work
-print(list)
+var l2 = List[Int](1, 2, 3, 4)
+var l3 = List[String]()         # Empty list
 
 #: from collections import List
 var list = List(2, 3, 4)
@@ -78,6 +65,43 @@ for item in list:
 #: var list = List[Int](2, 3, 4)
 for i in range(len(list)):
     print(list[i], end=", ")
+```
+
+##### Typescript (version >=0.x.x)
+
+```ts
+// TODO:
+```
+
+##### Go (version >=0.x.x)
+
+```go
+// TODO:
+```
+
+#### Operations on a list (array) of values
+
+##### Python (version >=0.x.x)
+
+```py
+# TODO:
+```
+
+##### Mojo (version >=0.6.x)
+
+```mojo
+var l2 = List[Int](1, 2, 3, 4)
+
+# Valid operations on list
+print(l1[0])    # Get first item in the list
+print(l1[-1])   # Get last item in the list
+print(len(l2))  # Get the length of the list
+l2.pop()        # Remove the last element from the list
+l2.append(5)    # Append an element to the list
+
+# Invalid operations on list
+l2.append(3.14) # Error: Float cannot be converted to Int
+print(list)
 ```
 
 ##### Typescript (version >=0.x.x)
