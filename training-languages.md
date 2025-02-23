@@ -15,7 +15,7 @@
     - [Functions](./languages/functions.md)
     - [Scopes](./languages/scopes.md)
     - [User Defined Types](./languages/user-defined-types.md)
-    - [Variables & Constansts](./languages/variables-constants.md)
+    - [Values](./languages/values.md)
 
 ## System Prompt
 
