@@ -1,6 +1,6 @@
 ### Functions
 
-#### TODO: def main function
+#### Main entry point
 
 ##### Python (version >=0.x.x)
 
@@ -12,7 +12,7 @@
 
 ```mojo
 def main():
-    print("Hello world")
+    # code...
 ```
 
 ##### Typescript (version >=0.x.x)
