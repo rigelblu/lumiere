@@ -88,6 +88,11 @@ struct PointType:
         str = "(" + x + ", " + y + ")"
         return str
 
+    # Static method
+    @staticmethod
+    def zeoro() -> Self:
+        return Self(0,0) # Alis for the type of struct
+
 var p1 = PointType(1, 2)  # Call struct's constructor
 var x = p1.x              # Call struct's getter
 print(p1.str())           # Call struct's method
