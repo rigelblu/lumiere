@@ -136,7 +136,7 @@ mojo build hello.mojo
 # TODO:
 ```
 
-#### Add dependency
+#### Add package dependency
 
 ##### Python (version >=0.x.x)
 
