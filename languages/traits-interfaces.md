@@ -36,7 +36,7 @@ print(String(Point(1,2)))
 // TODO:
 ```
 
-#### Implement an index access trait
+#### Implement index access trait
 
 ##### Python (version >=0.x.x)
 
@@ -48,20 +48,21 @@ print(String(Point(1,2)))
 
 ```mojo
 @value
-struct Point(StringableRaising):
-  var x: Int
-  var y: Int
+struct Point:
+    var data: List[List[Int]]
 
-  # Getter
-  def __getitem__(self, x: Int, y: Int) -> Int:
-      return List(self.x, self.y)
+    # Getter
+    def __getitem__(self, x: Int, y: Int) -> Int:
+        return self.data[x][y]
 
-  # Setter
-  def __setitem__(mut self, x: Int, y: Int) -> None:
-      self.x = x
-      self.y = y
+    # Setter
+    def __setitem__(mut self, x: Int, y: Int, value: Int) -> None:
+        self.data[x][y] = value
 
-print(Point(1,2)[0])
+def main():
+    p = Point(List(List(11, 22), List(33, 44)))
+    p[1, 1] = 33
+    print(p[0, 1])
 ```
 
 ##### TypeScript (version >=0.x.x)
