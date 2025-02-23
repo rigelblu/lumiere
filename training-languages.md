@@ -17,6 +17,7 @@
     - [Lifetimes](./languages/lifetimes.md)
     - [Packages / Modules](./languages/packages-modules.md)
     - [Scopes](./languages/scopes.md)
+    - [Traits & Interfaces](./languages/traits-interfaces.md)
     - [User Defined Types](./languages/user-defined-types.md)
     - [Values](./languages/values.md)
     - [Standard Library](./languages/standard-library.md)
