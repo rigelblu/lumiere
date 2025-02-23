@@ -55,6 +55,10 @@ var l1 = List(1, 2, 3, 4)
 # Explicit
 var l2 = List[Int](1, 2, 3, 4)
 var l3 = List[String]()         # Empty list
+var g1 = List(
+    List(11, 22),
+    List(33, 44)
+)
 
 #: from collections import List
 var list = List(2, 3, 4)
@@ -91,9 +95,14 @@ for i in range(len(list)):
 
 ```mojo
 var l2 = List[Int](1, 2, 3, 4)
+var g1 = List(
+    List(11, 22),
+    List(33, 44)
+)
 
 # Valid operations on list
 print(l1[0])    # Get first item in the list
+print(g1[0][0]) # Get first item, in the first list (ie. row 0, column 0)
 print(l1[-1])   # Get last item in the list
 print(len(l2))  # Get the length of the list
 l2.pop()        # Remove the last element from the list
