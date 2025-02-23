@@ -54,41 +54,6 @@ var name3 = "John"         # With implicit type
 // TODO:
 ```
 
-#### Define as optional value
-
-##### Python (version >=x.x.x)
-
-```py
-# TODO:
-```
-
-##### Mojo (version >=0.6.x)
-
-```mojo
-# Initialize optional with value
-var c1 = Optional("blue")
-var c2: Optional[String] = "blue"
-
-# Initialize optional with no value
-var c3 = Optional[String]()
-var c4: Optional[String] = None
-
-var c5: Optional[String] = String("blue")
-if c5:
-    # code...
-```
-
-##### Typescript (version >=x.x.x)
-
-```ts
-// TODO:
-```
-
-##### Go (version >=x.x.x)
-
-```go
-// TODO:
-```
 
 #### Increment / decrement a numeric value
 

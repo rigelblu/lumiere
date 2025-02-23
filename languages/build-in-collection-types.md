@@ -2,13 +2,13 @@
 
 #### Define a string
 
-Python (version >=0.x.x)
+##### Python (version >=0.x.x)
 
 ```py
 # TODO:
 ```
 
-Mojo (version >=0.6.x)
+##### Mojo (version >=0.6.x)
 
 ```mojo
 # Implicit string
@@ -26,13 +26,13 @@ var c4: String = "yellow"
 var c5: String = "Color: " + c1
 ```
 
-Typescript (version >=0.x.x)
+##### Typescript (version >=0.x.x)
 
 ```ts
 // TODO:
 ```
 
-Go (version >=0.x.x)
+##### Go (version >=0.x.x)
 
 ```go
 // TODO:
@@ -40,13 +40,13 @@ Go (version >=0.x.x)
 
 #### Define a list (array) of values
 
-Python (version >=0.x.x)
+##### Python (version >=0.x.x)
 
 ```py
 # TODO:
 ```
 
-Mojo (version >=0.6.x)
+##### Mojo (version >=0.6.x)
 
 ```mojo
 # Implicit
@@ -79,13 +79,13 @@ for i in range(len(list)):
     print(list[i], end=", ")
 ```
 
-Typescript (version >=0.x.x)
+##### Typescript (version >=0.x.x)
 
 ```ts
 // TODO:
 ```
 
-Go (version >=0.x.x)
+##### Go (version >=0.x.x)
 
 ```go
 // TODO:
@@ -93,13 +93,13 @@ Go (version >=0.x.x)
 
 #### Define a dictionary
 
-Python (version >=0.x.x)
+##### Python (version >=0.x.x)
 
 ```py
 # TODO:
 ```
 
-Mojo (version >=0.6.x)
+##### Mojo (version >=0.6.x)
 
 ```mojo
 # Explicit
@@ -116,13 +116,13 @@ for item in d.items():
   print(item[].key, item[].value)
 ```
 
-Typescript (version >=0.x.x)
+##### Typescript (version >=0.x.x)
 
 ```ts
 // TODO:
 ```
 
-Go (version >=0.6.x)
+##### Go (version >=0.6.x)
 
 ```go
 // TODO:
@@ -132,13 +132,13 @@ Go (version >=0.6.x)
 
 Tuples are immutable and can hold multiple types
 
-Python (version >=0.x.x)
+##### Python (version >=0.x.x)
 
 ```py
 # TODO:
 ```
 
-Mojo (version >=0.6.x)
+##### Mojo (version >=0.6.x)
 
 ```mojo
 # Explicit tuple
@@ -151,13 +151,13 @@ year, month = date
 day = date[2]
 ```
 
-Typescript (version >=0.x.x)
+##### Typescript (version >=0.x.x)
 
 ```ts
 
 ```
 
-Go (version >=0.x.x)
+##### Go (version >=0.x.x)
 
 ```go
 // TODO:
@@ -165,13 +165,13 @@ Go (version >=0.x.x)
 
 #### Define a set
 
-Python (version >=x.x.x)
+##### Python (version >=x.x.x)
 
 ```py
 # TODO:
 ```
 
-Mojo (version >=0.6.x)
+##### Mojo (version >=0.6.x)
 
 ```mojo
 from collections import Set
@@ -184,13 +184,49 @@ for color in c1:
     print("-", color[])
 ```
 
-Typescript (version >=x.x.x)
+##### Typescript (version >=x.x.x)
 
 ```ts
 // TODO:
 ```
 
-Go (version >=x.x.x)
+##### Go (version >=x.x.x)
+
+```go
+// TODO:
+```
+
+#### Define as optional value
+
+##### Python (version >=x.x.x)
+
+```py
+# TODO:
+```
+
+##### Mojo (version >=0.6.x)
+
+```mojo
+# Initialize optional with value
+var c1 = Optional("blue")
+var c2: Optional[String] = "blue"
+
+# Initialize optional with no value
+var c3 = Optional[String]()
+var c4: Optional[String] = None
+
+var c5: Optional[String] = String("blue")
+if c5:
+    # code...
+```
+
+##### Typescript (version >=x.x.x)
+
+```ts
+// TODO:
+```
+
+##### Go (version >=x.x.x)
 
 ```go
 // TODO:
