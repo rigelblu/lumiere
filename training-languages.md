@@ -14,6 +14,7 @@
     - [Control-Flow / Iterations / While](./languages/control-flow-iterations-while.md)
     - [Functions](./languages/functions.md)
     - [Input / Output](./languages/input-output.md)
+    - [Packages / Modules](./languages/packages-modules.md)
     - [Scopes](./languages/scopes.md)
     - [User Defined Types](./languages/user-defined-types.md)
     - [Values](./languages/values.md)
