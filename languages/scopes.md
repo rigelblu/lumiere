@@ -14,7 +14,7 @@ global_var = "I'm global"
 # Not built into language
 ```
 
-##### Typescript (version >=0.x.x)
+##### TypeScript (version >=0.x.x)
 
 ```ts
 // Not built into language
@@ -49,7 +49,7 @@ from ..pkg1/file1 import *
 # TODO: confirm if it's not built into language or if it follows python pattern
 ```
 
-##### Typescript (version >=0.x.x)
+##### TypeScript (version >=0.x.x)
 
 ```ts
 // ./pkg1/file1.ts
@@ -106,7 +106,7 @@ PRIMARY = "blue"
 from ..pkg1/file1 import *
 ```
 
-##### Typescript (version >=0.x.x)
+##### TypeScript (version >=0.x.x)
 
 ```ts
 // ./pkg1/file1.ts
@@ -167,7 +167,7 @@ if condition:
     # code...
 ```
 
-##### Typescript (version >=0.x.x)
+##### TypeScript (version >=0.x.x)
 
 ```ts
 if (condition) {

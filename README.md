@@ -28,7 +28,7 @@ The page is organized around high-level concepts developers use instead of the l
 
 Some languages implement the same concept differently, call it differently, use one feature for multiple purposes.
 
-**Example with interfaces from Typescript**
+**Example with interfaces from TypeScript**
 
 1. Define a user-defined type
 

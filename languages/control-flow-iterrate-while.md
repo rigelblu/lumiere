@@ -18,7 +18,7 @@ while fib_curr < 50:
     // code...
 ```
 
-##### Typescript (version >=x.x.x)
+##### TypeScript (version >=x.x.x)
 
 ```ts
 // TODO:
@@ -48,7 +48,7 @@ while n < 5:
         continue
 ```
 
-##### Typescript (version >=x.x.x)
+##### TypeScript (version >=x.x.x)
 
 ```ts
 // TODO:
@@ -78,7 +78,7 @@ while n < 5:
         break
 ```
 
-##### Typescript (version >=x.x.x)
+##### TypeScript (version >=x.x.x)
 
 ```ts
 // TODO:
@@ -120,7 +120,7 @@ else:
     print("Executing else clause")
 ```
 
-##### Typescript (version >=x.x.x)
+##### TypeScript (version >=x.x.x)
 
 ```ts
 // TODO:
@@ -145,7 +145,7 @@ else:
 ```mojo
 ```
 
-##### Typescript (version >=x.x.x)
+##### TypeScript (version >=x.x.x)
 
 ```ts
 // TODO:

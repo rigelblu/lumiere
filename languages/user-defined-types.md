@@ -18,7 +18,7 @@ alias ColorType = String
 var c1: ColorType = "blue"
 ```
 
-##### Typescript (version >=1.x.x)
+##### TypeScript (version >=1.x.x)
 
 ```ts
 type ColorType = string;
@@ -78,7 +78,7 @@ var p1 = PointType(1, 2)
 var x = p1.x
 ```
 
-##### Typescript (version >=2.x.x)
+##### TypeScript (version >=2.x.x)
 
 ```ts
 type PointType = {

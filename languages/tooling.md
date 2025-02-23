@@ -16,7 +16,7 @@ magic init hello --format mojoproject
 cd hello
 ```
 
-##### Typescript (version >=0.x.x)
+##### TypeScript (version >=0.x.x)
 
 ```sh
 # TODO:
@@ -46,7 +46,7 @@ cd hello
 - `mojoproject.toml` -  defines the project dependencies and other features
 ```
 
-##### Typescript (version >=0.x.x)
+##### TypeScript (version >=0.x.x)
 
 ```sh
 # TODO:
@@ -72,7 +72,7 @@ cd hello
 magic shell
 ```
 
-##### Typescript (version >=0.x.x)
+##### TypeScript (version >=0.x.x)
 
 ```sh
 # TODO:
@@ -98,7 +98,7 @@ magic shell
 mojo hello.mojo
 ```
 
-##### Typescript (version >=0.x.x)
+##### TypeScript (version >=0.x.x)
 
 ```sh
 # TODO:
@@ -124,7 +124,7 @@ mojo hello.mojo
 mojo build hello.mojo
 ```
 
-##### Typescript (version >=0.x.x)
+##### TypeScript (version >=0.x.x)
 
 ```sh
 # TODO:

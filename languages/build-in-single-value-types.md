@@ -18,7 +18,7 @@ flag1 = True
 var flag2: Bool = False
 ```
 
-Typescript (version >=0.x.x)
+TypeScript (version >=0.x.x)
 
 ```ts
 // TODO:
@@ -58,7 +58,7 @@ var year9: UInt32: 2025
 var year10: UInt64: 2025
 ```
 
-Typescript (version >=0.x.x)
+TypeScript (version >=0.x.x)
 
 ```ts
 // TODO:
@@ -90,7 +90,7 @@ var pi3: Float32 = 3.141
 var pi4: Float64 = 3.141
 ```
 
-Typescript (version >=0.x.x)
+TypeScript (version >=0.x.x)
 
 ```ts
 // TODO:
@@ -116,7 +116,7 @@ Mojo (version >=0.6.x)
 # TODO:
 ```
 
-Typescript (version >=0.x.x)
+TypeScript (version >=0.x.x)
 
 ```ts
 // TODO:

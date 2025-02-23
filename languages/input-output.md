@@ -14,7 +14,7 @@
 print("Hellow world")
 ```
 
-##### Typescript (version >=0.x.x)
+##### TypeScript (version >=0.x.x)
 
 ```ts
 // TODO:
@@ -40,7 +40,7 @@ print("Hellow world")
 var year: Int = input("What year is it")
 ```
 
-##### Typescript (version >=0.x.x)
+##### TypeScript (version >=0.x.x)
 
 ```ts
 // TODO:

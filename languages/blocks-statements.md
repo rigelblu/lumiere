@@ -18,7 +18,7 @@ if condition:
     # code...
 ```
 
-##### Typescript (version >=0.x.x)
+##### TypeScript (version >=0.x.x)
 
 ```ts
 if (condition) {

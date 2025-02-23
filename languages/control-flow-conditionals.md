@@ -24,7 +24,7 @@ else:
 
 ```
 
-##### Typescript (version >=x.x.x)
+##### TypeScript (version >=x.x.x)
 
 ```ts
 // TODO:
@@ -54,7 +54,7 @@ if year != 2025: # code...skipped when condition is False
 # TODO: add negation example
 ```
 
-##### Typescript (version >=x.x.x)
+##### TypeScript (version >=x.x.x)
 
 ```ts
 // TODO:
@@ -87,7 +87,7 @@ if false_func() and true_func():
     print("True result")
 ```
 
-##### Typescript (version >=x.x.x)
+##### TypeScript (version >=x.x.x)
 
 ```ts
 // TODO:
@@ -113,7 +113,7 @@ if false_func() and true_func():
 time = "future" if year > 2020 else "past"
 ```
 
-##### Typescript (version >=x.x.x)
+##### TypeScript (version >=x.x.x)
 
 ```ts
 // TODO:

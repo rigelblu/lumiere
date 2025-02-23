@@ -16,7 +16,7 @@ var name2: String = "John" # With explicit type
 var name3 = "John"         # With implicit type
 ```
 
-##### Typescript (version >=0.x.x)
+##### TypeScript (version >=0.x.x)
 
 ```ts
 // TODO:
@@ -42,7 +42,7 @@ var name3 = "John"         # With implicit type
 # TODO:
 ```
 
-##### Typescript (version >=0.x.x)
+##### TypeScript (version >=0.x.x)
 
 ```ts
 // TODO:
@@ -70,7 +70,7 @@ n += 1
 # TODO: check if it does other types like hex too
 ```
 
-##### Typescript (version >=0.x.x)
+##### TypeScript (version >=0.x.x)
 
 ```ts
 // TODO:
@@ -96,7 +96,7 @@ n += 1
 month, year = m, year + 1
 ```
 
-##### Typescript (version >=0.x.x)
+##### TypeScript (version >=0.x.x)
 
 ```ts
 // TODO:

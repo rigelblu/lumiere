@@ -26,7 +26,7 @@ var c4: String = "yellow"
 var c5: String = "Color: " + c1
 ```
 
-##### Typescript (version >=0.x.x)
+##### TypeScript (version >=0.x.x)
 
 ```ts
 // TODO:
@@ -71,7 +71,7 @@ for i in range(len(list)):
     print(list[i], end=", ")
 ```
 
-##### Typescript (version >=0.x.x)
+##### TypeScript (version >=0.x.x)
 
 ```ts
 // TODO:
@@ -113,7 +113,7 @@ l2.append(3.14) # Error: Float cannot be converted to Int
 print(list)
 ```
 
-##### Typescript (version >=0.x.x)
+##### TypeScript (version >=0.x.x)
 
 ```ts
 // TODO:
@@ -150,7 +150,7 @@ for item in d.items():
   print(item[].key, item[].value)
 ```
 
-##### Typescript (version >=0.x.x)
+##### TypeScript (version >=0.x.x)
 
 ```ts
 // TODO:
@@ -185,7 +185,7 @@ year, month = date
 day = date[2]
 ```
 
-##### Typescript (version >=0.x.x)
+##### TypeScript (version >=0.x.x)
 
 ```ts
 
@@ -218,7 +218,7 @@ for color in c1:
     print("-", color[])
 ```
 
-##### Typescript (version >=x.x.x)
+##### TypeScript (version >=x.x.x)
 
 ```ts
 // TODO:
@@ -254,7 +254,7 @@ if c5:
     # code...
 ```
 
-##### Typescript (version >=x.x.x)
+##### TypeScript (version >=x.x.x)
 
 ```ts
 // TODO:
