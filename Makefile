@@ -6,7 +6,8 @@ clean:
 
 build:
 	@mkdir -p $(OUT_DIR)
-	@cat ./training-languages.md > $(OUT_DIR)/language-training.md
+	@awk '!/${{replaced with contents of trainging files}}/' ./training-languages.md > \
+	 $(OUT_DIR)/language-training.md
 	@find ./languages -name "*.md" -type f | xargs cat >> $(OUT_DIR)/language-training.md
 
 publish: build
