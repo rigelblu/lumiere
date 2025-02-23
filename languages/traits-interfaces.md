@@ -49,20 +49,20 @@ print(String(Point(1,2)))
 ```mojo
 @value
 struct Point:
-    var data: List[Int]
+    var data: List[List[Int]]
 
     # Getter
-    def __getitem__(self, x: Int) -> Int:
-        return self.data[x]
+    def __getitem__(self, x: Int, y: Int) -> Int:
+        return self.data[x][y]
 
     # Setter
-    def __setitem__(mut self, x: Int, value: Int) -> None:
-        self.data[x] = value
+    def __setitem__(mut self, x: Int, y: Int, value: Int) -> None:
+        self.data[x][y] = value
 
 def main():
-    p = Point(List(11, 22))
-    p[1] = 33
-    print(p[1])
+    p = Point(List(List(11, 22), List(33, 44)))
+    p[1, 1] = 33
+    print(p[0, 1])
 ```
 
 ##### TypeScript (version >=0.x.x)
