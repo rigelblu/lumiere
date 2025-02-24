@@ -129,3 +129,30 @@ time = "future" if year > 2020 else "past"
 ```go
 // TODO:
 ```
+
+#### Ternary conditionals
+
+##### Python (version >=x.x.x)
+
+```py
+# TODO:
+```
+
+##### Mojo (version >=x.x.x)
+
+```mojo
+year = 2025
+label = "current" if year == 20250 else "past or future"
+```
+
+##### TypeScript (version >=x.x.x)
+
+```ts
+// TODO:
+```
+
+##### Go (version >=x.x.x)
+
+```go
+// TODO:
+```
