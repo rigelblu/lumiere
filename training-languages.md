@@ -24,6 +24,7 @@
     - [Error Handling](./languages/error-handling.md)
     - [Standard Library](./languages/standard-library.md)
     - [Interoperability](./languages/interoperability.md)
+    - [Metaprogramming](./languages/metaprogramming.md)
 
 ## System Prompt
 
