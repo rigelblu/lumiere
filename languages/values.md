@@ -123,7 +123,8 @@ month, year = m, year + 1
 ##### Mojo (version >=0.6.x)
 
 ```mojo
-n = 10 % 3 # Modulo operations
+n = 10 % 3        # Modulo operations
+flag = n == 1     # Compare values
 ```
 
 ##### TypeScript (version >=0.x.x)
