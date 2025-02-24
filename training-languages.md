@@ -21,6 +21,7 @@
     - [Traits & Interfaces](./languages/traits-interfaces.md)
     - [User Defined Types](./languages/user-defined-types.md)
     - [Values](./languages/values.md)
+    - [Error Handling](./languages/error-handling.md)
     - [Standard Library](./languages/standard-library.md)
     - [Interoperability](./languages/interoperability.md)
 
