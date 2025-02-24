@@ -1,6 +1,6 @@
 ### Values
 
-#### Define as variable value
+#### Define and/or initiialize as variable value
 
 ##### Python (version >=0.x.x)
 
@@ -11,9 +11,13 @@
 ##### Mojo (version >=0.x.x)
 
 ```mojo
-name1 = "John"             # Without a type
-var name2: String = "John" # With explicit type
-var name3 = "John"         # With implicit type
+# Implicit type
+name1 = "John"              # Without a type
+var name3 = "John"          # With implicit type
+
+# Explicit type
+var name1: String           # Define
+var name2: String = "John"  # Define and initialize
 ```
 
 ##### TypeScript (version >=0.x.x)
