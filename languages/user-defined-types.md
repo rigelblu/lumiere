@@ -266,6 +266,11 @@ struct Point:
 
     # Set item, including slice
     # def __setitem(...) -> None:
+
+    # For loop
+    # def __iter__()
+    # def __next__()
+    # def __len__()
 ```
 
 ##### Typescript (version >=0.x.x)
