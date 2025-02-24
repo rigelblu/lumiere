@@ -20,8 +20,6 @@ if year <= 2025:
     # code...
 else:
     # code...
-
-
 ```
 
 ##### TypeScript (version >=x.x.x)

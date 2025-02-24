@@ -37,6 +37,7 @@ var c1 ColorType = "blue"
 Custom data structure with
 - Fields: variables containing the data
 - Methods: (optional) functions to work with/manipulate instances of the data structure
+- **Constraints:** doesn't allow dynamic dispatch (i.e. which specific implementation of a polymorphic method or function to call at runtime) or any runtime changes to the structure
 
 ##### Python (version >=3.7.x)
 
@@ -83,6 +84,11 @@ struct PointType:
     def __init__(out self, x: Int, y: Int):
         self.x = x
         self.y = y
+
+    # Copy Constructor
+    def __copyinit__(out self, existing other):
+        self.x = existing.x
+        self.y = existing.y
 
     # Method
     def str(self) -> String:
