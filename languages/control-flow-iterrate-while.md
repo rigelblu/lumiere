@@ -13,7 +13,7 @@
 ```mojo
 n = 1
 
-while fib_curr < 50:
+while n < 50:
     n +=1
     // code...
 ```
