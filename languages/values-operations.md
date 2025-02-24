@@ -58,34 +58,6 @@ var name2: String = "John"  # Define and initialize
 // TODO:
 ```
 
-
-#### Increment / decrement a numeric value
-
-##### Python (version >=0.x.x)
-
-```py
-# TODO:
-```
-
-##### Mojo (version >=0.6.x)
-
-```mojo
-n += 1
-# TODO: check if it does other types like hex too
-```
-
-##### TypeScript (version >=0.x.x)
-
-```ts
-// TODO:
-```
-
-##### Go (version >=0.x.x)
-
-```go
-// TODO:
-```
-
 #### Assign Values
 
 ##### Python (version >=0.x.x)
@@ -137,13 +109,24 @@ n = n * 3
 n = n / 2
 n = 3 ** 2
 
+# increment / decrement
+n += 1
+n -= 1
+n *= 2
+n /= 2
+n **= 2
+
 # floor division, round down
 n = n // 3
 
 # get value at index and slice
-x[index1]
-x[startIndex1:endIndex1]
-x[index1, index2]
+x[0]                              # 1st value
+x[1]                              # 2nd value
+x[-1]                             # Last value
+x[0, 0]                           # 1st value in a 2-dimensional list
+x[0:5]                            # First 5 values
+x[1:6:2]                          # 2nd, 4th, 6th value - stepping increment
+x[::-1]                           # All values in reverse order
 
 # compare
 flag = n == 1
@@ -154,11 +137,9 @@ flag = n > 1
 flag = n >= 1
 
 # memerbship
-# TODO: check `is` and `is not`
-for x in range(10):
-    # code...
-for x not in range(10):
-    # code...
+flag = "hello" in "hello world"
+flag = "hello" not in "helo world"
+
 for x is Int:
     # code...
 for x is not Int:
@@ -172,16 +153,20 @@ n = n and 1
 n = n or 1
 n = not(n)
 
-# assignment expression
-# TODO: check what this does
-n := 1
+# assign value within an expression
+if str := input("Enter number"):
+  # code...
 
 # matrix multiplication
 # TODO: check usage
 z = m @ n
 
 # String concatenation
-var c5: String = "Color: " + "blue"
+var c1: String = "Color: " + "blue"
+var c2: String = String("Color: ", "blue", ".") # More performant when concatenating more than two strings
+
+# String replication
+alias divider = "#" * 20
 ```
 
 ##### TypeScript (version >=0.x.x)
