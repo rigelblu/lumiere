@@ -92,8 +92,6 @@ while n < 5:
 
 #### Execute seperate block after while loop completes succesfully
 
-Nuance: don't execute if break or continue statement executed
-
 ##### Python (version >=x.x.x)
 
 ```py
@@ -101,6 +99,8 @@ Nuance: don't execute if break or continue statement executed
 ```
 
 ##### Mojo (version >=x.x.x)
+
+**Constraint:** doesn't execute if break or continue statement executed
 
 ```mojo
 n = 5
