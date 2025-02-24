@@ -5,7 +5,9 @@
 - [System Prompt](#system-prompt)
 - Programming Languages
   - Core
+    - [Tooling](./languages/tooling.md)
     - [Blocks & Statements](./languages/blocks-statements.md)
+    - [Values](./languages/values.md)
     - [Built-in Single Value Types](./languages/built-in-single-value-types.md)
     - [Built-in Collection Types](./languages/built-in-collection-types.md)
     - [Comments](./languages/comments.md)
