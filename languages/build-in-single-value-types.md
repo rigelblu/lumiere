@@ -182,3 +182,12 @@ month = Int(String("02"))
 ```go
 // TODO:
 ```
+
+### TODO
+
+- Hexadecimal literals
+- Octal literals
+- Binary literals
+- [SIMD (single instruction, multiple data)](https://docs.modular.com/mojo/manual/types#simd-and-dtype)
+- [DType (described different dat types that a SIMD vector can hold)](https://docs.modular.com/mojo/manual/types#the-dtype-type)
+- [Register-passable, memory-only, and trivial types](https://docs.modular.com/mojo/manual/types#register-passable-memory-only-and-trivial-types)
