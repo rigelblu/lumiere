@@ -147,3 +147,54 @@ fn use_trait_function():
 ```go
 // TODO:
 ```
+
+#### Conform to a writeable trait
+
+##### Python (version >=0.x.x)
+
+```py
+# TODO:
+```
+
+##### Mojo (version >=0.x.x)
+
+**Constraints:s**
+- The Writable trait doesn't allow the write_to() method to raise an error and the Stringable trait doesn't allow the __str__() method to raise an error. Instead have to define these methods with fn
+
+```mojo
+@value
+struct Complex(
+    Writable,
+    Stringable,
+):
+    # code...
+
+    fn __str__(self) -> String:
+        return String.write(self)
+
+    fn write_to[W: Writer](self, mut writer: W):
+        writer.write("(", self.re)
+        if self.im < 0:
+            writer.write(" - ", -self.im)
+        else:
+            writer.write(" + ", self.im)
+        writer.write("i)")
+
+c3 = Complex(3.14159, -2.71828)
+print("c3 =", c3)
+
+var msg = String("The value is: ", c3)
+print(msg)
+```
+
+##### Typescript (version >=0.x.x)
+
+```ts
+// TODO:
+```
+
+##### Go (version >=0.x.x)
+
+```go
+// TODO:
+```
