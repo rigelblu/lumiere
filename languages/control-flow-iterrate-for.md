@@ -23,12 +23,6 @@ for i in range(5):
     if i == 3:
         break
     print(i, end=", ")
-
-# TODO: break out into seperate heading
-for i in range(5):
-    print(i, end=", ")
-else:
-    print("\nFinished executing 'for' loop")
 ```
 
 ##### TypeScript (version >=x.x.x)
@@ -53,14 +47,14 @@ else:
 
 ##### Mojo (version >=x.x.x)
 
+**Constraint:** iterating over collections assigns the loop index a Reference to each item, not the item itself. You can access the item using the dereference operator, [].
+
 ```mojo
 from collections import List
 
 colors = List[String]("Blue", "Yellow")
 for color in colors:
     print(color[]) # Required to reference the element
-else:
-    print("Finished executing 'for' loop")
 ```
 
 ##### TypeScript (version >=x.x.x)
@@ -78,7 +72,6 @@ else:
 #### Execute block over items in a set
 
 ##### Python (version >=x.x.x)
-
 
 ```py
 # TODO:
@@ -142,7 +135,7 @@ for item in colors.items():
 // TODO:
 ```
 
-#### Execute block for a list of items
+#### Execute separate block after interating over a list
 
 ##### Python (version >=x.x.x)
 
@@ -152,60 +145,14 @@ for item in colors.items():
 
 ##### Mojo (version >=x.x.x)
 
-```mojo
-
-```
-
-##### TypeScript (version >=x.x.x)
-
-```ts
-// TODO:
-```
-
-##### Go (version >=x.x.x)
-
-```go
-// TODO:
-```
-
-#### Execute block for a list of items
-
-##### Python (version >=x.x.x)
-
-```py
-# TODO:
-```
-
-##### Mojo (version >=x.x.x)
+**What it does:** the else clause executes after iterating over all of the elements in a collection
+**Constraints:** the else clause does not execute if a break or return statement terminates the for loop
 
 ```mojo
-
-```
-
-##### TypeScript (version >=x.x.x)
-
-```ts
-// TODO:
-```
-
-##### Go (version >=x.x.x)
-
-```go
-// TODO:
-```
-
-#### Execute block for a list of items
-
-##### Python (version >=x.x.x)
-
-```py
-# TODO:
-```
-
-##### Mojo (version >=x.x.x)
-
-```mojo
-
+for i in range(5):
+    print(i, end=", ")
+else:
+    print("\nFinished executing 'for' loop")
 ```
 
 ##### TypeScript (version >=x.x.x)

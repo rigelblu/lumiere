@@ -27,3 +27,7 @@ REFACTOR: move into separate files inside a standard-library directory
 ```go
 // TODO:
 ```
+
+### TODO:
+
+- range() function

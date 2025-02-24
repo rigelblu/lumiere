@@ -39,3 +39,40 @@ def main():
 ```go
 // TODO:
 ```
+
+#### Interate over a python collections
+
+##### Python (version >=0.x.x)
+
+```py
+# TODO:
+```
+
+##### Mojo (version >=0.x.x)
+
+```mojo
+from python import Python
+
+py_list = Python.evaluate("[1, 2, 3]")
+for py_obj in py_list:
+    print(py_obj)
+
+py_dict = Python.evaluate("{'x': 1, 'x': 2")
+for py_key in py_dict:
+    print(py_key, py_dict[py_key])
+
+for py_tuple in py_dict.items():
+    print(py_tuple[0], py_tuple[1])
+```
+
+##### Typescript (version >=0.x.x)
+
+```ts
+// TODO:
+```
+
+##### Go (version >=0.x.x)
+
+```go
+// TODO:
+```
