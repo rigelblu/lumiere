@@ -73,9 +73,12 @@ hello3("world")
 
 #### TODO: Define a function with optional types
 
+Support methods, fields, operator overloading, decorators for metaprogramming
+
 - **How it works:**
   - Compiler always assumes that the function can raise an error
   - If you don't specify a type for an argument or return value, it's assigned the object type, a special type that that can represent different types of values. This allows for some runtime dynamism, but also means that the function might fail at runtime if it receives the wrong type.
+  - Arguments are passed by immutable reference by default
 
 ##### Python (version >=0.x.x)
 
