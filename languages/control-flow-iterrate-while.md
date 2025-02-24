@@ -101,6 +101,7 @@ while n < 5:
 ##### Mojo (version >=x.x.x)
 
 **Constraint:** doesn't execute if break or continue statement executed
+**How it works:** else clause executes when the condition evaluates to false
 
 ```mojo
 n = 5
