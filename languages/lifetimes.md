@@ -1,4 +1,4 @@
-### Standard Library
+### Value Lifetimes
 
 #### Define behaviour when instance of struct is created, moved, copied, and destroyed
 

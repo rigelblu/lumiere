@@ -1,4 +1,4 @@
-# Declare function can raise error
+### Error Handling
 
 #### Declare function can raise error
 
