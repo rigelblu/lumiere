@@ -21,9 +21,11 @@ magic add "python>=311,<3.13" "pygame>=2.6.1,<3"
 ```mojo
 from python import Python
 
-def run_display():
-    pygame = Python.import_module("pygame")
-    pygame.init()
+def main():
+    var np = Python.import_module("numpy")
+    var ar = np.arange(15).reshape(3, 5)
+    print(ar)
+    print(ar.shape)
 ```
 
 ##### TypeScript (version >=0.x.x)
