@@ -8,7 +8,7 @@
     - [Tooling](./languages/tooling.md)
     - [Comments](./languages/comments.md)
     - [Blocks & Statements](./languages/blocks-statements.md)
-    - [Values](./languages/values.md)
+    - [Values & Operations](./languages/values-operations.md)
     - [Scopes](./languages/scopes.md)
     - [Built-in Single Value Types](./languages/built-in-single-value-types.md)
     - [Built-in Collection Types](./languages/built-in-collection-types.md)

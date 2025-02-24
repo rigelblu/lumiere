@@ -29,7 +29,6 @@ c3 = """
 
 # Explicit string
 var c4: String = "yellow"
-var c5: String = "Color: " + c1
 ```
 
 ##### TypeScript (version >=0.x.x)
