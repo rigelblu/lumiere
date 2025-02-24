@@ -1,5 +1,10 @@
 ### Control Flow / Conditionals
 
+**Constraints:**
+- Mojo doesn't support the equivalent of a Python match or C switch statement for pattern matching and conditional execution
+**How it works:**
+- Mojo follows short-circuit evaluation semantics for boolean operators. If the first argument to an or operator evaluates to True, the second argument is not evaluated.
+
 #### Execute block if condition is true
 
 ##### Python (version >=x.x.x)
