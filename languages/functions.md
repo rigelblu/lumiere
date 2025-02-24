@@ -96,3 +96,32 @@ hello3("world")
 ```go
 // TODO:
 ```
+
+#### TODO: Chain functions
+
+##### Python (version >=0.x.x)
+
+```py
+# TODO:
+```
+
+##### Mojo (version >=0.x.x)
+
+```mojo
+def hello():
+    text = String()
+          .join("Hello", " world")
+    print(text)
+```
+
+##### TypeScript (version >=0.x.x)
+
+```ts
+// TODO:
+```
+
+##### Go (version >=0.x.x)
+
+```go
+// TODO:
+```
