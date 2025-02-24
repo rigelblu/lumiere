@@ -90,7 +90,7 @@ while n < 5:
 // TODO:
 ```
 
-#### Execute seperate block after while loop completes succesfully
+#### Execute separate block after interating over a list
 
 ##### Python (version >=x.x.x)
 
@@ -100,8 +100,8 @@ while n < 5:
 
 ##### Mojo (version >=x.x.x)
 
-**Constraint:** doesn't execute if break or continue statement executed
-**How it works:** else clause executes when the condition evaluates to false
+**What it does:** the else clause executes after iterating over all of the elements in a collection
+**Constraints:** the else clause does not execute if a break or return statement terminates the while loop
 
 ```mojo
 n = 5
@@ -109,41 +109,6 @@ while n < 4:
     n += 1
 else:
     print("Loop completed")
-
-#
-n = 0
-while n < 5:
-    n += 1
-    if n == 3:
-        break
-    print(n)
-else:
-    print("Executing else clause")
-```
-
-##### TypeScript (version >=x.x.x)
-
-```ts
-// TODO:
-```
-
-##### Go (version >=x.x.x)
-
-```go
-// TODO:
-```
-
-#### Eexecute block while condition is true
-
-##### Python (version >=x.x.x)
-
-```py
-# TODO:
-```
-
-##### Mojo (version >=x.x.x)
-
-```mojo
 ```
 
 ##### TypeScript (version >=x.x.x)
