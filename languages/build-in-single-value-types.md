@@ -102,6 +102,32 @@ var pi4: Float64 = 3.141
 // TODO:
 ```
 
+#### Define a dynamic object that's inferred at runtime
+
+##### Python (version >=0.x.x)
+
+```py
+# TODO:
+```
+
+##### Mojo (version >=0.6.x)
+
+```mojo
+# TODO
+```
+
+##### TypeScript (version >=0.x.x)
+
+```ts
+// TODO:
+```
+
+##### Go (version >=0.x.x)
+
+```go
+// TODO:
+```
+
 #### Define value as any type or any type range
 
 ##### Python (version >=0.x.x)
