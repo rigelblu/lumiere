@@ -29,11 +29,7 @@ def main():
 // TODO:
 ```
 
-#### TODO: def vs fn functions
-
-- **Def functions:**
-  - Compiler always assumes that the function can raise an error
-  - You must explicitly indicate with a `raises` keyword if it can raise an error
+#### TODO: Define a function with explicit types
 
 ##### Python (version >=0.x.x)
 
@@ -44,6 +40,22 @@ def main():
 ##### Mojo (version >=0.x.x)
 
 ```mojo
+fn hello1():
+  # code...
+
+# Pass argument by value
+fn hello2(name: String):
+  # code...
+
+# Pass argument by value, return string
+fn hello3(name: String) -> String:
+  # code...
+  return "Hello " + name
+
+```
+
+# Invoke function
+hello3("world")
 ```
 
 ##### TypeScript (version >=0.x.x)
@@ -58,7 +70,10 @@ def main():
 // TODO:
 ```
 
-#### TODO: Define a function
+#### TODO: Define a function with optional types
+
+- Compiler always assumes that the function can raise an error
+- You must explicitly indicate with a `raises` keyword if it can raise an error
 
 ##### Python (version >=0.x.x)
 
@@ -73,11 +88,11 @@ def hello1():
   # code...
 
 # Pass argument by value
-def hello2(name: String):
+def hello2(name):
   # code...
 
 # Pass argument by value, return string
-def hello3(name: String) -> String:
+def hello3(name):
   # code...
   return "Hello " + name
 
