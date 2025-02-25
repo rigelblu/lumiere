@@ -29,7 +29,7 @@
 #### Use default lifetimes, compiler auto generates lifecyle methods
 
 - *When to use:* basic aggregations of other types that don't require custom resource management or lifecycle behaviors
-- *How it works:* compiler provides "member-wise" constructor
+- *How it works:* compiler provides "member-wise" constructor `__init__()`, `__copyinit__()`, `__moveinit__()`
 
 ##### Python (version >=0.x.x)
 
