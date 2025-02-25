@@ -31,3 +31,4 @@ REFACTOR: move into separate files inside a standard-library directory
 ### TODO:
 
 - range() function
+- Context Managers: `NamedTemporaryFile`, `TemporaryDirectory`, `BlockingScopedLock`, `assert_raises`
