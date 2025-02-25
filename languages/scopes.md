@@ -4,6 +4,8 @@
 
 ##### Python (version >=0.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```py
 global_var = "I'm global"
 ```
@@ -16,19 +18,34 @@ global_var = "I'm global"
 
 ##### TypeScript (version >=0.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```ts
-// Not built into language
+// Define in global scope or window object
+declare global {
+  var globalVar: string;
+}
+globalThis.globalVar = "I'm global";
 ```
 
 ##### Go (version >=0.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```go
-// Not built into language
+package main
+
+// Package level variable with capital first letter
+var GlobalVar string = "I'm global"
+
+// Access from any file in the package
 ```
 
 #### Make variables privately available only to it's package / file
 
 ##### Python (version >=0.x.x)
+
+TODO: LLM Generated, TODO: verify code
 
 ```py
 # Not built into language. Use nearest equivalent, a naming convention
@@ -39,8 +56,8 @@ _PRIMARY = "blue"
 
 # ./pkg2/__init__.py
 # ./pkg2/file2.py
-# _PRIMARY won't be imported
-from ..pkg1/file1 import *
+from ..pkg1.file1 import * # _PRIMARY won't be imported
+
 ```
 
 ##### Mojo (version >=0.x.x)
@@ -51,19 +68,21 @@ from ..pkg1/file1 import *
 
 ##### TypeScript (version >=0.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```ts
 // ./pkg1/file1.ts
-const PRIMARY: string = "blue"
+const PRIMARY: string = "blue"  // No export = private to module
 
 // ./pkg2/file2.ts
-// PRIMARY won't be imported
-import * from '../pkg1/file1'
-
-// Trying to import PRIMARY manually will fail
-import { PRIMARY } from '../pkg1/file1';
+import * as file1 from '../pkg1/file1'
+// PRIMARY isn't accessible
+// file1.PRIMARY will fail
 ```
 
 ##### Go (version >=0.x.x)
+
+TODO: LLM Generated, TODO: verify code
 
 ```go
 // ./pkg1/file1.go
@@ -73,27 +92,29 @@ package colors
 const primary string = "blue"
 
 // ./pkg2/file2.go
+package other
 import "colors"
 
 // Trying to use primary will fail
-c1 := colors.primary
+/c1 := colors.primary // Compilation error
 ```
 
 #### Make variables publically available to other packages / files
 
 ##### Python (version >=0.x.x)
 
-```py
-# Not built into language. Use nearest equivalent
+TODO: LLM Generated, TODO: verify code
 
+```py
 # ./pkg1/__init__.py
+# Expose through __init__.py
+from .file1 import PRIMARY
+
 # ./pkg1/file1.py
 PRIMARY = "blue"
 
-# ./pkg2/__init__.py
 # ./pkg2/file2.py
-# PRIMARY will be imported
-from ../pkg1/file1 import *
+from pkg1 import PRIMARY
 ```
 
 ##### Mojo (version >=0.x.x)
@@ -108,19 +129,25 @@ from ..pkg1/file1 import *
 
 ##### TypeScript (version >=0.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```ts
 // ./pkg1/file1.ts
 export const PRIMARY: string = "blue"
 
 // ./pkg2/file2.ts
-// PRIMARY will be imported
-import * from '../pkg1/file1'
+// Import all exports
+import * as file1 from '../pkg1/file1'
 
-// Importing PRIMARY manually will succeed
+// Use exported constant
+const color = file1.PRIMARY
+// Or import specific export
 import { PRIMARY } from '../pkg1/file1';
 ```
 
 ##### Go (version >=0.x.x)
+
+TODO: LLM Generated, TODO: verify code
 
 ```go
 // ./pkg1/file1.go
@@ -136,28 +163,19 @@ import "colors"
 c1 := colors.Primary
 ```
 
-```go
-// ./pkg1/file1.go
-package colors
-
-// Use upper case first letter to make public to other packages
-const Primary string = "blue"
-
-// ./pkg1/file1_test.go
-package colors_test
-
-import "colors"
-
-c1 := Primary
-```
-
 #### Make variables available only to it's local block
 
 ##### Python (version >=0.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```py
-if condition:
-    # code...
+def my_function():
+    local_var = "only available inside function"
+    if condition:
+        block_var = "only available in this if block"
+    # block_var is not accessible here
+# local_var is not accessible here
 ```
 
 ##### Mojo (version >=0.x.x)
@@ -169,16 +187,32 @@ if condition:
 
 ##### TypeScript (version >=0.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```ts
-if (condition) {
-    // code...
+function myFunction() {
+    let functionScoped = "available in function";
+    if (condition) {
+        let blockScoped = "only in this block";
+        // blockScoped is only available in this block
+    }
+    // blockScoped is not accessible here
 }
+// functionScoped is not accessible here
 ```
 
 ##### Go (version >=0.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```go
-if condition {
-    // code...
+func myFunction() {
+    functionVar := "available in function"
+    if condition {
+        blockVar := "only in this block"
+        // blockVar only accessible in this if block
+    }
+    // blockVar not accessible here
 }
+// functionVar not accessible here
 ```
