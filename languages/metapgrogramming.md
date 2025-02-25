@@ -21,7 +21,7 @@ def repeat[count: Int](msg: String):
 repeat[3]("Hello")
 ```
 
-##### Typescript (version >=0.x.x)
+##### TypeScript (version >=0.x.x)
 
 ```ts
 // TODO:
