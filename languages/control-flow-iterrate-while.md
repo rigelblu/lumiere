@@ -4,8 +4,13 @@
 
 ##### Python (version >=x.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```py
-# TODO:
+n = 1
+while n < 50:
+    n += 1
+    # code...
 ```
 
 ##### Mojo (version >=x.x.x)
@@ -20,22 +25,41 @@ while n < 50:
 
 ##### TypeScript (version >=x.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```ts
-// TODO:
+let n = 1;
+while (n < 50) {
+    n += 1;
+    // code...
+}
 ```
 
 ##### Go (version >=x.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```go
-// TODO:
+n := 1
+for n < 50 {
+    n += 1
+    // code...
+}
 ```
 
 #### Skip to beginning of next block interation when a separate if condition is true
 
 ##### Python (version >=x.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```py
-# TODO:
+n = 0
+while n < 5:
+    n += 1
+    if n == 3:
+        continue
+    print(n)
 ```
 
 ##### Mojo (version >=x.x.x)
@@ -50,22 +74,45 @@ while n < 5:
 
 ##### TypeScript (version >=x.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```ts
-// TODO:
+let n = 0;
+while (n < 5) {
+    n += 1;
+    if (n === 3) {
+        continue;
+    }
+    console.log(n);
+}
 ```
 
 ##### Go (version >=x.x.x)
 
 ```go
-// TODO:
+n := 0
+for n < 5 {
+    n += 1
+    if n == 3 {
+        continue
+    }
+    fmt.Println(n)
+}
 ```
 
 #### Break out of interacting block when a separate if condition is true
 
 ##### Python (version >=x.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```py
-# TODO:
+n = 0
+while n < 5:
+    n += 1
+    if n == 3:
+        break
+    print(n)
 ```
 
 ##### Mojo (version >=x.x.x)
@@ -80,22 +127,55 @@ while n < 5:
 
 ##### TypeScript (version >=x.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```ts
-// TODO:
+let n = 0;
+while (n < 5) {
+    n += 1;
+    if (n === 3) {
+        break;
+    }
+    console.log(n);
+}
 ```
 
 ##### Go (version >=x.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```go
-// TODO:
+n := 0
+for n < 5 {
+    n += 1
+    if n == 3 {
+        break
+    }
+    fmt.Println(n)
+}
 ```
 
 #### Execute separate block after interating over a list
 
 ##### Python (version >=x.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```py
-# TODO:
+n = 5
+while n < 4:
+    n += 1
+else:
+    print("Loop completed")
+
+# break example - else won't execute
+n = 0
+while n < 5:
+    n += 1
+    if n == 3:
+        break
+else:
+    print("This won't print if loop is broken")
 ```
 
 ##### Mojo (version >=x.x.x)
@@ -113,12 +193,58 @@ else:
 
 ##### TypeScript (version >=x.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```ts
-// TODO:
+// TypeScript doesn't have a direct while-else construct
+// Using a flag or other approach instead
+
+let n = 5;
+if (n >= 4) {
+    console.log("Loop completed");
+}
+
+// With break handling
+let hasBreak = false;
+n = 0;
+while (n < 5) {
+    n += 1;
+    if (n === 3) {
+        hasBreak = true;
+        break;
+    }
+}
+
+if (!hasBreak) {
+    console.log("This won't print if loop is broken");
+}
 ```
 
 ##### Go (version >=x.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```go
-// TODO:
+// Go doesn't have a direct while-else construct
+// Using a flag or other approach instead
+
+n := 5
+if n >= 4 {
+    fmt.Println("Loop completed")
+}
+
+// With break handling
+hasBreak := false
+n = 0
+for n < 5 {
+    n += 1
+    if n == 3 {
+        hasBreak = true
+        break
+    }
+}
+
+if !hasBreak {
+    fmt.Println("This won't print if loop is broken")
+}
 ```
