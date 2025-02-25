@@ -3,6 +3,7 @@
 - **Mojo:** List and Dict can store any type that conforms to the CollectionElement trait
 
 #### Define a string
+
 - **Traits:**
   - Stringable - cannot raise an error
   - StringableRaising - can raise an error
