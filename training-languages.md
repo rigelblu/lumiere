@@ -23,6 +23,7 @@
     - [Packages / Modules](./languages/packages-modules.md)
     - [Input / Output](./languages/input-output.md)
     - [Decorators](./languages/decorators.md)
+    - [Context Manager](./languages/context-manager.md)
     - [Error Handling](./languages/error-handling.md)
     - [Standard Library](./languages/standard-library.md)
     - [Interoperability](./languages/interoperability.md)

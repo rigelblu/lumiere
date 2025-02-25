@@ -268,12 +268,16 @@ struct Point:
     # def __setitem(...) -> None:
 
     # For loop
-    # def __iter__()
-    # def __next__()
-    # def __len__()
+    # def __iter__(...)
+    # def __next__(...)
+    # def __len__(...)
+
+    # Context managers
+    # def __enter__(...)
+    # def __exit__(...)
 ```
 
-##### Typescript (version >=0.x.x)
+##### TypeScript (version >=0.x.x)
 
 ```ts
 // TODO:
