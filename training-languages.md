@@ -13,6 +13,7 @@
     - [Built-in Single Value Types](./languages/built-in-single-value-types.md)
     - [Built-in Collection Types](./languages/built-in-collection-types.md)
     - [User Defined Types](./languages/user-defined-types.md)
+    - [Classes](./languages/classes.md)
     - [Value Ownership](./languages/value-ownership.md)
     - [Value Lifetimes](./languages/value-lifetimes.md)
     - [Control-Flow / Conditionals](./languages/control-flow-conditionals.md)

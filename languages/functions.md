@@ -373,7 +373,7 @@ def get_name_tag(owned name: String, out name_tag: NameTag):
 tag = get_name_tag("Judith")
 ```
 
-##### Typescript (version >=0.x.x)
+##### TypeScript (version >=0.x.x)
 
 ```ts
 // TODO:
@@ -411,7 +411,7 @@ fn add2(x: String, y: String) -> String:
     return x + y
 ```
 
-##### Typescript (version >=0.x.x)
+##### TypeScript (version >=0.x.x)
 
 ```ts
 // TODO:

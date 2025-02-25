@@ -16,7 +16,7 @@ trait ColorTrait:
     def HSL(self): ...
 ```
 
-##### Typescript (version >=0.x.x)
+##### TypeScript (version >=0.x.x)
 
 ```ts
 // TODO:
@@ -136,7 +136,7 @@ fn use_trait_function():
     joinCyan(c1, c2)
 ```
 
-##### Typescript (version >=0.x.x)
+##### TypeScript (version >=0.x.x)
 
 ```ts
 // TODO:
@@ -187,7 +187,7 @@ var msg = String("The value is: ", c3)
 print(msg)
 ```
 
-##### Typescript (version >=0.x.x)
+##### TypeScript (version >=0.x.x)
 
 ```ts
 // TODO:
