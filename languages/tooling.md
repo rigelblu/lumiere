@@ -161,3 +161,29 @@ magic add {{package-name}}
 ```sh
 # TODO:
 ```
+
+#### Compile package
+
+##### Python (version >=0.x.x)
+
+```sh
+# TODO:
+```
+
+##### Mojo (version >=0.x.x)
+
+```sh
+mojo package package1 -o compiled_pkg1.mojopkg
+```
+
+##### TypeScript (version >=0.x.x)
+
+```sh
+# TODO:
+```
+
+##### Go (version >=0.x.x)
+
+```sh
+# TODO:
+```
