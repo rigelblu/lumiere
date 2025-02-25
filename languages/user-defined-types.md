@@ -150,8 +150,37 @@ x := p1.x
 
 ##### Python (version >=0.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```py
-# TODO:
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    # Addition '+'
+    def __add__(self, other):
+        return Point(self.x + other.x, self.y + other.y)
+
+    # Subtraction '-'
+    def __sub__(self, other):
+        return Point(self.x - other.x, self.y - other.y)
+
+    # Multiplication '*'
+    def __mul__(self, scalar):
+        return Point(self.x * scalar, self.y * scalar)
+
+    # Equals '=='
+    def __eq__(self, other):
+        return self.x == other.x and self.y == other.y
+
+    # String representation
+    def __str__(self):
+        return f"({self.x}, {self.y})"
+
+    # Less than '<'
+    def __lt__(self, other):
+        return (self.x**2 + self.y**2) < (other.x**2 + other.y**2)
 ```
 
 ##### Mojo (version >=0.x.x)
@@ -290,12 +319,95 @@ struct Point:
 
 ##### TypeScript (version >=0.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```ts
-// TODO:
+// TypeScript doesn't support operator overloading
+// The nearest equivalent is to use explicit methods
+
+class Point {
+  constructor(public x: number, public y: number) {}
+
+  // Instead of + operator
+  add(other: Point): Point {
+    return new Point(this.x + other.x, this.y + other.y);
+  }
+
+  // Instead of - operator
+  subtract(other: Point): Point {
+    return new Point(this.x - other.x, this.y - other.y);
+  }
+
+  // Instead of * operator
+  multiply(scalar: number): Point {
+    return new Point(this.x * scalar, this.y * scalar);
+  }
+
+  // Instead of == operator
+  equals(other: Point): boolean {
+    return this.x === other.x && this.y === other.y;
+  }
+
+  // Instead of < operator
+  lessThan(other: Point): boolean {
+    return (this.x**2 + this.y**2) < (other.x**2 + other.y**2);
+  }
+
+  toString(): string {
+    return `(${this.x}, ${this.y})`;
+  }
+}
 ```
 
 ##### Go (version >=0.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```go
-// TODO:
+// Go doesn't support operator overloading
+// The nearest equivalent is to use explicit methods
+
+package main
+
+import (
+	"fmt"
+	"math"
+)
+
+type Point struct {
+	X, Y float64
+}
+
+// Instead of + operator
+func (p Point) Add(other Point) Point {
+	return Point{p.X + other.X, p.Y + other.Y}
+}
+
+// Instead of - operator
+func (p Point) Subtract(other Point) Point {
+	return Point{p.X - other.X, p.Y - other.Y}
+}
+
+// Instead of * operator
+func (p Point) Multiply(scalar float64) Point {
+	return Point{p.X * scalar, p.Y * scalar}
+}
+
+// Instead of == operator (Go does have == for structs)
+func (p Point) Equals(other Point) bool {
+	return p.X == other.X && p.Y == other.Y
+}
+
+// Instead of < operator
+func (p Point) LessThan(other Point) bool {
+	return p.MagnitudeSquared() < other.MagnitudeSquared()
+}
+
+func (p Point) MagnitudeSquared() float64 {
+	return p.X*p.X + p.Y*p.Y
+}
+
+func (p Point) String() string {
+	return fmt.Sprintf("(%v, %v)", p.X, p.Y)
+}
 ```
