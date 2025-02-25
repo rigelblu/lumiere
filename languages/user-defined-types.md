@@ -67,11 +67,11 @@ x = p1.x
 ##### Mojo (version >=0.4.x)
 
 - **Constraints**:
-  - All fields must be declared upfront with a type. You can't add fields dynamically at run-time.
-  - Values can't be assigned as part of the field declaration. Instead, use constructor to initialize the value of all fields.
+  - All fields must be declared upfront with a type. You can't add fields dynamically at run-time
+  - Values can't be assigned as part of the field declaration. Instead, use constructor to initialize the value of all fields
 
 - **How it works:**
-  - The instance is automatically passed as the first argument, followed by any explicit arguments that you provide.
+  - The instance is automatically passed as the first argument, followed by any explicit arguments that you provide
   - The first argument of the method is an instance of the struct, so it doesn't require an explicit type annotation
 
 - **Conventions:**
@@ -88,6 +88,10 @@ struct PointType:
         self.x = x
         self.y = y
 
+    # Destructor
+    def __del__(self):
+        # code...
+
     # Copy Constructor
     def __copyinit__(out self, existing other):
         self.x = existing.x
@@ -101,7 +105,11 @@ struct PointType:
     # Static method
     @staticmethod
     def zeoro() -> Self:
-        return Self(0,0) # Alis for the type of struct
+        return Self(0,0) # Alias for the type of struct
+
+    @staticmethod
+    def log() -> None:
+        # code...
 
 var p1 = PointType(1, 2)  # Call struct's constructor
 var x = p1.x              # Call struct's getter
