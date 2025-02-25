@@ -20,11 +20,26 @@ struct Point
     y: Int
 ```
 
+
+```mojo
+# file2.mojo
+import file1
+
+var p = file1.Point(1, 2
+```
+
 ```mojo
 # file2.mojo
 from file1 import Point
 
-# code...
+var p = Point(1, 2)
+```
+
+```mojo
+# file2.mojo
+from file1 import Point as pt
+
+var p = pt(1, 2)
 ```
 
 ##### TypeScript (version >=0.x.x)
