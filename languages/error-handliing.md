@@ -4,8 +4,21 @@
 
 ##### Python (version >=0.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```py
-# TODO:
+def hello4(name: str):
+    if name == "":
+        raise ValueError("Name is empty")
+    elif len(name) == 0:
+        raise Exception("Name is empty")  # Simple exception
+    return "Hello " + name
+
+# Type hints can document exceptions (Python 3.11+)
+from typing import NoReturn
+
+def fail(message: str) -> NoReturn:
+    raise RuntimeError(message)
 ```
 
 ##### Mojo (version >=0.x.x)
@@ -24,22 +37,102 @@ fn hello4(name: String) raises:
 
 ##### TypeScript (version >=0.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```ts
-// TODO:
+// Custom error type
+class EmptyNameError extends Error {
+  constructor(message: string) {
+    super(message);
+    this.name = "EmptyNameError";
+  }
+}
+
+// Function that can throw errors
+function hello4(name: string): string {
+  if (name === "") {
+    throw new EmptyNameError("Name is empty");
+  } else if (name.length === 0) {
+    throw new Error("Name is empty");
+  }
+  return "Hello " + name;
+}
+
+// Documentation with JSDoc
+/**
+ * @throws {Error} If the name is empty
+ */
+function greet(name: string): string {
+  if (!name) throw new Error("Empty name");
+  return `Hello, ${name}`;
+}
 ```
 
 ##### Go (version >=0.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```go
-// TODO:
+import (
+  "errors"
+  "fmt"
+)
+
+// Go functions return errors rather than throwing them
+func hello4(name string) (string, error) {
+  if name == "" {
+    return "", errors.New("Name is empty")
+  } else if len(name) == 0 {
+    return "", fmt.Errorf("Name is empty")
+  }
+  return "Hello " + name, nil
+}
+
+// Custom error types
+type EmptyNameError struct {
+  Message string
+}
+
+func (e *EmptyNameError) Error() string {
+  return e.Message
+}
+
+func validateName(name string) (string, error) {
+  if name == "" {
+    return "", &EmptyNameError{"Name cannot be empty"}
+  }
+  return name, nil
+}
 ```
 
 #### Handle raised errors
 
 ##### Python (version >=0.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```py
-# TODO:
+def handle_error():
+    try:
+        # Code that might raise an exception
+        result = hello4("")
+    except ValueError as e:
+        # Handle specific error type
+        print("Handled ValueError:", e)
+    except Exception as e:
+        # Handle any other exceptions
+        print("Handled an error:", e)
+    else:
+        # Executes if no exception occurred
+        print("No errors occurred")
+    finally:
+        # Always executes, regardless of exceptions
+        print("Cleanup code here")
+
+    # Context manager for resource handling
+    with open("file.txt", "r") as f:
+        # File automatically closes even if exceptions occur
+        content = f.read()
 ```
 
 ##### Mojo (version >=0.x.x)
@@ -62,12 +155,85 @@ fn handle_error():
 
 ##### TypeScript (version >=0.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```ts
-// TODO:
+function handleError(): void {
+  try {
+    // Code that might throw an exception
+    const result = hello4("");
+  } catch (e) {
+    // Type checking for specific errors
+    if (e instanceof EmptyNameError) {
+      console.log("Handled EmptyNameError:", e.message);
+    } else if (e instanceof Error) {
+      console.log("Handled generic error:", e.message);
+    } else {
+      console.log("Unknown error:", e);
+    }
+  } finally {
+    // Always executes, regardless of exceptions
+    console.log("Cleanup code here");
+  }
+
+  // Using Promise error handling
+  fetchData()
+    .then(result => console.log(result))
+    .catch(error => console.error("API error:", error));
+
+  // Async/await with try/catch
+  async function processData() {
+    try {
+      const data = await fetchData();
+      return processResult(data);
+    } catch (error) {
+      console.error("Failed to process data:", error);
+    }
+  }
+}
 ```
 
 ##### Go (version >=0.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```go
-// TODO:
+func handleError() {
+  // Basic error checking pattern
+  result, err := hello4("")
+  if err != nil {
+    fmt.Println("Error:", err)
+    return
+  }
+
+  // Type assertions to check specific error types
+  _, err = validateName("")
+  if err != nil {
+    if emptyErr, ok := err.(*EmptyNameError); ok {
+      fmt.Println("Empty name error:", emptyErr.Message)
+    } else {
+      fmt.Println("Other error:", err)
+    }
+  }
+
+  // Defer for cleanup (similar to finally)
+  file, err := os.Open("file.txt")
+  if err != nil {
+    fmt.Println("Failed to open file:", err)
+    return
+  }
+  defer file.Close() // Will execute when function returns
+
+  // Panic/recover (rarely used, similar to try/catch)
+  defer func() {
+    if r := recover(); r != nil {
+      fmt.Println("Recovered from panic:", r)
+    }
+  }()
+
+  // Code that might panic
+  if someCondition {
+    panic("Critical error occurred")
+  }
+}
 ```

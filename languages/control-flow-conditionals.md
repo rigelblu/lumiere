@@ -1,5 +1,7 @@
 ### Control Flow / Conditionals
 
+##### Mojo
+
 **Constraints:**
 - Mojo doesn't support the equivalent of a Python match or C switch statement for pattern matching and conditional execution
 **How it works:**
@@ -9,8 +11,20 @@
 
 ##### Python (version >=x.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```py
-# TODO:
+year = 2025
+
+if year > 2025:
+    # code...
+
+if year <= 2025:
+    # code...
+elif year == 2025:
+    # code...
+else:
+    # code...
 ```
 
 ##### Mojo (version >=x.x.x)
@@ -31,22 +45,56 @@ else:
 
 ##### TypeScript (version >=x.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```ts
-// TODO:
+const year = 2025;
+
+if (year > 2025) {
+    // code...
+}
+
+if (year <= 2025) {
+    // code...
+} else if (year === 2025) {
+    // code...
+} else {
+    // code...
+}
 ```
 
 ##### Go (version >=x.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```go
-// TODO:
+year := 2025
+
+if year > 2025 {
+    // code...
+}
+
+if year <= 2025 {
+    // code...
+} else if year == 2025 {
+    // code...
+} else {
+    // code...
+}
 ```
 
 #### Execute inline statement if condition is true
 
 ##### Python (version >=x.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```py
-# TODO:
+if year < 2021: print("Past")  # Inline code
+if year >= 2026: print("Future")  # Inline code
+if year == 2025: print("Present")  # Inline code
+if year != 2025: print("Not present")  # Inline code
+if not (year == 2025): print("Not present")  # Negation example
 ```
 
 ##### Mojo (version >=x.x.x)
@@ -61,23 +109,42 @@ if year != 2025: # code...skipped when condition is False
 
 ##### TypeScript (version >=x.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```ts
-// TODO:
+if (year < 2021) console.log("Past");  // Inline code
+if (year >= 2026) console.log("Future");  // Inline code
+if (year === 2025) console.log("Present");  // Inline code
+if (year !== 2025) console.log("Not present");  // Inline code
+if (!(year === 2025)) console.log("Not present");  // Negation example
 ```
 
 ##### Go (version >=x.x.x)
 
-```go
-// TODO:
-```
+TODO: LLM Generated, TODO: verify code
 
+```go
+if year < 2021 { fmt.Println("Past") }  // Inline code
+if year >= 2026 { fmt.Println("Future") }  // Inline code
+if year == 2025 { fmt.Println("Present") }  // Inline code
+if year != 2025 { fmt.Println("Not present") }  // Inline code
+if !(year == 2025) { fmt.Println("Not present") }  // Negation example
+```
 
 #### Execute if either or both conditions are true
 
 ##### Python (version >=x.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```py
-# TODO:
+# Either conditions
+if true_func() or false_func():
+    print("True result")
+
+# Both conditions
+if false_func() and true_func():
+    print("True result")
 ```
 
 ##### Mojo (version >=x.x.x)
@@ -94,22 +161,44 @@ if false_func() and true_func():
 
 ##### TypeScript (version >=x.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```ts
-// TODO:
+// Either conditions
+if (trueFunc() || falseFunc()) {
+    console.log("True result");
+}
+
+// Both conditions
+if (falseFunc() && trueFunc()) {
+    console.log("True result");
+}
 ```
 
 ##### Go (version >=x.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```go
-// TODO:
+// Either conditions
+if trueFunc() || falseFunc() {
+    fmt.Println("True result")
+}
+
+// Both conditions
+if falseFunc() && trueFunc() {
+    fmt.Println("True result")
+}
 ```
 
 #### Assign value to variable if condition is true
 
 ##### Python (version >=x.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```py
-# TODO:
+time = "future" if year > 2020 else "past"
 ```
 
 ##### Mojo (version >=x.x.x)
@@ -120,22 +209,42 @@ time = "future" if year > 2020 else "past"
 
 ##### TypeScript (version >=x.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```ts
-// TODO:
+const time = year > 2020 ? "future" : "past";
 ```
 
 ##### Go (version >=x.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```go
-// TODO:
+var time string
+if year > 2020 {
+    time = "future"
+} else {
+    time = "past"
+}
+
+// Alternative using an immediately-invoked function
+time := func() string {
+    if year > 2020 {
+        return "future"
+    }
+    return "past"
+}()
 ```
 
 #### Ternary conditionals
 
 ##### Python (version >=x.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```py
-# TODO:
+year = 2025
+label = "current" if year == 2025 else "past or future"
 ```
 
 ##### Mojo (version >=x.x.x)
@@ -147,12 +256,23 @@ label = "current" if year == 20250 else "past or future"
 
 ##### TypeScript (version >=x.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```ts
-// TODO:
+const year = 2025;
+const label = year === 2025 ? "current" : "past or future";
 ```
 
 ##### Go (version >=x.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```go
-// TODO:
+year := 2025
+label := func() string {
+    if year == 2025 {
+        return "current"
+    }
+    return "past or future"
+}()
 ```

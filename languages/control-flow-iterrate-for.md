@@ -4,8 +4,21 @@
 
 ##### Python (version >=x.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```py
-# TODO:
+for i in range(5):
+    print(i, end=", ")
+
+for i in range(5):
+    if i == 3:
+        continue
+    print(i, end=", ")
+
+for i in range(5):
+    if i == 3:
+        break
+    print(i, end=", ")
 ```
 
 ##### Mojo (version >=x.x.x)
@@ -27,22 +40,66 @@ for i in range(5):
 
 ##### TypeScript (version >=x.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```ts
-// TODO:
+for (let i = 0; i < 5; i++) {
+    console.log(i + ", ");
+}
+
+for (let i = 0; i < 5; i++) {
+    if (i === 3) {
+        continue;
+    }
+    console.log(i + ", ");
+}
+
+for (let i = 0; i < 5; i++) {
+    if (i === 3) {
+        break;
+    }
+    console.log(i + ", ");
+}
 ```
 
 ##### Go (version >=x.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```go
-// TODO:
+for i := 0; i < 5; i++ {
+    fmt.Print(i, ", ")
+}
+
+for i := 0; i < 5; i++ {
+    if i == 3 {
+        continue
+    }
+    fmt.Print(i, ", ")
+}
+
+for i := 0; i < 5; i++ {
+    if i == 3 {
+        break
+    }
+    fmt.Print(i, ", ")
+}
 ```
 
 #### Execute block over items in a list
 
 ##### Python (version >=x.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```py
-# TODO:
+colors = ["Blue", "Yellow"]
+for color in colors:
+    print(color)
+
+# With index
+for i, color in enumerate(colors):
+    print(f"Color {i}: {color}")
 ```
 
 ##### Mojo (version >=x.x.x)
@@ -59,22 +116,56 @@ for color in colors:
 
 ##### TypeScript (version >=x.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```ts
-// TODO:
+const colors: string[] = ["Blue", "Yellow"];
+for (const color of colors) {
+    console.log(color);
+}
+
+// With index
+colors.forEach((color, index) => {
+    console.log(`Color ${index}: ${color}`);
+});
+
+// Traditional for loop
+for (let i = 0; i < colors.length; i++) {
+    console.log(colors[i]);
+}
 ```
 
 ##### Go (version >=x.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```go
-// TODO:
+colors := []string{"Blue", "Yellow"}
+for _, color := range colors {
+    fmt.Println(color)
+}
+
+// With index
+for i, color := range colors {
+    fmt.Printf("Color %d: %s\n", i, color)
+}
+
+// Traditional for loop
+for i := 0; i < len(colors); i++ {
+    fmt.Println(colors[i])
+}
 ```
 
 #### Execute block over items in a set
 
 ##### Python (version >=x.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```py
-# TODO:
+years = {2024, 2025, 2026}
+for year in years:
+    print(year)
 ```
 
 ##### Mojo (version >=x.x.x)
@@ -89,22 +180,57 @@ for year in years:
 
 ##### TypeScript (version >=x.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```ts
-// TODO:
+const years = new Set<number>([2024, 2025, 2026]);
+for (const year of years) {
+    console.log(year);
+}
+
+// Using forEach
+years.forEach(year => {
+    console.log(year);
+});
 ```
 
 ##### Go (version >=x.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```go
-// TODO:
+// Go doesn't have a built-in set type
+// Using a map with empty struct values to simulate a set
+years := map[int]struct{}{
+    2024: {},
+    2025: {},
+    2026: {},
+}
+
+for year := range years {
+    fmt.Println(year)
+}
 ```
 
 #### Execute block over items in a dictionary / map
 
 ##### Python (version >=x.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```py
-# TODO:
+colors = {
+    "Primary": "Blue",
+    "Secondary": "Yellow"
+}
+
+# Iterate over keys
+for key in colors:
+    print(colors[key] + ", " + key)
+
+# Iterate over items (key-value pairs)
+for key, value in colors.items():
+    print(value + ", " + key)
 ```
 
 ##### Mojo (version >=x.x.x)
@@ -125,22 +251,77 @@ for item in colors.items():
 
 ##### TypeScript (version >=x.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```ts
-// TODO:
+// Using an object
+const colors = {
+    "Primary": "Blue",
+    "Secondary": "Yellow"
+};
+
+// Iterate over keys
+for (const key in colors) {
+    console.log(colors[key] + ", " + key);
+}
+
+// Iterate over entries
+Object.entries(colors).forEach(([key, value]) => {
+    console.log(value + ", " + key);
+});
+
+// Using a Map
+const colorsMap = new Map<string, string>([
+    ["Primary", "Blue"],
+    ["Secondary", "Yellow"]
+]);
+
+// Iterate over entries
+for (const [key, value] of colorsMap.entries()) {
+    console.log(value + ", " + key);
+}
 ```
 
 ##### Go (version >=x.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```go
-// TODO:
+colors := map[string]string{
+    "Primary":   "Blue",
+    "Secondary": "Yellow",
+}
+
+// Iterate over key-value pairs
+for key, value := range colors {
+    fmt.Println(value + ", " + key)
+}
+
+// Iterate over keys only
+for key := range colors {
+    fmt.Println(colors[key] + ", " + key)
+}
 ```
 
 #### Execute separate block after interating over a list
 
 ##### Python (version >=x.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```py
-# TODO:
+for i in range(5):
+    print(i, end=", ")
+else:
+    print("\nFinished executing 'for' loop")
+
+# Break example - else won't execute
+for i in range(5):
+    if i == 3:
+        break
+    print(i, end=", ")
+else:
+    print("\nThis won't print if loop is broken")
 ```
 
 ##### Mojo (version >=x.x.x)
@@ -157,12 +338,68 @@ else:
 
 ##### TypeScript (version >=x.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```ts
-// TODO:
+// TypeScript doesn't have a direct for-else construct
+// Using a flag or other approach instead
+
+let hasBreak = false;
+for (let i = 0; i < 5; i++) {
+    console.log(i + ", ");
+    if (someCondition) {
+        hasBreak = true;
+        break;
+    }
+}
+
+if (!hasBreak) {
+    console.log("\nFinished executing 'for' loop");
+}
+
+// Alternative with IIFE (Immediately Invoked Function Expression)
+(() => {
+    for (let i = 0; i < 5; i++) {
+        console.log(i + ", ");
+        if (someCondition) return; // Early exit
+    }
+    console.log("\nFinished executing 'for' loop");
+})();
 ```
 
 ##### Go (version >=x.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```go
-// TODO:
+// Go doesn't have a direct for-else construct
+// Using a flag or other approach instead
+
+hasBreak := false
+for i := 0; i < 5; i++ {
+    fmt.Print(i, ", ")
+    if someCondition {
+        hasBreak = true
+        break
+    }
+}
+
+if !hasBreak {
+    fmt.Println("\nFinished executing 'for' loop")
+}
+
+// Alternative with labeled break
+loopCompleted := true
+loop:
+for i := 0; i < 5; i++ {
+    fmt.Print(i, ", ")
+    if someCondition {
+        loopCompleted = false
+        break loop
+    }
+}
+
+if loopCompleted {
+    fmt.Println("\nFinished executing 'for' loop")
+}
 ```

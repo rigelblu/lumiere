@@ -4,8 +4,14 @@
 
 ##### Python (version >=0.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```py
-# TODO:
+# Implicit type
+name1 = "John"              # Python uses duck typing
+# Explicit type (Python 3.6+)
+name2: str                  # Define
+name3: str = "John"         # Define and initialize
 ```
 
 ##### Mojo (version >=0.x.x)
@@ -22,22 +28,39 @@ var name2: String = "John"  # Define and initialize
 
 ##### TypeScript (version >=0.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```ts
-// TODO:
+// Implicit type
+let name1 = "John";         // Type inferred as string
+// Explicit type
+let name2: string;          // Define
+let name3: string = "John"; // Define and initialize
 ```
 
 ##### Go (version >=0.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```go
-// TODO:
+// Explicit type
+var name1 string            // Define
+var name2 string = "John"   // Define and initialize
+// Short variable declaration (implicit type)
+name3 := "John"             // Inferred type
 ```
 
 #### Define as constant value
 
 ##### Python (version >=0.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```py
-# TODO:
+# Python doesn't have true constants
+# Use naming convention for constants
+NAME = "John"
+PI = 3.14159
 ```
 
 ##### Mojo (version >=0.x.x)
@@ -48,22 +71,47 @@ var name2: String = "John"  # Define and initialize
 
 ##### TypeScript (version >=0.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```ts
-// TODO:
+// Using const for immutable references
+const NAME: string = "John";
+const PI: number = 3.14159;
+// Or readonly for properties
+interface Config {
+  readonly API_KEY: string;
+}
 ```
 
 ##### Go (version >=0.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```go
-// TODO:
+// Single constant
+const NAME string = "John"
+// Multiple constants
+const (
+    PI = 3.14159
+    VERSION = "1.0.0"
+)
+// Untyped constants
+const LIMIT = 100
 ```
 
 #### Assign Values
 
 ##### Python (version >=0.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```py
-# TODO:
+# Single assignment
+x = 10
+# Multiple assignment
+month, year = 6, 2023
+# Augmented assignment
+x += 5
 ```
 
 ##### Mojo (version >=0.6.x)
@@ -74,14 +122,31 @@ month, year = m, year + 1
 
 ##### TypeScript (version >=0.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```ts
-// TODO:
+// Single assignment
+let x = 10;
+// Multiple assignment (using destructuring)
+let [month, year] = [6, 2023];
+// Augmented assignment
+x += 5;
 ```
 
 ##### Go (version >=0.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
+
 ```go
-// TODO:
+// Single assignment
+x = 10
+// Multiple assignment
+month, year = 6, 2023
+// Short declaration (for new variables)
+x, y := 10, 20
+// Augmented assignment
+x += 5
 ```
 
 #### Operations
@@ -90,8 +155,60 @@ TODO: consider breaking into sections
 
 ##### Python (version >=0.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```py
-# TODO:
+n = 1
+# Parenthesis expression
+n = (n + 1) * 2
+# Basic arithmetic
+n = n + 1
+n = n - 1
+n = n * 3
+n = n / 2
+n = 3 ** 2  # Exponent
+# Augmented assignment
+n += 1
+n -= 1
+n *= 2
+n /= 2
+n **= 2
+# Floor division
+n = n // 3
+# Indexing and slicing
+x[0]                            # 1st value
+x[1]                            # 2nd value
+x[-1]                           # Last value
+x[0][0]                         # 1st value in a 2-dimensional list
+x[0:5]                          # First 5 values
+x[1:6:2]                        # 2nd, 4th, 6th value - stepping increment
+x[::-1]                         # All values in reverse order
+# Comparison
+flag = n == 1
+flag = n != 1
+flag = n < 1
+flag = n <= 1
+flag = n > 1
+flag = n >= 1
+# Membership
+flag = "hello" in "hello world"
+flag = "hello" not in "hello world"
+# Modulo (remainder)
+n = 10 % 3
+# Logical operators
+n = n and 1
+n = n or 1
+n = not(n)
+# Walrus operator (Python 3.8+)
+if (input_str := input("Enter number")):
+    # code...
+# Matrix multiplication
+z = m @ n
+# String concatenation
+c1 = "Color: " + "blue"
+c2 = "".join(["Color: ", "blue", "."])  # More efficient for multiple strings
+# String replication
+divider = "#" * 20
 ```
 
 ##### Mojo (version >=0.6.x)
@@ -171,22 +288,144 @@ alias divider = "#" * 20
 
 ##### TypeScript (version >=0.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```ts
-// TODO:
+let n = 1;
+// Parenthesis expression
+n = (n + 1) * 2;
+// Basic arithmetic
+n = n + 1;
+n = n - 1;
+n = n * 3;
+n = n / 2;
+n = Math.pow(3, 2);  // Exponent
+// Augmented assignment
+n += 1;
+n -= 1;
+n *= 2;
+n /= 2;
+// Indexing
+x[0];                           // 1st value
+x[1];                           // 2nd value
+x[x.length-1];                  // Last value
+x[0][0];                        // 1st value in a 2-dimensional array
+// Slice
+x.slice(0, 5);                  // First 5 values
+// Comparison
+const flag = n === 1;
+const flag2 = n !== 1;
+const flag3 = n < 1;
+const flag4 = n <= 1;
+const flag5 = n > 1;
+const flag6 = n >= 1;
+// Membership
+const flag7 = "hello world".includes("hello");
+const flag8 = !("hello world".includes("hello"));
+// Type checking
+const isNumber = typeof n === "number";
+// Modulo (remainder)
+n = 10 % 3;
+// Logical operators
+n = n && 1;
+n = n || 1;
+n = !n;
+// Nullish coalescing
+const value = someValue ?? defaultValue;
+// Optional chaining
+const prop = obj?.prop;
+// String concatenation
+const c1 = "Color: " + "blue";
+const c2 = `Color: ${blue}.`;  // Template literals
+// String replication
+const divider = "#".repeat(20);
 ```
 
 ##### Go (version >=0.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```go
-// TODO:
+n := 1
+// Parenthesis expression
+n = (n + 1) * 2
+// Basic arithmetic
+n = n + 1
+n = n - 1
+n = n * 3
+n = n / 2
+// No direct exponent operator, use math.Pow
+import "math"
+n = int(math.Pow(3, 2))
+// Augmented assignment
+n += 1
+n -= 1
+n *= 2
+n /= 2
+// Indexing
+x[0]                            // 1st value
+x[1]                            // 2nd value
+x[len(x)-1]                     // Last value
+x[0][0]                         // 1st value in a 2-dimensional slice
+// Slice
+x[0:5]                          // First 5 values
+// Comparison
+flag := n == 1
+flag = n != 1
+flag = n < 1
+flag = n <= 1
+flag = n > 1
+flag = n >= 1
+// Membership (using strings package for strings)
+import "strings"
+flag = strings.Contains("hello world", "hello")
+flag = !strings.Contains("hello world", "hello")
+// Type assertions
+_, isInt := x.(int)             // Check if x is an integer
+// Modulo (remainder)
+n = 10 % 3
+// Logical operators
+// Go uses && and || for boolean types only
+if n != 0 && m > 5 {
+    // code...
+}
+// Assignment within if statement
+if inputStr := getUserInput(); inputStr != "" {
+  // code...
+}
+// String concatenation
+import "fmt"
+c1 := "Color: " + "blue"
+c2 := fmt.Sprintf("Color: %s.", "blue")
+// String replication
+divider := strings.Repeat("#", 20)
 ```
 
 #### Bitwise operations
 
 ##### Python (version >=0.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```py
-# TODO:
+b = 1
+# Bitwise - positive, negative, not
+b = +b
+b = -b
+b = ~b
+# Bitwise shift
+b = b << 1
+b = b >> 1
+# Bitwise logic
+b = b & 1         # AND
+b = b ^ 1         # XOR
+b = b | 1         # OR
+# Augmented bitwise assignment
+b &= 1
+b |= 1
+b ^= 1
+b <<= 1
+b >>= 1
 ```
 
 ##### Mojo (version >=0.6.x)
@@ -211,14 +450,54 @@ b = b | 1         # OR
 
 ##### TypeScript (version >=0.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```ts
-// TODO:
+let b = 1;
+// Bitwise - positive, negative, not
+b = +b;
+b = -b;
+b = ~b;
+// Bitwise shift
+b = b << 1;
+b = b >> 1;
+b = b >>> 1;      // Unsigned right shift
+// Bitwise logic
+b = b & 1;        // AND
+b = b ^ 1;        // XOR
+b = b | 1;        // OR
+// Augmented bitwise assignment
+b &= 1;
+b |= 1;
+b ^= 1;
+b <<= 1;
+b >>= 1;
+b >>>= 1;         // Unsigned right shift assignment
 ```
 
 ##### Go (version >=0.x.x)
 
+TODO: LLM Generated, TODO: verify code
+
 ```go
-// TODO:
+b := 1
+// Bitwise - positive, negative, not
+b = +b
+b = -b
+b = ^b           // NOT (bitwise complement)
+// Bitwise shift
+b = b << 1
+b = b >> 1
+// Bitwise logic
+b = b & 1        // AND
+b = b ^ 1        // XOR
+b = b | 1        // OR
+// Augmented bitwise assignment
+b &= 1
+b |= 1
+b ^= 1
+b <<= 1
+b >>= 1
 ```
 
 ### TODO
