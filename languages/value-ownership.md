@@ -1,5 +1,10 @@
 ### Value Ownership
 
+##### Mojo
+
+**How it Works:**
+- Mojo uses a third approach called "ownership" that relies on a collection of rules that programmers must follow when passing values. The rules ensure there is only one "owner" for a given value at a time. When a value's lifetime ends, Mojo calls its destructor, which is responsible for deallocating any heap memory that needs to be deallocated
+
 #### Define a value as mutable
 
 ##### Python (version >=0.x.x)
@@ -229,3 +234,7 @@ func (p Point) Dump() {
     fmt.Println(p.X)
 }
 ```
+
+### TODO
+
+- UnsafePointer
