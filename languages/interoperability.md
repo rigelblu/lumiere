@@ -28,18 +28,6 @@ def main():
     print(ar.shape)
 ```
 
-##### TypeScript (version >=0.x.x)
-
-```ts
-// TODO:
-```
-
-##### Go (version >=0.x.x)
-
-```go
-// TODO:
-```
-
 #### Interate over a python collections
 
 ##### Python (version >=0.x.x)
@@ -63,18 +51,6 @@ for py_key in py_dict:
 
 for py_tuple in py_dict.items():
     print(py_tuple[0], py_tuple[1])
-```
-
-##### TypeScript (version >=0.x.x)
-
-```ts
-// TODO:
-```
-
-##### Go (version >=0.x.x)
-
-```go
-// TODO:
 ```
 
 #### Assign / pass by value / reference
