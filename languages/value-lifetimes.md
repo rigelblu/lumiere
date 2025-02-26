@@ -1,5 +1,15 @@
 ### Value Lifetimes
 
+##### Mojo
+
+**What it does:**
+- A lifetime checker analyzes dataflow through your program. It identifies when variables are valid and inserts destructor calls when a variable's lifetime ends.
+
+**How to use:**
+- Most of the time, origins are handled automatically by the compiler. However, in some cases you'll need to interact with origins directly:
+  - When working with references—specifically ref arguments and ref return values.
+  - When working with types like Pointer or Span which are parameterized on the origin of the data they refer to
+
 #### Define behaviour when instance of struct is created, moved, copied, and destroyed
 
 ##### Python (version >=0.x.x)
@@ -204,3 +214,51 @@ func NewPerson(name string) Person {
     return Person{Name: name}
 }
 ```
+
+#### Specify origin types
+
+##### Python (version >=0.x.x)
+
+```py
+# TODO:
+```
+
+##### Mojo (version >=0.x.x)
+
+```mojo
+# Immutable Origin
+struct ImmutableRef[origin: ImmutableOrigin]:
+    pass
+
+# Mutalable Origin
+struct MutableRef[origin: MutableOrigin]:
+    pass
+
+# Example: Parametric Mutability
+struct ParametricRef[
+    is_mutable: Bool,
+    //,
+    origin: Origin[is_mutable]
+]:
+    pass
+```
+
+##### TypeScript (version >=0.x.x)
+
+```ts
+// TODO:
+```
+
+##### Go (version >=0.x.x)
+
+```go
+// TODO:
+```
+
+### TODO
+
+- [Origin types](https://docs.modular.com/mojo/manual/values/lifetimes#origin-types)
+- [Origin values](https://docs.modular.com/mojo/manual/values/lifetimes#origin-values)
+- [`ref` argument](https://docs.modular.com/mojo/manual/values/lifetimes#ref-arguments)
+- [`ref` return values](https://docs.modular.com/mojo/manual/values/lifetimes#ref-return-values)
+- [Claude Explanation](https://claude.ai/share/543bae56-8cc6-45bd-951b-5be81856f3ed)
