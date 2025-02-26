@@ -66,9 +66,30 @@ interface Color {
 - **LLM Prompt to generate other language examples**
 ```
 - Read the mojo programming language example for each section.
-- Replace all the TODO statements inside code blocks with examples of the specified programming language.
+- Replace all the TODO statements inside code blocks with generated examples of the specified programming language.
+- Generated examples must be a minimal implementation of the same functionality in the anchor code block.
 - Do not replace the mojo examples.
 - Do not change the format or structure of the content.
+```
+
+### Structured Metadata
+
+```baml
+metadata {
+  "language": string,
+  "language_version": string
+  "code_role": anchor | trail
+  "code_author": human | llm | human approved
+</metadata>
+```
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.1.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
 ```
 
 ---
@@ -80,6 +101,7 @@ _Draft_
 - Add examples for [programming languages](./training-languages.md)
 - Use same names where possisble across conceept
 - Make example clear, concise, specific, while being as simple as possible
+- Write the minimal implementation of the same functionality in each language
 
 Write approach goals
 
