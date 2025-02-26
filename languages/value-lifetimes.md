@@ -220,7 +220,32 @@ func NewPerson(name string) Person {
 ##### Python (version >=0.x.x)
 
 ```py
-# TODO:
+from typing import TypeVar, Generic, TypedDict
+
+# Simulate origin types with TypedDict
+class ImmutableOrigin(TypedDict):
+    readonly: bool
+
+class MutableOrigin(TypedDict):
+    readonly: bool
+
+# Generic type variables with constraints
+T_Immutable = TypeVar('T_Immutable', bound=ImmutableOrigin)
+T_Mutable = TypeVar('T_Mutable', bound=MutableOrigin)
+
+# Reference types parameterized on origin
+class ImmutableRef(Generic[T_Immutable]):
+    pass
+
+class MutableRef(Generic[T_Mutable]):
+    pass
+
+# Example: Parametric Mutability
+T_AnyOrigin = TypeVar('T_AnyOrigin')
+
+class ParametricRef(Generic[T_AnyOrigin]):
+    def __init__(self, is_mutable: bool):
+        self.is_mutable = is_mutable
 ```
 
 ##### Mojo (version >=0.x.x)
@@ -246,13 +271,79 @@ struct ParametricRef[
 ##### TypeScript (version >=0.x.x)
 
 ```ts
-// TODO:
+// Simulate origin types with interfaces
+interface ImmutableOrigin {
+    readonly: true;
+}
+
+interface MutableOrigin {
+    readonly: false;
+}
+
+// Origin type (union type)
+type Origin<IsMutable extends boolean> =
+    IsMutable extends true ? MutableOrigin : ImmutableOrigin;
+
+// Reference types parameterized on origin
+class ImmutableRef<T extends ImmutableOrigin> {
+    constructor() {}
+}
+
+class MutableRef<T extends MutableOrigin> {
+    constructor() {}
+}
+
+// Example: Parametric Mutability
+class ParametricRef
+    IsMutable extends boolean,
+    T extends Origin<IsMutable>
+> {
+    constructor() {}
+}
 ```
 
 ##### Go (version >=0.x.x)
 
 ```go
-// TODO:
+package main
+
+import "fmt"
+
+// Origin types simulated via interfaces
+type Origin interface {
+    isOrigin()
+}
+
+type ImmutableOrigin struct{}
+func (ImmutableOrigin) isOrigin() {}
+
+type MutableOrigin struct{}
+func (MutableOrigin) isOrigin() {}
+
+// Reference types
+type ImmutableRef struct {
+    origin ImmutableOrigin
+}
+
+type MutableRef struct {
+    origin MutableOrigin
+}
+
+// Parametric mutability using interface
+type ParametricRef struct {
+    isMutable bool
+    origin    Origin
+}
+
+func NewParametricRef(isMutable bool) ParametricRef {
+    var origin Origin
+    if isMutable {
+        origin = MutableOrigin{}
+    } else {
+        origin = ImmutableOrigin{}
+    }
+    return ParametricRef{isMutable: isMutable, origin: origin}
+}
 ```
 
 ### TODO

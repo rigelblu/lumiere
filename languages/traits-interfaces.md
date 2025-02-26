@@ -43,6 +43,29 @@ type ColorTrait interface {
 }
 ```
 
+##### Rust (version >=0.x.x)
+
+TODO: LLM Generated, TODO: verify code
+
+```rust
+trait ColorTrait {
+    // Function declaration without implementation
+    fn hsl(&self) -> (f64, f64, f64);
+}
+```
+
+##### C++ (version >=0.x.x)
+
+TODO: LLM Generated, TODO: verify code
+
+```cpp
+class ColorTrait {
+public:
+    // Pure virtual function (abstract method)
+    virtual void HSL() = 0;
+};
+```
+
 #### Conform struct to a string trait
 
 ##### Python (version >=0.x.x)
@@ -114,6 +137,55 @@ func (p Point) String() string {
 func main() {
   p := Point{1, 2}
   fmt.Println(p)  // Outputs: "(1, 2)"
+}
+```
+
+##### Rust (version >=0.x.x)
+
+TODO: LLM Generated, TODO: verify code
+
+```rust
+struct Point {
+    x: i32,
+    y: i32,
+}
+
+impl std::fmt::Display for Point {
+    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
+        write!(f, "({}, {})", self.x, self.y)
+    }
+}
+
+fn main() {
+    let p = Point { x: 1, y: 2 };
+    println!("{}", p);  // Outputs: "(1, 2)"
+}
+```
+
+##### C++ (version >=0.x.x)
+
+TODO: LLM Generated, TODO: verify code
+
+```cpp
+#include <iostream>
+#include <string>
+
+class Point {
+private:
+    int x, y;
+public:
+    Point(int x, int y) : x(x), y(y) {}
+
+    // Override string conversion
+    operator std::string() const {
+        return "(" + std::to_string(x) + ", " + std::to_string(y) + ")";
+    }
+};
+
+int main() {
+    Point p(1, 2);
+    std::cout << std::string(p) << std::endl;  // Outputs: "(1, 2)"
+    return 0;
 }
 ```
 
@@ -214,6 +286,76 @@ func main() {
   p := &Point{Data: [][]int{{11, 22}, {33, 44}}}
   p.SetAt(1, 1, 55)
   fmt.Println(p.GetAt(0, 1))  // Outputs: 22
+}
+```
+
+##### Rust (version >=0.x.x)
+
+TODO: LLM Generated, TODO: verify code
+
+```rust
+use std::ops::{Index, IndexMut};
+
+struct Point {
+    data: Vec<Vec<i32>>,
+}
+
+// Implement Index trait for reading
+impl Index<(usize, usize)> for Point {
+    type Output = i32;
+
+    fn index(&self, idx: (usize, usize)) -> &Self::Output {
+        &self.data[idx.0][idx.1]
+    }
+}
+
+// Implement IndexMut trait for writing
+impl IndexMut<(usize, usize)> for Point {
+    fn index_mut(&mut self, idx: (usize, usize)) -> &mut Self::Output {
+        &mut self.data[idx.0][idx.1]
+    }
+}
+
+fn main() {
+    let mut p = Point {
+        data: vec![vec![11, 22], vec![33, 44]],
+    };
+    p[(1, 1)] = 55;
+    println!("{}", p[(0, 1)]);  // Outputs: 22
+}
+```
+
+##### C++ (version >=0.x.x)
+
+TODO: LLM Generated, TODO: verify code
+
+```cpp
+#include <iostream>
+#include <vector>
+
+class Point {
+private:
+    std::vector<std::vector<int>> data;
+
+public:
+    Point(const std::vector<std::vector<int>>& data) : data(data) {}
+
+    // Getter with operator overloading
+    int operator()(int x, int y) const {
+        return data[x][y];
+    }
+
+    // Setter with operator overloading
+    int& operator()(int x, int y) {
+        return data[x][y];
+    }
+};
+
+int main() {
+    Point p({{11, 22}, {33, 44}});
+    p(1, 1) = 55;
+    std::cout << p(0, 1) << std::endl;  // Outputs: 22
+    return 0;
 }
 ```
 
@@ -350,6 +492,96 @@ func UseTraitFunction() {
   c1 := NewColor(0, 0, 255)
   c2 := NewColor(0, 255, 255)
   result := JoinCyan(c1, c2)
+}
+```
+
+##### Rust (version >=0.x.x)
+
+TODO: LLM Generated, TODO: verify code
+
+```rust
+// Define trait
+trait ColorTrait {
+    fn get_cmyk(&self) -> (i32, i32, i32, i32);
+}
+
+// Implementation
+struct Color {
+    r: i32,
+    g: i32,
+    b: i32,
+    cmyk: (i32, i32, i32, i32),
+}
+
+impl Color {
+    fn new(r: i32, g: i32, b: i32) -> Self {
+        // Calculate CMYK from RGB (simplified)
+        let k = 100 - (r.max(g).max(b) * 100 / 255);
+        Color { r, g, b, cmyk: (0, 0, 0, k) }
+    }
+}
+
+impl ColorTrait for Color {
+    fn get_cmyk(&self) -> (i32, i32, i32, i32) {
+        self.cmyk
+    }
+}
+
+// Function accepts any type that implements ColorTrait
+fn join_cyan<T: ColorTrait>(c1: &T, c2: &T) -> i32 {
+    let cmyk1 = c1.get_cmyk();
+    let cmyk2 = c2.get_cmyk();
+    cmyk1.0 + cmyk2.0
+}
+
+fn use_trait_function() {
+    let c1 = Color::new(0, 0, 255);
+    let c2 = Color::new(0, 255, 255);
+    let result = join_cyan(&c1, &c2);
+}
+```
+
+##### C++ (version >=0.x.x)
+
+TODO: LLM Generated, TODO: verify code
+
+```cpp
+#include <array>
+
+// Define trait/interface as a concept (C++20)
+template <typename T>
+concept ColorTrait = requires(T t) {
+    { t.getCMYK() } -> std::convertible_to<std::array<int, 4>>;
+};
+
+// Implementation
+class Color {
+private:
+    int r, g, b;
+    std::array<int, 4> cmyk;
+
+public:
+    Color(int r, int g, int b) : r(r), g(g), b(b) {
+        // Calculate CMYK from RGB (simplified)
+        int k = 100 - std::max({r, g, b}) * 100 / 255;
+        cmyk = {0, 0, 0, k};
+    }
+
+    std::array<int, 4> getCMYK() const {
+        return cmyk;
+    }
+};
+
+// Function accepts any type that satisfies ColorTrait
+template <ColorTrait T>
+int joinCyan(const T& c1, const T& c2) {
+    return c1.getCMYK()[0] + c2.getCMYK()[0];
+}
+
+void useTraitFunction() {
+    Color c1(0, 0, 255);
+    Color c2(0, 255, 255);
+    int result = joinCyan(c1, c2);
 }
 ```
 
@@ -569,5 +801,149 @@ func main() {
   var sb strings.Builder
   c3.WriteTo(&sb)
   fmt.Println(sb.String())
+}
+```
+
+##### Rust (version >=0.x.x)
+
+TODO: LLM Generated, TODO: verify code
+
+```rust
+use std::fmt;
+use std::io::{self, Write};
+
+// Define traits
+trait Writable {
+    fn write_to<W: Write>(&self, writer: &mut W) -> io::Result<()>;
+}
+
+// Implementation
+struct Complex {
+    re: f64,
+    im: f64,
+}
+
+impl fmt::Display for Complex {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        if self.im < 0.0 {
+            write!(f, "({} - {}i)", self.re, -self.im)
+        } else {
+            write!(f, "({} + {}i)", self.re, self.im)
+        }
+    }
+}
+
+impl Writable for Complex {
+    fn write_to<W: Write>(&self, writer: &mut W) -> io::Result<()> {
+        write!(writer, "(")?;
+        write!(writer, "{}", self.re)?;
+
+        if self.im < 0.0 {
+            write!(writer, " - {}", -self.im)?;
+        } else {
+            write!(writer, " + {}", self.im)?;
+        }
+
+        write!(writer, "i)")?;
+        Ok(())
+    }
+}
+
+fn main() {
+    let c3 = Complex { re: 3.14159, im: -2.71828 };
+    println!("c3 = {}", c3);  // Uses Display
+
+    let mut buffer = Vec::new();
+    c3.write_to(&mut buffer).unwrap();
+    println!("{}", String::from_utf8(buffer).unwrap());
+}
+```
+
+##### C++ (version >=0.x.x)
+
+TODO: LLM Generated, TODO: verify code
+
+```cpp
+#include <iostream>
+#include <sstream>
+#include <string>
+
+// Define interfaces
+class Writer {
+public:
+    virtual void write(const std::string& s) = 0;
+    virtual ~Writer() = default;
+};
+
+class Stringable {
+public:
+    virtual std::string toString() const = 0;
+    virtual ~Stringable() = default;
+};
+
+class Writable {
+public:
+    virtual void writeTo(Writer& writer) const = 0;
+    virtual ~Writable() = default;
+};
+
+// Implementation
+class Complex : public Stringable, public Writable {
+private:
+    double re, im;
+
+public:
+    Complex(double re, double im) : re(re), im(im) {}
+
+    std::string toString() const override {
+        std::ostringstream oss;
+        if (im < 0) {
+            oss << "(" << re << " - " << -im << "i)";
+        } else {
+            oss << "(" << re << " + " << im << "i)";
+        }
+        return oss.str();
+    }
+
+    void writeTo(Writer& writer) const override {
+        writer.write("(");
+        writer.write(std::to_string(re));
+
+        if (im < 0) {
+            writer.write(" - ");
+            writer.write(std::to_string(-im));
+        } else {
+            writer.write(" + ");
+            writer.write(std::to_string(im));
+        }
+
+        writer.write("i)");
+    }
+};
+
+// String writer implementation
+class StringWriter : public Writer {
+private:
+    std::string content;
+
+public:
+    void write(const std::string& s) override {
+        content += s;
+    }
+
+    std::string getContent() const {
+        return content;
+    }
+};
+
+int main() {
+    Complex c3(3.14159, -2.71828);
+    std::cout << "c3 = " << c3.toString() << std::endl;
+
+    StringWriter writer;
+    c3.writeTo(writer);
+    std::cout << writer.getContent() << std::endl;
+
+    return 0;
 }
 ```

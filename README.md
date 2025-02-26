@@ -61,6 +61,18 @@ interface Color {
 
 ---
 
+## Context
+
+- **LLM Prompt to generate other language examples**
+```
+- Read the mojo programming language example for each section.
+- Replace all the TODO statements inside code blocks with examples of the specified programming language.
+- Do not replace the mojo examples.
+- Do not change the format or structure of the content.
+```
+
+---
+
 ## Contribution Guideline
 
 _Draft_

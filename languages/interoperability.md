@@ -13,7 +13,12 @@ magic add "python>=311,<3.13" "pygame>=2.6.1,<3"
 ##### Python (version >=0.x.x)
 
 ```py
-# TODO:
+import numpy as np
+
+def main():
+    ar = np.arange(15).reshape(3, 5)
+    print(ar)
+    print(ar.shape)
 ```
 
 ##### Mojo (version >=0.x.x)
@@ -28,24 +33,24 @@ def main():
     print(ar.shape)
 ```
 
-##### TypeScript (version >=0.x.x)
-
-```ts
-// TODO:
-```
-
-##### Go (version >=0.x.x)
-
-```go
-// TODO:
-```
-
 #### Interate over a python collections
 
 ##### Python (version >=0.x.x)
 
 ```py
-# TODO:
+# List iteration
+py_list = [1, 2, 3]
+for item in py_list:
+    print(item)
+
+# Dictionary iteration
+py_dict = {'x': 1, 'y': 2}
+for key in py_dict:
+    print(key, py_dict[key])
+
+# Dictionary items iteration
+for key, value in py_dict.items():
+    print(key, value)
 ```
 
 ##### Mojo (version >=0.x.x)
@@ -63,18 +68,6 @@ for py_key in py_dict:
 
 for py_tuple in py_dict.items():
     print(py_tuple[0], py_tuple[1])
-```
-
-##### TypeScript (version >=0.x.x)
-
-```ts
-// TODO:
-```
-
-##### Go (version >=0.x.x)
-
-```go
-// TODO:
 ```
 
 #### Assign / pass by value / reference
