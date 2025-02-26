@@ -43,6 +43,22 @@ type ColorTrait interface {
 }
 ```
 
+##### Rust (version >=0.x.x)
+
+TODO: LLM Generated, TODO: verify code
+
+```rust
+
+```
+
+##### C++ (version >=0.x.x)
+
+TODO: LLM Generated, TODO: verify code
+
+```cpp
+
+```
+
 #### Conform struct to a string trait
 
 ##### Python (version >=0.x.x)
@@ -115,6 +131,22 @@ func main() {
   p := Point{1, 2}
   fmt.Println(p)  // Outputs: "(1, 2)"
 }
+```
+
+##### Rust (version >=0.x.x)
+
+TODO: LLM Generated, TODO: verify code
+
+```rust
+
+```
+
+##### C++ (version >=0.x.x)
+
+TODO: LLM Generated, TODO: verify code
+
+```cpp
+
 ```
 
 #### Implement index access trait
@@ -215,6 +247,22 @@ func main() {
   p.SetAt(1, 1, 55)
   fmt.Println(p.GetAt(0, 1))  // Outputs: 22
 }
+```
+
+##### Rust (version >=0.x.x)
+
+TODO: LLM Generated, TODO: verify code
+
+```rust
+
+```
+
+##### C++ (version >=0.x.x)
+
+TODO: LLM Generated, TODO: verify code
+
+```cpp
+
 ```
 
 #### Conform function argument type to a trait
@@ -351,6 +399,22 @@ func UseTraitFunction() {
   c2 := NewColor(0, 255, 255)
   result := JoinCyan(c1, c2)
 }
+```
+
+##### Rust (version >=0.x.x)
+
+TODO: LLM Generated, TODO: verify code
+
+```rust
+
+```
+
+##### C++ (version >=0.x.x)
+
+TODO: LLM Generated, TODO: verify code
+
+```cpp
+
 ```
 
 #### Conform to a writeable trait
@@ -570,4 +634,20 @@ func main() {
   c3.WriteTo(&sb)
   fmt.Println(sb.String())
 }
+```
+
+##### Rust (version >=0.x.x)
+
+TODO: LLM Generated, TODO: verify code
+
+```rust
+
+```
+
+##### C++ (version >=0.x.x)
+
+TODO: LLM Generated, TODO: verify code
+
+```cpp
+
 ```
