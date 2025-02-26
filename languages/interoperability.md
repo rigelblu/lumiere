@@ -76,3 +76,26 @@ for py_tuple in py_dict.items():
 ```go
 // TODO:
 ```
+
+#### Assign / pass by value / reference
+
+**Interoperability**
+- Mojo's object type is designed to support Python's style of argument passing for functions, which is different from the other types in Mojo
+- Python's argument-passing convention is called "pass by object reference." This means when you pass a variable to a Python function, you actually pass a reference to the object, as a value (so it's not strictly reference semantics)
+- Passing the object reference "as a value" means that the argument name is just a container that acts like an alias to the original object. If you reassign the argument inside the function, it does not affect the caller's original value. However, if you modify the object itself (such as call append() on a list), the change is visible to the original object outside the function
+
+```py
+# Example: mutate object
+def modify_list(l):                      # l = ar, ar = [1, 2]
+    l.append(3)                          # l = ar, ar = [1, 2, 3]
+
+ar = [1, 2]                              # ar = [1, 2]
+modify_list(ar)                          # ar = [1, 2, 3]
+
+# Example: change reference
+def change_list(l):                      # l = ar,     ar = [1, 2]
+    l = [3, 4]                           # l = [3, 4], ar = [1, 2]
+
+ar = [1, 2]                              # ar = [1, 2]
+change_list(ar)                          # ar = [1, 2]
+```
