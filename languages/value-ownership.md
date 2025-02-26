@@ -80,13 +80,40 @@ const PI = 3.14159
 ##### Rust (version >=0.x.x)
 
 ```rust
-// TODO:
+// Variables are immutable by default in Rust
+let name = "John"; // Immutable variable
+// name = "Jane"; // Error: cannot assign twice to immutable variable
+
+// Use the `mut` keyword to make a variable mutable
+let mut count = 0; // Mutable variable
+count += 1; // This is allowed
+
+// Function parameters can also be declared as mutable
+fn increment(mut number: i32) {
+    number += 1; // Modifies the local copy
+}
 ```
 
 ##### C++ (version >=0.x.x)
 
 ```cpp
-// TODO:
+// Variables are mutable by default
+int count = 0;
+count = 1; // Allowed
+
+// Use const to make variables immutable
+const double PI = 3.14159;
+// PI = 3.0; // Error: cannot modify const variable
+
+// For function parameters:
+void updateValue(int value) {
+    value = 42; // Modifies the local copy
+}
+
+// Using references for mutation
+void updateValueByRef(int& value) {
+    value = 42; // Modifies the original value
+}
 ```
 
 #### Define a value as passed by value or by reference
@@ -171,13 +198,58 @@ modifyPointer(&x)  // x is now 42
 ##### Rust (version >=0.x.x)
 
 ```rust
-// TODO:
+// By value (ownership is transferred)
+fn set_point_x(x: i32) {
+    // x is owned by this function
+}
+
+// By reference (borrowing)
+fn get_name(name: &String) -> usize {
+    name.len() // Returns length of the string
+}
+
+// By mutable reference
+fn update_name(name: &mut String) {
+    name.push_str(" Smith"); // Modifies the original
+}
+
+fn main() {
+    let x = 5;
+    set_point_x(x); // x is still usable here because i32 implements Copy
+
+    let name = String::from("John");
+    let len = get_name(&name); // Immutable borrow
+
+    let mut full_name = String::from("Jane");
+    update_name(&mut full_name); // Mutable borrow
+}
 ```
 
 ##### C++ (version >=0.x.x)
 
 ```cpp
-// TODO:
+// By value (creates a copy)
+void setPointX(int x) {
+    x = 10; // Modifies the local copy only
+}
+
+// By reference (can modify original)
+void setName(std::string& name) {
+    name += " Smith"; // Modifies the original
+}
+
+// By const reference (cannot modify)
+void printName(const std::string& name) {
+    std::cout << name << std::endl;
+    // name = "Bob"; // Error: cannot modify const reference
+}
+
+// By pointer
+void updateValue(int* ptr) {
+    if (ptr) {
+        *ptr = 42; // Modifies the original value
+    }
+}
 ```
 
 #### Define a value as ?
@@ -276,13 +348,62 @@ func (p Point) Dump() {
 ##### Rust (version >=0.x.x)
 
 ```rust
-// TODO:
+struct Point {
+    x: i32,
+}
+
+impl Point {
+    // Constructor
+    fn new(x: i32) -> Self {
+        Point { x }
+    }
+
+    // Clone implementation (explicit copying)
+    fn clone(&self) -> Self {
+        Point { x: self.x }
+    }
+
+    // Dump method
+    fn dump(&self) {
+        println!("{}", self.x);
+    }
+}
+
+// Derive automatic implementation of Clone and Debug traits
+#[derive(Clone, Debug)]
+struct AutoPoint {
+    x: i32,
+}
 ```
 
 ##### C++ (version >=0.x.x)
 
 ```cpp
-// TODO:
+class Point {
+private:
+    int x;
+
+public:
+    // Constructor
+    Point(int x) : x(x) {}
+
+    // Copy constructor
+    Point(const Point& other) : x(other.x) {
+        std::cout << "Copy constructor called" << std::endl;
+    }
+
+    // Copy assignment operator
+    Point& operator=(const Point& other) {
+        if (this != &other) {
+            x = other.x;
+        }
+        return *this;
+    }
+
+    void dump() const {
+        std::cout << x << std::endl;
+    }
+};
 ```
 
 #### Assign / pass by value (value semantics)
@@ -293,7 +414,32 @@ func (p Point) Dump() {
 - When you call a Python function and pass an object with a pointer to a heap-allocated value. Python actually gives that function a reference to your object, which allows the function to mutate the heap-allocated value
 
 ```py
-# TODO:
+# Python's value semantics for immutable types
+def add_one(num):
+    num = num + 1  # Creates a new object, doesn't modify original
+    return num
+
+# Example 1
+x = 1                # x = 1
+y = x                # y = 1, x = 1
+y += 1               # y = 2, x = 1
+
+# Example 2
+a = 1                # a = 1
+result = add_one(a)  # result = 2, a = 1
+
+# Example 3 (with custom class)
+class Vector:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def __repr__(self):
+        return f"Vector({self.x}, {self.y})"
+
+def update_vector(vec):
+    vec = Vector(9, vec.y)  # Creates a new Vector
+    return vec
 ```
 
 ##### Mojo (version >=0.x.x)
@@ -339,25 +485,113 @@ fn add_two(d: Int):                           # d = c
 ##### TypeScript (version >=0.x.x)
 
 ```ts
-// TODO:
+// Example 1: Value semantics with primitive types
+let x = 1;                 // x = 1
+let y = x;                 // y = 1, x = 1
+y += 1;                    // y = 2, x = 1
+
+// Example 2: Function with primitive types
+function addOne(num: number): number {
+    return num + 1;        // Creates a new value
+}
+
+const a = 1;               // a = 1
+const result = addOne(a);  // result = 2, a = 1
+
+// Example 3: Value semantics with objects requires explicit copying
+interface Point {
+    x: number;
+    y: number;
+}
+
+function updatePoint(point: Point): Point {
+    // Create a new object to avoid modifying the original
+    return { ...point, x: 9 };
+}
 ```
 
 ##### Go (version >=0.x.x)
 
 ```go
-// TODO:
+// Example 1: Value semantics with basic types
+func main() {
+    x := 1              // x = 1
+    y := x              // y = 1, x = 1
+    y += 1              // y = 2, x = 1
+
+    // Example 2: Function with value semantics
+    a := 1              // a = 1
+    result := addOne(a) // result = 2, a = 1
+
+    // Example 3: Structs use value semantics by default
+    v := Point{1, 2}    // v = {1, 2}
+    newV := updatePoint(v) // newV = {9, 2}, v = {1, 2}
+}
+
+func addOne(num int) int {
+    return num + 1      // Creates a new value
+}
+
+type Point struct {
+    X int
+    Y int
+}
+
+func updatePoint(p Point) Point {
+    newP := p           // Creates a copy
+    newP.X = 9
+    return newP
+}
 ```
 
 ##### Rust (version >=0.x.x)
 
 ```rust
-// TODO:
+// Example 1: Value semantics with Copy types
+fn main() {
+    let x = 1;            // x = 1
+    let y = x;            // y = 1, x = 1 (copy is made because i32 implements Copy)
+    let mut z = y;        // z = 1
+    z += 1;               // z = 2, y = 1, x = 1
+
+    // Example 2: Function with value semantics
+    let a = 1;            // a = 1
+    let result = add_one(a); // result = 2, a = 1 (a is copied)
+}
+
+fn add_one(num: i32) -> i32 {
+    num + 1  // Returns a new value
+}
+
+fn update_point(mut p: Point) -> Point {
+    p.x = 9;  // Modifies the local copy
+    p         // Returns the modified copy
+}
 ```
 
 ##### C++ (version >=0.x.x)
 
 ```cpp
-// TODO:
+// Example 1: Value semantics with Copy types
+fn main() {
+    let x = 1;            // x = 1
+    let y = x;            // y = 1, x = 1 (copy is made because i32 implements Copy)
+    let mut z = y;        // z = 1
+    z += 1;               // z = 2, y = 1, x = 1
+
+    // Example 2: Function with value semantics
+    let a = 1;            // a = 1
+    let result = add_one(a); // result = 2, a = 1 (a is copied)
+}
+
+fn add_one(num: i32) -> i32 {
+    num + 1  // Returns a new value
+}
+
+fn update_point(mut p: Point) -> Point {
+    p.x = 9;  // Modifies the local copy
+    p         // Returns the modified copy
+}
 ```
 
 #### Assign / pass by referece and allow mutating (reference semantics)
@@ -365,7 +599,30 @@ fn add_two(d: Int):                           # d = c
 ##### Python (version >=0.x.x)
 
 ```py
-# TODO:
+# Example 1: Mutating through reference (mutable objects)
+def add(x, y):
+    x.append(y)  # Modifies the original list
+
+a = [1, 2]      # a = [1, 2]
+b = 3           # b = 3
+add(a, b)       # a = [1, 2, 3], b = 3
+
+# Example 2: Working with custom objects
+class List:
+    def __init__(self, *items):
+        self.items = list(items)
+
+    def append(self, item):
+        self.items.append(item)
+
+    def __repr__(self):
+        return f"List({', '.join(map(str, self.items))})"
+
+def mutate(l):
+    l.append(5)  # Modifies the original list
+
+list_obj = List(1, 2)  # list_obj = List(1, 2)
+mutate(list_obj)       # list_obj = List(1, 2, 5)
 ```
 
 ##### Mojo (version >=0.x.x)
@@ -416,25 +673,147 @@ fn invalid_access():
 ##### TypeScript (version >=0.x.x)
 
 ```ts
-// TODO:
+// Example 1: Objects are passed by reference
+function add(x: number[], y: number): void {
+    x.push(y);  // Modifies the original array
+}
+
+const a: number[] = [1, 2];  // a = [1, 2]
+const b: number = 3;         // b = 3
+add(a, b);                   // a = [1, 2, 3], b = 3
+
+// Example 2: Working with custom classes
+class List<T> {
+    private items: T[];
+
+    constructor(...items: T[]) {
+        this.items = items;
+    }
+
+    append(item: T): void {
+        this.items.push(item);
+    }
+
+    toString(): string {
+        return `List(${this.items.join(", ")})`;
+    }
+}
+
+function mutate(l: List<number>): void {
+    l.append(5);  // Modifies the original list
+}
 ```
 
 ##### Go (version >=0.x.x)
 
 ```go
-// TODO:
+// Example 1: Passing by pointer to allow mutation
+func add(x *[]int, y int) {
+    *x = append(*x, y)  // Modifies the original slice
+}
+
+func main() {
+    a := []int{1, 2}    // a = [1, 2]
+    b := 3              // b = 3
+    add(&a, b)          // a = [1, 2, 3], b = 3
+
+    // Example 2: Working with custom types
+    list := NewList(1, 2)  // list = List{1, 2}
+    mutate(&list)          // list = List{1, 2, 5}
+}
+
+// Example 2 implementation
+type List struct {
+    Items []int
+}
+
+func NewList(items ...int) List {
+    return List{Items: items}
+}
+
+func mutate(l *List) {
+    l.Items = append(l.Items, 5)  // Modifies the original list
+}
 ```
 
 ##### Rust (version >=0.x.x)
 
 ```rust
-// TODO:
+// Example 1: Passing by mutable reference
+fn add(x: &mut Vec<i32>, y: i32) {
+    x.push(y);  // Modifies the original vector
+}
+
+fn main() {
+    let mut a = vec![1, 2];  // a = [1, 2]
+    let b = 3;               // b = 3
+    add(&mut a, b);          // a = [1, 2, 3], b = 3
+
+    // Example 2: Working with custom structs
+    #[derive(Debug)]
+    struct List {
+        items: Vec<i32>,
+    }
+
+    impl List {
+        fn new(items: Vec<i32>) -> Self {
+            List { items }
+        }
+
+        fn append(&mut self, item: i32) {
+            self.items.push(item);
+        }
+    }
+
+    fn mutate(l: &mut List) {
+        l.append(5);  // Modifies the original list
+    }
+
+    let mut list = List::new(vec![1, 2]);  // list = List { items: [1, 2] }
+    mutate(&mut list);                     // list = List { items: [1, 2, 5] }
+}
 ```
 
 ##### C++ (version >=0.x.x)
 
 ```cpp
-// TODO:
+#include <iostream>
+#include <vector>
+#include <string>
+
+// Example 1: Passing by reference to allow mutation
+void add(std::vector<int>& x, int y) {
+    x.push_back(y);  // Modifies the original vector
+}
+
+int main() {
+    std::vector<int> a = {1, 2};  // a = [1, 2]
+    int b = 3;                    // b = 3
+    add(a, b);                    // a = [1, 2, 3], b = 3
+
+    // Example 2: Working with custom classes
+    List list(1, 2);              // list = List(1, 2)
+    mutate(list);                 // list = List(1, 2, 5)
+
+    return 0;
+}
+
+// Example 2 implementation
+class List {
+private:
+    std::vector<int> items;
+
+public:
+    List(std::initializer_list<int> init) : items(init) {}
+
+    void append(int item) {
+        items.push_back(item);
+    }
+};
+
+void mutate(List& l) {
+    l.append(5);  // Modifies the original list
+}
 ```
 
 #### Assign / pass by referece, allowing mutating, and transfer ownership (reference semantics)
@@ -452,7 +831,29 @@ fn invalid_access():
 ##### Python (version >=0.x.x)
 
 ```py
-# TODO:
+# Python doesn't have explicit ownership transfer like Mojo
+# but we can simulate similar behavior
+
+# Example 1: Function without "ownership transfer"
+def my_function1():
+    message = "Hello"           # message = "Hello"
+    take_text1(message)         # message = "Hello"
+    print(f"After: {message}")  # Prints "After: Hello"
+
+def take_text1(text):
+    text = text + "!"           # Creates a new string, doesn't modify original
+    print(f"In function: {text}")  # Prints "In function: Hello!"
+
+# Example 2: Simulating "ownership transfer" by returning modified value
+def my_function2():
+    message = "Hello"                  # message = "Hello"
+    message = take_text2(message)      # message = "Hello!"
+    print(f"After: {message}")         # Prints "After: Hello!"
+
+def take_text2(text):
+    text = text + "!"                  # text = "Hello!"
+    print(f"In function: {text}")      # Prints "In function: Hello!"
+    return text                        # Return the modified value
 ```
 
 ##### Mojo (version >=0.x.x)
@@ -497,14 +898,130 @@ fn fn_example(a_in: Int, mut b: Int, owned c: object):
 ##### TypeScript (version >=0.x.x)
 
 ```ts
-// TODO:
+// TypeScript doesn't have explicit ownership transfer like Mojo
+// but we can simulate similar behavior
+
+// Example 1: Function without "ownership transfer"
+function myFunction1(): void {
+    let message: string = "Hello";       // message = "Hello"
+    takeText1(message);                  // message = "Hello"
+    console.log(`After: ${message}`);    // Prints "After: Hello"
+}
+
+function takeText1(text: string): void {
+    text = text + "!";                   // Creates a new string, doesn't modify original
+    console.log(`In function: ${text}`); // Prints "In function: Hello!"
+}
+
+// Example 2: Simulating "ownership transfer" by returning modified value
+function myFunction2(): void {
+    let message: string = "Hello";             // message = "Hello"
+    message = takeText2(message);              // message = "Hello!"
+    console.log(`After: ${message}`);          // Prints "After: Hello!"
+}
+
+function takeText2(text: string): string {
+    text = text + "!";                         // text = "Hello!"
+    console.log(`In function: ${text}`);       // Prints "In function: Hello!"
+    return text;                               // Return the modified value
+}
 ```
 
 ##### Go (version >=0.x.x)
 
 ```go
-// TODO:
+package main
+
+import "fmt"
+
+// Example 1: Function without "ownership transfer"
+func myFunction1() {
+    message := "Hello"                   // message = "Hello"
+    takeText1(message)                   // message = "Hello"
+    fmt.Printf("After: %s\n", message)   // Prints "After: Hello"
+}
+
+func takeText1(text string) {
+    text = text + "!"                    // Creates a new string, doesn't modify original
+    fmt.Printf("In function: %s\n", text) // Prints "In function: Hello!"
+}
+
+// Example 2: Simulating "ownership transfer" by returning modified value
+func myFunction2() {
+    message := "Hello"                     // message = "Hello"
+    message = takeText2(message)           // message = "Hello!"
+    fmt.Printf("After: %s\n", message)     // Prints "After: Hello!"
+}
+
+func takeText2(text string) string {
+    text = text + "!"                      // text = "Hello!"
+    fmt.Printf("In function: %s\n", text)  // Prints "In function: Hello!"
+    return text                            // Return the modified value
+}
 ```
+
+##### Rust (version >=0.x.x)
+
+```rust
+// Example 1: Without ownership transfer
+fn my_function1() {
+    let message = String::from("Hello");    // message = "Hello"
+    take_text1(&message);                   // message = "Hello"
+    println!("After: {}", message);         // Prints "After: Hello"
+}
+
+fn take_text1(text: &String) {
+    let modified = format!("{}!", text);    // Creates a new string
+    println!("In function: {}", modified);  // Prints "In function: Hello!"
+}
+
+// Example 2: With ownership transfer
+fn my_function2() {
+    let message = String::from("Hello");    // message = "Hello"
+    let message = take_text2(message);      // Original message is moved, new message = "Hello!"
+    println!("After: {}", message);         // Prints "After: Hello!"
+}
+
+fn take_text2(mut text: String) -> String {
+    text.push('!');                         // text = "Hello!"
+    println!("In function: {}", text);      // Prints "In function: Hello!"
+    text                                    // Return ownership of the modified text
+}
+```
+
+##### C++ (version >=0.x.x)
+
+```cpp
+#include <iostream>
+#include <string>
+#include <memory>
+
+// Example 1: Without ownership transfer
+void myFunction1() {
+    std::string message = "Hello";          // message = "Hello"
+    takeText1(message);                     // message = "Hello"
+    std::cout << "After: " << message << std::endl;  // Prints "After: Hello"
+}
+
+void takeText1(const std::string& text) {
+    std::string modified = text + "!";      // Creates a new string
+    std::cout << "In function: " << modified << std::endl;  // Prints "In function: Hello!"
+}
+
+// Example 2: With ownership transfer using move semantics
+void myFunction2() {
+    std::string message = "Hello";               // message = "Hello"
+    message = takeText2(std::move(message));     // Moves message in, assigns new value
+    std::cout << "After: " << message << std::endl;  // Prints "After: Hello!"
+}
+
+std::string takeText2(std::string text) {
+    text.append("!");                            // text = "Hello!"
+    std::cout << "In function: " << text << std::endl;  // Prints "In function: Hello!"
+    return text;                                // Return the modified value
+}
+```
+
 
 ### TODO
 
