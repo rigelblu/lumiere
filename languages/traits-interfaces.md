@@ -84,9 +84,16 @@ trait ColorTrait {
 }
 ```
 
-##### C++ (version >=0.x.x)
+##### C++
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "c++",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```cpp
 class ColorTrait {
@@ -222,9 +229,16 @@ fn main() {
 }
 ```
 
-##### C++ (version >=0.x.x)
+##### C++
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "c++",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```cpp
 #include <iostream>
@@ -415,9 +429,16 @@ fn main() {
 }
 ```
 
-##### C++ (version >=0.x.x)
+##### C++
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "c++",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```cpp
 #include <iostream>
@@ -661,9 +682,16 @@ fn use_trait_function() {
 }
 ```
 
-##### C++ (version >=0.x.x)
+##### C++
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "c++",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```cpp
 #include <array>
@@ -1009,9 +1037,16 @@ fn main() {
 }
 ```
 
-##### C++ (version >=0.x.x)
+##### C++
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "c++",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```cpp
 #include <iostream>

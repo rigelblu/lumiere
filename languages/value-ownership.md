@@ -133,7 +133,16 @@ fn increment(mut number: i32) {
 }
 ```
 
-##### C++ (version >=0.x.x)
+##### C++
+
+```json
+metadata {
+  "language": "c++",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```cpp
 // Variables are mutable by default
@@ -296,7 +305,16 @@ fn main() {
 }
 ```
 
-##### C++ (version >=0.x.x)
+##### C++
+
+```json
+metadata {
+  "language": "c++",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```cpp
 // By value (creates a copy)
@@ -478,7 +496,16 @@ struct AutoPoint {
 }
 ```
 
-##### C++ (version >=0.x.x)
+##### C++
+
+```json
+metadata {
+  "language": "c++",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```cpp
 class Point {
@@ -707,7 +734,16 @@ fn update_point(mut p: Point) -> Point {
 }
 ```
 
-##### C++ (version >=0.x.x)
+##### C++
+
+```json
+metadata {
+  "language": "c++",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```cpp
 // Example 1: Value semantics with Copy types
@@ -948,7 +984,16 @@ fn main() {
 }
 ```
 
-##### C++ (version >=0.x.x)
+##### C++
+
+```json
+metadata {
+  "language": "c++",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```cpp
 #include <iostream>
@@ -1199,7 +1244,16 @@ fn take_text2(mut text: String) -> String {
 }
 ```
 
-##### C++ (version >=0.x.x)
+##### C++
+
+```json
+metadata {
+  "language": "c++",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```cpp
 #include <iostream>
