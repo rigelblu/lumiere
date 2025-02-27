@@ -2,6 +2,15 @@
 
 ##### Mojo
 
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
+
 **Constraints:**
 - Mojo doesn't support the equivalent of a Python match or C switch statement for pattern matching and conditional execution
 **How it works:**
@@ -34,7 +43,16 @@ else:
     # code...
 ```
 
-##### Mojo (version >=x.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 year = 2025
@@ -111,7 +129,16 @@ if year != 2025: print("Not present")  # Inline code
 if not (year == 2025): print("Not present")  # Negation example
 ```
 
-##### Mojo (version >=x.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 if year < 2021: # code...skipped when condition is False
@@ -168,7 +195,16 @@ if false_func() and true_func():
     print("True result")
 ```
 
-##### Mojo (version >=x.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 # Either conditions
@@ -229,7 +265,16 @@ metadata {
 time = "future" if year > 2020 else "past"
 ```
 
-##### Mojo (version >=x.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 time = "future" if year > 2020 else "past"
@@ -282,7 +327,16 @@ year = 2025
 label = "current" if year == 2025 else "past or future"
 ```
 
-##### Mojo (version >=x.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 year = 2025

@@ -2,6 +2,15 @@
 
 ##### Mojo
 
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
+
 **How it Works:**
 - Mojo uses a third approach called "ownership" that relies on a collection of rules that programmers must follow when passing values. The rules ensure there is only one "owner" for a given value at a time. When a value's lifetime ends, Mojo calls its destructor, which is responsible for deallocating any heap memory that needs to be deallocated
 
@@ -42,7 +51,16 @@ def update_list(lst):
     lst.append(4)  # This modifies the original list
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 def setColor(mut color: String) -> None:
@@ -153,7 +171,16 @@ greeting = "hello"
 update_string(greeting)  # greeting is still "hello"
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 # By value
@@ -297,9 +324,18 @@ class Point:
         print(self.x)
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
+
+
 
 ```mojo
 struct Point:
@@ -472,7 +508,16 @@ def update_vector(vec):
     return vec
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 **What it does**
 - All function arguments use value semantics by default
@@ -664,7 +709,16 @@ list_obj = List(1, 2)  # list_obj = List(1, 2)
 mutate(list_obj)       # list_obj = List(1, 2, 5)
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 **What it does:**
 - Every value has only one owner at a time
@@ -904,7 +958,16 @@ def take_text2(text):
     return text                        # Return the modified value
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 # Example: don't transfer ownership

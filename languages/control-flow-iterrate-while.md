@@ -20,7 +20,16 @@ while n < 50:
     # code...
 ```
 
-##### Mojo (version >=x.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 n = 1
@@ -76,7 +85,16 @@ while n < 5:
     print(n)
 ```
 
-##### Mojo (version >=x.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 n = 0
@@ -136,7 +154,16 @@ while n < 5:
     print(n)
 ```
 
-##### Mojo (version >=x.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 n = 0
@@ -206,7 +233,16 @@ else:
     print("This won't print if loop is broken")
 ```
 
-##### Mojo (version >=x.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 **What it does:** the else clause executes after iterating over all of the elements in a collection
 **Constraints:** the else clause does not execute if a break or return statement terminates the while loop

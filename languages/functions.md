@@ -23,7 +23,16 @@ if __name__ == "__main__":
     main()
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 - **Convention:** put at end of file
 
@@ -100,7 +109,16 @@ def hello3(name: str) -> str:
 hello3("world")
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 - By default, the value is returned to the caller as an owned value
 - **Constraints:**
@@ -227,7 +245,16 @@ def hello4(name: str) -> str:
 hello3("world")
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 def hello1():
@@ -360,7 +387,16 @@ class StringBuilder:
 result = StringBuilder().append("Hello").append(" ").append("world").get()
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 def hello():
@@ -476,7 +512,16 @@ color1()  # name will be "blue"
 color1("green")
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 **Constraints:**
   - Must appear after required arguments
@@ -604,7 +649,16 @@ point1(z=1, x=2, y=3)
 point1(2, z=1, y=3)
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 def point1(x: Int, y: Int, z: Int):
@@ -725,7 +779,16 @@ point1(1, 2, 3)
 sum_all(1, 2, 3, 4)  # Returns 10
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 def point1(d1: Int, *d2: Int):
@@ -836,7 +899,16 @@ point1(1, "hello", "world")
 concat_strings("Pre-", "Hello", " ", "World")  # Returns "Pre-Hello World"
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 def point1(d1: Int, *d2: String):
@@ -945,7 +1017,16 @@ point1(x=10, y=20, z=30)
 config = create_config(True, host="localhost", port="8080")
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 - **Constraints**:
   - Always implicitly treated as if they were declared with the owned argument convention, and can't be declared otherwise
@@ -1097,7 +1178,16 @@ tag = get_name_tag("Judith")
 print(tag.name)
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 **What it is:**
 - The out argument convention identifies an uninitialized variable that the function must initialize.
@@ -1248,7 +1338,16 @@ result1 = add(1, 2)       # Returns 3
 result2 = add("a", "b")   # Returns "ab"
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 def add1(x: Int, y: Int) -> Int:

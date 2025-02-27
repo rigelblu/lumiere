@@ -33,7 +33,16 @@ c3 = """
 c4: str = "yellow"
 ```
 
-##### Mojo (version >=0.6.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 # Implicit string
@@ -123,7 +132,16 @@ for i in range(len(list)):
     print(list[i], end=", ")
 ```
 
-##### Mojo (version >=0.6.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 # Implicit
@@ -239,7 +257,16 @@ l2.append(5)    # Append an element to the list
 print(l2)
 ```
 
-##### Mojo (version >=0.6.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 var l2 = List[Int](1, 2, 3, 4)
@@ -335,7 +362,16 @@ for key, value in d.items():
     print(key, value)
 ```
 
-##### Mojo (version >=0.6.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 # Explicit
@@ -419,7 +455,16 @@ year, month, day = date
 day = date[2]
 ```
 
-##### Mojo (version >=0.6.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 # Explicit tuple
@@ -492,7 +537,16 @@ for color in c1:
     print("-", color)
 ```
 
-##### Mojo (version >=0.6.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 from collections import Set
@@ -574,7 +628,16 @@ def color() -> None:
     # code...
 ```
 
-##### Mojo (version >=0.6.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 # Initialize optional with value

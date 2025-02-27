@@ -39,7 +39,16 @@ from point import Point as Pt
 p = Pt(1, 2)
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 **What is it:** a module is a single file
 
@@ -197,7 +206,16 @@ p2 = Point(1, 1)
 line = Line(p1, p2)
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 **What to do:**
 - Compile package into a `.mojopkg` to share and is compatible across system architectures

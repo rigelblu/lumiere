@@ -25,7 +25,16 @@ print("Hello", end=" ")
 print("world")
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 print("Hellow world")
@@ -86,7 +95,16 @@ year = float(input("Enter the year: "))
 x, y = map(int, input("Enter two numbers separated by space: ").split())
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 var year: Int = input("What year is it")
@@ -178,7 +196,16 @@ finally:
     f.close()
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 f = open(input_file, "r)
@@ -292,7 +319,16 @@ with open("output_file.txt", "w") as f:
     f.writelines(line + "\n" for line in lines)
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 # TODO:

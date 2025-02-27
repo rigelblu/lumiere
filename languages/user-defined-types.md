@@ -20,7 +20,16 @@ ColorType = str
 c1: ColorType = "blue"
 ```
 
-##### Mojo (version >=0.4.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 alias ColorType = String
@@ -82,7 +91,16 @@ p1 = PointType(1, 2)
 x = p1.x
 ```
 
-##### Mojo (version >=0.4.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 - **Constraints**:
   - All fields must be declared upfront with a type. You can't add fields dynamically at run-time
@@ -208,7 +226,16 @@ class Point:
         return (self.x**2 + self.y**2) < (other.x**2 + other.y**2)
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 **Constraints:** The `Comparable` and `EqualityComparable` traits don't allow the comparison dunder methods to raise errors. Because using `def` to define a method implies that it can raise an error, you must use `fn` to implement the comparison methods declared by these traits.
 

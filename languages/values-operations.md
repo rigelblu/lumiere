@@ -21,7 +21,16 @@ name2: str                  # Define
 name3: str = "John"         # Define and initialize
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 # Implicit type
@@ -77,7 +86,16 @@ NAME = "John"
 PI = 3.14159
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 # TODO:
@@ -135,7 +153,16 @@ month, year = 6, 2023
 x += 5
 ```
 
-##### Mojo (version >=0.6.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 month, year = m, year + 1
@@ -239,7 +266,16 @@ c2 = "".join(["Color: ", "blue", "."])  # More efficient for multiple strings
 divider = "#" * 20
 ```
 
-##### Mojo (version >=0.6.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 n = 1
@@ -463,7 +499,16 @@ b <<= 1
 b >>= 1
 ```
 
-##### Mojo (version >=0.6.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 b = 1

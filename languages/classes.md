@@ -61,7 +61,16 @@ anonymous = Person.create_anonymous()
 print(anonymous.name)  # Anonymous
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 TODO: LLM Generated, TODO: verify code
 
