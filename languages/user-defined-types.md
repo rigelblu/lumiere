@@ -52,7 +52,16 @@ type ColorType = string;
 let c1: ColorType = "blue";
 ```
 
-##### Go (version >=1.x.x)
+##### Go
+
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 type ColorType string
@@ -187,7 +196,16 @@ const p2: PointType = { x: 1, y: 2 };
 let x = p1.x;
 ```
 
-##### Go (version >=1.x.x)
+##### Go
+
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 type PointType struct {
@@ -441,9 +459,16 @@ class Point {
 }
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Go doesn't support operator overloading

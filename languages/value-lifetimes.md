@@ -109,9 +109,16 @@ const p2 = p1.clone();            // Copying John -> Creating John
 p1.cleanup();                     // Manual cleanup
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 package main
@@ -240,9 +247,16 @@ const p1 = new Person("John");
 console.log(p1.name);  // John
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Go structs initialize with zero values by default
@@ -384,7 +398,16 @@ class ParametricRef
 }
 ```
 
-##### Go (version >=0.x.x)
+##### Go
+
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 package main

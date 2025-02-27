@@ -51,9 +51,16 @@ declare global {
 globalThis.globalVar = "I'm global";
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 package main
@@ -126,9 +133,16 @@ import * as file1 from '../pkg1/file1'
 // file1.PRIMARY will fail
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // ./pkg1/file1.go
@@ -214,9 +228,16 @@ const color = file1.PRIMARY
 import { PRIMARY } from '../pkg1/file1';
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // ./pkg1/file1.go
@@ -293,9 +314,16 @@ function myFunction() {
 // functionScoped is not accessible here
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 func myFunction() {

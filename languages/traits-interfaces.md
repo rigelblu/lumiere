@@ -56,9 +56,16 @@ interface ColorTrait {
 }
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 type ColorTrait interface {
@@ -164,9 +171,16 @@ class Point implements Stringable {
 console.log(String(new Point(1, 2)));  // Outputs: "(1, 2)"
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 import "fmt"
@@ -332,9 +346,16 @@ function main() {
 }
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 type Point struct {
@@ -544,9 +565,16 @@ function useTraitFunction() {
 }
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Define trait/interface
@@ -852,9 +880,16 @@ c3.writeTo(writer);
 console.log(writer.getContent());
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 import (

@@ -61,9 +61,16 @@ let name2: string;          // Define
 let name3: string = "John"; // Define and initialize
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Explicit type
@@ -129,9 +136,16 @@ interface Config {
 }
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Single constant
@@ -202,9 +216,16 @@ let [month, year] = [6, 2023];
 x += 5;
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 
 ```go
@@ -433,9 +454,16 @@ const c2 = `Color: ${blue}.`;  // Template literals
 const divider = "#".repeat(20);
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 n := 1
@@ -590,9 +618,16 @@ b >>= 1;
 b >>>= 1;         // Unsigned right shift assignment
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 b := 1

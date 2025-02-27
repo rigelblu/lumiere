@@ -93,9 +93,16 @@ const userReadOnly: User = { name: "John" };
 // userReadOnly.name = "Jane";  // Error: Cannot assign to read-only property
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Not built into language
@@ -230,9 +237,16 @@ let x = 10;
 modifyPrimitive(x);  // x is still 10
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Not built into language
@@ -398,9 +412,17 @@ class Point {
     }
 }
 ```
-##### Go (version >=0.x.x)
 
-TODO: LLM Generated, TODO: verify code
+##### Go
+
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Not built into language
@@ -617,7 +639,16 @@ function updatePoint(point: Point): Point {
 }
 ```
 
-##### Go (version >=0.x.x)
+##### Go
+
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Example 1: Value semantics with basic types
@@ -838,7 +869,16 @@ function mutate(l: List<number>): void {
 }
 ```
 
-##### Go (version >=0.x.x)
+##### Go
+
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Example 1: Passing by pointer to allow mutation
@@ -1088,7 +1128,16 @@ function takeText2(text: string): string {
 }
 ```
 
-##### Go (version >=0.x.x)
+##### Go
+
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 package main

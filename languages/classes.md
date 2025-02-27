@@ -150,9 +150,16 @@ const anonymous = Person.createAnonymous();
 console.log(anonymous.name);  // Anonymous
 ```
 
-##### Go (version >=1.16.0)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Go doesn't have traditional classes, uses structs and methods instead

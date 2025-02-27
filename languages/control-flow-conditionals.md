@@ -95,9 +95,16 @@ if (year <= 2025) {
 }
 ```
 
-##### Go (version >=x.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 year := 2025
@@ -174,9 +181,16 @@ if (year !== 2025) console.log("Not present");  // Inline code
 if (!(year === 2025)) console.log("Not present");  // Negation example
 ```
 
-##### Go (version >=x.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 if year < 2021 { fmt.Println("Past") }  // Inline code
@@ -253,9 +267,16 @@ if (falseFunc() && trueFunc()) {
 }
 ```
 
-##### Go (version >=x.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Either conditions
@@ -316,9 +337,16 @@ metadata {
 const time = year > 2020 ? "future" : "past";
 ```
 
-##### Go (version >=x.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 var time string
@@ -387,9 +415,16 @@ const year = 2025;
 const label = year === 2025 ? "current" : "past or future";
 ```
 
-##### Go (version >=x.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 year := 2025

@@ -85,9 +85,16 @@ for (let i = 0; i < 5; i++) {
 }
 ```
 
-##### Go (version >=x.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 for i := 0; i < 5; i++ {
@@ -181,9 +188,16 @@ for (let i = 0; i < colors.length; i++) {
 }
 ```
 
-##### Go (version >=x.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 colors := []string{"Blue", "Yellow"}
@@ -263,9 +277,16 @@ years.forEach(year => {
 });
 ```
 
-##### Go (version >=x.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Go doesn't have a built-in set type
@@ -374,9 +395,16 @@ for (const [key, value] of colorsMap.entries()) {
 }
 ```
 
-##### Go (version >=x.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 colors := map[string]string{
@@ -482,9 +510,16 @@ if (!hasBreak) {
 })();
 ```
 
-##### Go (version >=x.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Go doesn't have a direct for-else construct

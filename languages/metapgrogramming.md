@@ -54,7 +54,16 @@ metadata {
 // TODO:
 ```
 
-##### Go (version >=0.x.x)
+##### Go
+
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // TODO:

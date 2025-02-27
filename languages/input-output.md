@@ -63,9 +63,16 @@ console.error("Error message");
 console.warn("Warning message");
 ```
 
-##### Go (version >=1.16.0)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Basic print
@@ -146,9 +153,16 @@ rl.question('Enter your age: ', (answer) => {
 });
 ```
 
-##### Go (version >=1.16.0)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Using bufio scanner
@@ -272,9 +286,16 @@ async function readFile() {
 }
 ```
 
-##### Go (version >=1.16.0)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Read entire file at once
@@ -392,9 +413,16 @@ fs.promises.writeFile('output_file.txt', 'Hello, world!\n')
   });
 ```
 
-##### Go (version >=1.16.0)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 import (

@@ -85,9 +85,16 @@ let c3 = `
 let c4: string = "yellow";
 ```
 
-##### Go (version >=1.16.0)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Implicit string
@@ -209,9 +216,16 @@ for (let i = 0; i < list2.length; i++) {
 }
 ```
 
-##### Go (version >=1.16.0)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Implicit
@@ -333,9 +347,16 @@ l2.push(5);    // Append an element to the list
 console.log(l2);
 ```
 
-##### Go (version >=1.16.0)
+##### Go
 
-TODO: LLM Generated, verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 l2 := []int{1, 2, 3, 4}
@@ -433,9 +454,16 @@ for (const [key, value] of Object.entries(d)) {
 }
 ```
 
-##### Go (version >=1.16.0)
+##### Go
 
-TODO: LLM Generated, verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Explicit
@@ -527,9 +555,16 @@ let [year, month, day] = date;
 day = date[2];
 ```
 
-##### Go (version >=1.16.0)
+##### Go
 
-TODO: LLM Generated, verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Go doesn't have built-in tuples, but can use struct
@@ -616,9 +651,16 @@ for (const color of c1) {
 }
 ```
 
-##### Go (version >=1.16.0)
+##### Go
 
-TODO: LLM Generated, verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 ```go
 // Using maps to implement sets
 colors := map[string]bool{"blue": true, "yellow": true}
@@ -728,9 +770,16 @@ function color(): void {
 }
 ```
 
-##### Go (version >=1.16.0)
+##### Go
 
-TODO: LLM Generated, verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Initialize with value

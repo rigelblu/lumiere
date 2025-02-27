@@ -58,9 +58,16 @@ while (n < 50) {
 }
 ```
 
-##### Go (version >=x.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 n := 1
@@ -133,7 +140,16 @@ while (n < 5) {
 }
 ```
 
-##### Go (version >=x.x.x)
+##### Go
+
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 n := 0
@@ -209,9 +225,16 @@ while (n < 5) {
 }
 ```
 
-##### Go (version >=x.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 n := 0
@@ -312,9 +335,16 @@ if (!hasBreak) {
 }
 ```
 
-##### Go (version >=x.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Go doesn't have a direct while-else construct
