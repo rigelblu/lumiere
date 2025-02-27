@@ -73,9 +73,16 @@ type ColorTrait interface {
 }
 ```
 
-##### Rust (version >=0.x.x)
+##### Rust
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "rust"
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```rust
 trait ColorTrait {
@@ -207,9 +214,16 @@ func main() {
 }
 ```
 
-##### Rust (version >=0.x.x)
+##### Rust
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "rust"
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```rust
 struct Point {
@@ -393,9 +407,16 @@ func main() {
 }
 ```
 
-##### Rust (version >=0.x.x)
+##### Rust
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "rust"
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```rust
 use std::ops::{Index, IndexMut};
@@ -636,9 +657,16 @@ func UseTraitFunction() {
 }
 ```
 
-##### Rust (version >=0.x.x)
+##### Rust
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "rust"
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```rust
 // Define trait
@@ -982,9 +1010,16 @@ func main() {
 }
 ```
 
-##### Rust (version >=0.x.x)
+##### Rust
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "rust"
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```rust
 use std::fmt;

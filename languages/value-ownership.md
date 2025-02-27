@@ -116,7 +116,16 @@ const PI = 3.14159
 // PI = 3.0  // Compile error
 ```
 
-##### Rust (version >=0.x.x)
+##### Rust
+
+```json
+metadata {
+  "language": "rust"
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```rust
 // Variables are immutable by default in Rust
@@ -275,7 +284,16 @@ modifyValue(x)  // x is still 10
 modifyPointer(&x)  // x is now 42
 ```
 
-##### Rust (version >=0.x.x)
+##### Rust
+
+```json
+metadata {
+  "language": "rust"
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```rust
 // By value (ownership is transferred)
@@ -465,7 +483,16 @@ func (p Point) Dump() {
 }
 ```
 
-##### Rust (version >=0.x.x)
+##### Rust
+
+```json
+metadata {
+  "language": "rust"
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```rust
 struct Point {
@@ -709,7 +736,16 @@ func updatePoint(p Point) Point {
 }
 ```
 
-##### Rust (version >=0.x.x)
+##### Rust
+
+```json
+metadata {
+  "language": "rust"
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```rust
 // Example 1: Value semantics with Copy types
@@ -946,7 +982,16 @@ func mutate(l *List) {
 }
 ```
 
-##### Rust (version >=0.x.x)
+##### Rust
+
+```json
+metadata {
+  "language": "rust"
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```rust
 // Example 1: Passing by mutable reference
@@ -1215,7 +1260,16 @@ func takeText2(text string) string {
 }
 ```
 
-##### Rust (version >=0.x.x)
+##### Rust
+
+```json
+metadata {
+  "language": "rust"
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```rust
 // Example 1: Without ownership transfer
