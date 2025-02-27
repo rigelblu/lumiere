@@ -2,9 +2,16 @@
 
 #### Define a boolean
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Implicit boolean
@@ -14,7 +21,16 @@ flag1 = True
 flag2: bool = False
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 # Implicit boolean
@@ -24,9 +40,16 @@ flag1 = True
 var flag2: Bool = False
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Implicit boolean
@@ -36,9 +59,16 @@ let flag1 = true;
 let flag2: boolean = false;
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Implicit boolean
@@ -50,9 +80,16 @@ var flag2 bool = false
 
 #### Define a integer
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Implicit integer
@@ -62,7 +99,16 @@ year1 = 2025
 year2: int = 2025
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 # Implicit signed integer
@@ -82,9 +128,16 @@ var year9: UInt32: 2025
 var year10: UInt64: 2025
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Implicit integer
@@ -94,9 +147,16 @@ let year1 = 2025;
 let year2: number = 2025;
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Implicit integer
@@ -118,9 +178,16 @@ var year10 uint64 = 2025
 
 #### Define a real-number
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Implicit real-number
@@ -130,7 +197,16 @@ pi1 = 3.14
 pi2: float = 3.141
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 # Implicit real-number
@@ -142,9 +218,16 @@ var pi3: Float32 = 3.141
 var pi4: Float64 = 3.141
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Implicit real-number
@@ -154,9 +237,16 @@ let pi1 = 3.14;
 let pi2: number = 3.141;
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Implicit real-number
@@ -169,9 +259,16 @@ var pi3 float64 = 3.141
 
 #### Define a dynamic object that's inferred at runtime
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Dynamic type
@@ -184,15 +281,31 @@ dynamic_value: Any = "string"
 dynamic_value = 42  # Valid
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 # TODO
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Using 'any' type
@@ -204,9 +317,16 @@ let value2: unknown = "string";
 value2 = 42;  // Valid
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Using empty interface
@@ -220,9 +340,16 @@ value2 = 42  // Valid
 
 #### Define value as any type or any type range
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Using Any type
@@ -239,15 +366,31 @@ value2 = True  # Valid
 value3: int | str | bool = "string"
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 # TODO:
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Using any type
@@ -264,9 +407,16 @@ function process<T extends string | number>(value: T): T {
 }
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Using any (Go 1.18+)
@@ -292,9 +442,16 @@ func process(value any) {
 
 #### Convert type
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Converting between types
@@ -304,16 +461,32 @@ pi = float("3.14")
 is_valid = bool(1)  # True
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 year = String(2025)
 month = Int(String("02"))
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Converting between types
@@ -327,9 +500,16 @@ let hex = (42).toString(16);  // Convert to hex string
 let int_from_hex = parseInt("2a", 16);  // Convert from hex
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 import (

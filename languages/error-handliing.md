@@ -2,9 +2,16 @@
 
 #### Declare function can raise error
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 def hello4(name: str):
@@ -21,7 +28,16 @@ def fail(message: str) -> NoReturn:
     raise RuntimeError(message)
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 **Constraints:**
 - Doesn't support typed error conditions yet. All errors are instances of Error, and the only thing that distinguishes different error conditions is the error message that you provide
@@ -35,9 +51,16 @@ fn hello4(name: String) raises:
     return "Hello " + name
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Custom error type
@@ -68,9 +91,16 @@ function greet(name: string): string {
 }
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 import (
@@ -107,9 +137,16 @@ func validateName(name string) (string, error) {
 
 #### Handle raised errors
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 def handle_error():
@@ -135,7 +172,16 @@ def handle_error():
         content = f.read()
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 **Constraints:**
 - If `raises` keyword isn't included when defining a function with fn, then the function must explicitly handle any errors that might occur in code that it executes
@@ -153,9 +199,16 @@ fn handle_error():
         # code block to execute always...
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 function handleError(): void {
@@ -193,9 +246,16 @@ function handleError(): void {
 }
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 func handleError() {

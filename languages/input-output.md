@@ -2,9 +2,16 @@
 
 #### Print to console
 
-##### Python (version >=3.6.0)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Basic print
@@ -18,15 +25,31 @@ print("Hello", end=" ")
 print("world")
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 print("Hellow world")
 ```
 
-##### TypeScript (version >=4.0.0)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Basic console output
@@ -40,9 +63,16 @@ console.error("Error message");
 console.warn("Warning message");
 ```
 
-##### Go (version >=1.16.0)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Basic print
@@ -58,9 +88,16 @@ fmt.Print("world\n")
 
 #### Read from console
 
-##### Python (version >=3.6.0)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Basic input (returns string)
@@ -72,15 +109,31 @@ year = float(input("Enter the year: "))
 x, y = map(int, input("Enter two numbers separated by space: ").split())
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 var year: Int = input("What year is it")
 ```
 
-##### TypeScript (version >=4.0.0)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Browser environment
@@ -100,9 +153,16 @@ rl.question('Enter your age: ', (answer) => {
 });
 ```
 
-##### Go (version >=1.16.0)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Using bufio scanner
@@ -131,9 +191,16 @@ fmt.Scanf("%d", &year)
 
 #### Read from file
 
-##### Python (version >=3.6.0)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Using with statement (recommended)
@@ -157,7 +224,16 @@ finally:
     f.close()
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 f = open(input_file, "r)
@@ -167,9 +243,16 @@ finally:
     f.close()
 ```
 
-##### TypeScript (version >=4.0.0)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Node.js environment
@@ -203,9 +286,16 @@ async function readFile() {
 }
 ```
 
-##### Go (version >=1.16.0)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Read entire file at once
@@ -244,9 +334,16 @@ for scanner.Scan() {
 
 #### Write to file
 
-##### Python (version >=3.6.0)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Using with statement (recommended)
@@ -264,15 +361,31 @@ with open("output_file.txt", "w") as f:
     f.writelines(line + "\n" for line in lines)
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 # TODO:
 ```
 
-##### TypeScript (version >=4.0.0)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Node.js environment
@@ -300,9 +413,16 @@ fs.promises.writeFile('output_file.txt', 'Hello, world!\n')
   });
 ```
 
-##### Go (version >=1.16.0)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 import (

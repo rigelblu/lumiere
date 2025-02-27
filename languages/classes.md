@@ -2,9 +2,16 @@
 
 #### Define and use classes
 
-##### Python (version >=3.6.0)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Basic class definition
@@ -53,7 +60,17 @@ print(Person.get_species_info())
 anonymous = Person.create_anonymous()
 print(anonymous.name)  # Anonymous
 ```
-##### Mojo (version >=0.x.x)
+
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 TODO: LLM Generated, TODO: verify code
 
@@ -66,9 +83,17 @@ TODO: LLM Generated, TODO: verify code
 ```mojo
 # Not implemented. Use nearest alternative
 ```
-##### TypeScript (version >=4.0.0)
 
-TODO: LLM Generated, TODO: verify code
+##### TypeScript
+
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Basic class definition
@@ -125,9 +150,16 @@ const anonymous = Person.createAnonymous();
 console.log(anonymous.name);  // Anonymous
 ```
 
-##### Go (version >=1.16.0)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Go doesn't have traditional classes, uses structs and methods instead

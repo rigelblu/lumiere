@@ -2,9 +2,16 @@
 
 #### Define a trait
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 from abc import ABC, abstractmethod
@@ -15,7 +22,16 @@ class ColorTrait(ABC):
         pass
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 trait ColorTrait:
@@ -23,9 +39,16 @@ trait ColorTrait:
     def HSL(self): ...
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 interface ColorTrait {
@@ -33,9 +56,16 @@ interface ColorTrait {
 }
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 type ColorTrait interface {
@@ -43,9 +73,16 @@ type ColorTrait interface {
 }
 ```
 
-##### Rust (version >=0.x.x)
+##### Rust
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "rust"
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```rust
 trait ColorTrait {
@@ -54,9 +91,16 @@ trait ColorTrait {
 }
 ```
 
-##### C++ (version >=0.x.x)
+##### C++
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "c++",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```cpp
 class ColorTrait {
@@ -68,9 +112,16 @@ public:
 
 #### Conform struct to a string trait
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 class Point:
@@ -84,7 +135,16 @@ class Point:
 print(str(Point(1, 2)))  # Outputs: "(1, 2)"
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 @value
@@ -98,9 +158,16 @@ struct Point(StringableRaising):
 print(String(Point(1,2)))
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 interface Stringable {
@@ -118,9 +185,16 @@ class Point implements Stringable {
 console.log(String(new Point(1, 2)));  // Outputs: "(1, 2)"
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 import "fmt"
@@ -140,9 +214,16 @@ func main() {
 }
 ```
 
-##### Rust (version >=0.x.x)
+##### Rust
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "rust"
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```rust
 struct Point {
@@ -162,9 +243,16 @@ fn main() {
 }
 ```
 
-##### C++ (version >=0.x.x)
+##### C++
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "c++",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```cpp
 #include <iostream>
@@ -191,9 +279,16 @@ int main() {
 
 #### Implement index access trait
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 class Point:
@@ -216,7 +311,16 @@ def main():
     print(p[0, 1])  # Outputs: 22
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 @value
@@ -237,9 +341,16 @@ def main():
     print(p[0, 1])
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 class Point {
@@ -263,9 +374,16 @@ function main() {
 }
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 type Point struct {
@@ -289,9 +407,16 @@ func main() {
 }
 ```
 
-##### Rust (version >=0.x.x)
+##### Rust
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "rust"
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```rust
 use std::ops::{Index, IndexMut};
@@ -325,9 +450,16 @@ fn main() {
 }
 ```
 
-##### C++ (version >=0.x.x)
+##### C++
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "c++",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```cpp
 #include <iostream>
@@ -361,9 +493,16 @@ int main() {
 
 #### Conform function argument type to a trait
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 from typing import Protocol, Tuple
@@ -391,7 +530,16 @@ def use_trait_function():
     result = join_cyan(c1, c2)
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 # TODO: test if this works
@@ -414,9 +562,16 @@ fn use_trait_function():
     joinCyan(c1, c2)
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Define trait/interface
@@ -452,9 +607,16 @@ function useTraitFunction() {
 }
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Define trait/interface
@@ -495,9 +657,16 @@ func UseTraitFunction() {
 }
 ```
 
-##### Rust (version >=0.x.x)
+##### Rust
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "rust"
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```rust
 // Define trait
@@ -541,9 +710,16 @@ fn use_trait_function() {
 }
 ```
 
-##### C++ (version >=0.x.x)
+##### C++
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "c++",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```cpp
 #include <array>
@@ -587,9 +763,16 @@ void useTraitFunction() {
 
 #### Conform to a writeable trait
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 from abc import ABC, abstractmethod
@@ -646,7 +829,16 @@ c3.write_to(writer)
 print(writer.get_content())
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 **Constraints:s**
 - The Writable trait doesn't allow the write_to() method to raise an error and the Stringable trait doesn't allow the **str**() method to raise an error. Instead have to define these methods with fn
@@ -677,9 +869,16 @@ var msg = String("The value is: ", c3)
 print(msg)
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Define interfaces
@@ -737,9 +936,16 @@ c3.writeTo(writer);
 console.log(writer.getContent());
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 import (
@@ -804,9 +1010,16 @@ func main() {
 }
 ```
 
-##### Rust (version >=0.x.x)
+##### Rust
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "rust"
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```rust
 use std::fmt;
@@ -859,9 +1072,16 @@ fn main() {
 }
 ```
 
-##### C++ (version >=0.x.x)
+##### C++
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "c++",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```cpp
 #include <iostream>

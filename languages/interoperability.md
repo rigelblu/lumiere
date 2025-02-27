@@ -2,7 +2,16 @@
 
 #### Add python dependency
 
-##### Python (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```sh
 magic add "python>=311,<3.13" "pygame>=2.6.1,<3"
@@ -10,7 +19,16 @@ magic add "python>=311,<3.13" "pygame>=2.6.1,<3"
 
 #### Import python
 
-##### Python (version >=0.x.x)
+##### Python
+
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 import numpy as np
@@ -21,7 +39,16 @@ def main():
     print(ar.shape)
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 from python import Python
@@ -35,7 +62,16 @@ def main():
 
 #### Interate over a python collections
 
-##### Python (version >=0.x.x)
+##### Python
+
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # List iteration
@@ -53,7 +89,16 @@ for key, value in py_dict.items():
     print(key, value)
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 from python import Python

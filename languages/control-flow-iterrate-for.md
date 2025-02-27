@@ -2,9 +2,16 @@
 
 #### Execute block for a range of items
 
-##### Python (version >=x.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 for i in range(5):
@@ -21,7 +28,16 @@ for i in range(5):
     print(i, end=", ")
 ```
 
-##### Mojo (version >=x.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 for i in range(5):
@@ -38,9 +54,16 @@ for i in range(5):
     print(i, end=", ")
 ```
 
-##### TypeScript (version >=x.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 for (let i = 0; i < 5; i++) {
@@ -62,9 +85,16 @@ for (let i = 0; i < 5; i++) {
 }
 ```
 
-##### Go (version >=x.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 for i := 0; i < 5; i++ {
@@ -88,9 +118,16 @@ for i := 0; i < 5; i++ {
 
 #### Execute block over items in a list
 
-##### Python (version >=x.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 colors = ["Blue", "Yellow"]
@@ -102,7 +139,16 @@ for i, color in enumerate(colors):
     print(f"Color {i}: {color}")
 ```
 
-##### Mojo (version >=x.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 **Constraint:** iterating over collections assigns the loop index a Reference to each item, not the item itself. You can access the item using the dereference operator, [].
 
@@ -114,9 +160,16 @@ for color in colors:
     print(color[]) # Required to reference the element
 ```
 
-##### TypeScript (version >=x.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 const colors: string[] = ["Blue", "Yellow"];
@@ -135,9 +188,16 @@ for (let i = 0; i < colors.length; i++) {
 }
 ```
 
-##### Go (version >=x.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 colors := []string{"Blue", "Yellow"}
@@ -158,9 +218,16 @@ for i := 0; i < len(colors); i++ {
 
 #### Execute block over items in a set
 
-##### Python (version >=x.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 years = {2024, 2025, 2026}
@@ -168,7 +235,16 @@ for year in years:
     print(year)
 ```
 
-##### Mojo (version >=x.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 from collections import Set
@@ -178,9 +254,16 @@ for year in years:
     print(year[])
 ```
 
-##### TypeScript (version >=x.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 const years = new Set<number>([2024, 2025, 2026]);
@@ -194,9 +277,16 @@ years.forEach(year => {
 });
 ```
 
-##### Go (version >=x.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Go doesn't have a built-in set type
@@ -214,9 +304,16 @@ for year := range years {
 
 #### Execute block over items in a dictionary / map
 
-##### Python (version >=x.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 colors = {
@@ -233,7 +330,16 @@ for key, value in colors.items():
     print(value + ", " + key)
 ```
 
-##### Mojo (version >=x.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 from collections import Dict
@@ -249,9 +355,16 @@ for item in colors.items():
     print(item[].value + ", " + item[].key)
 ```
 
-##### TypeScript (version >=x.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Using an object
@@ -282,9 +395,16 @@ for (const [key, value] of colorsMap.entries()) {
 }
 ```
 
-##### Go (version >=x.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 colors := map[string]string{
@@ -305,9 +425,16 @@ for key := range colors {
 
 #### Execute separate block after interating over a list
 
-##### Python (version >=x.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 for i in range(5):
@@ -324,7 +451,16 @@ else:
     print("\nThis won't print if loop is broken")
 ```
 
-##### Mojo (version >=x.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 **What it does:** the else clause executes after iterating over all of the elements in a collection
 **Constraints:** the else clause does not execute if a break or return statement terminates the for loop
@@ -336,9 +472,16 @@ else:
     print("\nFinished executing 'for' loop")
 ```
 
-##### TypeScript (version >=x.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // TypeScript doesn't have a direct for-else construct
@@ -367,9 +510,16 @@ if (!hasBreak) {
 })();
 ```
 
-##### Go (version >=x.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Go doesn't have a direct for-else construct

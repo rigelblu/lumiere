@@ -9,9 +9,16 @@
   - StringableRaising - can raise an error
   - Signature: `__str__() -> String`
 
-##### Python (version >=3.6.0)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Implicit string
@@ -26,7 +33,16 @@ c3 = """
 c4: str = "yellow"
 ```
 
-##### Mojo (version >=0.6.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 # Implicit string
@@ -43,9 +59,16 @@ c3 = """
 var c4: String = "yellow"
 ```
 
-##### TypeScript (version >=4.0.0)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Implicit string
@@ -62,9 +85,16 @@ let c3 = `
 let c4: string = "yellow";
 ```
 
-##### Go (version >=1.16.0)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Implicit string
@@ -83,9 +113,16 @@ var c4 string = "yellow"
 
 #### Define a list (array) of values
 
-##### Python (version >=3.6.0)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Implicit
@@ -109,7 +146,16 @@ for i in range(len(list)):
     print(list[i], end=", ")
 ```
 
-##### Mojo (version >=0.6.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 # Implicit
@@ -134,9 +180,16 @@ for i in range(len(list)):
     print(list[i], end=", ")
 ```
 
-##### TypeScript (version >=4.0.0)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Implicit
@@ -163,9 +216,16 @@ for (let i = 0; i < list2.length; i++) {
 }
 ```
 
-##### Go (version >=1.16.0)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Implicit
@@ -194,9 +254,17 @@ for i := 0; i < len(list2); i++ {
 
 #### Operations on a list (array) of values
 
-##### Python (version >=3.6.0)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
+
 ```py
 l2 = [1, 2, 3, 4]
 g1 = [
@@ -217,7 +285,16 @@ l2.append(5)    # Append an element to the list
 print(l2)
 ```
 
-##### Mojo (version >=0.6.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 var l2 = List[Int](1, 2, 3, 4)
@@ -239,9 +316,16 @@ l2.append(3.14) # Error: Float cannot be converted to Int
 print(list)
 ```
 
-##### TypeScript (version >=4.0.0)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 let l2: number[] = [1, 2, 3, 4];
@@ -263,9 +347,16 @@ l2.push(5);    // Append an element to the list
 console.log(l2);
 ```
 
-##### Go (version >=1.16.0)
+##### Go
 
-TODO: LLM Generated, verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 l2 := []int{1, 2, 3, 4}
@@ -289,9 +380,16 @@ fmt.Println(l2)
 
 #### Define a dictionary
 
-##### Python (version >=3.6.0)
+##### Python
 
-TODO: LLM Generated, verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Explicit
@@ -306,7 +404,16 @@ for key, value in d.items():
     print(key, value)
 ```
 
-##### Mojo (version >=0.6.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 # Explicit
@@ -323,9 +430,16 @@ for item in d.items():
     print(item[].key, item[].value)
 ```
 
-##### TypeScript (version >=4.0.0)
+##### TypeScript
 
-TODO: LLM Generated, verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Explicit
@@ -340,9 +454,16 @@ for (const [key, value] of Object.entries(d)) {
 }
 ```
 
-##### Go (version >=1.16.0)
+##### Go
 
-TODO: LLM Generated, verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Explicit
@@ -365,9 +486,16 @@ for key, value := range d {
 
 Tuples are immutable and can hold multiple types
 
-##### Python (version >=3.9.0)
+##### Python
 
-TODO: LLM Generated, verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Explicit tuple
@@ -383,7 +511,16 @@ year, month, day = date
 day = date[2]
 ```
 
-##### Mojo (version >=0.6.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 # Explicit tuple
@@ -396,9 +533,16 @@ year, month = date
 day = date[2]
 ```
 
-##### TypeScript (version >=4.0.0)
+##### TypeScript
 
-TODO: LLM Generated, verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Explicit tuple
@@ -411,9 +555,16 @@ let [year, month, day] = date;
 day = date[2];
 ```
 
-##### Go (version >=1.16.0)
+##### Go
 
-TODO: LLM Generated, verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Go doesn't have built-in tuples, but can use struct
@@ -437,9 +588,16 @@ day := date.Day
 
 #### Define a set
 
-##### Python (version >=3.6.0)
+##### Python
 
-TODO: LLM Generated, verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 colors = {"blue", "yellow"}
@@ -449,7 +607,16 @@ for color in c1:
     print("-", color)
 ```
 
-##### Mojo (version >=0.6.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 from collections import Set
@@ -460,9 +627,16 @@ for color in c1:
     print("-", color[])
 ```
 
-##### TypeScript (version >=4.0.0)
+##### TypeScript
 
-TODO: LLM Generated, verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Using Set in TypeScript
@@ -477,9 +651,16 @@ for (const color of c1) {
 }
 ```
 
-##### Go (version >=1.16.0)
+##### Go
 
-TODO: LLM Generated, verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 ```go
 // Using maps to implement sets
 colors := map[string]bool{"blue": true, "yellow": true}
@@ -501,9 +682,16 @@ for color := range c1 {
 
 #### Define as optional or none value
 
-##### Python (version >=3.10.0)
+##### Python
 
-TODO: LLM Generated, verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 from typing import Optional
@@ -524,7 +712,16 @@ def color() -> None:
     # code...
 ```
 
-##### Mojo (version >=0.6.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 # Initialize optional with value
@@ -543,9 +740,16 @@ def color() -> None:
     # code...
 ```
 
-##### TypeScript (version >=4.0.0)
+##### TypeScript
 
-TODO: LLM Generated, verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Initialize optional with value
@@ -566,9 +770,16 @@ function color(): void {
 }
 ```
 
-##### Go (version >=1.16.0)
+##### Go
 
-TODO: LLM Generated, verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Initialize with value

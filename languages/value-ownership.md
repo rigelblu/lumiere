@@ -2,6 +2,15 @@
 
 ##### Mojo
 
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
+
 **How it Works:**
 - Mojo uses a third approach called "ownership" that relies on a collection of rules that programmers must follow when passing values. The rules ensure there is only one "owner" for a given value at a time. When a value's lifetime ends, Mojo calls its destructor, which is responsible for deallocating any heap memory that needs to be deallocated
 
@@ -21,9 +30,16 @@
 
 #### Define a value as mutable
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Python variables are mutable by default
@@ -35,16 +51,32 @@ def update_list(lst):
     lst.append(4)  # This modifies the original list
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 def setColor(mut color: String) -> None:
     # code...
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Not built into language
@@ -61,9 +93,16 @@ const userReadOnly: User = { name: "John" };
 // userReadOnly.name = "Jane";  // Error: Cannot assign to read-only property
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Not built into language
@@ -77,7 +116,16 @@ const PI = 3.14159
 // PI = 3.0  // Compile error
 ```
 
-##### Rust (version >=0.x.x)
+##### Rust
+
+```json
+metadata {
+  "language": "rust"
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```rust
 // Variables are immutable by default in Rust
@@ -94,7 +142,16 @@ fn increment(mut number: i32) {
 }
 ```
 
-##### C++ (version >=0.x.x)
+##### C++
+
+```json
+metadata {
+  "language": "c++",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```cpp
 // Variables are mutable by default
@@ -118,9 +175,16 @@ void updateValueByRef(int& value) {
 
 #### Define a value as passed by value or by reference
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Python passes references to objects, but the reference itself is passed by value
@@ -139,7 +203,16 @@ greeting = "hello"
 update_string(greeting)  # greeting is still "hello"
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 # By value
@@ -151,7 +224,16 @@ def setName(read name: String) -> None:
     # code...
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
+
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Not built into language
@@ -173,9 +255,16 @@ let x = 10;
 modifyPrimitive(x);  // x is still 10
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Not built into language
@@ -195,7 +284,16 @@ modifyValue(x)  // x is still 10
 modifyPointer(&x)  // x is now 42
 ```
 
-##### Rust (version >=0.x.x)
+##### Rust
+
+```json
+metadata {
+  "language": "rust"
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```rust
 // By value (ownership is transferred)
@@ -225,7 +323,16 @@ fn main() {
 }
 ```
 
-##### C++ (version >=0.x.x)
+##### C++
+
+```json
+metadata {
+  "language": "c++",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```cpp
 // By value (creates a copy)
@@ -254,9 +361,16 @@ void updateValue(int* ptr) {
 
 #### Define a value as ?
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 class Point:
@@ -276,9 +390,18 @@ class Point:
         print(self.x)
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
+
+
 
 ```mojo
 struct Point:
@@ -294,9 +417,16 @@ struct Point:
         print(self.first, self.second)
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Not built into language
@@ -318,9 +448,17 @@ class Point {
     }
 }
 ```
-##### Go (version >=0.x.x)
 
-TODO: LLM Generated, TODO: verify code
+##### Go
+
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Not built into language
@@ -345,7 +483,16 @@ func (p Point) Dump() {
 }
 ```
 
-##### Rust (version >=0.x.x)
+##### Rust
+
+```json
+metadata {
+  "language": "rust"
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```rust
 struct Point {
@@ -376,7 +523,16 @@ struct AutoPoint {
 }
 ```
 
-##### C++ (version >=0.x.x)
+##### C++
+
+```json
+metadata {
+  "language": "c++",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```cpp
 class Point {
@@ -408,7 +564,16 @@ public:
 
 #### Assign / pass by value (value semantics)
 
-##### Python (version >=0.x.x)
+##### Python
+
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 **What it does:**
 - When you call a Python function and pass an object with a pointer to a heap-allocated value. Python actually gives that function a reference to your object, which allows the function to mutate the heap-allocated value
@@ -442,7 +607,16 @@ def update_vector(vec):
     return vec
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 **What it does**
 - All function arguments use value semantics by default
@@ -482,7 +656,16 @@ fn add_two(d: Int):                           # d = c
     e += 2
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
+
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Example 1: Value semantics with primitive types
@@ -510,7 +693,16 @@ function updatePoint(point: Point): Point {
 }
 ```
 
-##### Go (version >=0.x.x)
+##### Go
+
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Example 1: Value semantics with basic types
@@ -544,7 +736,16 @@ func updatePoint(p Point) Point {
 }
 ```
 
-##### Rust (version >=0.x.x)
+##### Rust
+
+```json
+metadata {
+  "language": "rust"
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```rust
 // Example 1: Value semantics with Copy types
@@ -569,7 +770,16 @@ fn update_point(mut p: Point) -> Point {
 }
 ```
 
-##### C++ (version >=0.x.x)
+##### C++
+
+```json
+metadata {
+  "language": "c++",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```cpp
 // Example 1: Value semantics with Copy types
@@ -596,7 +806,16 @@ fn update_point(mut p: Point) -> Point {
 
 #### Assign / pass by referece and allow mutating (reference semantics)
 
-##### Python (version >=0.x.x)
+##### Python
+
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Example 1: Mutating through reference (mutable objects)
@@ -625,7 +844,16 @@ list_obj = List(1, 2)  # list_obj = List(1, 2)
 mutate(list_obj)       # list_obj = List(1, 2, 5)
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 **What it does:**
 - Every value has only one owner at a time
@@ -670,7 +898,16 @@ fn invalid_access():
   append_twice(my_string, my_string)    # error: passing `my_string` mut is invalid since it is also passed read.
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
+
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Example 1: Objects are passed by reference
@@ -704,7 +941,16 @@ function mutate(l: List<number>): void {
 }
 ```
 
-##### Go (version >=0.x.x)
+##### Go
+
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Example 1: Passing by pointer to allow mutation
@@ -736,7 +982,16 @@ func mutate(l *List) {
 }
 ```
 
-##### Rust (version >=0.x.x)
+##### Rust
+
+```json
+metadata {
+  "language": "rust"
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```rust
 // Example 1: Passing by mutable reference
@@ -774,7 +1029,16 @@ fn main() {
 }
 ```
 
-##### C++ (version >=0.x.x)
+##### C++
+
+```json
+metadata {
+  "language": "c++",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```cpp
 #include <iostream>
@@ -828,7 +1092,16 @@ void mutate(List& l) {
 - The read argument always gets an immutable reference or a local copy. You can't transfer a value into a read argument.
 - The owned argument always gets a uniquely owned value, which may have been copied or transferred from the callee. Using owned arguments without the transfer sigil (^) usually results in values being copied.
 
-##### Python (version >=0.x.x)
+##### Python
+
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Python doesn't have explicit ownership transfer like Mojo
@@ -856,7 +1129,16 @@ def take_text2(text):
     return text                        # Return the modified value
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 # Example: don't transfer ownership
@@ -895,7 +1177,16 @@ fn fn_example(a_in: Int, mut b: Int, owned c: object):
     pass
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
+
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // TypeScript doesn't have explicit ownership transfer like Mojo
@@ -927,7 +1218,16 @@ function takeText2(text: string): string {
 }
 ```
 
-##### Go (version >=0.x.x)
+##### Go
+
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 package main
@@ -960,7 +1260,16 @@ func takeText2(text string) string {
 }
 ```
 
-##### Rust (version >=0.x.x)
+##### Rust
+
+```json
+metadata {
+  "language": "rust"
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```rust
 // Example 1: Without ownership transfer
@@ -989,7 +1298,16 @@ fn take_text2(mut text: String) -> String {
 }
 ```
 
-##### C++ (version >=0.x.x)
+##### C++
+
+```json
+metadata {
+  "language": "c++",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```cpp
 #include <iostream>
@@ -1021,7 +1339,6 @@ std::string takeText2(std::string text) {
     return text;                                // Return the modified value
 }
 ```
-
 
 ### TODO
 

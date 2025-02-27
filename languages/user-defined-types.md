@@ -4,28 +4,64 @@
 
 As known as type aliases
 
-##### Python (version >=3.5.x)
+##### Python
+
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "human"
+}
+```
 
 ```py
 ColorType = str
 c1: ColorType = "blue"
 ```
 
-##### Mojo (version >=0.4.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 alias ColorType = String
 var c1: ColorType = "blue"
 ```
 
-##### TypeScript (version >=1.x.x)
+##### TypeScript
+
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 type ColorType = string;
 let c1: ColorType = "blue";
 ```
 
-##### Go (version >=1.x.x)
+##### Go
+
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 type ColorType string
@@ -39,7 +75,16 @@ Custom data structure with
 - Methods: (optional) functions to work with/manipulate instances of the data structure
 - **Constraints:** doesn't allow dynamic dispatch (i.e. which specific implementation of a polymorphic method or function to call at runtime) or any runtime changes to the structure
 
-##### Python (version >=3.7.x)
+##### Python
+
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "human"
+}
+```
 
 ```py
 # Not built into language. Use nearest equivalent
@@ -64,7 +109,16 @@ p1 = PointType(1, 2)
 x = p1.x
 ```
 
-##### Mojo (version >=0.4.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 - **Constraints**:
   - All fields must be declared upfront with a type. You can't add fields dynamically at run-time
@@ -116,7 +170,16 @@ var x = p1.x              # Call struct's getter
 print(p1.str())           # Call struct's method
 ```
 
-##### TypeScript (version >=2.x.x)
+##### TypeScript
+
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 type PointType = {
@@ -133,7 +196,16 @@ const p2: PointType = { x: 1, y: 2 };
 let x = p1.x;
 ```
 
-##### Go (version >=1.x.x)
+##### Go
+
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 type PointType struct {
@@ -148,9 +220,16 @@ x := p1.x
 
 #### Overload operators (dunder methods)
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 class Point:
@@ -183,7 +262,16 @@ class Point:
         return (self.x**2 + self.y**2) < (other.x**2 + other.y**2)
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 **Constraints:** The `Comparable` and `EqualityComparable` traits don't allow the comparison dunder methods to raise errors. Because using `def` to define a method implies that it can raise an error, you must use `fn` to implement the comparison methods declared by these traits.
 
@@ -322,9 +410,16 @@ struct Point:
     # def __moveinit__(...)
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // TypeScript doesn't support operator overloading
@@ -364,9 +459,16 @@ class Point {
 }
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Go doesn't support operator overloading

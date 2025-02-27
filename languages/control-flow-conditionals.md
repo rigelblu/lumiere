@@ -2,6 +2,15 @@
 
 ##### Mojo
 
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
+
 **Constraints:**
 - Mojo doesn't support the equivalent of a Python match or C switch statement for pattern matching and conditional execution
 **How it works:**
@@ -9,9 +18,16 @@
 
 #### Execute block if condition is true
 
-##### Python (version >=x.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 year = 2025
@@ -27,7 +43,16 @@ else:
     # code...
 ```
 
-##### Mojo (version >=x.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 year = 2025
@@ -43,9 +68,16 @@ else:
     # code...
 ```
 
-##### TypeScript (version >=x.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 const year = 2025;
@@ -63,9 +95,16 @@ if (year <= 2025) {
 }
 ```
 
-##### Go (version >=x.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 year := 2025
@@ -85,9 +124,16 @@ if year <= 2025 {
 
 #### Execute inline statement if condition is true
 
-##### Python (version >=x.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 if year < 2021: print("Past")  # Inline code
@@ -97,7 +143,16 @@ if year != 2025: print("Not present")  # Inline code
 if not (year == 2025): print("Not present")  # Negation example
 ```
 
-##### Mojo (version >=x.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 if year < 2021: # code...skipped when condition is False
@@ -107,9 +162,16 @@ if year != 2025: # code...skipped when condition is False
 # TODO: add negation example
 ```
 
-##### TypeScript (version >=x.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 if (year < 2021) console.log("Past");  // Inline code
@@ -119,9 +181,16 @@ if (year !== 2025) console.log("Not present");  // Inline code
 if (!(year === 2025)) console.log("Not present");  // Negation example
 ```
 
-##### Go (version >=x.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 if year < 2021 { fmt.Println("Past") }  // Inline code
@@ -133,9 +202,16 @@ if !(year == 2025) { fmt.Println("Not present") }  // Negation example
 
 #### Execute if either or both conditions are true
 
-##### Python (version >=x.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Either conditions
@@ -147,7 +223,16 @@ if false_func() and true_func():
     print("True result")
 ```
 
-##### Mojo (version >=x.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 # Either conditions
@@ -159,9 +244,16 @@ if false_func() and true_func():
     print("True result")
 ```
 
-##### TypeScript (version >=x.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Either conditions
@@ -175,9 +267,16 @@ if (falseFunc() && trueFunc()) {
 }
 ```
 
-##### Go (version >=x.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Either conditions
@@ -193,31 +292,61 @@ if falseFunc() && trueFunc() {
 
 #### Assign value to variable if condition is true
 
-##### Python (version >=x.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 time = "future" if year > 2020 else "past"
 ```
 
-##### Mojo (version >=x.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 time = "future" if year > 2020 else "past"
 ```
 
-##### TypeScript (version >=x.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 const time = year > 2020 ? "future" : "past";
 ```
 
-##### Go (version >=x.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 var time string
@@ -238,34 +367,64 @@ time := func() string {
 
 #### Ternary conditionals
 
-##### Python (version >=x.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 year = 2025
 label = "current" if year == 2025 else "past or future"
 ```
 
-##### Mojo (version >=x.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 year = 2025
 label = "current" if year == 20250 else "past or future"
 ```
 
-##### TypeScript (version >=x.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 const year = 2025;
 const label = year === 2025 ? "current" : "past or future";
 ```
 
-##### Go (version >=x.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 year := 2025

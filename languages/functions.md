@@ -2,9 +2,16 @@
 
 #### Main entry point
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Main function definition
@@ -16,7 +23,16 @@ if __name__ == "__main__":
     main()
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 - **Convention:** put at end of file
 
@@ -25,9 +41,16 @@ def main():
     # code...
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // For Node.js application
@@ -49,9 +72,16 @@ function main(): void {
 main();
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 package main
@@ -64,9 +94,16 @@ func main() {
 
 #### Define a function with explicit types
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # No parameters, no return value
@@ -86,7 +123,16 @@ def hello3(name: str) -> str:
 hello3("world")
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 - By default, the value is returned to the caller as an owned value
 - **Constraints:**
@@ -111,9 +157,16 @@ fn hello3(name: String) -> String:
 hello3("world")
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // No parameters, no return value
@@ -136,9 +189,16 @@ function hello3(name: string): string {
 hello3("world");
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // No parameters, no return value
@@ -175,9 +235,16 @@ Support methods, fields, operator overloading, decorators for metaprogramming
     - Recived as a value if type is declared as any other type
   - Return types default to object
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # No explicit types
@@ -206,7 +273,16 @@ def hello4(name: str) -> str:
 hello3("world")
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 def hello1():
@@ -230,9 +306,16 @@ def hello3(name: String) -> String:
 hello3("world")
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Using 'any' type for flexibility
@@ -266,9 +349,16 @@ function hello4(name: string): string {
 hello3("world");
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Go requires explicit types, but can use interface{} for generic values
@@ -304,9 +394,16 @@ hello3("world")
 
 #### Chain functions
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 def hello():
@@ -332,7 +429,16 @@ class StringBuilder:
 result = StringBuilder().append("Hello").append(" ").append("world").get()
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 def hello():
@@ -341,9 +447,16 @@ def hello():
     print(text)
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 function hello(): void {
@@ -382,9 +495,16 @@ const result = new StringBuilder()
     .get();
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 import (
@@ -423,9 +543,16 @@ func main() {
 
 #### Define optional arguments on function
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 def color1(name: str = "blue"):
@@ -441,7 +568,16 @@ color1()  # name will be "blue"
 color1("green")
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 **Constraints:**
   - Must appear after required arguments
@@ -459,9 +595,16 @@ def color3(mut name: String = "blue"):
     # code...
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 function color1(name: string = "blue"): void {
@@ -485,9 +628,16 @@ color1();  // name will be "blue"
 color1("green");
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Go doesn't have built-in default parameters
@@ -544,9 +694,16 @@ color2(WithName("green"))
 
 #### Invoke functions with keywords arguments
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 def point1(x: int, y: int, z: int):
@@ -562,7 +719,16 @@ point1(z=1, x=2, y=3)
 point1(2, z=1, y=3)
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 def point1(x: Int, y: Int, z: Int):
@@ -575,9 +741,16 @@ point1(z = 1, x = 2, y = 3)
 point2(z = 1, x = 2, y = 3)
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Using object destructuring for named parameters
@@ -601,9 +774,16 @@ point1({ z: 1, x: 2, y: 3 });
 point2({ x: 2, y: 3, z: 1 });
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Go doesn't support keyword arguments directly
@@ -652,9 +832,16 @@ point1(params)
 
 #### Define a function with a variable number of arguments
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 def point1(d1: int, *d2: int):
@@ -676,7 +863,16 @@ point1(1, 2, 3)
 sum_all(1, 2, 3, 4)  # Returns 10
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 def point1(d1: Int, *d2: Int):
@@ -693,9 +889,16 @@ point2(1)
 point2(1, 2, 3)
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 function point1(d1: number, ...d2: number[]): void {
@@ -721,9 +924,16 @@ point1(1, 2, 3);
 sumAll(1, 2, 3, 4);  // Returns 10
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Variadic function
@@ -756,9 +966,16 @@ sumAll(1, numbers...)  // Spread operator for slices
 
 #### Define a function with a variable number of arguments of Strings
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 def point1(d1: int, *d2: str):
@@ -780,7 +997,16 @@ point1(1, "hello", "world")
 concat_strings("Pre-", "Hello", " ", "World")  # Returns "Pre-Hello World"
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 def point1(d1: Int, *d2: String):
@@ -797,9 +1023,16 @@ point2(1)
 point2(1, 2, 3)
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 function point1(d1: number, ...d2: string[]): void {
@@ -825,9 +1058,16 @@ point1(1, "hello", "world");
 concatStrings("Pre-", "Hello", " ", "World");  // Returns "Pre-Hello World"
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Variadic function with strings
@@ -860,9 +1100,16 @@ concatStrings("Pre-", words...)
 
 #### Define a function with a variable number of keywords arguments
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 def point1(**kwargs: int):
@@ -882,7 +1129,16 @@ point1(x=10, y=20, z=30)
 config = create_config(True, host="localhost", port="8080")
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 - **Constraints**:
   - Always implicitly treated as if they were declared with the owned argument convention, and can't be declared otherwise
@@ -901,9 +1157,16 @@ fn point2(**kwargs: Int) raises:
       print(key[], "=", kwargs[key[]])
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Using Record type for dynamic keys
@@ -944,9 +1207,16 @@ const config = createConfig({
 });
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Using map for keyword arguments
@@ -986,9 +1256,16 @@ config := createConfig(true, settings)
 
 #### Define a function with named return values
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 from typing import NamedTuple, Tuple
@@ -1027,7 +1304,16 @@ tag = get_name_tag("Judith")
 print(tag.name)
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 **What it is:**
 - The out argument convention identifies an uninitialized variable that the function must initialize.
@@ -1048,9 +1334,16 @@ def get_name_tag(owned name: String, out name_tag: NameTag):
 tag = get_name_tag("Judith")
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Return object with named properties
@@ -1088,9 +1381,16 @@ const tag = getNameTag("Judith");
 console.log(tag.name);
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Named return values
@@ -1134,9 +1434,16 @@ fmt.Println(tag.Name)
 
 - **What is it:** same function, with different signature names
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Python doesn't support true function overloading
@@ -1171,7 +1478,16 @@ result1 = add(1, 2)       # Returns 3
 result2 = add("a", "b")   # Returns "ab"
 ```
 
-##### Mojo (version >=0.x.x)
+##### Mojo
+
+```json
+metadata {
+  "language": "mojo",
+  "language_version":">=0.6.x",
+  "code_role": "anchor",
+  "code_author": "human"
+}
+```
 
 ```mojo
 def add1(x: Int, y: Int) -> Int:
@@ -1187,9 +1503,16 @@ fn add2(x: String, y: String) -> String:
     return x + y
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Function overloading with function signatures
@@ -1214,9 +1537,16 @@ const result1 = add(1, 2);        // Returns 3
 const result2 = add("a", "b");    // Returns "ab"
 ```
 
-##### Go (version >=0.x.x)
+##### Go
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "go",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```go
 // Go doesn't support function overloading directly
