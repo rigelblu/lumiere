@@ -79,7 +79,7 @@ metadata {
   "language": string,
   "language_version": string
   "code_role": anchor | trail
-  "code_author": human | llm | human approved
+  "code_author": human | llm | human approved | -
 </metadata>
 ```
 
