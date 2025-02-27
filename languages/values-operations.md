@@ -42,9 +42,16 @@ var name1: String           # Define
 var name2: String = "John"  # Define and initialize
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Implicit type
@@ -101,9 +108,16 @@ metadata {
 # TODO:
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Using const for immutable references
@@ -168,9 +182,16 @@ metadata {
 month, year = m, year + 1
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Single assignment
@@ -350,9 +371,16 @@ var c2: String = String("Color: ", "blue", ".") # More performant when concatena
 alias divider = "#" * 20
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 let n = 1;
@@ -528,9 +556,16 @@ b = b ^ 1         # XOR
 b = b | 1         # OR
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 let b = 1;

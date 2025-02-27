@@ -34,7 +34,16 @@ metadata {
 # TODO:
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
+
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // TODO:

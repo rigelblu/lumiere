@@ -40,9 +40,16 @@ metadata {
 print("Hellow world")
 ```
 
-##### TypeScript (version >=4.0.0)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Basic console output
@@ -110,9 +117,16 @@ metadata {
 var year: Int = input("What year is it")
 ```
 
-##### TypeScript (version >=4.0.0)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Browser environment
@@ -215,9 +229,16 @@ finally:
     f.close()
 ```
 
-##### TypeScript (version >=4.0.0)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Node.js environment
@@ -334,9 +355,16 @@ metadata {
 # TODO:
 ```
 
-##### TypeScript (version >=4.0.0)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Node.js environment

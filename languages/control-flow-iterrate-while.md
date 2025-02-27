@@ -39,9 +39,16 @@ while n < 50:
     // code...
 ```
 
-##### TypeScript (version >=x.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 let n = 1;
@@ -104,9 +111,16 @@ while n < 5:
         continue
 ```
 
-##### TypeScript (version >=x.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 let n = 0;
@@ -173,9 +187,16 @@ while n < 5:
         break
 ```
 
-##### TypeScript (version >=x.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 let n = 0;
@@ -255,9 +276,16 @@ else:
     print("Loop completed")
 ```
 
-##### TypeScript (version >=x.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // TypeScript doesn't have a direct while-else construct

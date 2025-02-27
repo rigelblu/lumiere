@@ -71,9 +71,16 @@ metadata {
 # TODO:
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 class Person {
@@ -202,9 +209,16 @@ p1 = Person("John")
 print(p1.name)
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // TypeScript with default constructor
@@ -327,7 +341,16 @@ struct ParametricRef[
     pass
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
+
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Simulate origin types with interfaces

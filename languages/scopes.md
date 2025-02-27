@@ -32,9 +32,16 @@ metadata {
 # Not built into language
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Define in global scope or window object
@@ -98,9 +105,16 @@ metadata {
 # TODO: confirm if it's not built into language or if it follows python pattern
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // ./pkg1/file1.ts
@@ -175,9 +189,16 @@ PRIMARY = "blue"
 from ..pkg1/file1 import *
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // ./pkg1/file1.ts
@@ -249,9 +270,16 @@ if condition:
     # code...
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 function myFunction() {

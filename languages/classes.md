@@ -84,9 +84,16 @@ TODO: LLM Generated, TODO: verify code
 # Not implemented. Use nearest alternative
 ```
 
-##### TypeScript (version >=4.0.0)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Basic class definition

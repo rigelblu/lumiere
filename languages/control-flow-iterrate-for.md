@@ -54,9 +54,16 @@ for i in range(5):
     print(i, end=", ")
 ```
 
-##### TypeScript (version >=x.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 for (let i = 0; i < 5; i++) {
@@ -146,9 +153,16 @@ for color in colors:
     print(color[]) # Required to reference the element
 ```
 
-##### TypeScript (version >=x.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 const colors: string[] = ["Blue", "Yellow"];
@@ -226,9 +240,16 @@ for year in years:
     print(year[])
 ```
 
-##### TypeScript (version >=x.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 const years = new Set<number>([2024, 2025, 2026]);
@@ -313,9 +334,16 @@ for item in colors.items():
     print(item[].value + ", " + item[].key)
 ```
 
-##### TypeScript (version >=x.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Using an object
@@ -416,9 +444,16 @@ else:
     print("\nFinished executing 'for' loop")
 ```
 
-##### TypeScript (version >=x.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // TypeScript doesn't have a direct for-else construct

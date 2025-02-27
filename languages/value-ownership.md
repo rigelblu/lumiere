@@ -67,9 +67,16 @@ def setColor(mut color: String) -> None:
     # code...
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Not built into language
@@ -192,7 +199,16 @@ def setName(read name: String) -> None:
     # code...
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
+
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Not built into language
@@ -351,9 +367,16 @@ struct Point:
         print(self.first, self.second)
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Not built into language
@@ -557,7 +580,16 @@ fn add_two(d: Int):                           # d = c
     e += 2
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
+
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Example 1: Value semantics with primitive types
@@ -763,7 +795,16 @@ fn invalid_access():
   append_twice(my_string, my_string)    # error: passing `my_string` mut is invalid since it is also passed read.
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
+
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Example 1: Objects are passed by reference
@@ -1006,7 +1047,16 @@ fn fn_example(a_in: Int, mut b: Int, owned c: object):
     pass
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
+
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // TypeScript doesn't have explicit ownership transfer like Mojo

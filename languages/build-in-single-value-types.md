@@ -40,9 +40,16 @@ flag1 = True
 var flag2: Bool = False
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Implicit boolean
@@ -114,9 +121,16 @@ var year9: UInt32: 2025
 var year10: UInt64: 2025
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Implicit integer
@@ -190,9 +204,16 @@ var pi3: Float32 = 3.141
 var pi4: Float64 = 3.141
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Implicit real-number
@@ -254,9 +275,16 @@ metadata {
 # TODO
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Using 'any' type
@@ -325,9 +353,16 @@ metadata {
 # TODO:
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Using any type
@@ -407,9 +442,16 @@ year = String(2025)
 month = Int(String("02"))
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Converting between types

@@ -41,7 +41,16 @@ with open(input_file, "r") as f_in, open(output_file, "w") as f_out:
     f_out.write(output_text)
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
+
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // TODO:

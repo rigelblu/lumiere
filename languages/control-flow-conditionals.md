@@ -68,9 +68,16 @@ else:
     # code...
 ```
 
-##### TypeScript (version >=x.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 const year = 2025;
@@ -148,9 +155,16 @@ if year != 2025: # code...skipped when condition is False
 # TODO: add negation example
 ```
 
-##### TypeScript (version >=x.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 if (year < 2021) console.log("Past");  // Inline code
@@ -216,9 +230,16 @@ if false_func() and true_func():
     print("True result")
 ```
 
-##### TypeScript (version >=x.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Either conditions
@@ -280,9 +301,16 @@ metadata {
 time = "future" if year > 2020 else "past"
 ```
 
-##### TypeScript (version >=x.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 const time = year > 2020 ? "future" : "past";
@@ -343,9 +371,16 @@ year = 2025
 label = "current" if year == 20250 else "past or future"
 ```
 
-##### TypeScript (version >=x.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 const year = 2025;

@@ -59,9 +59,16 @@ c3 = """
 var c4: String = "yellow"
 ```
 
-##### TypeScript (version >=4.0.0)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Implicit string
@@ -166,9 +173,16 @@ for i in range(len(list)):
     print(list[i], end=", ")
 ```
 
-##### TypeScript (version >=4.0.0)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Implicit
@@ -288,9 +302,16 @@ l2.append(3.14) # Error: Float cannot be converted to Int
 print(list)
 ```
 
-##### TypeScript (version >=4.0.0)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 let l2: number[] = [1, 2, 3, 4];
@@ -388,9 +409,16 @@ for item in d.items():
     print(item[].key, item[].value)
 ```
 
-##### TypeScript (version >=4.0.0)
+##### TypeScript
 
-TODO: LLM Generated, verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Explicit
@@ -477,9 +505,16 @@ year, month = date
 day = date[2]
 ```
 
-##### TypeScript (version >=4.0.0)
+##### TypeScript
 
-TODO: LLM Generated, verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Explicit tuple
@@ -557,9 +592,16 @@ for color in c1:
     print("-", color[])
 ```
 
-##### TypeScript (version >=4.0.0)
+##### TypeScript
 
-TODO: LLM Generated, verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Using Set in TypeScript
@@ -656,9 +698,16 @@ def color() -> None:
     # code...
 ```
 
-##### TypeScript (version >=4.0.0)
+##### TypeScript
 
-TODO: LLM Generated, verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // Initialize optional with value

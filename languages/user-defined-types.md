@@ -36,7 +36,16 @@ alias ColorType = String
 var c1: ColorType = "blue"
 ```
 
-##### TypeScript (version >=1.x.x)
+##### TypeScript
+
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 type ColorType = string;
@@ -152,7 +161,16 @@ var x = p1.x              # Call struct's getter
 print(p1.str())           # Call struct's method
 ```
 
-##### TypeScript (version >=2.x.x)
+##### TypeScript
+
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 type PointType = {
@@ -374,9 +392,16 @@ struct Point:
     # def __moveinit__(...)
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```ts
 // TypeScript doesn't support operator overloading

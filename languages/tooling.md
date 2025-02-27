@@ -34,7 +34,16 @@ magic init hello --format mojoproject
 cd hello
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
+
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```sh
 # TODO:
@@ -82,7 +91,16 @@ metadata {
 - `mojoproject.toml` -  defines the project dependencies and other features
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
+
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```sh
 # TODO:
@@ -126,7 +144,16 @@ metadata {
 magic shell
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
+
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```sh
 # TODO:
@@ -170,7 +197,16 @@ metadata {
 mojo hello.mojo
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
+
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```sh
 # TODO:
@@ -214,7 +250,16 @@ metadata {
 mojo build hello.mojo
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
+
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```sh
 # TODO:
@@ -258,7 +303,16 @@ metadata {
 magic add {{package-name}}
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
+
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```sh
 # TODO:
@@ -302,7 +356,16 @@ metadata {
 mojo package package1 -o compiled_pkg1.mojopkg
 ```
 
-##### TypeScript (version >=0.x.x)
+##### TypeScript
+
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```sh
 # TODO:
