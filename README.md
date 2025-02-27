@@ -83,6 +83,10 @@ metadata {
 </metadata>
 ```
 
+#### Example:
+
+##### Mojo
+
 ```json
 metadata {
   "language": "mojo",
