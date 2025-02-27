@@ -2,9 +2,16 @@
 
 #### Execute block for a range of items
 
-##### Python (version >=x.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 for i in range(5):
@@ -88,9 +95,16 @@ for i := 0; i < 5; i++ {
 
 #### Execute block over items in a list
 
-##### Python (version >=x.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 colors = ["Blue", "Yellow"]
@@ -158,9 +172,16 @@ for i := 0; i < len(colors); i++ {
 
 #### Execute block over items in a set
 
-##### Python (version >=x.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 years = {2024, 2025, 2026}
@@ -214,9 +235,16 @@ for year := range years {
 
 #### Execute block over items in a dictionary / map
 
-##### Python (version >=x.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 colors = {
@@ -305,9 +333,16 @@ for key := range colors {
 
 #### Execute separate block after interating over a list
 
-##### Python (version >=x.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 for i in range(5):

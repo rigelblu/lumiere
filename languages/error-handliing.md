@@ -2,9 +2,16 @@
 
 #### Declare function can raise error
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 def hello4(name: str):
@@ -107,9 +114,16 @@ func validateName(name string) (string, error) {
 
 #### Handle raised errors
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 def handle_error():

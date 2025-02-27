@@ -2,9 +2,16 @@
 
 #### Execute block while condition is true
 
-##### Python (version >=x.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 n = 1
@@ -49,9 +56,16 @@ for n < 50 {
 
 #### Skip to beginning of next block interation when a separate if condition is true
 
-##### Python (version >=x.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 n = 0
@@ -102,9 +116,16 @@ for n < 5 {
 
 #### Break out of interacting block when a separate if condition is true
 
-##### Python (version >=x.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 n = 0
@@ -157,9 +178,16 @@ for n < 5 {
 
 #### Execute separate block after interating over a list
 
-##### Python (version >=x.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 n = 5

@@ -4,7 +4,16 @@
 
 As known as type aliases
 
-##### Python (version >=3.5.x)
+##### Python
+
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "human"
+}
+```
 
 ```py
 ColorType = str
@@ -39,7 +48,16 @@ Custom data structure with
 - Methods: (optional) functions to work with/manipulate instances of the data structure
 - **Constraints:** doesn't allow dynamic dispatch (i.e. which specific implementation of a polymorphic method or function to call at runtime) or any runtime changes to the structure
 
-##### Python (version >=3.7.x)
+##### Python
+
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "human"
+}
+```
 
 ```py
 # Not built into language. Use nearest equivalent
@@ -148,9 +166,16 @@ x := p1.x
 
 #### Overload operators (dunder methods)
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 class Point:

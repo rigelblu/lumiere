@@ -2,9 +2,16 @@
 
 #### Make variable available globally across program
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 global_var = "I'm global"
@@ -43,9 +50,16 @@ var GlobalVar string = "I'm global"
 
 #### Make variables privately available only to it's package / file
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Not built into language. Use nearest equivalent, a naming convention
@@ -101,9 +115,16 @@ import "colors"
 
 #### Make variables publically available to other packages / files
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # ./pkg1/__init__.py
@@ -165,9 +186,16 @@ c1 := colors.Primary
 
 #### Make variables available only to it's local block
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 def my_function():

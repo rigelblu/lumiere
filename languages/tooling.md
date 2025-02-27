@@ -2,7 +2,16 @@
 
 #### Initiatialize project
 
-##### Python (version >=0.x.x)
+##### Python
+
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "-"
+}
+```
 
 ```sh
 # TODO:
@@ -30,7 +39,16 @@ cd hello
 
 #### Artifacts
 
-##### Python (version >=0.x.x)
+##### Python
+
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "-"
+}
+```
 
 ```sh
 # TODO:
@@ -60,7 +78,16 @@ cd hello
 
 #### Download and load project's virtual environemnt
 
-##### Python (version >=0.x.x)
+##### Python
+
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "-"
+}
+```
 
 ```sh
 # TODO:
@@ -86,7 +113,16 @@ magic shell
 
 #### Run program
 
-##### Python (version >=0.x.x)
+##### Python
+
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "-"
+}
+```
 
 ```sh
 # TODO:
@@ -112,7 +148,16 @@ mojo hello.mojo
 
 #### Compile program into an executable
 
-##### Python (version >=0.x.x)
+##### Python
+
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "-"
+}
+```
 
 ```sh
 # TODO:
@@ -138,7 +183,16 @@ mojo build hello.mojo
 
 #### Add package dependency
 
-##### Python (version >=0.x.x)
+##### Python
+
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "-"
+}
+```
 
 ```sh
 # TODO:
@@ -164,7 +218,16 @@ magic add {{package-name}}
 
 #### Compile package
 
-##### Python (version >=0.x.x)
+##### Python
+
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "-"
+}
+```
 
 ```sh
 # TODO:

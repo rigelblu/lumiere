@@ -87,7 +87,7 @@ metadata {
 metadata {
   "language": "mojo",
   "language_version":">=0.1.x",
-  "code_role": "anchor",
+  "code_role": "trail",
   "code_author": "human"
 }
 ```

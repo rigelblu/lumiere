@@ -2,9 +2,16 @@
 
 #### Define a trait
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 from abc import ABC, abstractmethod
@@ -68,9 +75,16 @@ public:
 
 #### Conform struct to a string trait
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 class Point:
@@ -191,9 +205,16 @@ int main() {
 
 #### Implement index access trait
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 class Point:
@@ -361,9 +382,16 @@ int main() {
 
 #### Conform function argument type to a trait
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 from typing import Protocol, Tuple
@@ -587,9 +615,16 @@ void useTraitFunction() {
 
 #### Conform to a writeable trait
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 from abc import ABC, abstractmethod

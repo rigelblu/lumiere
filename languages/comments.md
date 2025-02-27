@@ -2,7 +2,16 @@
 
 #### Write comments that will be ignored
 
-##### Python (version >=x.x.x)
+##### Python
+
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Single line comment

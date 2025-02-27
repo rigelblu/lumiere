@@ -2,7 +2,16 @@
 
 #### Define a group of statements (i.e. code) to be executed together
 
-##### Python (version >=0.x.x)
+##### Python
+
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "human"
+}
+```
 
 ```py
 if condition:

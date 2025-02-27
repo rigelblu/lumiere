@@ -5,7 +5,16 @@
 **What it does:**
 - Ensures that resources it manages are properly release
 
-##### Python (version >=0.x.x)
+##### Python
+
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "-"
+}
+```
 
 ```py
 # TODO:

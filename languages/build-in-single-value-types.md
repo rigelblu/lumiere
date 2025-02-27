@@ -2,9 +2,16 @@
 
 #### Define a boolean
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Implicit boolean
@@ -50,9 +57,16 @@ var flag2 bool = false
 
 #### Define a integer
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Implicit integer
@@ -118,9 +132,16 @@ var year10 uint64 = 2025
 
 #### Define a real-number
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Implicit real-number
@@ -169,9 +190,16 @@ var pi3 float64 = 3.141
 
 #### Define a dynamic object that's inferred at runtime
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Dynamic type
@@ -220,9 +248,16 @@ value2 = 42  // Valid
 
 #### Define value as any type or any type range
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Using Any type
@@ -292,9 +327,16 @@ func process(value any) {
 
 #### Convert type
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Converting between types

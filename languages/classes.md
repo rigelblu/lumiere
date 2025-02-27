@@ -2,9 +2,16 @@
 
 #### Define and use classes
 
-##### Python (version >=3.6.0)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Basic class definition
@@ -53,6 +60,7 @@ print(Person.get_species_info())
 anonymous = Person.create_anonymous()
 print(anonymous.name)  # Anonymous
 ```
+
 ##### Mojo (version >=0.x.x)
 
 TODO: LLM Generated, TODO: verify code
@@ -66,6 +74,7 @@ TODO: LLM Generated, TODO: verify code
 ```mojo
 # Not implemented. Use nearest alternative
 ```
+
 ##### TypeScript (version >=4.0.0)
 
 TODO: LLM Generated, TODO: verify code

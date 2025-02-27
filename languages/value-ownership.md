@@ -21,9 +21,16 @@
 
 #### Define a value as mutable
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Python variables are mutable by default
@@ -118,9 +125,16 @@ void updateValueByRef(int& value) {
 
 #### Define a value as passed by value or by reference
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Python passes references to objects, but the reference itself is passed by value
@@ -254,9 +268,16 @@ void updateValue(int* ptr) {
 
 #### Define a value as ?
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 class Point:
@@ -408,7 +429,16 @@ public:
 
 #### Assign / pass by value (value semantics)
 
-##### Python (version >=0.x.x)
+##### Python
+
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 **What it does:**
 - When you call a Python function and pass an object with a pointer to a heap-allocated value. Python actually gives that function a reference to your object, which allows the function to mutate the heap-allocated value
@@ -596,7 +626,16 @@ fn update_point(mut p: Point) -> Point {
 
 #### Assign / pass by referece and allow mutating (reference semantics)
 
-##### Python (version >=0.x.x)
+##### Python
+
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Example 1: Mutating through reference (mutable objects)
@@ -828,7 +867,16 @@ void mutate(List& l) {
 - The read argument always gets an immutable reference or a local copy. You can't transfer a value into a read argument.
 - The owned argument always gets a uniquely owned value, which may have been copied or transferred from the callee. Using owned arguments without the transfer sigil (^) usually results in values being copied.
 
-##### Python (version >=0.x.x)
+##### Python
+
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Python doesn't have explicit ownership transfer like Mojo
@@ -1021,7 +1069,6 @@ std::string takeText2(std::string text) {
     return text;                                // Return the modified value
 }
 ```
-
 
 ### TODO
 

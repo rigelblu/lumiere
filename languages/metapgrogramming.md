@@ -2,7 +2,16 @@
 
 #### Define a parameter at compile time
 
-##### Python (version >=0.x.x)
+##### Python
+
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "-"
+}
+```
 
 ```py
 # TODO:

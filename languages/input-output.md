@@ -2,9 +2,16 @@
 
 #### Print to console
 
-##### Python (version >=3.6.0)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Basic print
@@ -58,9 +65,16 @@ fmt.Print("world\n")
 
 #### Read from console
 
-##### Python (version >=3.6.0)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Basic input (returns string)
@@ -131,9 +145,16 @@ fmt.Scanf("%d", &year)
 
 #### Read from file
 
-##### Python (version >=3.6.0)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Using with statement (recommended)
@@ -244,9 +265,16 @@ for scanner.Scan() {
 
 #### Write to file
 
-##### Python (version >=3.6.0)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Using with statement (recommended)

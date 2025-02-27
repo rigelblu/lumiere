@@ -2,7 +2,7 @@
 
 #### Add python dependency
 
-##### Python (version >=0.x.x)
+##### Mojo (version >=0.x.x)
 
 ```sh
 magic add "python>=311,<3.13" "pygame>=2.6.1,<3"
@@ -10,7 +10,16 @@ magic add "python>=311,<3.13" "pygame>=2.6.1,<3"
 
 #### Import python
 
-##### Python (version >=0.x.x)
+##### Python
+
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 import numpy as np
@@ -35,7 +44,16 @@ def main():
 
 #### Interate over a python collections
 
-##### Python (version >=0.x.x)
+##### Python
+
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # List iteration

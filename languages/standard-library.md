@@ -4,7 +4,16 @@ REFACTOR: move into separate files inside a standard-library directory
 
 #### Print to console
 
-##### Python (version >=0.x.x)
+##### Python
+
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # TODO:

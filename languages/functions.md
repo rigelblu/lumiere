@@ -2,9 +2,16 @@
 
 #### Main entry point
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Main function definition
@@ -64,9 +71,16 @@ func main() {
 
 #### Define a function with explicit types
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # No parameters, no return value
@@ -175,9 +189,16 @@ Support methods, fields, operator overloading, decorators for metaprogramming
     - Recived as a value if type is declared as any other type
   - Return types default to object
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # No explicit types
@@ -304,9 +325,16 @@ hello3("world")
 
 #### Chain functions
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 def hello():
@@ -423,9 +451,16 @@ func main() {
 
 #### Define optional arguments on function
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 def color1(name: str = "blue"):
@@ -544,9 +579,16 @@ color2(WithName("green"))
 
 #### Invoke functions with keywords arguments
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 def point1(x: int, y: int, z: int):
@@ -652,9 +694,16 @@ point1(params)
 
 #### Define a function with a variable number of arguments
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 def point1(d1: int, *d2: int):
@@ -756,9 +805,16 @@ sumAll(1, numbers...)  // Spread operator for slices
 
 #### Define a function with a variable number of arguments of Strings
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 def point1(d1: int, *d2: str):
@@ -860,9 +916,16 @@ concatStrings("Pre-", words...)
 
 #### Define a function with a variable number of keywords arguments
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 def point1(**kwargs: int):
@@ -986,9 +1049,16 @@ config := createConfig(true, settings)
 
 #### Define a function with named return values
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 from typing import NamedTuple, Tuple
@@ -1134,9 +1204,16 @@ fmt.Println(tag.Name)
 
 - **What is it:** same function, with different signature names
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Python doesn't support true function overloading

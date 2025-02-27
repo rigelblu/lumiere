@@ -12,9 +12,16 @@
 
 #### Define behaviour when instance of struct is created, moved, copied, and destroyed
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 class Person:
@@ -134,9 +141,16 @@ func main() {
 
 *How it works:* compiler provides "member-wise" constructor `__init__()`, `__copyinit__()`, `__moveinit__()`
 
-##### Python (version >=0.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Python doesn't auto-generate lifecycle methods
@@ -217,7 +231,16 @@ func NewPerson(name string) Person {
 
 #### Specify origin types
 
-##### Python (version >=0.x.x)
+##### Python
+
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 from typing import TypeVar, Generic, TypedDict

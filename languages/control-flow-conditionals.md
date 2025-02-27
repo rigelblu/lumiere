@@ -9,9 +9,16 @@
 
 #### Execute block if condition is true
 
-##### Python (version >=x.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 year = 2025
@@ -85,9 +92,16 @@ if year <= 2025 {
 
 #### Execute inline statement if condition is true
 
-##### Python (version >=x.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 if year < 2021: print("Past")  # Inline code
@@ -133,9 +147,16 @@ if !(year == 2025) { fmt.Println("Not present") }  // Negation example
 
 #### Execute if either or both conditions are true
 
-##### Python (version >=x.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Either conditions
@@ -193,9 +214,16 @@ if falseFunc() && trueFunc() {
 
 #### Assign value to variable if condition is true
 
-##### Python (version >=x.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 time = "future" if year > 2020 else "past"
@@ -238,9 +266,16 @@ time := func() string {
 
 #### Ternary conditionals
 
-##### Python (version >=x.x.x)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 year = 2025

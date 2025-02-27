@@ -9,9 +9,16 @@
   - StringableRaising - can raise an error
   - Signature: `__str__() -> String`
 
-##### Python (version >=3.6.0)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Implicit string
@@ -83,9 +90,16 @@ var c4 string = "yellow"
 
 #### Define a list (array) of values
 
-##### Python (version >=3.6.0)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Implicit
@@ -194,9 +208,17 @@ for i := 0; i < len(list2); i++ {
 
 #### Operations on a list (array) of values
 
-##### Python (version >=3.6.0)
+##### Python
 
-TODO: LLM Generated, TODO: verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
+
 ```py
 l2 = [1, 2, 3, 4]
 g1 = [
@@ -289,9 +311,16 @@ fmt.Println(l2)
 
 #### Define a dictionary
 
-##### Python (version >=3.6.0)
+##### Python
 
-TODO: LLM Generated, verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Explicit
@@ -365,9 +394,16 @@ for key, value := range d {
 
 Tuples are immutable and can hold multiple types
 
-##### Python (version >=3.9.0)
+##### Python
 
-TODO: LLM Generated, verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 # Explicit tuple
@@ -437,9 +473,16 @@ day := date.Day
 
 #### Define a set
 
-##### Python (version >=3.6.0)
+##### Python
 
-TODO: LLM Generated, verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 colors = {"blue", "yellow"}
@@ -501,9 +544,16 @@ for color := range c1 {
 
 #### Define as optional or none value
 
-##### Python (version >=3.10.0)
+##### Python
 
-TODO: LLM Generated, verify code
+```json
+metadata {
+  "language": "python",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
 
 ```py
 from typing import Optional
