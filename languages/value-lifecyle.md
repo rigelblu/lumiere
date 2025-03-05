@@ -21,6 +21,7 @@ metadata {
 
 **Conventions:**
 - Manage memory and resources for each type by implementing specific lifecycle methods: constructor, copy constructor, move constructor, and destructor.
+- `Self` is an alias for the current type name (i.e. `Point1D`)
 
 #### Define behaviour when instance of struct is created, moved, copied, and destroyed
 
@@ -72,6 +73,9 @@ metadata {
 
 - Mojo may invoke this method if a value of that type is transferred into a function as an owned argument, and the original variable's lifetime ends at the same point (with or without use of the ^ transfer sigil)
 - In some cases, Mojo can optimize away the move operation entirely, leaving the value in the same memory location but updating its ownership. In these cases, a value can be transferred without invoking either the __copyinit__() or __moveinit__() constructors.
+
+**Convetions:**
+- If your type doesn't use any pointers for heap-allocated data, then writing the constructor and copy constructor is all boilerplate code that you shouldn't have to write
 
 ```mojo
 struct Point:
@@ -480,6 +484,43 @@ func NewParametricRef(isMutable bool) ParametricRef {
     }
     return ParametricRef{isMutable: isMutable, origin: origin}
 }
+```
+
+#### Create a copy of a value
+
+##### Python (version >=0.x.x)
+
+```py
+# TODO:
+```
+
+##### Mojo (version >=0.x.x)
+
+```mojo
+struct Point1D:
+    var x: Int
+
+    fn __init__(out self, x: Int):
+        self.x = x
+
+    fn __copyinit__(out self, existing: Self):
+        self.x = existing.x
+
+def main():
+    p1 = Point1D(5)
+    p2 = p1
+```
+
+##### TypeScript (version >=0.x.x)
+
+```ts
+// TODO:
+```
+
+##### Go (version >=0.x.x)
+
+```go
+// TODO:
 ```
 
 ### TODO
