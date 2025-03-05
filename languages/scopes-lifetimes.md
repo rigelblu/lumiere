@@ -347,3 +347,7 @@ func myFunction() {
 }
 // functionVar not accessible here
 ```
+
+#### TODO
+
+- [Death of a value()](https://docs.modular.com/mojo/manual/lifecycle/death)
