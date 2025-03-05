@@ -19,6 +19,9 @@ metadata {
   - When working with references—specifically ref arguments and ref return values.
   - When working with types like Pointer or Span which are parameterized on the origin of the data they refer to
 
+**Conventions:**
+- Manage memory and resources for each type by implementing specific lifecycle methods: constructor, copy constructor, move constructor, and destructor.
+
 #### Define behaviour when instance of struct is created, moved, copied, and destroyed
 
 ##### Python
@@ -67,8 +70,30 @@ metadata {
 }
 ```
 
+- Mojo may invoke this method if a value of that type is transferred into a function as an owned argument, and the original variable's lifetime ends at the same point (with or without use of the ^ transfer sigil)
+- In some cases, Mojo can optimize away the move operation entirely, leaving the value in the same memory location but updating its ownership. In these cases, a value can be transferred without invoking either the __copyinit__() or __moveinit__() constructors.
+
+
 ```mojo
-# TODO:
+struct Point:
+    var x, y: Int
+
+    # Constructor
+    def __init__(out self, x: Int, y: Int):
+        self.x = x
+        self.y = y
+
+    # Destructor
+    def __del__(self):
+        # code...
+
+    # Copy Constructor
+    def __copyinit__(out self, existing other):
+        # code...
+
+    # Move Constructor
+    def __moveinit__(...)
+        # code...
 ```
 
 ##### TypeScript
