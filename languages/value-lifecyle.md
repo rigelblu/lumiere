@@ -523,6 +523,98 @@ def main():
 // TODO:
 ```
 
+#### Move the value as a reference
+
+
+##### Python (version >=0.x.x)
+
+```py
+# TODO:
+```
+
+##### Mojo (version >=0.x.x)
+
+**How it works:**
+- Invalidates the original variable, preventing any access to it and disabling its destructor
+- Calls this move constructor only when the original variable's lifetime actually ends at the point of transfer
+
+**Conventions:**
+- For types without heap-allocated fields, you get no real benefit from the move constructor. Making copies of simple data types on the stack, like integers, floats, and booleans, is very cheap. Yet, if you allow your type to be copied, then there's generally no reason to disallow moves, so you can synthesize both constructors by adding the @value decorator
+- Use the default member-wise and move constructor, but create a custom copy constructor
+- Use @value to create a member-wise constructor, and add overloads that take different sets of arguments
+
+```mojo
+struct HeapPoint:
+    var data: UnsafePointer[Int]
+    var size: Int
+
+    fn __init__(out self, size: Int):
+        self.size = size
+        self.data = UnsafePointer[Int].alloc(self.size)
+        for i in range(self.size):
+            # code...
+
+    fn __moveinit__(out self, owned existing: Self):
+        self.size = existing.size
+        self.data = existing.data
+
+    fn __del__(owned self):
+        for i in range(self.size):
+            # code...
+        self.data.free()
+
+def main():
+    var a = HeapPoint(3)
+    var b = a^
+
+    b.dump()   # Prints [1, 1, 1]
+    #a.dump()  # ERROR: use of uninitialized value 'a'
+```
+
+##### TypeScript (version >=0.x.x)
+
+```ts
+// TODO:
+```
+
+##### Go (version >=0.x.x)
+
+```go
+// TODO:
+```
+
+#### Use CPU registers when possible
+
+##### Python (version >=0.x.x)
+
+```py
+# TODO:
+```
+
+##### Mojo (version >=0.x.x)
+
+```mojo
+@register_passable("trivial")
+struct Int:
+    var value: __mlir_type.index
+
+    fn __init__(value: __mlir_type.index) -> Int:
+        return Self {value: value}
+    ...
+```
+
+##### TypeScript (version >=0.x.x)
+
+```ts
+// TODO:
+```
+
+##### Go (version >=0.x.x)
+
+```go
+// TODO:
+```
+
 ### TODO
 
 - [Origin types](https://docs.modular.com/mojo/manual/values/lifetimes#origin-types)
