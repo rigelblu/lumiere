@@ -1,4 +1,4 @@
-### Scopes
+### Scopes & Value Lifetimes
 
 #### Make variable available globally across program
 

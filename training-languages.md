@@ -9,7 +9,7 @@
     - [Comments](./languages/comments.md)
     - [Blocks & Statements](./languages/blocks-statements.md)
     - [Values & Operations](./languages/values-operations.md)
-    - [Scopes](./languages/scopes.md)
+    - [Scopes & Value Lifetimes](./languages/scopes-lifetimes.md)
     - [Built-in Single Value Types](./languages/built-in-single-value-types.md)
     - [Built-in Collection Types](./languages/built-in-collection-types.md)
     - [User Defined Types](./languages/user-defined-types.md)
