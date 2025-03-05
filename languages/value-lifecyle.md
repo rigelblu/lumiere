@@ -1,4 +1,4 @@
-### Value Lifetimes
+### Value Lifecycle
 
 ##### Mojo
 

@@ -15,7 +15,7 @@
     - [User Defined Types](./languages/user-defined-types.md)
     - [Classes](./languages/classes.md)
     - [Value Ownership](./languages/value-ownership.md)
-    - [Value Lifetimes](./languages/value-lifetimes.md)
+    - [Value Lifecycle](./languages/value-lifecycle.md)
     - [Control-Flow / Conditionals](./languages/control-flow-conditionals.md)
     - [Control-Flow / Iterations / For](./languages/control-flow-iterations-for.md)
     - [Control-Flow / Iterations / While](./languages/control-flow-iterations-while.md)
