@@ -1,5 +1,13 @@
 ### Scopes & Value Lifetimes
 
+##### Mojo
+
+**Definitions:**
+- Lifetime:
+   - Span of time during program execution in which the value is considered valid
+   - Begins when its value is initialized (via __init__(), __copyinit__() or __moveinit__())
+   - Ends when the value is destroyed (__del__()), or consumed in some other way (for example, as part of a __moveinit__() call)
+
 #### Make variable available globally across program
 
 ##### Python
