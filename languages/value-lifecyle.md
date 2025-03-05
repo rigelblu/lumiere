@@ -73,15 +73,18 @@ metadata {
 - Mojo may invoke this method if a value of that type is transferred into a function as an owned argument, and the original variable's lifetime ends at the same point (with or without use of the ^ transfer sigil)
 - In some cases, Mojo can optimize away the move operation entirely, leaving the value in the same memory location but updating its ownership. In these cases, a value can be transferred without invoking either the __copyinit__() or __moveinit__() constructors.
 
-
 ```mojo
 struct Point:
-    var x, y: Int
+    var x: Int
+    var y: Int
+    var name: String
 
     # Constructor
     def __init__(out self, x: Int, y: Int):
         self.x = x
         self.y = y
+        Self.setName(self)                      # Can use self before constructor is finished
+        print("constructor: x=", self.name)
 
     # Destructor
     def __del__(self):
@@ -94,6 +97,9 @@ struct Point:
     # Move Constructor
     def __moveinit__(...)
         # code...
+
+    def setName(self, name: String = "Not Set"):
+        self.name = name
 ```
 
 ##### TypeScript

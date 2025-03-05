@@ -107,6 +107,11 @@ metadata {
 
 ---
 
+## Sources & Credits
+- [Mojo Manual](https://docs.modular.com/mojo/manual)
+
+---
+
 ## Contribution Guideline
 
 _Draft_
