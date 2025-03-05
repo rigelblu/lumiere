@@ -137,20 +137,6 @@ struct PointType:
     var x: Int
     var y: Int
 
-    # Constructor
-    def __init__(out self, x: Int, y: Int):
-        self.x = x
-        self.y = y
-
-    # Destructor
-    def __del__(self):
-        # code...
-
-    # Copy Constructor
-    def __copyinit__(out self, existing other):
-        self.x = existing.x
-        self.y = existing.y
-
     # Method
     def str(self) -> String:
         str = "(" + x + ", " + y + ")"
@@ -403,11 +389,6 @@ struct Point:
     # Context managers
     # def __enter__(...)
     # def __exit__(...)
-
-    # Move
-    # Mojo may invoke this method if a value of that type is transferred into a function as an owned argument, and the original variable's lifetime ends at the same point (with or without use of the ^ transfer sigil)
-    # In some cases, Mojo can optimize away the move operation entirely, leaving the value in the same memory location but updating its ownership. In these cases, a value can be transferred without invoking either the __copyinit__() or __moveinit__() constructors.
-    # def __moveinit__(...)
 ```
 
 ##### TypeScript

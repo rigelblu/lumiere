@@ -1,4 +1,15 @@
-### Scopes
+### Scopes & Value Lifetimes
+
+##### Mojo
+
+**Definitions:**
+- Lifetime:
+   - Span of time during program execution in which the value is considered valid
+   - Begins when its value is initialized (via __init__(), __copyinit__() or __moveinit__())
+   - Ends when the value is destroyed (__del__()), or consumed in some other way (for example, as part of a __moveinit__() call)
+
+**How it works:**
+- The life of a value begins when a variable is initialized and continues up until the value is last used, at which point Mojo destroys it. Mojo destroys every value/object as soon as it's no longer used, using an “as soon as possible” (ASAP) destruction policy that runs after every sub-expression
 
 #### Make variable available globally across program
 
@@ -336,3 +347,7 @@ func myFunction() {
 }
 // functionVar not accessible here
 ```
+
+#### TODO
+
+- [Death of a value()](https://docs.modular.com/mojo/manual/lifecycle/death)

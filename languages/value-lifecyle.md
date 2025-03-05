@@ -1,4 +1,4 @@
-### Value Lifetimes
+### Value Lifecycle
 
 ##### Mojo
 
@@ -18,6 +18,10 @@ metadata {
 - Most of the time, origins are handled automatically by the compiler. However, in some cases you'll need to interact with origins directly:
   - When working with references—specifically ref arguments and ref return values.
   - When working with types like Pointer or Span which are parameterized on the origin of the data they refer to
+
+**Conventions:**
+- Manage memory and resources for each type by implementing specific lifecycle methods: constructor, copy constructor, move constructor, and destructor.
+- `Self` is an alias for the current type name (i.e. `Point1D`)
 
 #### Define behaviour when instance of struct is created, moved, copied, and destroyed
 
@@ -67,8 +71,39 @@ metadata {
 }
 ```
 
+- Mojo may invoke this method if a value of that type is transferred into a function as an owned argument, and the original variable's lifetime ends at the same point (with or without use of the ^ transfer sigil)
+- In some cases, Mojo can optimize away the move operation entirely, leaving the value in the same memory location but updating its ownership. In these cases, a value can be transferred without invoking either the __copyinit__() or __moveinit__() constructors.
+
+**Convetions:**
+- If your type doesn't use any pointers for heap-allocated data, then writing the constructor and copy constructor is all boilerplate code that you shouldn't have to write
+
 ```mojo
-# TODO:
+struct Point:
+    var x: Int
+    var y: Int
+    var name: String
+
+    # Constructor
+    def __init__(out self, x: Int, y: Int):
+        self.x = x
+        self.y = y
+        Self.setName(self)                      # Can use self before constructor is finished
+        print("constructor: x=", self.name)
+
+    # Destructor
+    def __del__(self):
+        # code...
+
+    # Copy Constructor
+    def __copyinit__(out self, existing other):
+        # code...
+
+    # Move Constructor
+    def __moveinit__(...)
+        # code...
+
+    def setName(self, name: String = "Not Set"):
+        self.name = name
 ```
 
 ##### TypeScript
@@ -449,6 +484,135 @@ func NewParametricRef(isMutable bool) ParametricRef {
     }
     return ParametricRef{isMutable: isMutable, origin: origin}
 }
+```
+
+#### Create a copy of a value
+
+##### Python (version >=0.x.x)
+
+```py
+# TODO:
+```
+
+##### Mojo (version >=0.x.x)
+
+```mojo
+struct Point1D:
+    var x: Int
+
+    fn __init__(out self, x: Int):
+        self.x = x
+
+    fn __copyinit__(out self, existing: Self):
+        self.x = existing.x
+
+def main():
+    p1 = Point1D(5)
+    p2 = p1
+```
+
+##### TypeScript (version >=0.x.x)
+
+```ts
+// TODO:
+```
+
+##### Go (version >=0.x.x)
+
+```go
+// TODO:
+```
+
+#### Move the value as a reference
+
+
+##### Python (version >=0.x.x)
+
+```py
+# TODO:
+```
+
+##### Mojo (version >=0.x.x)
+
+**How it works:**
+- Invalidates the original variable, preventing any access to it and disabling its destructor
+- Calls this move constructor only when the original variable's lifetime actually ends at the point of transfer
+
+**Conventions:**
+- For types without heap-allocated fields, you get no real benefit from the move constructor. Making copies of simple data types on the stack, like integers, floats, and booleans, is very cheap. Yet, if you allow your type to be copied, then there's generally no reason to disallow moves, so you can synthesize both constructors by adding the @value decorator
+- Use the default member-wise and move constructor, but create a custom copy constructor
+- Use @value to create a member-wise constructor, and add overloads that take different sets of arguments
+
+```mojo
+struct HeapPoint:
+    var data: UnsafePointer[Int]
+    var size: Int
+
+    fn __init__(out self, size: Int):
+        self.size = size
+        self.data = UnsafePointer[Int].alloc(self.size)
+        for i in range(self.size):
+            # code...
+
+    fn __moveinit__(out self, owned existing: Self):
+        self.size = existing.size
+        self.data = existing.data
+
+    fn __del__(owned self):
+        for i in range(self.size):
+            # code...
+        self.data.free()
+
+def main():
+    var a = HeapPoint(3)
+    var b = a^
+
+    b.dump()   # Prints [1, 1, 1]
+    #a.dump()  # ERROR: use of uninitialized value 'a'
+```
+
+##### TypeScript (version >=0.x.x)
+
+```ts
+// TODO:
+```
+
+##### Go (version >=0.x.x)
+
+```go
+// TODO:
+```
+
+#### Use CPU registers when possible
+
+##### Python (version >=0.x.x)
+
+```py
+# TODO:
+```
+
+##### Mojo (version >=0.x.x)
+
+```mojo
+@register_passable("trivial")
+struct Int:
+    var value: __mlir_type.index
+
+    fn __init__(value: __mlir_type.index) -> Int:
+        return Self {value: value}
+    ...
+```
+
+##### TypeScript (version >=0.x.x)
+
+```ts
+// TODO:
+```
+
+##### Go (version >=0.x.x)
+
+```go
+// TODO:
 ```
 
 ### TODO
