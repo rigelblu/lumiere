@@ -7,12 +7,7 @@ REFACTOR: move into separate files inside a standard-library directory
 ##### Python
 
 ```json
-metadata {
-  "language": "python",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```py
@@ -22,12 +17,7 @@ metadata {
 ##### Mojo
 
 ```json
-metadata {
-  "language": "mojo",
-  "language_version":">=0.6.x",
-  "code_role": "anchor",
-  "code_author": "human"
-}
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
 ```mojo
@@ -37,12 +27,7 @@ metadata {
 ##### TypeScript
 
 ```json
-metadata {
-  "language": "typescript",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```ts
@@ -52,12 +37,7 @@ metadata {
 ##### Go
 
 ```json
-metadata {
-  "language": "go",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```go

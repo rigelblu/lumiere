@@ -7,12 +7,7 @@ As known as type aliases
 ##### Python
 
 ```json
-metadata {
-  "language": "python",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "human"
-}
+metadata { "language": "python",  "language_version":">=0.x.x", "code_role": "trail", "code_author": "human" }
 ```
 
 ```py
@@ -23,12 +18,7 @@ c1: ColorType = "blue"
 ##### Mojo
 
 ```json
-metadata {
-  "language": "mojo",
-  "language_version":">=0.6.x",
-  "code_role": "anchor",
-  "code_author": "human"
-}
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
 ```mojo
@@ -39,12 +29,7 @@ var c1: ColorType = "blue"
 ##### TypeScript
 
 ```json
-metadata {
-  "language": "typescript",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```ts
@@ -55,12 +40,7 @@ let c1: ColorType = "blue";
 ##### Go
 
 ```json
-metadata {
-  "language": "go",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```go
@@ -78,12 +58,7 @@ Custom data structure with
 ##### Python
 
 ```json
-metadata {
-  "language": "python",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "human"
-}
+metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "human" }
 ```
 
 ```py
@@ -112,12 +87,7 @@ x = p1.x
 ##### Mojo
 
 ```json
-metadata {
-  "language": "mojo",
-  "language_version":">=0.6.x",
-  "code_role": "anchor",
-  "code_author": "human"
-}
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
 - **Constraints**:
@@ -159,12 +129,7 @@ print(p1.str())           # Call struct's method
 ##### TypeScript
 
 ```json
-metadata {
-  "language": "typescript",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```ts
@@ -185,12 +150,7 @@ let x = p1.x;
 ##### Go
 
 ```json
-metadata {
-  "language": "go",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```go
@@ -209,12 +169,7 @@ x := p1.x
 ##### Python
 
 ```json
-metadata {
-  "language": "python",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```py
@@ -251,12 +206,7 @@ class Point:
 ##### Mojo
 
 ```json
-metadata {
-  "language": "mojo",
-  "language_version":">=0.6.x",
-  "code_role": "anchor",
-  "code_author": "human"
-}
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
 **Constraints:** The `Comparable` and `EqualityComparable` traits don't allow the comparison dunder methods to raise errors. Because using `def` to define a method implies that it can raise an error, you must use `fn` to implement the comparison methods declared by these traits.
@@ -394,12 +344,7 @@ struct Point:
 ##### TypeScript
 
 ```json
-metadata {
-  "language": "typescript",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```ts
@@ -443,12 +388,7 @@ class Point {
 ##### Go
 
 ```json
-metadata {
-  "language": "go",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```go

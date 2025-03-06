@@ -3,12 +3,7 @@
 ##### Mojo
 
 ```json
-metadata {
-  "language": "mojo",
-  "language_version":">=0.6.x",
-  "code_role": "anchor",
-  "code_author": "human"
-}
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
 **Constraints:**
@@ -21,12 +16,7 @@ metadata {
 ##### Python
 
 ```json
-metadata {
-  "language": "python",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```py
@@ -46,12 +36,7 @@ else:
 ##### Mojo
 
 ```json
-metadata {
-  "language": "mojo",
-  "language_version":">=0.6.x",
-  "code_role": "anchor",
-  "code_author": "human"
-}
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
 ```mojo
@@ -71,12 +56,7 @@ else:
 ##### TypeScript
 
 ```json
-metadata {
-  "language": "typescript",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```ts
@@ -98,12 +78,7 @@ if (year <= 2025) {
 ##### Go
 
 ```json
-metadata {
-  "language": "go",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```go
@@ -127,12 +102,7 @@ if year <= 2025 {
 ##### Python
 
 ```json
-metadata {
-  "language": "python",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```py
@@ -146,12 +116,7 @@ if not (year == 2025): print("Not present")  # Negation example
 ##### Mojo
 
 ```json
-metadata {
-  "language": "mojo",
-  "language_version":">=0.6.x",
-  "code_role": "anchor",
-  "code_author": "human"
-}
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
 ```mojo
@@ -165,12 +130,7 @@ if year != 2025: # code...skipped when condition is False
 ##### TypeScript
 
 ```json
-metadata {
-  "language": "typescript",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```ts
@@ -184,12 +144,7 @@ if (!(year === 2025)) console.log("Not present");  // Negation example
 ##### Go
 
 ```json
-metadata {
-  "language": "go",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```go
@@ -205,12 +160,7 @@ if !(year == 2025) { fmt.Println("Not present") }  // Negation example
 ##### Python
 
 ```json
-metadata {
-  "language": "python",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```py
@@ -226,12 +176,7 @@ if false_func() and true_func():
 ##### Mojo
 
 ```json
-metadata {
-  "language": "mojo",
-  "language_version":">=0.6.x",
-  "code_role": "anchor",
-  "code_author": "human"
-}
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
 ```mojo
@@ -247,12 +192,7 @@ if false_func() and true_func():
 ##### TypeScript
 
 ```json
-metadata {
-  "language": "typescript",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```ts
@@ -270,12 +210,7 @@ if (falseFunc() && trueFunc()) {
 ##### Go
 
 ```json
-metadata {
-  "language": "go",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```go
@@ -295,12 +230,7 @@ if falseFunc() && trueFunc() {
 ##### Python
 
 ```json
-metadata {
-  "language": "python",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```py
@@ -310,12 +240,7 @@ time = "future" if year > 2020 else "past"
 ##### Mojo
 
 ```json
-metadata {
-  "language": "mojo",
-  "language_version":">=0.6.x",
-  "code_role": "anchor",
-  "code_author": "human"
-}
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
 ```mojo
@@ -325,12 +250,7 @@ time = "future" if year > 2020 else "past"
 ##### TypeScript
 
 ```json
-metadata {
-  "language": "typescript",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```ts
@@ -340,12 +260,7 @@ const time = year > 2020 ? "future" : "past";
 ##### Go
 
 ```json
-metadata {
-  "language": "go",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```go
@@ -370,12 +285,7 @@ time := func() string {
 ##### Python
 
 ```json
-metadata {
-  "language": "python",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```py
@@ -386,12 +296,7 @@ label = "current" if year == 2025 else "past or future"
 ##### Mojo
 
 ```json
-metadata {
-  "language": "mojo",
-  "language_version":">=0.6.x",
-  "code_role": "anchor",
-  "code_author": "human"
-}
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
 ```mojo
@@ -402,12 +307,7 @@ label = "current" if year == 20250 else "past or future"
 ##### TypeScript
 
 ```json
-metadata {
-  "language": "typescript",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```ts
@@ -418,12 +318,7 @@ const label = year === 2025 ? "current" : "past or future";
 ##### Go
 
 ```json
-metadata {
-  "language": "go",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```go

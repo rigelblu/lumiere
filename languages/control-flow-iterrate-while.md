@@ -5,12 +5,7 @@
 ##### Python
 
 ```json
-metadata {
-  "language": "python",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```py
@@ -23,12 +18,7 @@ while n < 50:
 ##### Mojo
 
 ```json
-metadata {
-  "language": "mojo",
-  "language_version":">=0.6.x",
-  "code_role": "anchor",
-  "code_author": "human"
-}
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
 ```mojo
@@ -42,12 +32,7 @@ while n < 50:
 ##### TypeScript
 
 ```json
-metadata {
-  "language": "typescript",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```ts
@@ -61,12 +46,7 @@ while (n < 50) {
 ##### Go
 
 ```json
-metadata {
-  "language": "go",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```go
@@ -82,12 +62,7 @@ for n < 50 {
 ##### Python
 
 ```json
-metadata {
-  "language": "python",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```py
@@ -102,12 +77,7 @@ while n < 5:
 ##### Mojo
 
 ```json
-metadata {
-  "language": "mojo",
-  "language_version":">=0.6.x",
-  "code_role": "anchor",
-  "code_author": "human"
-}
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
 ```mojo
@@ -121,12 +91,7 @@ while n < 5:
 ##### TypeScript
 
 ```json
-metadata {
-  "language": "typescript",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```ts
@@ -143,12 +108,7 @@ while (n < 5) {
 ##### Go
 
 ```json
-metadata {
-  "language": "go",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```go
@@ -167,12 +127,7 @@ for n < 5 {
 ##### Python
 
 ```json
-metadata {
-  "language": "python",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```py
@@ -187,12 +142,7 @@ while n < 5:
 ##### Mojo
 
 ```json
-metadata {
-  "language": "mojo",
-  "language_version":">=0.6.x",
-  "code_role": "anchor",
-  "code_author": "human"
-}
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
 ```mojo
@@ -206,12 +156,7 @@ while n < 5:
 ##### TypeScript
 
 ```json
-metadata {
-  "language": "typescript",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```ts
@@ -228,12 +173,7 @@ while (n < 5) {
 ##### Go
 
 ```json
-metadata {
-  "language": "go",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```go
@@ -252,12 +192,7 @@ for n < 5 {
 ##### Python
 
 ```json
-metadata {
-  "language": "python",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```py
@@ -280,12 +215,7 @@ else:
 ##### Mojo
 
 ```json
-metadata {
-  "language": "mojo",
-  "language_version":">=0.6.x",
-  "code_role": "anchor",
-  "code_author": "human"
-}
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
 **What it does:** the else clause executes after iterating over all of the elements in a collection
@@ -302,12 +232,7 @@ else:
 ##### TypeScript
 
 ```json
-metadata {
-  "language": "typescript",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```ts
@@ -338,12 +263,7 @@ if (!hasBreak) {
 ##### Go
 
 ```json
-metadata {
-  "language": "go",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```go

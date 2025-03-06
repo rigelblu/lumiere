@@ -16,12 +16,7 @@
 ##### Python
 
 ```json
-metadata {
-  "language": "python",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```py
@@ -31,12 +26,7 @@ global_var = "I'm global"
 ##### Mojo
 
 ```json
-metadata {
-  "language": "mojo",
-  "language_version":">=0.6.x",
-  "code_role": "anchor",
-  "code_author": "human"
-}
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
 ```mojo
@@ -46,12 +36,7 @@ metadata {
 ##### TypeScript
 
 ```json
-metadata {
-  "language": "typescript",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```ts
@@ -65,12 +50,7 @@ globalThis.globalVar = "I'm global";
 ##### Go
 
 ```json
-metadata {
-  "language": "go",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```go
@@ -87,12 +67,7 @@ var GlobalVar string = "I'm global"
 ##### Python
 
 ```json
-metadata {
-  "language": "python",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```py
@@ -111,12 +86,7 @@ from ..pkg1.file1 import * # _PRIMARY won't be imported
 ##### Mojo
 
 ```json
-metadata {
-  "language": "mojo",
-  "language_version":">=0.6.x",
-  "code_role": "anchor",
-  "code_author": "human"
-}
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
 ```mojo
@@ -126,12 +96,7 @@ metadata {
 ##### TypeScript
 
 ```json
-metadata {
-  "language": "typescript",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```ts
@@ -147,12 +112,7 @@ import * as file1 from '../pkg1/file1'
 ##### Go
 
 ```json
-metadata {
-  "language": "go",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```go
@@ -175,12 +135,7 @@ import "colors"
 ##### Python
 
 ```json
-metadata {
-  "language": "python",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```py
@@ -198,12 +153,7 @@ from pkg1 import PRIMARY
 ##### Mojo
 
 ```json
-metadata {
-  "language": "mojo",
-  "language_version":">=0.6.x",
-  "code_role": "anchor",
-  "code_author": "human"
-}
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
 ```mojo
@@ -217,12 +167,7 @@ from ..pkg1/file1 import *
 ##### TypeScript
 
 ```json
-metadata {
-  "language": "typescript",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```ts
@@ -242,12 +187,7 @@ import { PRIMARY } from '../pkg1/file1';
 ##### Go
 
 ```json
-metadata {
-  "language": "go",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```go
@@ -269,12 +209,7 @@ c1 := colors.Primary
 ##### Python
 
 ```json
-metadata {
-  "language": "python",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```py
@@ -289,12 +224,7 @@ def my_function():
 ##### Mojo
 
 ```json
-metadata {
-  "language": "mojo",
-  "language_version":">=0.6.x",
-  "code_role": "anchor",
-  "code_author": "human"
-}
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
 ```mojo
@@ -305,12 +235,7 @@ if condition:
 ##### TypeScript
 
 ```json
-metadata {
-  "language": "typescript",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```ts
@@ -328,12 +253,7 @@ function myFunction() {
 ##### Go
 
 ```json
-metadata {
-  "language": "go",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```go

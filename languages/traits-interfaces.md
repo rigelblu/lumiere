@@ -5,12 +5,7 @@
 ##### Python
 
 ```json
-metadata {
-  "language": "python",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```py
@@ -25,12 +20,7 @@ class ColorTrait(ABC):
 ##### Mojo
 
 ```json
-metadata {
-  "language": "mojo",
-  "language_version":">=0.6.x",
-  "code_role": "anchor",
-  "code_author": "human"
-}
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
 ```mojo
@@ -42,12 +32,7 @@ trait ColorTrait:
 ##### TypeScript
 
 ```json
-metadata {
-  "language": "typescript",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```ts
@@ -59,12 +44,7 @@ interface ColorTrait {
 ##### Go
 
 ```json
-metadata {
-  "language": "go",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```go
@@ -76,12 +56,7 @@ type ColorTrait interface {
 ##### Rust
 
 ```json
-metadata {
-  "language": "rust"
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "rust" "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```rust
@@ -94,12 +69,7 @@ trait ColorTrait {
 ##### C++
 
 ```json
-metadata {
-  "language": "c++",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "c++", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```cpp
@@ -115,12 +85,7 @@ public:
 ##### Python
 
 ```json
-metadata {
-  "language": "python",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```py
@@ -138,12 +103,7 @@ print(str(Point(1, 2)))  # Outputs: "(1, 2)"
 ##### Mojo
 
 ```json
-metadata {
-  "language": "mojo",
-  "language_version":">=0.6.x",
-  "code_role": "anchor",
-  "code_author": "human"
-}
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
 ```mojo
@@ -161,12 +121,7 @@ print(String(Point(1,2)))
 ##### TypeScript
 
 ```json
-metadata {
-  "language": "typescript",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```ts
@@ -188,12 +143,7 @@ console.log(String(new Point(1, 2)));  // Outputs: "(1, 2)"
 ##### Go
 
 ```json
-metadata {
-  "language": "go",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```go
@@ -217,12 +167,7 @@ func main() {
 ##### Rust
 
 ```json
-metadata {
-  "language": "rust"
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "rust" "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```rust
@@ -246,12 +191,7 @@ fn main() {
 ##### C++
 
 ```json
-metadata {
-  "language": "c++",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "c++", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```cpp
@@ -282,12 +222,7 @@ int main() {
 ##### Python
 
 ```json
-metadata {
-  "language": "python",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```py
@@ -314,12 +249,7 @@ def main():
 ##### Mojo
 
 ```json
-metadata {
-  "language": "mojo",
-  "language_version":">=0.6.x",
-  "code_role": "anchor",
-  "code_author": "human"
-}
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
 ```mojo
@@ -344,12 +274,7 @@ def main():
 ##### TypeScript
 
 ```json
-metadata {
-  "language": "typescript",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```ts
@@ -377,12 +302,7 @@ function main() {
 ##### Go
 
 ```json
-metadata {
-  "language": "go",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```go
@@ -410,12 +330,7 @@ func main() {
 ##### Rust
 
 ```json
-metadata {
-  "language": "rust"
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "rust" "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```rust
@@ -453,12 +368,7 @@ fn main() {
 ##### C++
 
 ```json
-metadata {
-  "language": "c++",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "c++", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```cpp
@@ -496,12 +406,7 @@ int main() {
 ##### Python
 
 ```json
-metadata {
-  "language": "python",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```py
@@ -533,12 +438,7 @@ def use_trait_function():
 ##### Mojo
 
 ```json
-metadata {
-  "language": "mojo",
-  "language_version":">=0.6.x",
-  "code_role": "anchor",
-  "code_author": "human"
-}
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
 ```mojo
@@ -565,12 +465,7 @@ fn use_trait_function():
 ##### TypeScript
 
 ```json
-metadata {
-  "language": "typescript",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```ts
@@ -610,12 +505,7 @@ function useTraitFunction() {
 ##### Go
 
 ```json
-metadata {
-  "language": "go",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```go
@@ -660,12 +550,7 @@ func UseTraitFunction() {
 ##### Rust
 
 ```json
-metadata {
-  "language": "rust"
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "rust" "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```rust
@@ -713,12 +598,7 @@ fn use_trait_function() {
 ##### C++
 
 ```json
-metadata {
-  "language": "c++",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "c++", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```cpp
@@ -766,12 +646,7 @@ void useTraitFunction() {
 ##### Python
 
 ```json
-metadata {
-  "language": "python",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```py
@@ -832,12 +707,7 @@ print(writer.get_content())
 ##### Mojo
 
 ```json
-metadata {
-  "language": "mojo",
-  "language_version":">=0.6.x",
-  "code_role": "anchor",
-  "code_author": "human"
-}
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
 **Constraints:s**
@@ -872,12 +742,7 @@ print(msg)
 ##### TypeScript
 
 ```json
-metadata {
-  "language": "typescript",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```ts
@@ -939,12 +804,7 @@ console.log(writer.getContent());
 ##### Go
 
 ```json
-metadata {
-  "language": "go",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```go
@@ -1013,12 +873,7 @@ func main() {
 ##### Rust
 
 ```json
-metadata {
-  "language": "rust"
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "rust" "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```rust
@@ -1075,12 +930,7 @@ fn main() {
 ##### C++
 
 ```json
-metadata {
-  "language": "c++",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "c++", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```cpp

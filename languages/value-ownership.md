@@ -33,12 +33,7 @@ metadata {
 ##### Python
 
 ```json
-metadata {
-  "language": "python",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```py
@@ -54,12 +49,7 @@ def update_list(lst):
 ##### Mojo
 
 ```json
-metadata {
-  "language": "mojo",
-  "language_version":">=0.6.x",
-  "code_role": "anchor",
-  "code_author": "human"
-}
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
 ```mojo
@@ -70,12 +60,7 @@ def setColor(mut color: String) -> None:
 ##### TypeScript
 
 ```json
-metadata {
-  "language": "typescript",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```ts
@@ -96,12 +81,7 @@ const userReadOnly: User = { name: "John" };
 ##### Go
 
 ```json
-metadata {
-  "language": "go",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```go
@@ -119,12 +99,7 @@ const PI = 3.14159
 ##### Rust
 
 ```json
-metadata {
-  "language": "rust"
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "rust" "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```rust
@@ -145,12 +120,7 @@ fn increment(mut number: i32) {
 ##### C++
 
 ```json
-metadata {
-  "language": "c++",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "c++", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```cpp
@@ -178,12 +148,7 @@ void updateValueByRef(int& value) {
 ##### Python
 
 ```json
-metadata {
-  "language": "python",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```py
@@ -206,12 +171,7 @@ update_string(greeting)  # greeting is still "hello"
 ##### Mojo
 
 ```json
-metadata {
-  "language": "mojo",
-  "language_version":">=0.6.x",
-  "code_role": "anchor",
-  "code_author": "human"
-}
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
 ```mojo
@@ -227,12 +187,7 @@ def setName(read name: String) -> None:
 ##### TypeScript
 
 ```json
-metadata {
-  "language": "typescript",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```ts
@@ -258,12 +213,7 @@ modifyPrimitive(x);  // x is still 10
 ##### Go
 
 ```json
-metadata {
-  "language": "go",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```go
@@ -287,12 +237,7 @@ modifyPointer(&x)  // x is now 42
 ##### Rust
 
 ```json
-metadata {
-  "language": "rust"
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "rust" "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```rust
@@ -326,12 +271,7 @@ fn main() {
 ##### C++
 
 ```json
-metadata {
-  "language": "c++",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "c++", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```cpp
@@ -364,12 +304,7 @@ void updateValue(int* ptr) {
 ##### Python
 
 ```json
-metadata {
-  "language": "python",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```py
@@ -393,12 +328,7 @@ class Point:
 ##### Mojo
 
 ```json
-metadata {
-  "language": "mojo",
-  "language_version":">=0.6.x",
-  "code_role": "anchor",
-  "code_author": "human"
-}
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
 
@@ -420,12 +350,7 @@ struct Point:
 ##### TypeScript
 
 ```json
-metadata {
-  "language": "typescript",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```ts
@@ -452,12 +377,7 @@ class Point {
 ##### Go
 
 ```json
-metadata {
-  "language": "go",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```go
@@ -486,12 +406,7 @@ func (p Point) Dump() {
 ##### Rust
 
 ```json
-metadata {
-  "language": "rust"
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "rust" "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```rust
@@ -526,12 +441,7 @@ struct AutoPoint {
 ##### C++
 
 ```json
-metadata {
-  "language": "c++",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "c++", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```cpp
@@ -567,12 +477,7 @@ public:
 ##### Python
 
 ```json
-metadata {
-  "language": "python",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 **What it does:**
@@ -610,12 +515,7 @@ def update_vector(vec):
 ##### Mojo
 
 ```json
-metadata {
-  "language": "mojo",
-  "language_version":">=0.6.x",
-  "code_role": "anchor",
-  "code_author": "human"
-}
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
 **What it does**
@@ -659,12 +559,7 @@ fn add_two(d: Int):                           # d = c
 ##### TypeScript
 
 ```json
-metadata {
-  "language": "typescript",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```ts
@@ -696,12 +591,7 @@ function updatePoint(point: Point): Point {
 ##### Go
 
 ```json
-metadata {
-  "language": "go",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```go
@@ -739,12 +629,7 @@ func updatePoint(p Point) Point {
 ##### Rust
 
 ```json
-metadata {
-  "language": "rust"
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "rust" "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```rust
@@ -773,11 +658,7 @@ fn update_point(mut p: Point) -> Point {
 ##### C++
 
 ```json
-metadata {
-  "language": "c++",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
+metadata { "language": "c++", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm"
 }
 ```
 
@@ -809,12 +690,7 @@ fn update_point(mut p: Point) -> Point {
 ##### Python
 
 ```json
-metadata {
-  "language": "python",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```py
@@ -847,12 +723,7 @@ mutate(list_obj)       # list_obj = List(1, 2, 5)
 ##### Mojo
 
 ```json
-metadata {
-  "language": "mojo",
-  "language_version":">=0.6.x",
-  "code_role": "anchor",
-  "code_author": "human"
-}
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
 **What it does:**
@@ -901,12 +772,7 @@ fn invalid_access():
 ##### TypeScript
 
 ```json
-metadata {
-  "language": "typescript",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```ts
@@ -944,12 +810,7 @@ function mutate(l: List<number>): void {
 ##### Go
 
 ```json
-metadata {
-  "language": "go",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```go
@@ -985,12 +846,7 @@ func mutate(l *List) {
 ##### Rust
 
 ```json
-metadata {
-  "language": "rust"
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "rust" "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```rust
@@ -1032,12 +888,7 @@ fn main() {
 ##### C++
 
 ```json
-metadata {
-  "language": "c++",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "c++", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
 ```cpp
