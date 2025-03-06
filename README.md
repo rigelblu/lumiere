@@ -88,21 +88,11 @@ metadata {
 ##### Mojo
 
 ```json
-metadata {
-  "language": "mojo",
-  "language_version":">=0.6.x",
-  "code_role": "anchor",
-  "code_author": "human"
-}
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
 ```json
-metadata {
-  "language": "mojo",
-  "language_version":">=0.1.x",
-  "code_role": "trail",
-  "code_author": "human"
-}
+metadata { "language": "mojo", "language_version":">=0.1.x", "code_role": "trail", "code_author": "human" }
 ```
 
 ---
