@@ -92,7 +92,7 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
 ```
 
 ```json
-metadata { "language": "mojo", "language_version":">=0.1.x", "code_role": "trail", "code_author": "human" }
+metadata { "language": "python", "language_version":">=0.1.x", "code_role": "trail", "code_author": "human" }
 ```
 
 ---
