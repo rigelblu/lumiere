@@ -1,6 +1,21 @@
 ### Traits & Interfaces
 
-#### Define a trait
+##### Mojo
+
+**Similar to:** Java interfaces, C++ concepts, Swift protocols, and Rust traits.
+
+**What to do:**
+- define alias constants
+- define method and static method signatures, followed by three dots (indicating method isn't implemented)
+- define lifecycle methods
+
+**What not to do:** implement method
+
+**Not yet supported:**
+- Defining fields
+- Define default method implementations inside a trait
+
+#### Define and conform to a trait
 
 ##### Python
 
@@ -19,6 +34,8 @@ class ColorTrait(ABC):
 
 ##### Mojo
 
+**Constraints:** Parameters and aliases are in the same namespace, so the parameter can't have the same name as the associated alias
+
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
@@ -27,6 +44,15 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
 trait ColorTrait:
     # The three dots following the method signature indicates the method is not implemented
     def HSL(self): ...
+
+trait Shape:
+    alias numPoint: Int
+
+struct Point[num: int](Shape):
+    alias numPoints: Int = num
+    var x: Int
+
+dot = Point[1]()
 ```
 
 ##### TypeScript
@@ -80,6 +106,180 @@ public:
 };
 ```
 
+#### Define trait that inherits another trait and conform to it
+
+##### Python
+
+```json
+metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
+```
+
+```py
+# TODO:
+```
+
+##### Mojo
+
+```json
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
+```
+
+```mojo
+trait Name:
+    fn name(self):
+        ...
+
+trait Point1D(Name):
+    fn x(self):
+        ...
+
+struct Point2D(Point1D)):
+    var x: Int
+
+    def name(self):
+        # code...
+
+    def x(self):
+        # code...
+```
+
+##### TypeScript
+
+```json
+metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
+```
+
+```ts
+// TODO:
+```
+
+##### Go
+
+```json
+metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
+```
+
+```go
+// TODO:
+```
+
+#### Define trait that inherits another trait and conform to it
+
+##### Python
+
+```json
+metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
+```
+
+```py
+# TODO:
+```
+
+##### Mojo
+
+```json
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
+```
+
+```mojo
+trait Name:
+    fn name(self):
+        ...
+
+trait Point1D:
+    fn x(self):
+        ...
+
+struct Point2D(Name, Point1D)):
+    var x: Int
+
+    def name(self):
+        # code...
+
+    def x(self):
+        # code...
+```
+
+##### TypeScript
+
+```json
+metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
+```
+
+```ts
+// TODO:
+```
+
+##### Go
+
+```json
+metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
+```
+
+```go
+// TODO:
+```
+
+#### Define and confirm a trait with lifecycle methods
+
+##### Python
+
+```json
+metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
+```
+
+```py
+# TODO:
+```
+
+##### Mojo
+
+```json
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
+```
+
+```mojo
+trait Point:
+    fn __init__(out self): ...
+
+trait Points(Point, Movable):
+    pass
+
+fn factory[T: Points]() -> T:
+    return T()
+
+struct Dot(Points):
+    var x: Int
+
+    fn __init__(out self):
+        self.id = 0
+
+    fn __moveinit__(out self, owned existing: Self):
+        self.id = existing.id
+
+var thing = factory[Dot]()
+```
+
+##### TypeScript
+
+```json
+metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
+```
+
+```ts
+// TODO:
+```
+
+##### Go
+
+```json
+metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
+```
+
+```go
+// TODO:
+```
+
 #### Conform struct to a string trait
 
 ##### Python
@@ -102,20 +302,23 @@ print(str(Point(1, 2)))  # Outputs: "(1, 2)"
 
 ##### Mojo
 
+**What to do:** Include trait name in parentheses after the struct name `struct Point1D(StringableRaising)`
+**How it works:** Struct that use the trait must implement everything required by the trait or you'll get a compile error
+
+**
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
 ```mojo
 @value
-struct Point(StringableRaising):
+struct Point1D(StringableRaising):
   var x: Int
-  var y: Int
 
   def __str__(self) -> String:
     # code...
 
-print(String(Point(1,2)))
+print(String(Point1D(1)))
 ```
 
 ##### TypeScript
@@ -436,6 +639,13 @@ def use_trait_function():
 ```
 
 ##### Mojo
+
+**Similar to:** templates in other programming languages
+
+**What to do:**
+- define conforming trait in square brackets following the method name `joinCyan[T: ColorTrait]`
+
+**What it does:** compiler infers the type of the argument, and ensures the type has the required trait
 
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
@@ -1017,3 +1227,144 @@ int main() {
     return 0;
 }
 ```
+
+#### Define value as any type or any type range
+
+##### Python
+
+```json
+metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
+```
+
+```py
+# Using Any type
+from typing import Any
+value1: Any = "string"
+
+# Using Union type
+from typing import Union
+value2: Union[int, str, bool] = "string"
+value2 = 42  # Valid
+value2 = True  # Valid
+
+# Python 3.10+ Union syntax
+value3: int | str | bool = "string"
+```
+
+##### Mojo
+
+**What to do:** This means you can call the destructor on any type
+
+**How it works:**
+- Every trait implicitly inherits from AnyType, and all structs conform to AnyType
+- For types that don't have a destructor, Mojo adds a no-op destructor.
+
+**Why use it:** This makes it possible to build generic collections without leaking memory. When the collection's destructor is called, it can safely call the destructors on every item it contains.
+
+```json
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
+```
+
+```mojo
+# TODO:
+```
+
+##### TypeScript
+
+```json
+metadata {
+  "language": "typescript",
+  "language_version":">=0.x.x",
+  "code_role": "trail",
+  "code_author": "llm"
+}
+```
+
+```ts
+// Using any type
+let value1: any = "string";
+
+// Using union type
+let value2: string | number | boolean = "string";
+value2 = 42;  // Valid
+value2 = true;  // Valid
+
+// Using generic constraints
+function process<T extends string | number>(value: T): T {
+    return value;
+}
+```
+
+##### Go
+
+```json
+metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
+```
+
+```go
+// Using any (Go 1.18+)
+var value1 any = "string"
+
+// Using type constraints with interfaces (Go 1.18+)
+type StringOrNumber interface {
+    ~string | ~int | ~float64
+}
+
+// Using type switch for runtime type checking
+func process(value any) {
+    switch v := value.(type) {
+    case string:
+        fmt.Println("string:", v)
+    case int:
+        fmt.Println("integer:", v)
+    case bool:
+        fmt.Println("boolean:", v)
+    }
+}
+```
+
+#### Define generic container that can hold different data types
+
+##### Python
+
+```json
+metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
+```
+
+```py
+# TODO:
+```
+
+##### Mojo
+
+```json
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
+```
+
+```mojo
+# TODO:
+```
+
+##### TypeScript
+
+```json
+metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
+```
+
+```ts
+// TODO:
+```
+
+##### Go
+
+```json
+metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
+```
+
+```go
+// TODO:
+```
+
+### TODO
+
+- [Generic structs with traits](https://docs.modular.com/mojo/manual/traits#generic-structs-with-traits)

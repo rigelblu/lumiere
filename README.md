@@ -78,7 +78,7 @@ interface Color {
 metadata {
   "language": string,
   "language_version": string
-  "code_role": anchor | trail
+  "code_role": anchor | trail | deprecated
   "code_author": human | llm | human approved | -
 </metadata>
 ```
@@ -88,17 +88,21 @@ metadata {
 ##### Mojo
 
 ```json
+// TODO: add tag property, indicating if it's the latest version
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
 ```json
-metadata { "language": "mojo", "language_version":">=0.1.x", "code_role": "trail", "code_author": "human" }
+// TODO: add tag property, indicating if it's the latest version
+metadata { "language": "python", "language_version":">=0.1.x", "code_role": "trail", "code_author": "human" }
 ```
 
 ---
 
 ## Sources & Credits
+
 - [Mojo Manual](https://docs.modular.com/mojo/manual)
+- [BAML for the jsonish structure](https://github.com/BoundaryML/baml)
 
 ---
 

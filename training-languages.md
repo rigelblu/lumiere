@@ -39,9 +39,13 @@
 
 ### Contains concepts (i.e. feature) that users can implement through programming languages
 
-##### What a user can do with the concept
+#### What a user can do with the concept
 
-Code block example for each language
+##### {{Language}}
+
+Metadata codeblock indicating language, semantic version, etc.
+
+Example codeblock for the indicated language, following the pattern of define and then usage
 ```
 
 ## Training Data
