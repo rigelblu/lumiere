@@ -30,6 +30,19 @@ flag1 = True
 var flag2: Bool = False
 ```
 
+```json
+metadata { "language": "mojo", "language_version":">=0.4.x <0.6.x", "code_role": "deprecated", "code_author": "human" }
+```
+
+```mojo
+# Implicit boolean
+flag1 = True
+
+# Explicit boolean
+let flag2: Bool = False
+```
+
+
 ##### TypeScript
 
 ```json
@@ -256,93 +269,6 @@ value1 = 42  // Valid
 // Using any type (Go 1.18+)
 var value2 any = "string"
 value2 = 42  // Valid
-```
-
-#### Define value as any type or any type range
-
-##### Python
-
-```json
-metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
-```
-
-```py
-# Using Any type
-from typing import Any
-value1: Any = "string"
-
-# Using Union type
-from typing import Union
-value2: Union[int, str, bool] = "string"
-value2 = 42  # Valid
-value2 = True  # Valid
-
-# Python 3.10+ Union syntax
-value3: int | str | bool = "string"
-```
-
-##### Mojo
-
-```json
-metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
-```
-
-```mojo
-# TODO:
-```
-
-##### TypeScript
-
-```json
-metadata {
-  "language": "typescript",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
-```
-
-```ts
-// Using any type
-let value1: any = "string";
-
-// Using union type
-let value2: string | number | boolean = "string";
-value2 = 42;  // Valid
-value2 = true;  // Valid
-
-// Using generic constraints
-function process<T extends string | number>(value: T): T {
-    return value;
-}
-```
-
-##### Go
-
-```json
-metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
-```
-
-```go
-// Using any (Go 1.18+)
-var value1 any = "string"
-
-// Using type constraints with interfaces (Go 1.18+)
-type StringOrNumber interface {
-    ~string | ~int | ~float64
-}
-
-// Using type switch for runtime type checking
-func process(value any) {
-    switch v := value.(type) {
-    case string:
-        fmt.Println("string:", v)
-    case int:
-        fmt.Println("integer:", v)
-    case bool:
-        fmt.Println("boolean:", v)
-    }
-}
 ```
 
 #### Convert type
