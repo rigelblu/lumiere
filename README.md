@@ -78,7 +78,7 @@ interface Color {
 metadata {
   "language": string,
   "language_version": string
-  "code_role": anchor | trail
+  "code_role": anchor | trail | deprecated
   "code_author": human | llm | human approved | -
 </metadata>
 ```
@@ -100,7 +100,9 @@ metadata { "language": "python", "language_version":">=0.1.x", "code_role": "tra
 ---
 
 ## Sources & Credits
+
 - [Mojo Manual](https://docs.modular.com/mojo/manual)
+- [BAML for the jsonish structure](https://github.com/BoundaryML/baml)
 
 ---
 
