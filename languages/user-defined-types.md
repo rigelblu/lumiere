@@ -50,12 +50,6 @@ var c1 ColorType = "blue"
 
 #### Define a user-defined type from composing built-in/user-defined types
 
-Custom data structure with
-- Fields: variables containing the data
-- Methods: (optional) functions to work with/manipulate instances of the data structure
-
-- **Constraints:** doesn't allow dynamic dispatch (i.e. which specific implementation of a polymorphic method or function to call at runtime) or any runtime changes to the structure
-
 ##### Python
 
 ```json
@@ -91,15 +85,21 @@ x = p1.x
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
-- **Constraints**:
+**What it is:**
+- Custom data structure with
+  - Fields: variables containing the data
+  - Methods: (optional) functions to work with/manipulate instances of the data structure
+
+**Constraints**:
   - All fields must be declared upfront with a type. You can't add fields dynamically at run-time
   - Values can't be assigned as part of the field declaration. Instead, use constructor to initialize the value of all fields
+  - Doesn't allow dynamic dispatch (i.e. which specific implementation of a polymorphic method or function to call at runtime) or any runtime changes to the structure
 
-- **How it works:**
+**How it works:**
   - The instance is automatically passed as the first argument, followed by any explicit arguments that you provide
   - The first argument of the method is an instance of the struct, so it doesn't require an explicit type annotation
 
-- **Conventions:**
+**Conventions:**
   - Although any name could be used for this argument, the convention is to call it self
   - The `out self` declares self as a mutable reference that starts out as uninitialized and must be initialized before the function returns
 
