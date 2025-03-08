@@ -9,11 +9,11 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 ```
 
 ```py
-# Implicit boolean
-flag1 = True
+flag1 = True                                               # Implicit boolean
+flag2: bool = False                                        # Explicit boolean
 
-# Explicit boolean
-flag2: bool = False
+if flag1 and not flag2:                                    # Usage
+    # code...
 ```
 
 ##### Mojo
@@ -23,11 +23,11 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
 ```
 
 ```mojo
-# Implicit boolean
-flag1 = True
+flag1 = True                                               # Implicit boolean
+var flag2: Bool = False                                    # Explicit boolean
 
-# Explicit boolean
-var flag2: Bool = False
+if flag1 and not flag2:                                    # Usage
+    # code...
 ```
 
 ```json
@@ -35,13 +35,12 @@ metadata { "language": "mojo", "language_version":">=0.4.x <0.6.x", "code_role":
 ```
 
 ```mojo
-# Implicit boolean
-flag1 = True
+flag1 = True                                               # Implicit boolean
+let flag2: Bool = False                                    # Explicit boolean
 
-# Explicit boolean
-let flag2: Bool = False
+if flag1 and not flag2:                                    # Usage
+    # code...
 ```
-
 
 ##### TypeScript
 
@@ -50,11 +49,12 @@ metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": 
 ```
 
 ```ts
-// Implicit boolean
-let flag1 = true;
+let flag1 = true;                                          // Implicit boolean
+let flag2: boolean = false;                                // Explicit boolean
 
-// Explicit boolean
-let flag2: boolean = false;
+if (flag1 && !flag2) {                                     // Usage
+    // code...
+}
 ```
 
 ##### Go
@@ -64,11 +64,12 @@ metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail",
 ```
 
 ```go
-// Implicit boolean
-flag1 := true
+flag1 := true													                     // Implicit boolean
+var flag2 bool = false                                     // Explicit boolean
 
-// Explicit boolean
-var flag2 bool = false
+if flag1 && !flag2 {                                       // Usage
+    // code...
+}
 ```
 
 #### Define a integer
