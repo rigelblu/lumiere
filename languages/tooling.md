@@ -216,7 +216,7 @@ metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail",
 # TODO:
 ```
 
-#### Add package dependency
+#### Add python package dependency
 
 ##### Python
 
