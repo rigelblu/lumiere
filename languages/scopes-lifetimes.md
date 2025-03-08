@@ -9,7 +9,9 @@
    - Ends when the value is destroyed (__del__()), or consumed in some other way (for example, as part of a __moveinit__() call)
 
 **How it works:**
-- The life of a value begins when a variable is initialized and continues up until the value is last used, at which point Mojo destroys it. Mojo destroys every value/object as soon as it's no longer used, using an “as soon as possible” (ASAP) destruction policy that runs after every sub-expression
+- The life of a value begins when a variable is initialized and continues up until the value is last used, at which point Mojo destroys it
+- Mojo does not wait until the end of a code block—or even until the end of an expression—to destroy an unused value. It destroys values using an “as soon as possible” (ASAP) destruction policy that runs after every sub-expression. Even within an expression like a+b+c+d, Mojo destroys the intermediate values as soon as they're no longer needed
+- Mojo immediately ends the value's lifetime and calls the __del__() destructor to perform any necessary cleanup for the type
 
 #### Make variable available globally across program
 
@@ -268,6 +270,51 @@ func myFunction() {
 // functionVar not accessible here
 ```
 
-#### TODO
+#### Explicit keep a value alive up to a certain statement
 
-- [Death of a value()](https://docs.modular.com/mojo/manual/lifecycle/death)
+##### Python
+
+```json
+metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
+```
+
+```py
+# TODO:
+```
+
+##### Mojo
+
+**What to do:** keep a value alive up to a certain point by assigning the value to the _ discard pattern at the point where it's okay to destroy it
+
+```json
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
+```
+
+```mojo
+fn __del__(owned self):
+    self.dump() # Self is still whole here
+
+    consume(self.obj2^)
+    _ = self.obj1
+    # Mojo keeps `obj1` alive until here, after its "last use"
+```
+
+##### TypeScript
+
+```json
+metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
+```
+
+```ts
+// TODO:
+```
+
+##### Go
+
+```json
+metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
+```
+
+```go
+// TODO:
+```
