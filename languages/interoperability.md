@@ -131,6 +131,111 @@ ar = [1, 2]                              # ar = [1, 2]
 change_list(ar)                          # ar = [1, 2]
 ```
 
+#### Use python types in mojo
+
+##### Python
+
+```json
+metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
+```
+
+```py
+# TODO:
+```
+
+##### Mojo
+
+```json
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
+```
+
+```mojo
+from python import Python
+
+def main():
+    py_dict = Python.dict()
+    py_dict["item_name"] = "whizbang"
+    py_dict["price"] = 11.75
+    py_dict["inventory"] = 100
+    print(py_dict)
+```
+
+#### Create and use mojo wrapper objects
+
+##### Mojo
+
+**What to do:**
+- You can explicitly create a wrapped Python object by initializing a PythonObject with a Mojo literal. Most of the time, you can treat the wrapped object just like you'd treat it in Python. You can use dot-notation to access attributes and call methods, and use the [] operator to access an item in a sequence.
+- If you want to construct a Python type that doesn't have a literal Mojo equivalent, you can also use the Python.evaluate() method
+
+**How it works:**
+- When you use Python objects in your Mojo code, Mojo adds the PythonObject wrapper around the Python object. This object exposes a number of common double underscore methods (dunder methods) like `__getitem__()`and `__getattr__()`, passing them through to the underlying Python object.
+- Currently PythonObject conforms to the Stringable, Boolable, Intable, and Floatable traits. This allows you to convert a PythonObject to the corresponding Mojo types.
+- PythonObject also implements the Writable trait, so that you can print Python values using the built-in print() function.
+
+```json
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
+```
+
+```mojo
+from python import PythonObject
+
+def main():
+    var py_list: PythonObject = ["cat", 2, 3.14159, 4]  # A ListLiteral
+    n = py_list[2]
+    print("n =", n)
+    py_list.append(5)
+    py_list[0] = "aardvark"
+    print(py_list)
+```
+
+```mojo
+from python import Python
+
+def main():
+    var py_set = Python.evaluate('{2, 3, 2, 7, 11, 3}')
+    num_items = len(py_set)
+    print(num_items, "items in the set.")
+    contained = 7 in py_set
+    print("Is 7 in the set:", contained)
+```
+
+```mojo
+var s = String(py_string)
+var b = Bool(py_bool)
+var i = Int(py_int)
+var f = Float64(py_float)
+print(python_object)
+```
+
+#### Comparing Python types in Mojo
+
+##### Mojo
+
+```mojo
+from python import Python
+from python import PythonObject
+
+def main():
+    var value1: PythonObject = 3.7
+    value2 = Python.evaluate("10/3")
+
+    # Compare values
+    print("Is value1 greater than 3:", value1 > 3)
+    print("Is value1 greater than value2:", value1 > value2)
+
+    # Compare identities
+    value3 = value2
+    print("value1 is value2:", value1 is value2)
+    print("value2 is value3:", value2 is value3)
+
+    # Compare types
+    py_float_type = Python.evaluate("float")
+    print("Python float type:", py_float_type)
+    print("value1 type:", Python.type(value1))
+    print("Is value1 a Python float:", Python.type(value1) is py_float_type)
+```
+
 ### See also
 
 - [Add python package dependency](./interoperability#add-package-dependency)
