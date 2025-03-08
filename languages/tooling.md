@@ -299,3 +299,58 @@ metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail",
 ```sh
 # TODO:
 ```
+
+#### Run tests
+
+##### Python
+
+```json
+metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
+```
+
+```py
+# TODO:
+```
+
+##### Mojo
+
+```json
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
+```
+
+```sh
+# Run all package test
+mojo test -I src test
+
+# Run all module tests
+mojo test -I src test/pkg1/test_module1.mojo
+
+# Run a single test id
+mojo test -I src 'test/pkg1/test_module1.mojo::test_method_valid()'
+
+# Print a list of tests
+mojo test --co test
+
+# Output tests results in JSON format
+mojo test --diagnostic-format json test_quickstart.mojo
+```
+
+##### TypeScript
+
+```json
+metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
+```
+
+```ts
+// TODO:
+```
+
+##### Go
+
+```json
+metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
+```
+
+```go
+// TODO:
+```
