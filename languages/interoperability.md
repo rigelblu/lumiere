@@ -164,7 +164,7 @@ def main():
 
 ##### Mojo
 
-**What to do:**
+**How to use:**
 - You can explicitly create a wrapped Python object by initializing a PythonObject with a Mojo literal. Most of the time, you can treat the wrapped object just like you'd treat it in Python. You can use dot-notation to access attributes and call methods, and use the [] operator to access an item in a sequence.
 - If you want to construct a Python type that doesn't have a literal Mojo equivalent, you can also use the Python.evaluate() method
 

@@ -116,7 +116,7 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 
 ##### Mojo
 
-**What to do:**
+**How to use:**
 - Infer-only paramater: put `//` after infer-only parameters
 - Positional-only parameters: put `/` after positional-only parameters
 - Variadic parameters: prefix parameter with star, ie `*parameter_name` (it's keyword-only)

@@ -2,7 +2,7 @@
 
 ##### Mojo
 
-**Definitions:**
+**Terminology:**
 - Lifetime:
    - Span of time during program execution in which the value is considered valid
    - Begins when its value is initialized (via __init__(), __copyinit__() or __moveinit__())
@@ -284,7 +284,7 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 
 ##### Mojo
 
-**What to do:** keep a value alive up to a certain point by assigning the value to the _ discard pattern at the point where it's okay to destroy it
+**How to use:** keep a value alive up to a certain point by assigning the value to the _ discard pattern at the point where it's okay to destroy it
 
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }

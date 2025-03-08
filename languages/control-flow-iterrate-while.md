@@ -219,6 +219,7 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
 ```
 
 **What it does:** the else clause executes after iterating over all of the elements in a collection
+
 **Constraints:** the else clause does not execute if a break or return statement terminates the while loop
 
 ```mojo

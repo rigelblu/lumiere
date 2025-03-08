@@ -4,7 +4,7 @@
 
 **Similar to:** Java interfaces, C++ concepts, Swift protocols, and Rust traits.
 
-**What to do:**
+**How to use:**
 - define alias constants
 - define method and static method signatures, followed by three dots (indicating method isn't implemented)
 - define lifecycle methods
@@ -302,7 +302,8 @@ print(str(Point(1, 2)))  # Outputs: "(1, 2)"
 
 ##### Mojo
 
-**What to do:** Include trait name in parentheses after the struct name `struct Point1D(StringableRaising)`
+**How to use:** Include trait name in parentheses after the struct name `struct Point1D(StringableRaising)`
+
 **How it works:** Struct that use the trait must implement everything required by the trait or you'll get a compile error
 
 **
@@ -642,10 +643,9 @@ def use_trait_function():
 
 **Similar to:** templates in other programming languages
 
-**What to do:**
-- define conforming trait in square brackets following the method name `joinCyan[T: ColorTrait]`
+**How to use:** define conforming trait in square brackets following the method name `joinCyan[T: ColorTrait]`
 
-**What it does:** compiler infers the type of the argument, and ensures the type has the required trait
+**How it works:** compiler infers the type of the argument, and ensures the type has the required trait
 
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
@@ -1253,7 +1253,7 @@ value3: int | str | bool = "string"
 
 ##### Mojo
 
-**What to do:** This means you can call the destructor on any type
+**How to use:** This means you can call the destructor on any type
 
 **How it works:**
 - Every trait implicitly inherits from AnyType, and all structs conform to AnyType

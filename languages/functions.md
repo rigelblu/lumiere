@@ -105,6 +105,7 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
 ```
 
 - By default, the value is returned to the caller as an owned value
+
 - **Constraints:**
   - You must explicitly indicate with a `raises` keyword if it can raise an error
   - Return values must specify a type, unless the function doesn't return a value
@@ -1127,9 +1128,9 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
 ```
 
 **What it is:**
-- The out argument convention identifies an uninitialized variable that the function must initialize.
+- `out`: argument convention identifies an uninitialized variable that the function must initialize
 
-**How to uses:**
+**How to use:**
 - A named result argument doesn't need to include an explicit return statement. If the function terminates without a return, or at a return statement with no value, the value of the out argument is returned to the caller
 
 **Constraints:**

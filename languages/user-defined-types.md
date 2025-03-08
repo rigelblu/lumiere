@@ -53,6 +53,7 @@ var c1 ColorType = "blue"
 Custom data structure with
 - Fields: variables containing the data
 - Methods: (optional) functions to work with/manipulate instances of the data structure
+
 - **Constraints:** doesn't allow dynamic dispatch (i.e. which specific implementation of a polymorphic method or function to call at runtime) or any runtime changes to the structure
 
 ##### Python

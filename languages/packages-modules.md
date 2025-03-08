@@ -202,7 +202,7 @@ line = Line(p1, p2)
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
-**What to do:**
+**How to use:**
 - Compile package into a `.mojopkg` to share and is compatible across system architectures
 
 **Conventions:**

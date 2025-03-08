@@ -16,7 +16,7 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 
 ##### Mojo
 
-**What to do:**
+**How to use:**
 - prefix method with `test_`
 - `assert_true()`: assert that the input value is True
 - `assert_false()`: assert that the input value is False
