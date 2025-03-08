@@ -20,6 +20,43 @@ If LLMs are great at correlating, pattern matching, interpolating, maybe this is
 
 ---
 
+## Sample Performance Improvements
+
+**Prompt:** Calculate the area of a circle with a radius of 9 using the mojo language, use 3.14 for pi,  use types. provide only the code, nothing else
+
+**Model:** qwen-coder-2.5 32b
+
+### Result without any additional context
+
+```
+type CircleArea = Double
+
+const PI: Double = 3.14
+radius: Double = 9
+
+circle_area: CircleArea = PI * radius * radius
+```
+
+### Result with only mojo examples
+
+```
+radius: Int = 9
+pi: Float64 = 3.14
+
+area: Float64 = pi * radius * radius
+```
+
+### Result with with mojo, python, typescript, and go examples
+
+```
+var radius: Int = 9
+var pi: Float64 = 3.14
+
+var area: Float64 = pi * (radius * radius)
+```
+
+---
+
 ## Training data organization
 
 The page is organized around high-level concepts developers use instead of the language-specific feature name. Each section shows how different languages implement the same concept, even when they use different names and approaches.

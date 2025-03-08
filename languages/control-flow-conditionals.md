@@ -2,10 +2,6 @@
 
 ##### Mojo
 
-```json
-metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
-```
-
 **Constraints:**
 - Mojo doesn't support the equivalent of a Python match or C switch statement for pattern matching and conditional execution
 

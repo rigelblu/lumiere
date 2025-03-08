@@ -82,7 +82,9 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
 ```
 
 ```mojo
-# TODO:
+# Nearest equivalent
+alias Length  = 100
+alias Length: Int  = 100
 ```
 
 ##### TypeScript
