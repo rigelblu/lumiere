@@ -1,5 +1,13 @@
 ### Interoperability
 
+**Constraints:**
+- The import_module() method returns a reference to the module in the form of a `PythonObject` wrapper. You must store the reference in a variable and then use it as shown in the example above to access functions, classes, and other objects defined by the module. See Mojo wrapper objects for more information about the `PythonObject` type
+- Currently, you cannot import individual members (such as a single Python class or function). You must import the whole Python module and then access members through the module name
+- Mojo doesn't yet support top-level code, so the `import_module()` call must be inside another method. This means you may need to import a module multiple times or pass around a reference to the module. This works the same way as Python: importing the module multiple times won't run the initialization logic more than once, so you don't pay any performance penalty
+- `import_module()` may raise an exception (for example, if the module isn't installed). If you're using it inside an fn function, you need to either handle errors (using a try/except clause), or add the raises keyword to the function signature. You'll also see this when calling Python functions that may raise exceptions. (Raising exceptions is much more common in Python code than in the Mojo standard library, which limits their use for performance reasons.)
+- `mojo build` doesn't include the Python packages used by your Mojo project. Instead, Mojo loads the Python interpreter and Python packages at runtime, so they must be provided in the environment where you run the Mojo program (such as inside the Magic environment where you built the executable)
+- You can't import Mojo modules from Python or call Mojo functions from Python. This prevents Mojo callbacks to a Python module
+
 #### Add python dependency
 
 ##### Mojo
@@ -24,9 +32,8 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 import numpy as np
 
 def main():
-    ar = np.arange(15).reshape(3, 5)
-    print(ar)
-    print(ar.shape)
+    random_array = np.random.rand(size, size)
+    print(random_array)
 ```
 
 ##### Mojo
@@ -43,6 +50,17 @@ def main():
     var ar = np.arange(15).reshape(3, 5)
     print(ar)
     print(ar.shape)
+```
+
+```mojo
+from python import Python
+
+def main():
+    Python.add_to_path("path/to/module")
+    mypython = Python.import_module("mypython")
+
+    values = mypython.gen_random_values(2, 3)
+    print(values)
 ```
 
 #### Interate over a python collections
@@ -112,3 +130,7 @@ def change_list(l):                      # l = ar,     ar = [1, 2]
 ar = [1, 2]                              # ar = [1, 2]
 change_list(ar)                          # ar = [1, 2]
 ```
+
+### See also
+
+- [Add python package dependency](./interoperability#add-package-dependency)
