@@ -15,6 +15,7 @@
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # Implicit string
 c1 = "blue"
@@ -34,6 +35,7 @@ c4: str = "yellow"
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # Implicit string
 c1 = "blue"
@@ -55,6 +57,7 @@ var c4: String = "yellow"
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Implicit string
 let c1 = "blue";
@@ -99,6 +102,7 @@ var c4 string = "yellow"
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # Implicit
 l1 = [1, 2, 3, 4]
@@ -127,6 +131,7 @@ for i in range(len(list)):
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # Implicit
 var l1 = List(1, 2, 3, 4)
@@ -156,6 +161,7 @@ for i in range(len(list)):
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Implicit
 let l1 = [1, 2, 3, 4];
@@ -220,6 +226,7 @@ for i := 0; i < len(list2); i++ {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 l2 = [1, 2, 3, 4]
 g1 = [
@@ -246,6 +253,7 @@ print(l2)
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 var l2 = List[Int](1, 2, 3, 4)
 var g1 = List(
@@ -272,6 +280,7 @@ print(list)
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 let l2: number[] = [1, 2, 3, 4];
 let g1 = [
@@ -326,6 +335,7 @@ fmt.Println(l2)
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # Explicit
 values: dict[str, float] = {}
@@ -345,6 +355,7 @@ for key, value in d.items():
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # Explicit
 var values = Dict[String, Float64]()
@@ -366,6 +377,7 @@ for item in d.items():
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Explicit
 let values: Record<string, number> = {};
@@ -412,6 +424,7 @@ Tuples are immutable and can hold multiple types
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # Explicit tuple
 date = (2025, "February", 22)
@@ -432,6 +445,7 @@ day = date[2]
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # Explicit tuple
 date = Tuple[Int, String, Int](2025, "February", 22)
@@ -449,6 +463,7 @@ day = date[2]
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Explicit tuple
 let date: [number, string, number] = [2025, "February", 22];
@@ -494,6 +509,7 @@ day := date.Day
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 colors = {"blue", "yellow"}
 primary = {"red", "blue", "green"}
@@ -508,6 +524,7 @@ for color in c1:
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 from collections import Set
 colors = Set("blue", "yellow")
@@ -523,6 +540,7 @@ for color in c1:
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Using Set in TypeScript
 const colors = new Set<string>(["blue", "yellow"]);
@@ -568,6 +586,7 @@ for color := range c1 {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 from typing import Optional
 
@@ -593,6 +612,7 @@ def color() -> None:
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # Initialize optional with value
 var c1 = Optional("blue")
@@ -616,6 +636,7 @@ def color() -> None:
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Initialize optional with value
 let c1: string | null = "blue";

@@ -8,6 +8,7 @@
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 n = 1
 while n < 50:
@@ -21,6 +22,7 @@ while n < 50:
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 n = 1
 
@@ -35,6 +37,7 @@ while n < 50:
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 let n = 1;
 while (n < 50) {
@@ -65,6 +68,7 @@ for n < 50 {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 n = 0
 while n < 5:
@@ -80,6 +84,7 @@ while n < 5:
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 n = 0
 while n < 5:
@@ -94,6 +99,7 @@ while n < 5:
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 let n = 0;
 while (n < 5) {
@@ -130,6 +136,7 @@ for n < 5 {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 n = 0
 while n < 5:
@@ -145,6 +152,7 @@ while n < 5:
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 n = 0
 while n < 5:
@@ -159,6 +167,7 @@ while n < 5:
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 let n = 0;
 while (n < 5) {
@@ -195,6 +204,7 @@ for n < 5 {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 n = 5
 while n < 4:
@@ -222,6 +232,7 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
 
 **Constraints:** the else clause does not execute if a break or return statement terminates the while loop
 
+**Examples:**
 ```mojo
 n = 5
 while n < 4:
@@ -236,6 +247,7 @@ else:
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // TypeScript doesn't have a direct while-else construct
 // Using a flag or other approach instead

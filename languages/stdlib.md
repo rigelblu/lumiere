@@ -10,6 +10,7 @@ REFACTOR: move into separate files inside a standard-library directory
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # TODO:
 ```
@@ -20,6 +21,7 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # TODO:
 ```
@@ -30,6 +32,7 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // TODO:
 ```
@@ -52,6 +55,7 @@ metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail",
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # TODO:
 ```
@@ -94,6 +98,7 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # TODO:
 ```
@@ -104,6 +109,7 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // TODO:
 ```

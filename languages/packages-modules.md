@@ -8,6 +8,7 @@
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # point.py
 class Point:
@@ -16,18 +17,21 @@ class Point:
         self.y = y
 ```
 
+**Examples:**
 ```py
 # main.py - import whole module
 import point
 p = point.Point(1, 2)
 ```
 
+**Examples:**
 ```py
 # main.py - import specific class
 from point import Point
 p = Point(1, 2)
 ```
 
+**Examples:**
 ```py
 # main.py - import with alias
 from point import Point as Pt
@@ -42,6 +46,7 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
 
 **What is it:** a module is a single file
 
+**Examples:**
 ```mojo
 # file1.mojo
 @value
@@ -50,6 +55,7 @@ struct Point
     y: Int
 ```
 
+**Examples:**
 ```mojo
 # file2.mojo
 import file1
@@ -57,6 +63,7 @@ import file1
 var p = file1.Point(1, 2
 ```
 
+**Examples:**
 ```mojo
 # file2.mojo
 from file1 import Point
@@ -64,6 +71,7 @@ from file1 import Point
 var p = Point(1, 2)
 ```
 
+**Examples:**
 ```mojo
 # file2.mojo
 from file1 import Point as pt
@@ -77,6 +85,7 @@ var p = pt(1, 2)
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // point.ts
 export class Point {
@@ -89,18 +98,21 @@ export function distanceBetween(p1: Point, p2: Point): number {
 }
 ```
 
+**Examples:**
 ```ts
 // main.ts - import whole module
 import * as Geometry from './point';
 const p = new Geometry.Point(1, 2);
 ```
 
+**Examples:**
 ```ts
 // main.ts - import specific exports
 import { Point } from './point';
 const p = new Point(1, 2);
 ```
 
+**Examples:**
 ```ts
 // main.ts - import with alias
 import { Point as Pt } from './point';
@@ -165,6 +177,7 @@ func main() {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # Directory structure
 # ./main.py
@@ -228,6 +241,7 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
 ./compiled_pkg1.mojopkg
 ```
 
+**Examples:**
 ```mojo
 # ./main.mojo
 from compiled_pkg1.module1 import UserDefinedStruct
@@ -249,6 +263,7 @@ from .module1 import *
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Directory structure
 // ./src/main.ts

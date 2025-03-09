@@ -10,6 +10,7 @@ REFACTOR: move into separate files inside a standard-library directory
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # TODO:
 ```
@@ -52,6 +53,7 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 from testing import assert_equal
 
@@ -72,6 +74,7 @@ assert_almost_equal(result, 3.33, atol=0.001, msg="close but no cigar")
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // TODO:
 ```
@@ -94,6 +97,7 @@ metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail",
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # TODO:
 ```
@@ -106,6 +110,7 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 def inc(n: Int) -> Int:
     if n == Int.MAX:
@@ -135,6 +140,7 @@ with assert_raises(contains="required"):
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // TODO:
 ```

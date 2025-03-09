@@ -8,6 +8,7 @@
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 for i in range(5):
     print(i, end=", ")
@@ -29,6 +30,7 @@ for i in range(5):
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 for i in range(5):
     print(i, end=", ")
@@ -50,6 +52,7 @@ for i in range(5):
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 for (let i = 0; i < 5; i++) {
     console.log(i + ", ");
@@ -104,6 +107,7 @@ for i := 0; i < 5; i++ {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 colors = ["Blue", "Yellow"]
 for color in colors:
@@ -122,6 +126,7 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
 
 **Constraint:** iterating over collections assigns the loop index a Reference to each item, not the item itself. You can access the item using the dereference operator, [].
 
+**Examples:**
 ```mojo
 from collections import List
 
@@ -136,6 +141,7 @@ for color in colors:
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 const colors: string[] = ["Blue", "Yellow"];
 for (const color of colors) {
@@ -184,6 +190,7 @@ for i := 0; i < len(colors); i++ {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 years = {2024, 2025, 2026}
 for year in years:
@@ -196,6 +203,7 @@ for year in years:
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 from collections import Set
 
@@ -210,6 +218,7 @@ for year in years:
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 const years = new Set<number>([2024, 2025, 2026]);
 for (const year of years) {
@@ -250,6 +259,7 @@ for year := range years {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 colors = {
     "Primary": "Blue",
@@ -271,6 +281,7 @@ for key, value in colors.items():
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 from collections import Dict
 
@@ -291,6 +302,7 @@ for item in colors.items():
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Using an object
 const colors = {
@@ -351,6 +363,7 @@ for key := range colors {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 for i in range(5):
     print(i, end=", ")
@@ -376,6 +389,7 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
 
 **Constraints:** the else clause does not execute if a break or return statement terminates the for loop
 
+**Examples:**
 ```mojo
 for i in range(5):
     print(i, end=", ")
@@ -389,6 +403,7 @@ else:
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // TypeScript doesn't have a direct for-else construct
 // Using a flag or other approach instead

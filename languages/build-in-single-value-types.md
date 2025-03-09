@@ -8,6 +8,7 @@
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 flag1 = True                                               # Implicit boolean
 flag2: bool = False                                        # Explicit boolean
@@ -22,6 +23,7 @@ if flag1 and not flag2:                                    # Usage
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 flag1 = True                                               # Implicit boolean
 var flag2: Bool = False                                    # Explicit boolean
@@ -34,6 +36,7 @@ if flag1 and not flag2:                                    # Usage
 metadata { "language": "mojo", "language_version":">=0.4.x <0.6.x", "code_role": "deprecated", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 flag1 = True                                               # Implicit boolean
 let flag2: Bool = False                                    # Explicit boolean
@@ -48,6 +51,7 @@ if flag1 and not flag2:                                    # Usage
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 let flag1 = true;                                          // Implicit boolean
 let flag2: boolean = false;                                // Explicit boolean
@@ -80,6 +84,7 @@ if flag1 && !flag2 {                                       // Usage
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # Implicit integer
 year1 = 2025
@@ -94,6 +99,7 @@ year2: int = 2025
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # Implicit signed integer
 year1 = 2025
@@ -118,6 +124,7 @@ var year10: UInt64: 2025
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Implicit integer
 let year1 = 2025;
@@ -158,6 +165,7 @@ var year10 uint64 = 2025
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # Implicit real-number
 pi1 = 3.14
@@ -172,6 +180,7 @@ pi2: float = 3.141
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # Implicit real-number
 pi1 = 3.14
@@ -188,6 +197,7 @@ var pi4: Float64 = 3.141
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Implicit real-number
 let pi1 = 3.14;
@@ -219,6 +229,7 @@ var pi3 float64 = 3.141
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # Dynamic type
 value = "string"
@@ -236,6 +247,7 @@ dynamic_value = 42  # Valid
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # TODO
 ```
@@ -246,6 +258,7 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Using 'any' type
 let value1: any = "string";
@@ -280,6 +293,7 @@ value2 = 42  // Valid
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # Converting between types
 year = str(2025)
@@ -294,6 +308,7 @@ is_valid = bool(1)  # True
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 year = String(2025)
 month = Int(String("02"))
@@ -305,6 +320,7 @@ month = Int(String("02"))
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Converting between types
 let year = String(2025);

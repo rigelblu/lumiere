@@ -28,6 +28,7 @@ Example codeblock for the indicated language, following the pattern of define an
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 flag1 = True                                               # Implicit boolean
 flag2: bool = False                                        # Explicit boolean
@@ -42,6 +43,7 @@ if flag1 and not flag2:                                    # Usage
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 flag1 = True                                               # Implicit boolean
 var flag2: Bool = False                                    # Explicit boolean
@@ -54,6 +56,7 @@ if flag1 and not flag2:                                    # Usage
 metadata { "language": "mojo", "language_version":">=0.4.x <0.6.x", "code_role": "deprecated", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 flag1 = True                                               # Implicit boolean
 let flag2: Bool = False                                    # Explicit boolean
@@ -70,6 +73,7 @@ if flag1 and not flag2:                                    # Usage
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # Implicit integer
 year1 = 2025
@@ -84,6 +88,7 @@ year2: int = 2025
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # Implicit signed integer
 year1 = 2025
@@ -110,6 +115,7 @@ var year10: UInt64: 2025
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # Implicit real-number
 pi1 = 3.14
@@ -124,6 +130,7 @@ pi2: float = 3.141
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # Implicit real-number
 pi1 = 3.14
@@ -144,6 +151,7 @@ var pi4: Float64 = 3.141
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # Implicit string
 c1 = "blue"
@@ -163,6 +171,7 @@ c4: str = "yellow"
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # Implicit string
 c1 = "blue"
@@ -186,6 +195,7 @@ var c4: String = "yellow"
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # Implicit
 l1 = [1, 2, 3, 4]
@@ -214,6 +224,7 @@ for i in range(len(list)):
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # Implicit
 var l1 = List(1, 2, 3, 4)
@@ -245,6 +256,7 @@ for i in range(len(list)):
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 l2 = [1, 2, 3, 4]
 g1 = [
@@ -271,6 +283,7 @@ print(l2)
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 var l2 = List[Int](1, 2, 3, 4)
 var g1 = List(
@@ -301,6 +314,7 @@ print(list)
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 year = 2025
 
@@ -321,6 +335,7 @@ else:
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 year = 2025
 
@@ -345,6 +360,7 @@ else:
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # Main function definition
 def main():
@@ -361,6 +377,7 @@ if __name__ == "__main__":
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 def main():
     # code...
@@ -374,6 +391,7 @@ def main():
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # No parameters, no return value
 def hello1() -> None:
@@ -398,6 +416,7 @@ hello3("world")
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 fn hello1():
   # code...
@@ -425,6 +444,7 @@ hello3("world")
 metadata { "language": "python",  "language_version":">=0.x.x", "code_role": "trail", "code_author": "human" }
 ```
 
+**Examples:**
 ```py
 ColorType = str
 c1: ColorType = "blue"
@@ -436,6 +456,7 @@ c1: ColorType = "blue"
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 alias ColorType = String
 var c1: ColorType = "blue"
@@ -449,6 +470,7 @@ var c1: ColorType = "blue"
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "human" }
 ```
 
+**Examples:**
 ```py
 # Not built into language. Use nearest equivalent
 class PointType:
@@ -459,6 +481,7 @@ p1 = PointType(1, 2)
 x = p1.x
 ```
 
+**Examples:**
 ```py
 # Not built into language. Use nearest equivalent
 from dataclasses import dataclass
@@ -478,6 +501,7 @@ x = p1.x
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 struct PointType:
     var x: Int
@@ -512,6 +536,7 @@ print(p1.str())           # Call struct's method
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # Implicit type
 name1 = "John"              # Python uses duck typing
@@ -526,6 +551,7 @@ name3: str = "John"         # Define and initialize
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # Implicit type
 name1 = "John"              # Without a type
@@ -544,6 +570,7 @@ var name2: String = "John"  # Define and initialize
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # Python doesn't have true constants
 # Use naming convention for constants
@@ -557,6 +584,7 @@ PI = 3.14159
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # Nearest equivalent
 alias Length  = 100
@@ -573,6 +601,7 @@ alias Length: Int  = 100
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # Basic print
 print("Hello world")
@@ -591,6 +620,7 @@ print("world")
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 print("Hellow world")
 ```
@@ -603,6 +633,7 @@ print("Hellow world")
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # Basic input (returns string)
 name = input("Enter your name: ")
@@ -619,6 +650,37 @@ x, y = map(int, input("Enter two numbers separated by space: ").split())
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 var year: Int = input("What year is it")
+```
+
+### Blocks & Statements
+
+#### Define a group of statements (i.e. code) to be executed together
+
+##### Python
+
+```json
+metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "human" }
+```
+
+**Examples:**
+```py
+if condition:
+    # code...
+```
+
+##### Mojo
+
+```json
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
+```
+
+You can use any number of spaces or tabs for indentation as long as the same indentation is used for the entire code block
+
+**Examples:**
+```mojo
+if condition:
+    # code...
 ```

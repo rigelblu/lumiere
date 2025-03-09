@@ -8,6 +8,7 @@
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # Implicit type
 name1 = "John"              # Python uses duck typing
@@ -22,6 +23,7 @@ name3: str = "John"         # Define and initialize
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # Implicit type
 name1 = "John"              # Without a type
@@ -38,6 +40,7 @@ var name2: String = "John"  # Define and initialize
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Implicit type
 let name1 = "John";         // Type inferred as string
@@ -68,6 +71,7 @@ name3 := "John"             // Inferred type
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # Python doesn't have true constants
 # Use naming convention for constants
@@ -81,6 +85,7 @@ PI = 3.14159
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # Nearest equivalent
 alias Length  = 100
@@ -93,6 +98,7 @@ alias Length: Int  = 100
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Using const for immutable references
 const NAME: string = "John";
@@ -129,6 +135,7 @@ const LIMIT = 100
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # Single assignment
 x = 10
@@ -144,6 +151,7 @@ x += 5
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 month, year = m, year + 1
 ```
@@ -159,6 +167,7 @@ metadata {
 }
 ```
 
+**Examples:**
 ```ts
 // Single assignment
 let x = 10;
@@ -196,6 +205,7 @@ TODO: consider breaking into sections
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 n = 1
 # Parenthesis expression
@@ -261,6 +271,7 @@ metadata {
 }
 ```
 
+**Examples:**
 ```mojo
 n = 1
 
@@ -340,6 +351,7 @@ alias divider = "#" * 20
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 let n = 1;
 // Parenthesis expression
@@ -461,6 +473,7 @@ divider := strings.Repeat("#", 20)
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 b = 1
 # Bitwise - positive, negative, not
@@ -488,6 +501,7 @@ b >>= 1
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 b = 1
 
@@ -512,6 +526,7 @@ b = b | 1         # OR
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 let b = 1;
 // Bitwise - positive, negative, not

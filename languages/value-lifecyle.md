@@ -26,6 +26,7 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 class Person:
     def __init__(self, name):
@@ -62,6 +63,7 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
 **Convetions:**
 - If your type doesn't use any pointers for heap-allocated data, then writing the constructor and copy constructor is all boilerplate code that you shouldn't have to write
 
+**Examples:**
 ```mojo
 struct Point:
     var x: Int
@@ -97,6 +99,7 @@ struct Point:
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 class Person {
     name: string;
@@ -189,6 +192,7 @@ func main() {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # Python doesn't auto-generate lifecycle methods
 # Basic class with minimal constructor
@@ -207,6 +211,7 @@ print(p1.name)  # John
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 @value
 struct Person:
@@ -222,6 +227,7 @@ print(p1.name)
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // TypeScript with default constructor
 class Person {
@@ -282,6 +288,7 @@ func NewPerson(name string) Person {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 from typing import TypeVar, Generic, TypedDict
 
@@ -317,6 +324,7 @@ class ParametricRef(Generic[T_AnyOrigin]):
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # Immutable Origin
 struct ImmutableRef[origin: ImmutableOrigin]:
@@ -341,6 +349,7 @@ struct ParametricRef[
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Simulate origin types with interfaces
 interface ImmutableOrigin {
@@ -429,6 +438,7 @@ func NewParametricRef(isMutable bool) ParametricRef {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # TODO:
 ```
@@ -439,6 +449,7 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 struct Point1D:
     var x: Int
@@ -460,6 +471,7 @@ def main():
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // TODO:
 ```
@@ -483,6 +495,7 @@ metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail",
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # TODO:
 ```
@@ -502,6 +515,7 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
 - Use the default member-wise and move constructor, but create a custom copy constructor
 - Use @value to create a member-wise constructor, and add overloads that take different sets of arguments
 
+**Examples:**
 ```mojo
 struct HeapPoint:
     var data: UnsafePointer[Int]
@@ -536,6 +550,7 @@ def main():
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // TODO:
 ```
@@ -558,6 +573,7 @@ metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail",
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # TODO:
 ```
@@ -568,6 +584,7 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 @register_passable("trivial")
 struct Int:
@@ -584,6 +601,7 @@ struct Int:
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // TODO:
 ```

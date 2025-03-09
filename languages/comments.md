@@ -8,6 +8,7 @@
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # Single line comment
 name = "lang" # Comment at end of line
@@ -27,6 +28,7 @@ Multi-line comment
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # Single line comment
 var name = "lang" # Comment at end of line
@@ -46,6 +48,7 @@ Multi-line comment
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Single line comment
 name = "lang" // Comment at end of line

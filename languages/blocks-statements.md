@@ -8,9 +8,12 @@
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "human" }
 ```
 
+**Examples:**
 ```py
 if condition:
-    # code...
+    # code block...
+
+# code block ...
 ```
 
 ##### Mojo
@@ -19,11 +22,17 @@ if condition:
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
-You can use any number of spaces or tabs for indentation as long as the same indentation is used for the entire code block
+**How to use:**
+- Ident using any number of spaces or tabs
+- Use same indentation for the entire code block
 
+**Examples:**
+**Examples:**
 ```mojo
 if condition:
-    # code...
+    # code block...
+
+# code block ...
 ```
 
 ##### TypeScript
@@ -32,9 +41,11 @@ if condition:
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
+**Examples:**
 ```ts
 if (condition) {
-  // code...
+  // code block...
 }
 ```
 
@@ -44,8 +55,10 @@ if (condition) {
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
+**Examples:**
 ```go
 if condition {
-    // code...
+    // code block...
 }
 ```

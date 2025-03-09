@@ -21,6 +21,7 @@
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 global_var = "I'm global"
 ```
@@ -31,6 +32,7 @@ global_var = "I'm global"
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # Not built into language
 ```
@@ -41,6 +43,7 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Define in global scope or window object
 declare global {
@@ -72,6 +75,7 @@ var GlobalVar string = "I'm global"
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # Not built into language. Use nearest equivalent, a naming convention
 
@@ -91,6 +95,7 @@ from ..pkg1.file1 import * # _PRIMARY won't be imported
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # TODO: confirm if it's not built into language or if it follows python pattern
 ```
@@ -101,6 +106,7 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // ./pkg1/file1.ts
 const PRIMARY: string = "blue"  // No export = private to module
@@ -140,6 +146,7 @@ import "colors"
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # ./pkg1/__init__.py
 # Expose through __init__.py
@@ -158,6 +165,7 @@ from pkg1 import PRIMARY
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # ./pkg1/file1.py
 PRIMARY = "blue"
@@ -172,6 +180,7 @@ from ..pkg1/file1 import *
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // ./pkg1/file1.ts
 export const PRIMARY: string = "blue"
@@ -214,6 +223,7 @@ c1 := colors.Primary
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 def my_function():
     local_var = "only available inside function"
@@ -229,6 +239,7 @@ def my_function():
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 if condition:
     # code...
@@ -240,6 +251,7 @@ if condition:
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 function myFunction() {
     let functionScoped = "available in function";
@@ -278,6 +290,7 @@ func myFunction() {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # TODO:
 ```
@@ -290,6 +303,7 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 fn __del__(owned self):
     self.dump() # Self is still whole here
@@ -305,6 +319,7 @@ fn __del__(owned self):
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // TODO:
 ```

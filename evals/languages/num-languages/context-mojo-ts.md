@@ -28,6 +28,7 @@ Example codeblock for the indicated language, following the pattern of define an
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 flag1 = True                                               # Implicit boolean
 var flag2: Bool = False                                    # Explicit boolean
@@ -40,6 +41,7 @@ if flag1 and not flag2:                                    # Usage
 metadata { "language": "mojo", "language_version":">=0.4.x <0.6.x", "code_role": "deprecated", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 flag1 = True                                               # Implicit boolean
 let flag2: Bool = False                                    # Explicit boolean
@@ -54,6 +56,7 @@ if flag1 and not flag2:                                    # Usage
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 let flag1 = true;                                          // Implicit boolean
 let flag2: boolean = false;                                // Explicit boolean
@@ -71,6 +74,7 @@ if (flag1 && !flag2) {                                     // Usage
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # Implicit signed integer
 year1 = 2025
@@ -95,6 +99,7 @@ var year10: UInt64: 2025
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Implicit integer
 let year1 = 2025;
@@ -111,6 +116,7 @@ let year2: number = 2025;
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # Implicit real-number
 pi1 = 3.14
@@ -127,6 +133,7 @@ var pi4: Float64 = 3.141
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Implicit real-number
 let pi1 = 3.14;
@@ -145,6 +152,7 @@ let pi2: number = 3.141;
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # Implicit string
 c1 = "blue"
@@ -166,6 +174,7 @@ var c4: String = "yellow"
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Implicit string
 let c1 = "blue";
@@ -189,6 +198,7 @@ let c4: string = "yellow";
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # Implicit
 var l1 = List(1, 2, 3, 4)
@@ -218,6 +228,7 @@ for i in range(len(list)):
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Implicit
 let l1 = [1, 2, 3, 4];
@@ -251,6 +262,7 @@ for (let i = 0; i < list2.length; i++) {
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 var l2 = List[Int](1, 2, 3, 4)
 var g1 = List(
@@ -277,6 +289,7 @@ print(list)
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 let l2: number[] = [1, 2, 3, 4];
 let g1 = [
@@ -307,6 +320,7 @@ console.log(l2);
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 year = 2025
 
@@ -327,6 +341,7 @@ else:
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 const year = 2025;
 
@@ -353,6 +368,7 @@ if (year <= 2025) {
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 def main():
     # code...
@@ -364,6 +380,7 @@ def main():
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // For Node.js application
 function main(): void {
@@ -392,6 +409,7 @@ main();
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 fn hello1():
   # code...
@@ -415,6 +433,7 @@ hello3("world")
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // No parameters, no return value
 function hello1(): void {
@@ -446,6 +465,7 @@ hello3("world");
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 alias ColorType = String
 var c1: ColorType = "blue"
@@ -457,6 +477,7 @@ var c1: ColorType = "blue"
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 type ColorType = string;
 let c1: ColorType = "blue";
@@ -470,6 +491,7 @@ let c1: ColorType = "blue";
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 struct PointType:
     var x: Int
@@ -500,6 +522,7 @@ print(p1.str())           # Call struct's method
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 type PointType = {
   x: number;
@@ -525,6 +548,7 @@ let x = p1.x;
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # Implicit type
 name1 = "John"              # Without a type
@@ -541,6 +565,7 @@ var name2: String = "John"  # Define and initialize
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Implicit type
 let name1 = "John";         // Type inferred as string
@@ -557,6 +582,7 @@ let name3: string = "John"; // Define and initialize
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # TODO:
 ```
@@ -567,6 +593,7 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Using const for immutable references
 const NAME: string = "John";
@@ -587,6 +614,7 @@ interface Config {
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 print("Hellow world")
 ```
@@ -597,6 +625,7 @@ print("Hellow world")
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Basic console output
 console.log("Hello world");
@@ -617,6 +646,7 @@ console.warn("Warning message");
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 var year: Int = input("What year is it")
 ```
@@ -627,6 +657,7 @@ var year: Int = input("What year is it")
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Browser environment
 const name = prompt("Enter your name:");
@@ -643,4 +674,35 @@ rl.question('Enter your age: ', (answer) => {
   console.log(`You are ${age} years old`);
   rl.close();
 });
+```
+
+### Blocks & Statements
+
+#### Define a group of statements (i.e. code) to be executed together
+
+##### Mojo
+
+```json
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
+```
+
+You can use any number of spaces or tabs for indentation as long as the same indentation is used for the entire code block
+
+**Examples:**
+```mojo
+if condition:
+    # code...
+```
+
+##### TypeScript
+
+```json
+metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
+```
+
+**Examples:**
+```ts
+if (condition) {
+  // code...
+}
 ```

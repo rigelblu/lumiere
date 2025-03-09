@@ -36,6 +36,7 @@ metadata {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # Python variables are mutable by default
 my_list = [1, 2, 3]  # Lists are mutable by default
@@ -52,6 +53,7 @@ def update_list(lst):
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 def setColor(mut color: String) -> None:
     # code...
@@ -63,6 +65,7 @@ def setColor(mut color: String) -> None:
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Not built into language
 
@@ -151,6 +154,7 @@ void updateValueByRef(int& value) {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # Python passes references to objects, but the reference itself is passed by value
 # Mutable objects can be modified in-place
@@ -174,6 +178,7 @@ update_string(greeting)  # greeting is still "hello"
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # By value
 def setPointX(owned x: Int) -> None:
@@ -190,6 +195,7 @@ def setName(read name: String) -> None:
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Not built into language
 
@@ -307,6 +313,7 @@ void updateValue(int* ptr) {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 class Point:
     def __init__(self, x):
@@ -333,6 +340,7 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
 
 
 
+**Examples:**
 ```mojo
 struct Point:
     var x: Int
@@ -353,6 +361,7 @@ struct Point:
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Not built into language
 
@@ -483,6 +492,7 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 **What it does:**
 - When you call a Python function and pass an object with a pointer to a heap-allocated value. Python actually gives that function a reference to your object, which allows the function to mutate the heap-allocated value
 
+**Examples:**
 ```py
 # Python's value semantics for immutable types
 def add_one(num):
@@ -525,6 +535,7 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
 - The way the fn function receives the y value is a "look but don't touch" approach to value semantics. This is also a more memory-efficient approach when dealing with memory-intensive arguments, because Mojo doesn't make any copies unless we explicitly make the copies ourselves
 - Thus, the default behavior for def and fn arguments is fully value semantic: arguments are either copies or immutable references, and any living variable from the callee is not affected by the function
 
+**Examples:**
 ```mojo
 # Pass by value / Value Semantics
 # Example 1
@@ -562,6 +573,7 @@ fn add_two(d: Int):                           # d = c
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Example 1: Value semantics with primitive types
 let x = 1;                 // x = 1
@@ -693,6 +705,7 @@ fn update_point(mut p: Point) -> Point {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # Example 1: Mutating through reference (mutable objects)
 def add(x, y):
@@ -740,6 +753,7 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
 - A mutable argument cannot define default value
 - A mutable reference must be exclusive. It can't have any other references that alias it
 
+**Examples:**
 ```mojo
 # Example 1
 fn main():
@@ -775,6 +789,7 @@ fn invalid_access():
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Example 1: Objects are passed by reference
 function add(x: number[], y: number): void {
@@ -954,6 +969,7 @@ metadata {
 }
 ```
 
+**Examples:**
 ```py
 # Python doesn't have explicit ownership transfer like Mojo
 # but we can simulate similar behavior
@@ -991,6 +1007,7 @@ metadata {
 }
 ```
 
+**Examples:**
 ```mojo
 # Example: don't transfer ownership
 my_function1()
@@ -1039,6 +1056,7 @@ metadata {
 }
 ```
 
+**Examples:**
 ```ts
 // TypeScript doesn't have explicit ownership transfer like Mojo
 // but we can simulate similar behavior

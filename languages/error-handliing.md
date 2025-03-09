@@ -8,6 +8,7 @@
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 def hello4(name: str):
     if name == "":
@@ -32,6 +33,7 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
 **Constraints:**
 - Doesn't support typed error conditions yet. All errors are instances of Error, and the only thing that distinguishes different error conditions is the error message that you provide
 
+**Examples:**
 ```mojo
 fn hello4(name: String) raises:
     if (name == ""):
@@ -47,6 +49,7 @@ fn hello4(name: String) raises:
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Custom error type
 class EmptyNameError extends Error {
@@ -123,6 +126,7 @@ func validateName(name string) (string, error) {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 def handle_error():
     try:
@@ -157,6 +161,7 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
 - If `raises` keyword isn't included when defining a function with fn, then the function must explicitly handle any errors that might occur in code that it executes
 - Because Mojo does not currently support typed errors, a try-except control structure can include at most one except clause, which catches any Error raised
 
+**Examples:**
 ```mojo
 fn handle_error():
     try:
@@ -175,6 +180,7 @@ fn handle_error():
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 function handleError(): void {
   try {
