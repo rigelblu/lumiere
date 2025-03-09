@@ -2,64 +2,6 @@
 
 REFACTOR: move into separate files inside a standard-library directory
 
-#### Print to console
-
-##### Python
-
-```json
-metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
-```
-
-**How to use:**
-- TODO:
-
-**Examples:**
-```py
-# TODO:
-```
-
-##### Mojo
-
-```json
-metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
-```
-
-**How to use:**
-- TODO:
-
-**Examples:**
-```mojo
-# TODO:
-```
-
-##### TypeScript
-
-```json
-metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
-```
-
-**How to use:**
-- TODO:
-
-**Examples:**
-```ts
-// TODO:
-```
-
-##### Go
-
-```json
-metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
-```
-
-**How to use:**
-- TODO:
-
-**Examples:**
-```go
-// TODO:
-```
-
 #### Use standard library traits
 
 ##### Python
