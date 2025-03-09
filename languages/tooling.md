@@ -8,6 +8,9 @@
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "-" }
 ```
 
+**How to use:**
+- TODO:
+
 ```sh
 # TODO:
 ```
@@ -17,6 +20,9 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
+
+**How to use:**
+- TODO:
 
 ```sh
 # "--mojoproject" adds max package as a dependency, which includes Mojo
@@ -30,6 +36,9 @@ cd hello
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 ```sh
 # TODO:
 ```
@@ -40,6 +49,9 @@ metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": 
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm"
 }
 ```
+
+**How to use:**
+- TODO:
 
 ```sh
 # TODO:
@@ -53,6 +65,9 @@ metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail",
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "-" }
 ```
 
+**How to use:**
+- TODO:
+
 ```sh
 # TODO:
 ```
@@ -63,7 +78,8 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
-
+**How to use:**
+- TODO:
 `.gitattributes` -
 `.gitignore` -
 - `.magic` - virtual environment for the project
@@ -76,6 +92,9 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 ```sh
 # TODO:
 ```
@@ -85,6 +104,9 @@ metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": 
 ```json
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 ```sh
 # TODO:
@@ -98,6 +120,9 @@ metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail",
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "-" }
 ```
 
+**How to use:**
+- TODO:
+
 ```sh
 # TODO:
 ```
@@ -107,6 +132,9 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
+
+**How to use:**
+- TODO:
 
 ```sh
 magic shell
@@ -118,6 +146,9 @@ magic shell
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 ```sh
 # TODO:
 ```
@@ -127,6 +158,9 @@ metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": 
 ```json
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 ```sh
 # TODO:
@@ -140,6 +174,9 @@ metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail",
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "-" }
 ```
 
+**How to use:**
+- TODO:
+
 ```sh
 # TODO:
 ```
@@ -149,6 +186,9 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
+
+**How to use:**
+- TODO:
 
 ```sh
 mojo hello.mojo
@@ -160,6 +200,9 @@ mojo hello.mojo
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 ```sh
 # TODO:
 ```
@@ -169,6 +212,9 @@ metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": 
 ```json
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 ```sh
 # TODO:
@@ -182,6 +228,9 @@ metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail",
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "-" }
 ```
 
+**How to use:**
+- TODO:
+
 ```sh
 # TODO:
 ```
@@ -191,6 +240,9 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
+
+**How to use:**
+- TODO:
 
 ```sh
 mojo build hello.mojo
@@ -202,6 +254,9 @@ mojo build hello.mojo
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 ```sh
 # TODO:
 ```
@@ -211,6 +266,9 @@ metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": 
 ```json
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 ```sh
 # TODO:
@@ -224,6 +282,9 @@ metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail",
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "-" }
 ```
 
+**How to use:**
+- TODO:
+
 ```sh
 # TODO:
 ```
@@ -233,6 +294,9 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
+
+**How to use:**
+- TODO:
 
 ```sh
 magic add {{package-name}}
@@ -244,6 +308,9 @@ magic add {{package-name}}
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 ```sh
 # TODO:
 ```
@@ -253,6 +320,9 @@ metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": 
 ```json
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 ```sh
 # TODO:
@@ -266,6 +336,9 @@ metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail",
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "-" }
 ```
 
+**How to use:**
+- TODO:
+
 ```sh
 # TODO:
 ```
@@ -275,6 +348,9 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
+
+**How to use:**
+- TODO:
 
 ```sh
 mojo package package1 -o compiled_pkg1.mojopkg
@@ -286,6 +362,9 @@ mojo package package1 -o compiled_pkg1.mojopkg
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 ```sh
 # TODO:
 ```
@@ -295,6 +374,9 @@ metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": 
 ```json
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 ```sh
 # TODO:
@@ -308,6 +390,9 @@ metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail",
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 # TODO:
@@ -318,6 +403,9 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
+
+**How to use:**
+- TODO:
 
 ```sh
 # Run all package test
@@ -342,6 +430,9 @@ mojo test --diagnostic-format json test_quickstart.mojo
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```ts
 // TODO:
@@ -353,6 +444,10 @@ metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": 
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // TODO:
 ```

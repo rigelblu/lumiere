@@ -8,6 +8,9 @@
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 # Main function definition
@@ -25,7 +28,10 @@ if __name__ == "__main__":
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
-- **Convention:** put at end of file
+**How to use:**
+- TODO:
+
+**Convention:** put at end of file
 
 **Examples:**
 ```mojo
@@ -38,6 +44,9 @@ def main():
 ```json
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```ts
@@ -66,6 +75,10 @@ main();
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 package main
 
@@ -82,6 +95,9 @@ func main() {
 ```json
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```py
@@ -108,12 +124,15 @@ hello3("world")
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**How to use:**
+- TODO:
+
 - By default, the value is returned to the caller as an owned value
 
-- **Constraints:**
-  - You must explicitly indicate with a `raises` keyword if it can raise an error
-  - Return values must specify a type, unless the function doesn't return a value
-  - By default, arguments are received as an immutable reference (values are read-only, using the read
+**Constraints:**
+- You must explicitly indicate with a `raises` keyword if it can raise an error
+- Return values must specify a type, unless the function doesn't return a value
+- By default, arguments are received as an immutable reference (values are read-only, using the read
 
 **Examples:**
 ```mojo
@@ -138,6 +157,9 @@ hello3("world")
 ```json
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```ts
@@ -167,6 +189,10 @@ hello3("world");
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // No parameters, no return value
 func hello1() {
@@ -190,23 +216,15 @@ hello3("world")
 
 #### Define a function with optional types
 
-Support methods, fields, operator overloading, decorators for metaprogramming
 
-- **How it works:**
-  - Compiler always assumes that the function can raise an error
-  - If you don't specify a type for an argument or return value, it's assigned the object type, a special type that that can represent different types of values. This allows for some runtime dynamism, but also means that the function might fail at runtime if it receives the wrong type.
-  - Arguments are
-    - Passed by immutable reference by default
-    - Copied into a mutalable one if the function mutates it
-    - Received as a reference if it's type is declared as an object
-    - Recived as a value if type is declared as any other type
-  - Return types default to object
 
 ##### Python
 
 ```json
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+**How to use:**
+- TODO:
 
 **Examples:**
 ```py
@@ -242,6 +260,21 @@ hello3("world")
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**How to use:**
+- TODO:
+
+Support methods, fields, operator overloading, decorators for metaprogramming
+
+**How it works:**
+- Compiler always assumes that the function can raise an error
+- If you don't specify a type for an argument or return value, it's assigned the object type, a special type that that can represent different types of values. This allows for some runtime dynamism, but also means that the function might fail at runtime if it receives the wrong type.
+- Arguments are
+  - Passed by immutable reference by default
+  - Copied into a mutalable one if the function mutates it
+  - Received as a reference if it's type is declared as an object
+  - Recived as a value if type is declared as any other type
+- Return types default to object
+
 **Examples:**
 ```mojo
 def hello1():
@@ -270,6 +303,9 @@ hello3("world")
 ```json
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```ts
@@ -310,6 +346,10 @@ hello3("world");
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // Go requires explicit types, but can use interface{} for generic values
 func hello1() {
@@ -350,6 +390,9 @@ hello3("world")
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 def hello():
@@ -381,6 +424,9 @@ result = StringBuilder().append("Hello").append(" ").append("world").get()
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```mojo
 def hello():
@@ -394,6 +440,9 @@ def hello():
 ```json
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```ts
@@ -440,6 +489,10 @@ metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail",
 }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 import (
     "strings"
@@ -483,6 +536,9 @@ func main() {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 def color1(name: str = "blue"):
@@ -503,6 +559,9 @@ color1("green")
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
+
+**How to use:**
+- TODO:
 
 **Constraints:**
   - Must appear after required arguments
@@ -526,6 +585,9 @@ def color3(mut name: String = "blue"):
 ```json
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```ts
@@ -556,6 +618,10 @@ color1("green");
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // Go doesn't have built-in default parameters
 // Option 1: Use variadic function with options pattern
@@ -617,6 +683,9 @@ color2(WithName("green"))
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 def point1(x: int, y: int, z: int):
@@ -638,6 +707,9 @@ point1(2, z=1, y=3)
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```mojo
 def point1(x: Int, y: Int, z: Int):
@@ -655,6 +727,9 @@ point2(z = 1, x = 2, y = 3)
 ```json
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```ts
@@ -685,6 +760,10 @@ point2({ x: 2, y: 3, z: 1 });
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // Go doesn't support keyword arguments directly
 // Use a struct to simulate named parameters
@@ -738,6 +817,9 @@ point1(params)
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 def point1(d1: int, *d2: int):
@@ -765,6 +847,9 @@ sum_all(1, 2, 3, 4)  # Returns 10
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```mojo
 def point1(d1: Int, *d2: Int):
@@ -786,6 +871,9 @@ point2(1, 2, 3)
 ```json
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```ts
@@ -818,6 +906,10 @@ sumAll(1, 2, 3, 4);  // Returns 10
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // Variadic function
 func point1(d1 int, d2 ...int) {
@@ -855,6 +947,9 @@ sumAll(1, numbers...)  // Spread operator for slices
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 def point1(d1: int, *d2: str):
@@ -882,6 +977,9 @@ concat_strings("Pre-", "Hello", " ", "World")  # Returns "Pre-Hello World"
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```mojo
 def point1(d1: Int, *d2: String):
@@ -903,6 +1001,9 @@ point2(1, 2, 3)
 ```json
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```ts
@@ -935,6 +1036,10 @@ concatStrings("Pre-", "Hello", " ", "World");  // Returns "Pre-Hello World"
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // Variadic function with strings
 func point1(d1 int, d2 ...string) {
@@ -972,6 +1077,9 @@ concatStrings("Pre-", words...)
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 def point1(**kwargs: int):
@@ -997,12 +1105,15 @@ config = create_config(True, host="localhost", port="8080")
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
-- **Constraints**:
-  - Always implicitly treated as if they were declared with the owned argument convention, and can't be declared otherwise
-  - Must have the same type, and this determines the type of the argument dictionary
-  - Argument type must conform to the CollectionElement trait. That is, the type must be both Movable and Copyable
-  - Dictionary unpacking is not supported yet
-  - Variadic keyword parameters are not supported yet
+**How to use:**
+- TODO:
+
+**Constraints**:
+- Always implicitly treated as if they were declared with the owned argument convention, and can't be declared otherwise
+- Must have the same type, and this determines the type of the argument dictionary
+- Argument type must conform to the CollectionElement trait. That is, the type must be both Movable and Copyable
+- Dictionary unpacking is not supported yet
+- Variadic keyword parameters are not supported yet
 
 **Examples:**
 ```mojo
@@ -1020,6 +1131,9 @@ fn point2(**kwargs: Int) raises:
 ```json
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```ts
@@ -1067,6 +1181,10 @@ const config = createConfig({
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // Using map for keyword arguments
 func point1(kwargs map[string]int) {
@@ -1110,6 +1228,9 @@ config := createConfig(true, settings)
 ```json
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```py
@@ -1181,6 +1302,9 @@ tag = get_name_tag("Judith")
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```ts
 // Return object with named properties
@@ -1224,6 +1348,10 @@ console.log(tag.name);
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // Named return values
 func getCoordinates() (x, y, z int) {
@@ -1264,13 +1392,16 @@ fmt.Println(tag.Name)
 
 #### Define overloaded functions
 
-- **What is it:** same function, with different signature names
+**What is it:** same function, with different signature names
 
 ##### Python
 
 ```json
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```py
@@ -1312,6 +1443,9 @@ result2 = add("a", "b")   # Returns "ab"
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```mojo
 def add1(x: Int, y: Int) -> Int:
@@ -1332,6 +1466,9 @@ fn add2(x: String, y: String) -> String:
 ```json
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```ts
@@ -1363,6 +1500,10 @@ const result2 = add("a", "b");    // Returns "ab"
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // Go doesn't support function overloading directly
 // Use different function names or interfaces

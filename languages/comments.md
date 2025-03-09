@@ -8,6 +8,9 @@
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 # Single line comment
@@ -27,6 +30,9 @@ Multi-line comment
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```mojo
@@ -48,6 +54,9 @@ Multi-line comment
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```ts
 // Single line comment
@@ -66,6 +75,10 @@ name = "lang" // Comment at end of line
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // Single line comment
 name := "lang" // Comment at end of line

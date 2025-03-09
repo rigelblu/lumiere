@@ -87,6 +87,7 @@ if (flag1 && !flag2) {                                     // Usage
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```go
 flag1 := true													                     // Implicit boolean
 var flag2 bool = false                                     // Explicit boolean
@@ -159,6 +160,7 @@ let year2: number = 2025;
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```go
 // Implicit integer
 year1 := 2025
@@ -232,6 +234,7 @@ let pi2: number = 3.141;
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```go
 // Implicit real-number
 pi1 := 3.14
@@ -315,6 +318,7 @@ let c4: string = "yellow";
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```go
 // Implicit string
 c1 := "blue"
@@ -429,6 +433,7 @@ for (let i = 0; i < list2.length; i++) {
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```go
 // Implicit
 l1 := []int{1, 2, 3, 4}
@@ -543,6 +548,7 @@ console.log(l2);
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```go
 l2 := []int{1, 2, 3, 4}
 g1 := [][]int{
@@ -638,6 +644,7 @@ if (year <= 2025) {
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```go
 year := 2025
 
@@ -720,6 +727,7 @@ main();
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```go
 package main
 
@@ -814,6 +822,7 @@ hello3("world");
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```go
 // No parameters, no return value
 func hello1() {
@@ -881,6 +890,7 @@ let c1: ColorType = "blue";
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```go
 type ColorType string
 var c1 ColorType = "blue"
@@ -978,6 +988,7 @@ let x = p1.x;
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```go
 type PointType struct {
     x int
@@ -1046,6 +1057,7 @@ let name3: string = "John"; // Define and initialize
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```go
 // Explicit type
 var name1 string            // Define
@@ -1106,6 +1118,7 @@ interface Config {
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```go
 // Single constant
 const NAME string = "John"
@@ -1177,6 +1190,7 @@ console.warn("Warning message");
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```go
 // Basic print
 fmt.Println("Hello world")
@@ -1250,6 +1264,7 @@ rl.question('Enter your age: ', (answer) => {
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```go
 // Using bufio scanner
 import (
@@ -1330,6 +1345,7 @@ if (condition) {
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```go
 if condition {
     // code block...

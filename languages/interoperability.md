@@ -16,6 +16,9 @@
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**How to use:**
+- TODO:
+
 ```sh
 magic add "python>=311,<3.13" "pygame>=2.6.1,<3"
 ```
@@ -27,6 +30,9 @@ magic add "python>=311,<3.13" "pygame>=2.6.1,<3"
 ```json
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```py
@@ -43,6 +49,9 @@ def main():
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```mojo
 from python import Python
@@ -53,6 +62,9 @@ def main():
     print(ar)
     print(ar.shape)
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```mojo
@@ -73,6 +85,9 @@ def main():
 ```json
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```py
@@ -97,6 +112,9 @@ for key, value in py_dict.items():
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```mojo
 from python import Python
@@ -119,6 +137,9 @@ for py_tuple in py_dict.items():
 - Mojo's object type is designed to support Python's style of argument passing for functions, which is different from the other types in Mojo
 - Python's argument-passing convention is called "pass by object reference." This means when you pass a variable to a Python function, you actually pass a reference to the object, as a value (so it's not strictly reference semantics)
 - Passing the object reference "as a value" means that the argument name is just a container that acts like an alias to the original object. If you reassign the argument inside the function, it does not affect the caller's original value. However, if you modify the object itself (such as call append() on a list), the change is visible to the original object outside the function
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```py
@@ -145,6 +166,9 @@ change_list(ar)                          # ar = [1, 2]
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 # TODO:
@@ -155,6 +179,9 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```mojo
@@ -184,6 +211,9 @@ def main():
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```mojo
@@ -222,6 +252,9 @@ print(python_object)
 #### Comparing Python types in Mojo
 
 ##### Mojo
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```mojo

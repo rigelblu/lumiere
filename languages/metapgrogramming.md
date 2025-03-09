@@ -8,6 +8,9 @@
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "-" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 # TODO:
@@ -15,13 +18,16 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 
 ##### Mojo
 
-**Analogy:** compile-time variable that becomes a runtime constant
-
-**Terminology:** "parameter" and "parameter expression" refer to compile-time values, and "argument" and "expression" refer to runtime values
-
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
+
+**How to use:**
+- TODO:
+
+**Analogy:** compile-time variable that becomes a runtime constant
+
+**Terminology:** "parameter" and "parameter expression" refer to compile-time values, and "argument" and "expression" refer to runtime values
 
 **Examples:**
 ```mojo
@@ -45,6 +51,9 @@ p = Points[2]
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```ts
 // TODO:
@@ -56,6 +65,10 @@ metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": 
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // TODO:
 ```
@@ -68,6 +81,9 @@ metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail",
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 # TODO:
@@ -78,6 +94,9 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```mojo
@@ -93,6 +112,9 @@ fn coount[num: Int]():
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```ts
 // TODO:
@@ -104,6 +126,10 @@ metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": 
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // TODO:
 ```
@@ -116,6 +142,9 @@ metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail",
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 # TODO:
@@ -123,16 +152,16 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 
 ##### Mojo
 
+```json
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
+```
+
 **How to use:**
 - Infer-only paramater: put `//` after infer-only parameters
 - Positional-only parameters: put `/` after positional-only parameters
 - Variadic parameters: prefix parameter with star, ie `*parameter_name` (it's keyword-only)
 - Keyword-only parameters: parameter list with no variadic parameter are keyword-only parameters
 - Optional parameters: put `=` and then default value for parameter
-
-```json
-metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
-```
 
 **Examples:**
 ```mojo
@@ -152,8 +181,6 @@ def my_sort[
 ]() -> SIMD[Type, width]:
 ```
 
-
-**Examples:**
 ```mojo
 # keyword-only parameter
 fn repeat[MsgType: Stringable, count: Int](msg: MsgType):
@@ -164,7 +191,6 @@ fn repeat[MsgType: Stringable, count: Int](msg: MsgType):
 repeat[count=2](42)                   # Must use keyword parameter for `count`
 ```
 
-**Examples:**
 ```mojo
 # inferred and then positional paramaters
 fn repeat[MsgType: Stringable, //, count: Int](msg: MsgType):
@@ -182,6 +208,9 @@ repeat[2](42)
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```ts
 // TODO:
@@ -193,6 +222,10 @@ metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": 
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // TODO:
 ```
@@ -205,6 +238,9 @@ metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail",
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 # TODO:
@@ -215,6 +251,9 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```mojo
@@ -232,6 +271,9 @@ repeat[count=2](42)                   # Must use keyword parameter for `count`
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```ts
 // TODO:
@@ -243,6 +285,10 @@ metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": 
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // TODO:
 ```
@@ -255,6 +301,9 @@ metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail",
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 # TODO:
@@ -265,6 +314,9 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```mojo
@@ -291,6 +343,9 @@ use_container()
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```ts
 // TODO:
@@ -302,6 +357,10 @@ metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": 
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // TODO:
 ```

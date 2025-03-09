@@ -6,7 +6,7 @@
 
 ### Results with llama-3.2
 
-**No context**
+**Context: None**
 ```
 const pi = 3.14;
 const radius = 9;
@@ -19,23 +19,23 @@ if (circumference <= 1) {
 }
 ```
 
-**Mojo Only**
+**Context: Mojo Only**
 ```
 ```
 
-**Mojo & Python**
+**Context: Mojo & Python**
 ```
 ```
 
-**Mojo & TypeScript**
+**Context: Mojo & TypeScript**
 ```
 ```
 
-**Mojo & Go**
+**Context: Mojo & Go**
 ```
 ```
 
-**Four Languages**
+**Context: Mojo, Python, TypeScript, Go**
 ```
 var radius: Int = 9
 var circumference: Float32 = radius * 2 * 3.14
