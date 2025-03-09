@@ -8,6 +8,7 @@
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # Basic class definition
 class Person:
@@ -70,6 +71,7 @@ TODO: LLM Generated, TODO: verify code
 **Alternatives**
 - Structs
 
+**Examples:**
 ```mojo
 # Not implemented. Use nearest alternative
 ```
@@ -80,6 +82,7 @@ TODO: LLM Generated, TODO: verify code
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Basic class definition
 class Person {

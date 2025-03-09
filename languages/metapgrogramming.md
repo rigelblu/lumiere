@@ -8,6 +8,7 @@
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "-" }
 ```
 
+**Examples:**
 ```py
 # TODO:
 ```
@@ -22,6 +23,7 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # Define parameter count on method
 def repeat[count: Int](msg: String):
@@ -43,6 +45,7 @@ p = Points[2]
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // TODO:
 ```
@@ -65,6 +68,7 @@ metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail",
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # TODO:
 ```
@@ -75,6 +79,7 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 fn coount[num: Int]():
     @parameter
@@ -88,6 +93,7 @@ fn coount[num: Int]():
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // TODO:
 ```
@@ -110,6 +116,7 @@ metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail",
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # TODO:
 ```
@@ -127,6 +134,7 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 def my_sort[
     # infer-only parameters
@@ -145,6 +153,7 @@ def my_sort[
 ```
 
 
+**Examples:**
 ```mojo
 # keyword-only parameter
 fn repeat[MsgType: Stringable, count: Int](msg: MsgType):
@@ -155,6 +164,7 @@ fn repeat[MsgType: Stringable, count: Int](msg: MsgType):
 repeat[count=2](42)                   # Must use keyword parameter for `count`
 ```
 
+**Examples:**
 ```mojo
 # inferred and then positional paramaters
 fn repeat[MsgType: Stringable, //, count: Int](msg: MsgType):
@@ -172,6 +182,7 @@ repeat[2](42)
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // TODO:
 ```
@@ -194,6 +205,7 @@ metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail",
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # TODO:
 ```
@@ -204,6 +216,7 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 fn repeat[MsgType: Stringable, count: Int](msg: MsgType):
     @parameter
@@ -219,6 +232,7 @@ repeat[count=2](42)                   # Must use keyword parameter for `count`
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // TODO:
 ```
@@ -241,6 +255,7 @@ metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail",
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # TODO:
 ```
@@ -251,6 +266,7 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 @value
 struct Container[ElementType: CollectionElement]:
@@ -275,6 +291,7 @@ use_container()
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // TODO:
 ```

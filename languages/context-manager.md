@@ -11,6 +11,7 @@
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "-" }
 ```
 
+**Examples:**
 ```py
 # TODO:
 ```
@@ -21,6 +22,7 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 with open(input_file, "r") as f:
     content = f.read()
@@ -37,6 +39,7 @@ with open(input_file, "r") as f_in, open(output_file, "w") as f_out:
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // TODO:
 ```

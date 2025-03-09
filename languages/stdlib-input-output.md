@@ -8,6 +8,7 @@
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # Basic print
 print("Hello world")
@@ -26,6 +27,7 @@ print("world")
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 print("Hellow world")
 ```
@@ -36,6 +38,7 @@ print("Hellow world")
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Basic console output
 console.log("Hello world");
@@ -74,6 +77,7 @@ fmt.Print("world\n")
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # Basic input (returns string)
 name = input("Enter your name: ")
@@ -90,6 +94,7 @@ x, y = map(int, input("Enter two numbers separated by space: ").split())
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 var year: Int = input("What year is it")
 ```
@@ -100,6 +105,7 @@ var year: Int = input("What year is it")
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Browser environment
 const name = prompt("Enter your name:");
@@ -157,6 +163,7 @@ fmt.Scanf("%d", &year)
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # Using with statement (recommended)
 with open("input_file.txt", "r") as f:
@@ -185,6 +192,7 @@ finally:
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 f = open(input_file, "r)
 try:
@@ -199,6 +207,7 @@ finally:
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Node.js environment
 import * as fs from 'fs';
@@ -280,6 +289,7 @@ for scanner.Scan() {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # Using with statement (recommended)
 with open("output_file.txt", "w") as f:
@@ -302,6 +312,7 @@ with open("output_file.txt", "w") as f:
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # TODO:
 ```
@@ -312,6 +323,7 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Node.js environment
 import * as fs from 'fs';

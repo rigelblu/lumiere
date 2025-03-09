@@ -28,6 +28,7 @@ If LLMs are great at correlating, pattern matching, interpolating, maybe this is
 
 ### Result without any additional context
 
+**Examples:**
 ```
 type CircleArea = Double
 
@@ -39,6 +40,7 @@ circle_area: CircleArea = PI * radius * radius
 
 ### Result with only mojo examples
 
+**Examples:**
 ```
 radius: Int = 9
 pi: Float64 = 3.14
@@ -48,6 +50,7 @@ area: Float64 = pi * radius * radius
 
 ### Result with with mojo, python, typescript, and go examples
 
+**Examples:**
 ```
 var radius: Int = 9
 var pi: Float64 = 3.14
@@ -71,6 +74,7 @@ Some languages implement the same concept differently, call it differently, use 
 
 **TypeScript**
 
+**Examples:**
 ```ts
 interface Color {
   name: string;
@@ -79,6 +83,7 @@ interface Color {
 
 **Go**
 
+**Examples:**
 ```go
 type Color struct {
   name string
@@ -89,6 +94,7 @@ type Color struct {
 
 **TypeScript**
 
+**Examples:**
 ```ts
 interface Color {
   name: string;

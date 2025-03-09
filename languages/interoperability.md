@@ -28,6 +28,7 @@ magic add "python>=311,<3.13" "pygame>=2.6.1,<3"
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 import numpy as np
 
@@ -42,6 +43,7 @@ def main():
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 from python import Python
 
@@ -52,6 +54,7 @@ def main():
     print(ar.shape)
 ```
 
+**Examples:**
 ```mojo
 from python import Python
 
@@ -71,6 +74,7 @@ def main():
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # List iteration
 py_list = [1, 2, 3]
@@ -93,6 +97,7 @@ for key, value in py_dict.items():
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 from python import Python
 
@@ -115,6 +120,7 @@ for py_tuple in py_dict.items():
 - Python's argument-passing convention is called "pass by object reference." This means when you pass a variable to a Python function, you actually pass a reference to the object, as a value (so it's not strictly reference semantics)
 - Passing the object reference "as a value" means that the argument name is just a container that acts like an alias to the original object. If you reassign the argument inside the function, it does not affect the caller's original value. However, if you modify the object itself (such as call append() on a list), the change is visible to the original object outside the function
 
+**Examples:**
 ```py
 # Example: mutate object
 def modify_list(l):                      # l = ar, ar = [1, 2]
@@ -139,6 +145,7 @@ change_list(ar)                          # ar = [1, 2]
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # TODO:
 ```
@@ -149,6 +156,7 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 from python import Python
 
@@ -177,6 +185,7 @@ def main():
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 from python import PythonObject
 
@@ -189,6 +198,7 @@ def main():
     print(py_list)
 ```
 
+**Examples:**
 ```mojo
 from python import Python
 
@@ -200,6 +210,7 @@ def main():
     print("Is 7 in the set:", contained)
 ```
 
+**Examples:**
 ```mojo
 var s = String(py_string)
 var b = Bool(py_bool)
@@ -212,6 +223,7 @@ print(python_object)
 
 ##### Mojo
 
+**Examples:**
 ```mojo
 from python import Python
 from python import PythonObject

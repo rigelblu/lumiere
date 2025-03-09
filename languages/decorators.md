@@ -8,6 +8,7 @@
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "-" }
 ```
 
+**Examples:**
 ```py
 # TODO:
 ```
@@ -18,6 +19,7 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # TODO:
 ```
@@ -28,6 +30,7 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // TODO:
 ```
@@ -50,6 +53,7 @@ metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail",
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "-" }
 ```
 
+**Examples:**
 ```py
 # TODO:
 ```
@@ -62,6 +66,7 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
 
 - Value assignment are converted into a constructor call if the target type has a constructor with a `@implicit` decorator and takes a single required argument that matches the value being assigned
 
+**Examples:**
 ```mojo
 struct Point2D:
     var x: Int
@@ -92,6 +97,7 @@ def main():
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // TODO:
 ```

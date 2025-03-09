@@ -8,6 +8,7 @@
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # Main function definition
 def main():
@@ -26,6 +27,7 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
 
 - **Convention:** put at end of file
 
+**Examples:**
 ```mojo
 def main():
     # code...
@@ -37,6 +39,7 @@ def main():
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // For Node.js application
 function main(): void {
@@ -80,6 +83,7 @@ func main() {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # No parameters, no return value
 def hello1() -> None:
@@ -111,6 +115,7 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
   - Return values must specify a type, unless the function doesn't return a value
   - By default, arguments are received as an immutable reference (values are read-only, using the read
 
+**Examples:**
 ```mojo
 fn hello1():
   # code...
@@ -134,6 +139,7 @@ hello3("world")
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // No parameters, no return value
 function hello1(): void {
@@ -202,6 +208,7 @@ Support methods, fields, operator overloading, decorators for metaprogramming
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # No explicit types
 def hello1():
@@ -235,6 +242,7 @@ hello3("world")
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 def hello1():
   # code...
@@ -263,6 +271,7 @@ hello3("world")
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Using 'any' type for flexibility
 function hello1(): void {
@@ -341,6 +350,7 @@ hello3("world")
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 def hello():
     text = (str()
@@ -371,6 +381,7 @@ result = StringBuilder().append("Hello").append(" ").append("world").get()
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 def hello():
     text = String()
@@ -384,6 +395,7 @@ def hello():
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 function hello(): void {
     // Using string methods
@@ -471,6 +483,7 @@ func main() {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 def color1(name: str = "blue"):
     # code...
@@ -495,6 +508,7 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
   - Must appear after required arguments
   - Cannot be used with mutual values
 
+**Examples:**
 ```mojo
 def color1(name: String = "blue"):
     # code...
@@ -513,6 +527,7 @@ def color3(mut name: String = "blue"):
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 function color1(name: string = "blue"): void {
     // code...
@@ -602,6 +617,7 @@ color2(WithName("green"))
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 def point1(x: int, y: int, z: int):
     # code...
@@ -622,6 +638,7 @@ point1(2, z=1, y=3)
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 def point1(x: Int, y: Int, z: Int):
     # code...
@@ -639,6 +656,7 @@ point2(z = 1, x = 2, y = 3)
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Using object destructuring for named parameters
 function point1({ x, y, z }: { x: number; y: number; z: number }): void {
@@ -720,6 +738,7 @@ point1(params)
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 def point1(d1: int, *d2: int):
     print(d1)
@@ -746,6 +765,7 @@ sum_all(1, 2, 3, 4)  # Returns 10
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 def point1(d1: Int, *d2: Int):
     for value in d2:
@@ -767,6 +787,7 @@ point2(1, 2, 3)
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 function point1(d1: number, ...d2: number[]): void {
     console.log(d1);
@@ -834,6 +855,7 @@ sumAll(1, numbers...)  // Spread operator for slices
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 def point1(d1: int, *d2: str):
     print(d1)
@@ -860,6 +882,7 @@ concat_strings("Pre-", "Hello", " ", "World")  # Returns "Pre-Hello World"
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 def point1(d1: Int, *d2: String):
     for value in d2:
@@ -881,6 +904,7 @@ point2(1, 2, 3)
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 function point1(d1: number, ...d2: string[]): void {
     console.log(d1);
@@ -948,6 +972,7 @@ concatStrings("Pre-", words...)
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 def point1(**kwargs: int):
     for key, value in kwargs.items():
@@ -979,6 +1004,7 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
   - Dictionary unpacking is not supported yet
   - Variadic keyword parameters are not supported yet
 
+**Examples:**
 ```mojo
 def point1(**kwargs: Int) raises:
   for key in kwargs.keys():
@@ -995,6 +1021,7 @@ fn point2(**kwargs: Int) raises:
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Using Record type for dynamic keys
 function point1(kwargs: Record<string, number>): void {
@@ -1084,6 +1111,7 @@ config := createConfig(true, settings)
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 from typing import NamedTuple, Tuple
 
@@ -1139,6 +1167,7 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
 **Conventions:**
 - The out argument should be the last argument in the list
 
+**Examples:**
 ```mojo
 def get_name_tag(owned name: String, out name_tag: NameTag):
     name_tag = NameTag(name^)
@@ -1152,6 +1181,7 @@ tag = get_name_tag("Judith")
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Return object with named properties
 function getCoordinates(): { x: number; y: number; z: number } {
@@ -1242,6 +1272,7 @@ fmt.Println(tag.Name)
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # Python doesn't support true function overloading
 # But can use multiple dispatch with libraries or implement similar behavior
@@ -1281,6 +1312,7 @@ result2 = add("a", "b")   # Returns "ab"
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 def add1(x: Int, y: Int) -> Int:
     return x + y
@@ -1301,6 +1333,7 @@ fn add2(x: String, y: String) -> String:
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Function overloading with function signatures
 function add(x: number, y: number): number;

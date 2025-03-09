@@ -23,6 +23,7 @@
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 from abc import ABC, abstractmethod
 
@@ -40,6 +41,7 @@ class ColorTrait(ABC):
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 trait ColorTrait:
     # The three dots following the method signature indicates the method is not implemented
@@ -61,6 +63,7 @@ dot = Point[1]()
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 interface ColorTrait {
   HSL(): { h: number; s: number; l: number };
@@ -114,6 +117,7 @@ public:
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # TODO:
 ```
@@ -124,6 +128,7 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 trait Name:
     fn name(self):
@@ -149,6 +154,7 @@ struct Point2D(Point1D)):
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // TODO:
 ```
@@ -171,6 +177,7 @@ metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail",
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # TODO:
 ```
@@ -181,6 +188,7 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 trait Name:
     fn name(self):
@@ -206,6 +214,7 @@ struct Point2D(Name, Point1D)):
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // TODO:
 ```
@@ -228,6 +237,7 @@ metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail",
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # TODO:
 ```
@@ -238,6 +248,7 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 trait Point:
     fn __init__(out self): ...
@@ -266,6 +277,7 @@ var thing = factory[Dot]()
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // TODO:
 ```
@@ -288,6 +300,7 @@ metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail",
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 class Point:
   def __init__(self, x, y):
@@ -311,6 +324,7 @@ print(str(Point(1, 2)))  # Outputs: "(1, 2)"
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 @value
 struct Point1D(StringableRaising):
@@ -328,6 +342,7 @@ print(String(Point1D(1)))
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 interface Stringable {
   toString(): string;
@@ -429,6 +444,7 @@ int main() {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 class Point:
     def __init__(self, data):
@@ -456,6 +472,7 @@ def main():
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 @value
 struct Point:
@@ -481,6 +498,7 @@ def main():
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 class Point {
   constructor(private data: number[][]) {}
@@ -613,6 +631,7 @@ int main() {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 from typing import Protocol, Tuple
 
@@ -651,6 +670,7 @@ def use_trait_function():
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # TODO: test if this works
 struct Color:
@@ -678,6 +698,7 @@ fn use_trait_function():
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Define trait/interface
 interface ColorTrait {
@@ -859,6 +880,7 @@ void useTraitFunction() {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 from abc import ABC, abstractmethod
 from typing import Protocol, TypeVar, Generic
@@ -923,6 +945,7 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
 **Constraints:s**
 - The Writable trait doesn't allow the write_to() method to raise an error and the Stringable trait doesn't allow the **str**() method to raise an error. Instead have to define these methods with fn
 
+**Examples:**
 ```mojo
 @value
 struct Complex(
@@ -955,6 +978,7 @@ print(msg)
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Define interfaces
 interface Writer {
@@ -1236,6 +1260,7 @@ int main() {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # Using Any type
 from typing import Any
@@ -1265,6 +1290,7 @@ value3: int | str | bool = "string"
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # TODO:
 ```
@@ -1280,6 +1306,7 @@ metadata {
 }
 ```
 
+**Examples:**
 ```ts
 // Using any type
 let value1: any = "string";
@@ -1331,6 +1358,7 @@ func process(value any) {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # TODO:
 ```
@@ -1341,6 +1369,7 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # TODO:
 ```
@@ -1351,6 +1380,7 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // TODO:
 ```

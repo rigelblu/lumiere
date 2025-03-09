@@ -16,6 +16,7 @@
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 year = 2025
 
@@ -36,6 +37,7 @@ else:
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 year = 2025
 
@@ -56,6 +58,7 @@ else:
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 const year = 2025;
 
@@ -102,6 +105,7 @@ if year <= 2025 {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 if year < 2021: print("Past")  # Inline code
 if year >= 2026: print("Future")  # Inline code
@@ -116,6 +120,7 @@ if not (year == 2025): print("Not present")  # Negation example
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 if year < 2021: # code...skipped when condition is False
 if year >= 2026: # code...skipped when condition is False
@@ -130,6 +135,7 @@ if year != 2025: # code...skipped when condition is False
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 if (year < 2021) console.log("Past");  // Inline code
 if (year >= 2026) console.log("Future");  // Inline code
@@ -160,6 +166,7 @@ if !(year == 2025) { fmt.Println("Not present") }  // Negation example
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 # Either conditions
 if true_func() or false_func():
@@ -176,6 +183,7 @@ if false_func() and true_func():
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # Either conditions
 if true_func() or false_func():
@@ -192,6 +200,7 @@ if false_func() and true_func():
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // Either conditions
 if (trueFunc() || falseFunc()) {
@@ -230,6 +239,7 @@ if falseFunc() && trueFunc() {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 time = "future" if year > 2020 else "past"
 ```
@@ -240,6 +250,7 @@ time = "future" if year > 2020 else "past"
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 time = "future" if year > 2020 else "past"
 ```
@@ -250,6 +261,7 @@ time = "future" if year > 2020 else "past"
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 const time = year > 2020 ? "future" : "past";
 ```
@@ -285,6 +297,7 @@ time := func() string {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 year = 2025
 label = "current" if year == 2025 else "past or future"
@@ -296,6 +309,7 @@ label = "current" if year == 2025 else "past or future"
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 year = 2025
 label = "current" if year == 20250 else "past or future"
@@ -307,6 +321,7 @@ label = "current" if year == 20250 else "past or future"
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 const year = 2025;
 const label = year === 2025 ? "current" : "past or future";

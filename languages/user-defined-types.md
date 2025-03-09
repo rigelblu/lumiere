@@ -10,6 +10,7 @@ As known as type aliases
 metadata { "language": "python",  "language_version":">=0.x.x", "code_role": "trail", "code_author": "human" }
 ```
 
+**Examples:**
 ```py
 ColorType = str
 c1: ColorType = "blue"
@@ -21,6 +22,7 @@ c1: ColorType = "blue"
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 alias ColorType = String
 var c1: ColorType = "blue"
@@ -32,6 +34,7 @@ var c1: ColorType = "blue"
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 type ColorType = string;
 let c1: ColorType = "blue";
@@ -56,6 +59,7 @@ var c1 ColorType = "blue"
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "human" }
 ```
 
+**Examples:**
 ```py
 # Not built into language. Use nearest equivalent
 class PointType:
@@ -66,6 +70,7 @@ p1 = PointType(1, 2)
 x = p1.x
 ```
 
+**Examples:**
 ```py
 # Not built into language. Use nearest equivalent
 from dataclasses import dataclass
@@ -103,6 +108,7 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
   - Although any name could be used for this argument, the convention is to call it self
   - The `out self` declares self as a mutable reference that starts out as uninitialized and must be initialized before the function returns
 
+**Examples:**
 ```mojo
 struct PointType:
     var x: Int
@@ -133,6 +139,7 @@ print(p1.str())           # Call struct's method
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 type PointType = {
   x: number;
@@ -173,6 +180,7 @@ x := p1.x
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```py
 class Point:
     def __init__(self, x, y):
@@ -212,6 +220,7 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
 
 **Constraints:** The `Comparable` and `EqualityComparable` traits don't allow the comparison dunder methods to raise errors. Because using `def` to define a method implies that it can raise an error, you must use `fn` to implement the comparison methods declared by these traits.
 
+**Examples:**
 ```mojo
 # Bitwise
 struct Point:
@@ -348,6 +357,7 @@ struct Point:
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```ts
 // TypeScript doesn't support operator overloading
 // The nearest equivalent is to use explicit methods

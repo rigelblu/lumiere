@@ -28,6 +28,7 @@ Example codeblock for the indicated language, following the pattern of define an
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 flag1 = True                                               # Implicit boolean
 var flag2: Bool = False                                    # Explicit boolean
@@ -40,6 +41,7 @@ if flag1 and not flag2:                                    # Usage
 metadata { "language": "mojo", "language_version":">=0.4.x <0.6.x", "code_role": "deprecated", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 flag1 = True                                               # Implicit boolean
 let flag2: Bool = False                                    # Explicit boolean
@@ -71,6 +73,7 @@ if flag1 && !flag2 {                                       // Usage
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # Implicit signed integer
 year1 = 2025
@@ -121,6 +124,7 @@ var year10 uint64 = 2025
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # Implicit real-number
 pi1 = 3.14
@@ -156,6 +160,7 @@ var pi3 float64 = 3.141
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # Implicit string
 c1 = "blue"
@@ -200,6 +205,7 @@ var c4 string = "yellow"
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # Implicit
 var l1 = List(1, 2, 3, 4)
@@ -262,6 +268,7 @@ for i := 0; i < len(list2); i++ {
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 var l2 = List[Int](1, 2, 3, 4)
 var g1 = List(
@@ -318,6 +325,7 @@ fmt.Println(l2)
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 year = 2025
 
@@ -364,6 +372,7 @@ if year <= 2025 {
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 def main():
     # code...
@@ -392,6 +401,7 @@ func main() {
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 fn hello1():
   # code...
@@ -446,6 +456,7 @@ hello3("world")
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 alias ColorType = String
 var c1: ColorType = "blue"
@@ -470,6 +481,7 @@ var c1 ColorType = "blue"
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 struct PointType:
     var x: Int
@@ -521,6 +533,7 @@ x := p1.x
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # Implicit type
 name1 = "John"              # Without a type
@@ -553,6 +566,7 @@ name3 := "John"             // Inferred type
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 # Nearest equivalent
 alias Length  = 100
@@ -587,6 +601,7 @@ const LIMIT = 100
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 print("Hellow world")
 ```
@@ -617,6 +632,7 @@ fmt.Print("world\n")
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**Examples:**
 ```mojo
 var year: Int = input("What year is it")
 ```
@@ -650,4 +666,34 @@ age, _ := strconv.Atoi(strings.TrimSpace(ageStr))
 var year int
 fmt.Print("What year is it? ")
 fmt.Scanf("%d", &year)
+```
+
+### Blocks & Statements
+
+#### Define a group of statements (i.e. code) to be executed together
+
+##### Mojo
+
+```json
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
+```
+
+You can use any number of spaces or tabs for indentation as long as the same indentation is used for the entire code block
+
+**Examples:**
+```mojo
+if condition:
+    # code...
+```
+
+##### Go
+
+```json
+metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
+```
+
+```go
+if condition {
+    // code...
+}
 ```
