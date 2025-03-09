@@ -146,7 +146,7 @@ metadata { "language": "python", "language_version":">=0.1.x", "code_role": "tra
 
 ## Sources & Credits
 
-- [Mojo Manual](https://docs.modular.com/mojo/manual)
+- Mojo documentation and examples leverage documentation content from the [Mojo Manual](https://docs.modular.com/mojo/manual) which is licensed under the [Apache License 2.0](https://github.com/modular/max/blob/main/LICENSE).
 - [BAML for the jsonish structure](https://github.com/BoundaryML/baml)
 
 ---
