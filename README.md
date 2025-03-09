@@ -164,4 +164,4 @@ Write approach goals
 
 > My goal is to write at an 8th grade level but with ideas that are super sophisticated. It doesn’t mean the way I’m writing is dumb. It means the way I’m writing is super simpler and straight forward. An eighth grade can easily ready one of my books. They may not understand every idea, but writing is not going to defeat them. Writing should be simple enough to that is does not defeat the reader.
 >
-> -- Malcom Gladwell
+> — Malcom Gladwell
