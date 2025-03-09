@@ -299,12 +299,7 @@ divider = "#" * 20
 ##### Mojo
 
 ```json
-metadata {
-  "language": "mojo",
-  "language_version":">=0.6.x",
-  "code_role": "anchor",
-  "code_author": "human"
-}
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
 **How to use:**
