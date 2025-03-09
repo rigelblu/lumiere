@@ -4,19 +4,24 @@
 
 **User Prompt:** Calculate the circumference of a circle with a radius of 9 using the mojo language. Print "ten" if circumference is greater than 10. Print "hundred" if it's greater than 100. Set too invaid flag if area is less than 1 and set invalid string to "Too small"Use 3.14 for pi and types. Provide only the code.
 
-### Results with llama-3.2
+### Results with codestral
 
 **Context: None**
 ```
-const pi = 3.14;
-const radius = 9;
+alias pi: Float64 = 3.14
+var radius: Float64 = 9.0
+var circumference: Float64 = 2.0 * pi * radius
+print("Circumference:", circumference)
 
-var circumference = 2 * pi * radius;
-print(circumference > 10 ? "ten" : "");
-print(circumstance > 100 ? "hundred" : "");
-if (circumference <= 1) {
-    set("invalid", "Too small");
+if circumference > 100.0 {
+    print("hundred")
+} else if circumference > 10.0 {
+    print("ten")
 }
+
+var area: Float64 = pi * radius * radius
+var too_invalid: Bool = area < 1.0
+var invalid_string: String = too_invalid ? "Too small" : ""
 ```
 
 **Context: Mojo Only**
@@ -37,23 +42,19 @@ if (circumference <= 1) {
 
 **Context: Mojo, Python, TypeScript, Go**
 ```
-var radius: Int = 9
-var circumference: Float32 = radius * 2 * 3.14
-if circumference > 10 {
-    print("ten")
-} else if circumference > 100 {
+alias pi: Float64 = 3.14
+var radius: Float64 = 9.0
+var circumference: Float64 = 2.0 * pi * radius
+print("Circumference:", circumference)
+
+if circumference > 100.0:
     print("hundred")
-}
+elif circumference > 10.0:
+    print("ten")
 
-var area: Float64 = radius * radius * 3.14
-
-if area < 1 {
-    setTooInvalidFlag := true
-    var invalidString: String = "Too small"
-    #print(invalidString) // Print statement not supported in mojo language
-} else if area >= 1000 {
-    print("big")
-}
+var area: Float64 = pi * radius * radius
+var too_invalid: Bool = area < 1.0
+var invalid_string: String = "Too small" if too_invalid else ""
 ```
 
 ## Eval: Use several features
