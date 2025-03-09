@@ -56,6 +56,7 @@ if flag1 and not flag2:                                    # Usage
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```go
 flag1 := true													                     // Implicit boolean
 var flag2 bool = false                                     // Explicit boolean
@@ -98,6 +99,7 @@ var year10: UInt64: 2025
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```go
 // Implicit integer
 year1 := 2025
@@ -141,6 +143,7 @@ var pi4: Float64 = 3.141
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```go
 // Implicit real-number
 pi1 := 3.14
@@ -182,6 +185,7 @@ var c4: String = "yellow"
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```go
 // Implicit string
 c1 := "blue"
@@ -235,6 +239,7 @@ for i in range(len(list)):
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```go
 // Implicit
 l1 := []int{1, 2, 3, 4}
@@ -295,6 +300,7 @@ print(list)
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```go
 l2 := []int{1, 2, 3, 4}
 g1 := [][]int{
@@ -346,6 +352,7 @@ else:
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```go
 year := 2025
 
@@ -384,6 +391,7 @@ def main():
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```go
 package main
 
@@ -425,6 +433,7 @@ hello3("world")
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```go
 // No parameters, no return value
 func hello1() {
@@ -468,6 +477,7 @@ var c1: ColorType = "blue"
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```go
 type ColorType string
 var c1 ColorType = "blue"
@@ -512,6 +522,7 @@ print(p1.str())           # Call struct's method
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```go
 type PointType struct {
     x int
@@ -550,6 +561,7 @@ var name2: String = "John"  # Define and initialize
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```go
 // Explicit type
 var name1 string            // Define
@@ -579,6 +591,7 @@ alias Length: Int  = 100
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```go
 // Single constant
 const NAME string = "John"
@@ -612,6 +625,7 @@ print("Hellow world")
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```go
 // Basic print
 fmt.Println("Hello world")
@@ -643,6 +657,7 @@ var year: Int = input("What year is it")
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```go
 // Using bufio scanner
 import (
@@ -692,6 +707,7 @@ if condition:
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```go
 if condition {
     // code...

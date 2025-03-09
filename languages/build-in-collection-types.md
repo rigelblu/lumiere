@@ -1,19 +1,15 @@
 ### Built-in Collection Types
 
-- **Mojo:** List and Dict can store any type that conforms to the CollectionElement trait
-
 #### Define a string
-
-- **Traits:**
-  - Stringable - cannot raise an error
-  - StringableRaising - can raise an error
-  - Signature: `__str__() -> String`
 
 ##### Python
 
 ```json
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```py
@@ -34,6 +30,9 @@ c4: str = "yellow"
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```mojo
@@ -57,6 +56,9 @@ var c4: String = "yellow"
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```ts
 // Implicit string
@@ -79,6 +81,10 @@ let c4: string = "yellow";
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // Implicit string
 c1 := "blue"
@@ -101,6 +107,9 @@ var c4 string = "yellow"
 ```json
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```py
@@ -131,6 +140,10 @@ for i in range(len(list)):
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**How to use:**
+- TODO:
+- List and Dict can store any type that conforms to the CollectionElement trait
+
 **Examples:**
 ```mojo
 # Implicit
@@ -160,6 +173,9 @@ for i in range(len(list)):
 ```json
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```ts
@@ -193,6 +209,10 @@ for (let i = 0; i < list2.length; i++) {
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // Implicit
 l1 := []int{1, 2, 3, 4}
@@ -226,6 +246,9 @@ for i := 0; i < len(list2); i++ {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 l2 = [1, 2, 3, 4]
@@ -252,6 +275,9 @@ print(l2)
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```mojo
@@ -280,6 +306,9 @@ print(list)
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```ts
 let l2: number[] = [1, 2, 3, 4];
@@ -307,6 +336,10 @@ console.log(l2);
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 l2 := []int{1, 2, 3, 4}
 g1 := [][]int{
@@ -335,6 +368,9 @@ fmt.Println(l2)
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 # Explicit
@@ -354,6 +390,9 @@ for key, value in d.items():
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```mojo
@@ -377,6 +416,9 @@ for item in d.items():
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```ts
 // Explicit
@@ -397,6 +439,10 @@ for (const [key, value] of Object.entries(d)) {
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // Explicit
 values := make(map[string]float64)
@@ -424,6 +470,9 @@ Tuples are immutable and can hold multiple types
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 # Explicit tuple
@@ -445,6 +494,9 @@ day = date[2]
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```mojo
 # Explicit tuple
@@ -462,6 +514,9 @@ day = date[2]
 ```json
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```ts
@@ -481,6 +536,10 @@ day = date[2];
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // Go doesn't have built-in tuples, but can use struct
 type Date struct {
@@ -509,6 +568,9 @@ day := date.Day
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 colors = {"blue", "yellow"}
@@ -523,6 +585,9 @@ for color in c1:
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```mojo
@@ -539,6 +604,9 @@ for color in c1:
 ```json
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```ts
@@ -559,6 +627,11 @@ for (const color of c1) {
 ```json
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // Using maps to implement sets
 colors := map[string]bool{"blue": true, "yellow": true}
@@ -586,6 +659,9 @@ for color := range c1 {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 from typing import Optional
@@ -612,6 +688,9 @@ def color() -> None:
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```mojo
 # Initialize optional with value
@@ -635,6 +714,9 @@ def color() -> None:
 ```json
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```ts
@@ -662,6 +744,10 @@ function color(): void {
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // Initialize with value
 

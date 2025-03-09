@@ -2,11 +2,16 @@
 
 #### Create and use module
 
+**What is it:** a module is a single file
+
 ##### Python
 
 ```json
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```py
@@ -17,21 +22,18 @@ class Point:
         self.y = y
 ```
 
-**Examples:**
 ```py
 # main.py - import whole module
 import point
 p = point.Point(1, 2)
 ```
 
-**Examples:**
 ```py
 # main.py - import specific class
 from point import Point
 p = Point(1, 2)
 ```
 
-**Examples:**
 ```py
 # main.py - import with alias
 from point import Point as Pt
@@ -44,7 +46,8 @@ p = Pt(1, 2)
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
-**What is it:** a module is a single file
+**How to use:**
+- TODO:
 
 **Examples:**
 ```mojo
@@ -55,7 +58,6 @@ struct Point
     y: Int
 ```
 
-**Examples:**
 ```mojo
 # file2.mojo
 import file1
@@ -63,7 +65,6 @@ import file1
 var p = file1.Point(1, 2
 ```
 
-**Examples:**
 ```mojo
 # file2.mojo
 from file1 import Point
@@ -71,7 +72,6 @@ from file1 import Point
 var p = Point(1, 2)
 ```
 
-**Examples:**
 ```mojo
 # file2.mojo
 from file1 import Point as pt
@@ -84,6 +84,9 @@ var p = pt(1, 2)
 ```json
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```ts
@@ -98,21 +101,18 @@ export function distanceBetween(p1: Point, p2: Point): number {
 }
 ```
 
-**Examples:**
 ```ts
 // main.ts - import whole module
 import * as Geometry from './point';
 const p = new Geometry.Point(1, 2);
 ```
 
-**Examples:**
 ```ts
 // main.ts - import specific exports
 import { Point } from './point';
 const p = new Point(1, 2);
 ```
 
-**Examples:**
 ```ts
 // main.ts - import with alias
 import { Point as Pt } from './point';
@@ -126,6 +126,10 @@ metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail",
 }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // geometry/point.go
 package geometry
@@ -177,6 +181,9 @@ func main() {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 # Directory structure
@@ -214,6 +221,9 @@ line = Line(p1, p2)
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
+
+**How to use:**
+- TODO:
 
 **How to use:**
 - Compile package into a `.mojopkg` to share and is compatible across system architectures
@@ -263,6 +273,9 @@ from .module1 import *
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```ts
 // Directory structure
@@ -301,6 +314,10 @@ const line = new Line(p1, p2);
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // Directory structure
 // go.mod defines the module name

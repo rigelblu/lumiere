@@ -21,6 +21,9 @@
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 global_var = "I'm global"
@@ -32,6 +35,9 @@ global_var = "I'm global"
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```mojo
 # Not built into language
@@ -42,6 +48,9 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
 ```json
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```ts
@@ -58,6 +67,10 @@ globalThis.globalVar = "I'm global";
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 package main
 
@@ -74,6 +87,9 @@ var GlobalVar string = "I'm global"
 ```json
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```py
@@ -95,6 +111,9 @@ from ..pkg1.file1 import * # _PRIMARY won't be imported
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```mojo
 # TODO: confirm if it's not built into language or if it follows python pattern
@@ -105,6 +124,9 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
 ```json
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```ts
@@ -123,6 +145,10 @@ import * as file1 from '../pkg1/file1'
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // ./pkg1/file1.go
 package colors
@@ -146,6 +172,9 @@ import "colors"
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 # ./pkg1/__init__.py
@@ -165,6 +194,9 @@ from pkg1 import PRIMARY
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```mojo
 # ./pkg1/file1.py
@@ -179,6 +211,9 @@ from ..pkg1/file1 import *
 ```json
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```ts
@@ -201,6 +236,10 @@ import { PRIMARY } from '../pkg1/file1';
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // ./pkg1/file1.go
 package colors
@@ -223,6 +262,9 @@ c1 := colors.Primary
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 def my_function():
@@ -239,6 +281,9 @@ def my_function():
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```mojo
 if condition:
@@ -250,6 +295,9 @@ if condition:
 ```json
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```ts
@@ -270,6 +318,10 @@ function myFunction() {
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 func myFunction() {
     functionVar := "available in function"
@@ -290,6 +342,9 @@ func myFunction() {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 # TODO:
@@ -297,11 +352,13 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 
 ##### Mojo
 
-**How to use:** keep a value alive up to a certain point by assigning the value to the _ discard pattern at the point where it's okay to destroy it
-
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
+
+**How to use:**
+- TODO:
+- keep a value alive up to a certain point by assigning the value to the _ discard pattern at the point where it's okay to destroy it
 
 **Examples:**
 ```mojo
@@ -319,6 +376,9 @@ fn __del__(owned self):
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```ts
 // TODO:
@@ -330,6 +390,10 @@ metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": 
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // TODO:
 ```

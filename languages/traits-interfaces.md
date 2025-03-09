@@ -23,6 +23,9 @@
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 from abc import ABC, abstractmethod
@@ -35,11 +38,14 @@ class ColorTrait(ABC):
 
 ##### Mojo
 
-**Constraints:** Parameters and aliases are in the same namespace, so the parameter can't have the same name as the associated alias
-
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
+
+**How to use:**
+- TODO:
+
+**Constraints:** Parameters and aliases are in the same namespace, so the parameter can't have the same name as the associated alias
 
 **Examples:**
 ```mojo
@@ -63,6 +69,9 @@ dot = Point[1]()
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```ts
 interface ColorTrait {
@@ -76,6 +85,10 @@ interface ColorTrait {
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 type ColorTrait interface {
   HSL() (h, s, l float64)
@@ -87,6 +100,9 @@ type ColorTrait interface {
 ```json
 metadata { "language": "rust" "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 ```rust
 trait ColorTrait {
@@ -100,6 +116,9 @@ trait ColorTrait {
 ```json
 metadata { "language": "c++", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 ```cpp
 class ColorTrait {
@@ -117,6 +136,9 @@ public:
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 # TODO:
@@ -127,6 +149,9 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```mojo
@@ -154,6 +179,9 @@ struct Point2D(Point1D)):
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```ts
 // TODO:
@@ -165,6 +193,10 @@ metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": 
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // TODO:
 ```
@@ -177,6 +209,9 @@ metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail",
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 # TODO:
@@ -187,6 +222,9 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```mojo
@@ -214,6 +252,9 @@ struct Point2D(Name, Point1D)):
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```ts
 // TODO:
@@ -225,6 +266,10 @@ metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": 
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // TODO:
 ```
@@ -237,6 +282,9 @@ metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail",
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 # TODO:
@@ -247,6 +295,9 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```mojo
@@ -277,6 +328,9 @@ var thing = factory[Dot]()
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```ts
 // TODO:
@@ -288,6 +342,10 @@ metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": 
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // TODO:
 ```
@@ -299,6 +357,11 @@ metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail",
 ```json
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- Stringable - cannot raise an error
+- StringableRaising - can raise an error
+- Signature: `__str__() -> String`
 
 **Examples:**
 ```py
@@ -315,14 +378,15 @@ print(str(Point(1, 2)))  # Outputs: "(1, 2)"
 
 ##### Mojo
 
-**How to use:** Include trait name in parentheses after the struct name `struct Point1D(StringableRaising)`
-
-**How it works:** Struct that use the trait must implement everything required by the trait or you'll get a compile error
-
-**
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
+
+**How to use:**
+- Include trait name in parentheses after the struct name `struct Point1D(StringableRaising)`
+
+**How it works:**
+- Struct that use the trait must implement everything required by the trait or you'll get a compile error
 
 **Examples:**
 ```mojo
@@ -341,6 +405,9 @@ print(String(Point1D(1)))
 ```json
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```ts
@@ -365,6 +432,10 @@ console.log(String(new Point(1, 2)));  // Outputs: "(1, 2)"
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 import "fmt"
 
@@ -389,6 +460,9 @@ func main() {
 metadata { "language": "rust" "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 ```rust
 struct Point {
     x: i32,
@@ -412,6 +486,9 @@ fn main() {
 ```json
 metadata { "language": "c++", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 ```cpp
 #include <iostream>
@@ -527,6 +604,7 @@ function main() {
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```go
 type Point struct {
   Data [][]int
@@ -554,6 +632,9 @@ func main() {
 ```json
 metadata { "language": "rust" "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 ```rust
 use std::ops::{Index, IndexMut};
@@ -593,6 +674,9 @@ fn main() {
 metadata { "language": "c++", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -631,6 +715,9 @@ int main() {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 from typing import Protocol, Tuple
@@ -660,15 +747,18 @@ def use_trait_function():
 
 ##### Mojo
 
-**Similar to:** templates in other programming languages
-
-**How to use:** define conforming trait in square brackets following the method name `joinCyan[T: ColorTrait]`
-
-**How it works:** compiler infers the type of the argument, and ensures the type has the required trait
-
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
+
+**Similar to:**
+- templates in other programming languages
+
+**How to use:**
+- define conforming trait in square brackets following the method name `joinCyan[T: ColorTrait]`
+
+**How it works:**
+-compiler infers the type of the argument, and ensures the type has the required trait
 
 **Examples:**
 ```mojo
@@ -697,6 +787,9 @@ fn use_trait_function():
 ```json
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```ts
@@ -739,6 +832,10 @@ function useTraitFunction() {
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // Define trait/interface
 type ColorTrait interface {
@@ -783,6 +880,9 @@ func UseTraitFunction() {
 ```json
 metadata { "language": "rust" "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 ```rust
 // Define trait
@@ -832,6 +932,9 @@ fn use_trait_function() {
 metadata { "language": "c++", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 ```cpp
 #include <array>
 
@@ -879,6 +982,9 @@ void useTraitFunction() {
 ```json
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```py
@@ -942,6 +1048,9 @@ print(writer.get_content())
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**How to use:**
+- TODO:
+
 **Constraints:s**
 - The Writable trait doesn't allow the write_to() method to raise an error and the Stringable trait doesn't allow the **str**() method to raise an error. Instead have to define these methods with fn
 
@@ -977,6 +1086,9 @@ print(msg)
 ```json
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```ts
@@ -1041,6 +1153,10 @@ console.log(writer.getContent());
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 import (
   "fmt"
@@ -1110,6 +1226,9 @@ func main() {
 metadata { "language": "rust" "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 ```rust
 use std::fmt;
 use std::io::{self, Write};
@@ -1166,6 +1285,9 @@ fn main() {
 ```json
 metadata { "language": "c++", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 ```cpp
 #include <iostream>
@@ -1260,6 +1382,9 @@ int main() {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 # Using Any type
@@ -1278,6 +1403,10 @@ value3: int | str | bool = "string"
 
 ##### Mojo
 
+```json
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
+```
+
 **How to use:** This means you can call the destructor on any type
 
 **How it works:**
@@ -1286,9 +1415,8 @@ value3: int | str | bool = "string"
 
 **Why use it:** This makes it possible to build generic collections without leaking memory. When the collection's destructor is called, it can safely call the destructors on every item it contains.
 
-```json
-metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
-```
+**How to use:**
+- TODO:
 
 **Examples:**
 ```mojo
@@ -1298,13 +1426,11 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
 ##### TypeScript
 
 ```json
-metadata {
-  "language": "typescript",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```ts
@@ -1328,6 +1454,10 @@ function process<T extends string | number>(value: T): T {
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // Using any (Go 1.18+)
 var value1 any = "string"
@@ -1358,6 +1488,9 @@ func process(value any) {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 # TODO:
@@ -1368,6 +1501,9 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```mojo
@@ -1380,6 +1516,9 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```ts
 // TODO:
@@ -1391,6 +1530,10 @@ metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": 
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // TODO:
 ```

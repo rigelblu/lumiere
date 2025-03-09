@@ -8,6 +8,9 @@
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 flag1 = True                                               # Implicit boolean
@@ -22,6 +25,9 @@ if flag1 and not flag2:                                    # Usage
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```mojo
@@ -51,6 +57,9 @@ if flag1 and not flag2:                                    # Usage
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```ts
 let flag1 = true;                                          // Implicit boolean
@@ -67,6 +76,10 @@ if (flag1 && !flag2) {                                     // Usage
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 flag1 := true													                     // Implicit boolean
 var flag2 bool = false                                     // Explicit boolean
@@ -84,6 +97,9 @@ if flag1 && !flag2 {                                       // Usage
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 # Implicit integer
@@ -98,6 +114,9 @@ year2: int = 2025
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```mojo
@@ -124,6 +143,9 @@ var year10: UInt64: 2025
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```ts
 // Implicit integer
@@ -139,6 +161,7 @@ let year2: number = 2025;
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**Examples:**
 ```go
 // Implicit integer
 year1 := 2025
@@ -165,6 +188,9 @@ var year10 uint64 = 2025
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 # Implicit real-number
@@ -179,6 +205,9 @@ pi2: float = 3.141
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```mojo
@@ -197,6 +226,9 @@ var pi4: Float64 = 3.141
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```ts
 // Implicit real-number
@@ -212,6 +244,10 @@ let pi2: number = 3.141;
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // Implicit real-number
 pi1 := 3.14
@@ -228,6 +264,9 @@ var pi3 float64 = 3.141
 ```json
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```py
@@ -247,6 +286,9 @@ dynamic_value = 42  # Valid
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```mojo
 # TODO
@@ -257,6 +299,9 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
 ```json
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```ts
@@ -274,7 +319,10 @@ value2 = 42;  // Valid
 ```json
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+**How to use:**
+- TODO:
 
+**Examples:**
 ```go
 // Using empty interface
 var value1 interface{} = "string"
@@ -293,6 +341,9 @@ value2 = 42  // Valid
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 # Converting between types
@@ -308,6 +359,9 @@ is_valid = bool(1)  # True
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```mojo
 year = String(2025)
@@ -319,6 +373,9 @@ month = Int(String("02"))
 ```json
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```ts
@@ -336,14 +393,13 @@ let int_from_hex = parseInt("2a", 16);  // Convert from hex
 ##### Go
 
 ```json
-metadata {
-  "language": "go",
-  "language_version":">=0.x.x",
-  "code_role": "trail",
-  "code_author": "llm"
-}
+metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 import (
     "fmt"

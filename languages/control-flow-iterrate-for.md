@@ -8,6 +8,9 @@
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 for i in range(5):
@@ -30,6 +33,9 @@ for i in range(5):
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```mojo
 for i in range(5):
@@ -51,6 +57,9 @@ for i in range(5):
 ```json
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```ts
@@ -79,6 +88,10 @@ for (let i = 0; i < 5; i++) {
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 for i := 0; i < 5; i++ {
     fmt.Print(i, ", ")
@@ -107,6 +120,9 @@ for i := 0; i < 5; i++ {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 colors = ["Blue", "Yellow"]
@@ -124,6 +140,9 @@ for i, color in enumerate(colors):
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**How to use:**
+- TODO:
+
 **Constraint:** iterating over collections assigns the loop index a Reference to each item, not the item itself. You can access the item using the dereference operator, [].
 
 **Examples:**
@@ -140,6 +159,9 @@ for color in colors:
 ```json
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```ts
@@ -165,6 +187,10 @@ for (let i = 0; i < colors.length; i++) {
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 colors := []string{"Blue", "Yellow"}
 for _, color := range colors {
@@ -190,6 +216,9 @@ for i := 0; i < len(colors); i++ {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 years = {2024, 2025, 2026}
@@ -202,6 +231,9 @@ for year in years:
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```mojo
@@ -217,6 +249,9 @@ for year in years:
 ```json
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```ts
@@ -237,6 +272,10 @@ years.forEach(year => {
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // Go doesn't have a built-in set type
 // Using a map with empty struct values to simulate a set
@@ -258,6 +297,9 @@ for year := range years {
 ```json
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```py
@@ -281,6 +323,9 @@ for key, value in colors.items():
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```mojo
 from collections import Dict
@@ -301,6 +346,9 @@ for item in colors.items():
 ```json
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```ts
@@ -338,6 +386,10 @@ for (const [key, value] of colorsMap.entries()) {
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 colors := map[string]string{
     "Primary":   "Blue",
@@ -363,6 +415,9 @@ for key := range colors {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 for i in range(5):
@@ -385,6 +440,9 @@ else:
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**How to use:**
+- TODO:
+
 **What it does:** the else clause executes after iterating over all of the elements in a collection
 
 **Constraints:** the else clause does not execute if a break or return statement terminates the for loop
@@ -402,6 +460,9 @@ else:
 ```json
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```ts
@@ -437,6 +498,10 @@ if (!hasBreak) {
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // Go doesn't have a direct for-else construct
 // Using a flag or other approach instead

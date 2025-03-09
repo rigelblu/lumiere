@@ -8,6 +8,9 @@
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 # Basic class definition
@@ -63,6 +66,9 @@ print(anonymous.name)  # Anonymous
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**How to use:**
+- TODO:
+
 TODO: LLM Generated, TODO: verify code
 
 **Constraints:**
@@ -81,6 +87,9 @@ TODO: LLM Generated, TODO: verify code
 ```json
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```ts
@@ -144,6 +153,10 @@ console.log(anonymous.name);  // Anonymous
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // Go doesn't have traditional classes, uses structs and methods instead
 package main

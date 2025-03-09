@@ -8,6 +8,9 @@
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 def hello4(name: str):
@@ -30,6 +33,9 @@ def fail(message: str) -> NoReturn:
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**How to use:**
+- TODO:
+
 **Constraints:**
 - Doesn't support typed error conditions yet. All errors are instances of Error, and the only thing that distinguishes different error conditions is the error message that you provide
 
@@ -48,6 +54,9 @@ fn hello4(name: String) raises:
 ```json
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```ts
@@ -85,6 +94,10 @@ function greet(name: string): string {
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 import (
   "errors"
@@ -126,6 +139,9 @@ func validateName(name string) (string, error) {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 def handle_error():
@@ -157,6 +173,9 @@ def handle_error():
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**How to use:**
+- TODO:
+
 **Constraints:**
 - If `raises` keyword isn't included when defining a function with fn, then the function must explicitly handle any errors that might occur in code that it executes
 - Because Mojo does not currently support typed errors, a try-except control structure can include at most one except clause, which catches any Error raised
@@ -179,6 +198,9 @@ fn handle_error():
 ```json
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```ts
@@ -223,6 +245,10 @@ function handleError(): void {
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 func handleError() {
   // Basic error checking pattern

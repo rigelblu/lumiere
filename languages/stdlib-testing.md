@@ -10,12 +10,19 @@ REFACTOR: move into separate files inside a standard-library directory
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 # TODO:
 ```
 
 ##### Mojo
+
+```json
+metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
+```
 
 **How to use:**
 - prefix method with `test_`
@@ -49,10 +56,6 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
   Error: At Expression [1] wrapper:14:16: AssertionError: condition was unexpectedly False
   ```
 
-```json
-metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
-```
-
 **Examples:**
 ```mojo
 from testing import assert_equal
@@ -74,6 +77,9 @@ assert_almost_equal(result, 3.33, atol=0.001, msg="close but no cigar")
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```ts
 // TODO:
@@ -85,6 +91,10 @@ metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": 
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // TODO:
 ```
@@ -96,6 +106,9 @@ metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail",
 ```json
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```py
@@ -109,6 +122,9 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```mojo
@@ -140,6 +156,9 @@ with assert_raises(contains="required"):
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```ts
 // TODO:
@@ -151,6 +170,10 @@ metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": 
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // TODO:
 ```

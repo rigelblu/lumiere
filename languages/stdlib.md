@@ -2,51 +2,6 @@
 
 REFACTOR: move into separate files inside a standard-library directory
 
-#### Print to console
-
-##### Python
-
-```json
-metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
-```
-
-**Examples:**
-```py
-# TODO:
-```
-
-##### Mojo
-
-```json
-metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
-```
-
-**Examples:**
-```mojo
-# TODO:
-```
-
-##### TypeScript
-
-```json
-metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
-```
-
-**Examples:**
-```ts
-// TODO:
-```
-
-##### Go
-
-```json
-metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
-```
-
-```go
-// TODO:
-```
-
 #### Use standard library traits
 
 ##### Python
@@ -54,6 +9,9 @@ metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail",
 ```json
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```py
@@ -98,6 +56,9 @@ metadata { "language": "python", "language_version":">=0.x.x", "code_role": "tra
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```mojo
 # TODO:
@@ -108,6 +69,9 @@ metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "ancho
 ```json
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```ts
@@ -120,6 +84,10 @@ metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": 
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // TODO:
 ```

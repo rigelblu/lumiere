@@ -10,6 +10,9 @@ As known as type aliases
 metadata { "language": "python",  "language_version":">=0.x.x", "code_role": "trail", "code_author": "human" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 ColorType = str
@@ -21,6 +24,9 @@ c1: ColorType = "blue"
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```mojo
@@ -34,6 +40,9 @@ var c1: ColorType = "blue"
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```ts
 type ColorType = string;
@@ -46,6 +55,10 @@ let c1: ColorType = "blue";
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 type ColorType string
 var c1 ColorType = "blue"
@@ -59,6 +72,9 @@ var c1 ColorType = "blue"
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "human" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 # Not built into language. Use nearest equivalent
@@ -70,7 +86,6 @@ p1 = PointType(1, 2)
 x = p1.x
 ```
 
-**Examples:**
 ```py
 # Not built into language. Use nearest equivalent
 from dataclasses import dataclass
@@ -89,6 +104,9 @@ x = p1.x
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
+
+**How to use:**
+- TODO:
 
 **What it is:**
 - Custom data structure with
@@ -139,6 +157,9 @@ print(p1.str())           # Call struct's method
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```ts
 type PointType = {
@@ -161,6 +182,10 @@ let x = p1.x;
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 type PointType struct {
     x int
@@ -179,6 +204,9 @@ x := p1.x
 ```json
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```py
@@ -217,6 +245,9 @@ class Point:
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
+
+**How to use:**
+- TODO:
 
 **Constraints:** The `Comparable` and `EqualityComparable` traits don't allow the comparison dunder methods to raise errors. Because using `def` to define a method implies that it can raise an error, you must use `fn` to implement the comparison methods declared by these traits.
 
@@ -357,6 +388,9 @@ struct Point:
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```ts
 // TypeScript doesn't support operator overloading
@@ -402,6 +436,10 @@ class Point {
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // Go doesn't support operator overloading
 // The nearest equivalent is to use explicit methods

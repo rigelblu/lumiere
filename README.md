@@ -18,6 +18,8 @@ If LLMs are great at correlating, pattern matching, interpolating, maybe this is
 1. In the short term, paste the training data into your LLMs's system prompt
 1. In the long term, LLMs will train on this data and become available whenever they update their cut-off date
 
+TODO: add make eval
+
 ---
 
 ## Sample Performance Improvements
@@ -144,7 +146,7 @@ metadata { "language": "python", "language_version":">=0.1.x", "code_role": "tra
 
 ## Sources & Credits
 
-- [Mojo Manual](https://docs.modular.com/mojo/manual)
+- Mojo documentation and examples leverage documentation content from the [Mojo Manual](https://docs.modular.com/mojo/manual) which is licensed under the [Apache License 2.0](https://github.com/modular/max/blob/main/LICENSE).
 - [BAML for the jsonish structure](https://github.com/BoundaryML/baml)
 
 ---
@@ -162,4 +164,4 @@ Write approach goals
 
 > My goal is to write at an 8th grade level but with ideas that are super sophisticated. It doesn’t mean the way I’m writing is dumb. It means the way I’m writing is super simpler and straight forward. An eighth grade can easily ready one of my books. They may not understand every idea, but writing is not going to defeat them. Writing should be simple enough to that is does not defeat the reader.
 >
-> -- Malcom Gladwell
+> — Malcom Gladwell

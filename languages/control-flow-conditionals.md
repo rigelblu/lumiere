@@ -16,6 +16,9 @@
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 year = 2025
@@ -37,6 +40,9 @@ else:
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```mojo
 year = 2025
@@ -57,6 +63,9 @@ else:
 ```json
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```ts
@@ -81,6 +90,10 @@ if (year <= 2025) {
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 year := 2025
 
@@ -105,6 +118,9 @@ if year <= 2025 {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 if year < 2021: print("Past")  # Inline code
@@ -119,6 +135,9 @@ if not (year == 2025): print("Not present")  # Negation example
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```mojo
@@ -135,6 +154,9 @@ if year != 2025: # code...skipped when condition is False
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```ts
 if (year < 2021) console.log("Past");  // Inline code
@@ -150,6 +172,10 @@ if (!(year === 2025)) console.log("Not present");  // Negation example
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 if year < 2021 { fmt.Println("Past") }  // Inline code
 if year >= 2026 { fmt.Println("Future") }  // Inline code
@@ -165,6 +191,9 @@ if !(year == 2025) { fmt.Println("Not present") }  // Negation example
 ```json
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```py
@@ -183,6 +212,9 @@ if false_func() and true_func():
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```mojo
 # Either conditions
@@ -199,6 +231,9 @@ if false_func() and true_func():
 ```json
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```ts
@@ -219,6 +254,10 @@ if (falseFunc() && trueFunc()) {
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 // Either conditions
 if trueFunc() || falseFunc() {
@@ -239,6 +278,9 @@ if falseFunc() && trueFunc() {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 time = "future" if year > 2020 else "past"
@@ -249,6 +291,9 @@ time = "future" if year > 2020 else "past"
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```mojo
@@ -261,6 +306,9 @@ time = "future" if year > 2020 else "past"
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```ts
 const time = year > 2020 ? "future" : "past";
@@ -272,6 +320,10 @@ const time = year > 2020 ? "future" : "past";
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 var time string
 if year > 2020 {
@@ -297,6 +349,9 @@ time := func() string {
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```py
 year = 2025
@@ -308,6 +363,9 @@ label = "current" if year == 2025 else "past or future"
 ```json
 metadata { "language": "mojo", "language_version":">=0.6.x", "code_role": "anchor", "code_author": "human" }
 ```
+
+**How to use:**
+- TODO:
 
 **Examples:**
 ```mojo
@@ -321,6 +379,9 @@ label = "current" if year == 20250 else "past or future"
 metadata { "language": "typescript", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
 **Examples:**
 ```ts
 const year = 2025;
@@ -333,6 +394,10 @@ const label = year === 2025 ? "current" : "past or future";
 metadata { "language": "go", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
+**How to use:**
+- TODO:
+
+**Examples:**
 ```go
 year := 2025
 label := func() string {
