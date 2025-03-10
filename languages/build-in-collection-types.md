@@ -360,11 +360,14 @@ l2 = append(l2, 5)    // Append an element to the list
 fmt.Println(l2)
 ```
 
-#### Define a dictionary
+#### Define a collection of key-value pairs (i.e. dictionary / map / hash)
+
+**Also known as:**
+- dictionary, dict map, hash, hash map
 
 ##### Python
 
-```json
+```jso9
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
