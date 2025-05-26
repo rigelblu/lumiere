@@ -23,6 +23,7 @@
     - [Context Manager](./languages/context-manager.md)
     - [Error Handling](./languages/error-handling.md)
     - [Standard Library](./languages/stdlib.md)
+    - [Standard Library - Concurrency](./languages/stdlib-concurrency)
     - [Standard Library - Input / Output](./languages/stdlib-input-output.md)
     - [Standard Library - Testing](./languages/stdlib-testing.md)
     - [Interoperability](./languages/interoperability.md)
