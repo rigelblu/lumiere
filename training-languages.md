@@ -22,4 +22,8 @@ Example codeblocks for the indicated language, following the pattern of define a
 
 ## Training Data
 
-{{replaced with contents of trainging files}}
+{{replaced with contents of training files}}
+
+- Coroutines
+- Parallelism
+- Thread Local Storage / Context
