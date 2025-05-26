@@ -19,6 +19,7 @@
     - [Functions](./languages/functions.md)
     - [Traits & Interfaces](./languages/traits-interfaces.md)
     - [Packages / Modules](./languages/packages-modules.md)
+    - [Reflections](./languages/reflections.md)
     - [Decorators](./languages/decorators.md)
     - [Context Manager](./languages/context-manager.md)
     - [Error Handling](./languages/error-handling.md)
