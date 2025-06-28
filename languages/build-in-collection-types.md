@@ -367,7 +367,7 @@ fmt.Println(l2)
 
 ##### Python
 
-```jso9
+```json
 metadata { "language": "python", "language_version":">=0.x.x", "code_role": "trail", "code_author": "llm" }
 ```
 
