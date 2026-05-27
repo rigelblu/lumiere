@@ -2,12 +2,12 @@
 
 Multi-programming language training data for LLMs
 
-## Intro
-
+## Intro: a hypothesis
 _Draft_
+
 LLMs struggle with accuracy on most new things - languages, libraries, frameworks due to lack of training data. So what if we provide one example for every use case/pattern to enable few shot learning the new thing (taking inspiration from few shot prompting).
 
-If LLMs are great at correlating, pattern matching, interpolating, maybe putting the example data immediate nears examples of others is enough to prevent calcifying culture, enabling new ideas to grow. Plus, we hear quality over quantity of the data is what matters.
+If LLMs are great at correlating, pattern matching, interpolating, maybe putting the example data immediate near examples of others is enough to prevent calcifying culture, enabling new ideas to grow. Plus, we hear quality over quantity of the data is what matters.
 
 ---
 
